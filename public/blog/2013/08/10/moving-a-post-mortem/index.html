@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+<meta property="og:title" content="Moving: a post-mortem" />
+<meta property="og:description" content="Last month, I moved from Atlanta to Chicago. Moving always sucks; that&rsquo;s a universal constant*, but I think this one went better than most. I&rsquo;ve compiled a list of what worked and what didn&rsquo;t, and some notes on what to do better next time.
+What Worked Trello Sabrina and I planned the move and tracked our tasks on Trello.com. I have to say, the ability to put together dynamic kanban-style task boards on the fly really helped us keep everything straight." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://agocs.org/blog/2013/08/10/moving-a-post-mortem/" />
+
+
+<meta property="og:updated_time" content="2013-08-10T04:34:48&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Moving: a post-mortem">
+<meta itemprop="description" content="Last month, I moved from Atlanta to Chicago. Moving always sucks; that&rsquo;s a universal constant*, but I think this one went better than most. I&rsquo;ve compiled a list of what worked and what didn&rsquo;t, and some notes on what to do better next time.
+What Worked Trello Sabrina and I planned the move and tracked our tasks on Trello.com. I have to say, the ability to put together dynamic kanban-style task boards on the fly really helped us keep everything straight.">
+
+
+<meta itemprop="dateModified" content="2013-08-10T04:34:48&#43;00:00" />
+<meta itemprop="wordCount" content="1038">
+
+
+
+<meta itemprop="keywords" content="golang,hacking,jeep,kitchen,programming,rabbitmq,talks," />
+
+
+
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:title" content="Moving: a post-mortem"/>
+<meta name="twitter:description" content="Last month, I moved from Atlanta to Chicago. Moving always sucks; that&rsquo;s a universal constant*, but I think this one went better than most. I&rsquo;ve compiled a list of what worked and what didn&rsquo;t, and some notes on what to do better next time.
+What Worked Trello Sabrina and I planned the move and tracked our tasks on Trello.com. I have to say, the ability to put together dynamic kanban-style task boards on the fly really helped us keep everything straight."/>
+<meta name="twitter:site" content="@@agox"/>
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+    <base href="https://agocs.org/">
+    <link rel="canonical" href="https://agocs.org/blog/2013/08/10/moving-a-post-mortem/">
+    <title>Moving: a post-mortem | Agocs.org</title>
+
+    <!-- CSS -->
+    <link href="https://agocs.org/css/app.css" rel="stylesheet">
+
+    
+
+    
+
+    
+    
+
+
+  </head>
+  <body>
+
+    <header class="nav">
+      <div class="top-bar">
+        <div class="row column">
+          <div class="top-bar-left">
+            <ul class="menu">
+              <li><a href="https://agocs.org/">
+                  Agocs.org
+                </a></li>
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="menu">
+              <li class=""><a href="https://agocs.org/">
+                Home
+              </a></li>
+              
+                
+                  <li><a href="https://agocs.org/">
+                    Agocs.org
+                  </a></li>
+                
+                  <li><a href="https://agocs.org/categories/">
+                    Categories
+                  </a></li>
+                
+                  <li><a href="https://agocs.org/categories/golang/">
+                    Golang
+                  </a></li>
+                
+                  <li><a href="https://agocs.org/categories/hacking/">
+                    Hacking
+                  </a></li>
+                
+                  <li><a href="https://agocs.org/categories/jeep/">
+                    Jeep
+                  </a></li>
+                
+                  <li><a href="https://agocs.org/categories/kitchen/">
+                    Kitchen
+                  </a></li>
+                
+                  <li><a href="https://agocs.org/post/">
+                    Posts
+                  </a></li>
+                
+                  <li><a href="https://agocs.org/categories/programming/">
+                    Programming
+                  </a></li>
+                
+                  <li><a href="https://agocs.org/categories/rabbitmq/">
+                    Rabbitmq
+                  </a></li>
+                
+                  <li><a href="https://agocs.org/categories/talks/">
+                    Talks
+                  </a></li>
+                
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <header class="blog-header">
+      <div class="callout large">
+        <div class="row column text-center">
+          <h1>
+            <a href="https://agocs.org/" rel="home">Agocs.org</a>
+          </h1>
+          
+            <p>
+              Programming and other interesting things
+            </p>
+          
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="row" id="content">
+        <div class="medium-8 columns">
+          
+  
+
+
+  <div class="blog-post">
+    <h3>
+      <a href="https://agocs.org/blog/2013/08/10/moving-a-post-mortem/">Moving: a post-mortem</a>
+    </h3>
+    <div class="callout small">
+      <small>
+        <time datetime="2013-08-10T04:34:48Z">
+          Sat 10 Aug, 2013
+        </time> by camerazn.
+        
+        
+        <br>
+        
+          Share
+
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fagocs.org%2fblog%2f2013%2f08%2f10%2fmoving-a-post-mortem%2f" title="Share on Facebook">
+      Facebook
+    </a>,
+
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fagocs.org%2fblog%2f2013%2f08%2f10%2fmoving-a-post-mortem%2f" title="Share on Google+">
+      Google+
+    </a>,
+
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fagocs.org%2fblog%2f2013%2f08%2f10%2fmoving-a-post-mortem%2f" title="Share on LinkedIn">
+      LinkedIn
+    </a>,
+
+
+    <a href="https://twitter.com/home?status=https%3a%2f%2fagocs.org%2fblog%2f2013%2f08%2f10%2fmoving-a-post-mortem%2f" title="Tweet this">
+      Twitter
+    </a>
+
+
+        
+      </small>
+    </div>
+    <p>
+      
+
+<p>Last month, I moved from Atlanta to Chicago. Moving always sucks; that&rsquo;s a universal constant*, but I think this one went better than most. I&rsquo;ve compiled a list of what worked and what didn&rsquo;t, and some notes on what to do better next time.</p>
+
+<h2 id="what-worked">What Worked</h2>
+
+<h4 id="trello">Trello</h4>
+
+<p>Sabrina and I planned the move and tracked our tasks on Trello.com. I have to say, the ability to put together dynamic kanban-style task boards on the fly really helped us keep everything straight.</p>
+
+<h4 id="penske-trucks">Penske Trucks</h4>
+
+<p>We rented a 26&rdquo; straight truck from Penske for this move. That&rsquo;s a big truck, but I decided it&rsquo;s better to have more truck than you need. It cost me less than $500 renting from Saturday - Wednesday, but what I neglected to consider was, on a move of that distance, I would need around 100 gallons of diesel fuel (right around $300-400).</p>
+
+<p>Another consideration is height &ndash; the truck was specified at 12&rsquo;7&rdquo;. That&rsquo;s short enough to clear most bridges, but I did come across one 12&rsquo;6&rdquo; bridge in downtown Chicago.</p>
+
+<p>Bridges aside, the Penske truck was comfortable and easy to drive. The AC worked great, and the stereo had an Aux input for my phone. It turned about as expected (surprisingly tight for a 30 foot truck), but it accelerated reasonably quickly and cruised comfortably at 70. I was concerned about a mountain in Monteagle, TN, but the truck made it up the grade easily when I dropped down to 5th, and I was never concerned about a runaway on the way down (again, engine braking in 4th or 5th).</p>
+
+<h4 id="audible-com">Audible.com</h4>
+
+<p>It&rsquo;s a long, long, long drive from Atlanta to Chicago. I made it better by listening to _A Supposedly Fun Thing I&rsquo;ll Never Do Again: Essays and Arguments _by David Foster Wallace, purchased through Audible. Audible made it really easy to pick an audiobook based on length (I didn&rsquo;t want to buy the 44 hour <em>Song of Ice and Fire</em>), and I actually turned to my Amazon recommendations for the book itself.</p>
+
+<p>The first essay in <em>A Supposedly Fun Thing</em>, entitled &ldquo;Derivative Sport in Tornado Alley&rdquo;, is about DFW&rsquo;s childhood in rural Illinois. It was interesting hearing his thoughts on the Illinois geography through the eyes of a child athlete.</p>
+
+<h4 id="rent-a-crate">Rent-A-Crate</h4>
+
+<p>Cardboard boxes suck.</p>
+
+<p>Let me rephrase that: Poorly assembled, poorly packed cardboard boxes suck. A properly assembled and packed cardboard box will bear (most of) the weight of the box(es) above it without destroying your stuff. An over-packed cardboard box means that the weight of the boxes above it is now being supported by your stuff, and when you&rsquo;re in frenzied packing mode, it&rsquo;s really easily to get sloppy in assembling and packing.</p>
+
+<p>There&rsquo;s a company called Rent-A-Crate with offices in several major cities around the country. They&rsquo;ll rent you these big orange crates for $3.50/crate/10 day period. They&rsquo;re sturdy, they nest, they stack stably, and they kick ass. I discovered that 20 crates fit into the back of my station wagon &ndash; just. I rented 25, and wound up taking them back in batches of 15 and 10.</p>
+
+<p>The only drawback (and some may see this as a positive) is that they force you to unpack your stuff, because you&rsquo;re paying for the crates otherwise.</p>
+
+<h4 id="the-home-depot">The Home Depot</h4>
+
+<p>I used to live down the street from not one but two Home Depot stores. It was great being able to run to The Home Depot to pick up bubble wrap, tape, more boxes (caveat, see previous section), and even the big god damn truck.</p>
+
+<h4 id="waze">Waze</h4>
+
+<p>I relied on Waze, a navigation app for my Android phone, to get me to Chicago. It&rsquo;s interesting because it dynamically rerouts you based on traffic, and it took me up US41, a rural highway that divides Indiana and Illinois, while Google took my girlfriend and her mother up I-65 through Indianapolis.</p>
+
+<p>Right as the sun was setting, the lightning bugs over the fields to either side of US41 were a sight to see.</p>
+
+<h4 id="movers">Movers</h4>
+
+<p>One thing I realized was that it would be a huge pain in the ass getting everything up and down stairs. We used Simple Moving Labor to hire movers in Atlanta and Chicago. These guys wrapped all of our furniture up securely and handled the heavy lifting and truck packing much better than we ever could have done. They were self-directed, and really knew their business They were around $350 on each end, but well worth the cost.</p>
+
+<h2 id="what-didn-t">What Didn&rsquo;t</h2>
+
+<h4 id="cardboard-boxes">Cardboard Boxes</h4>
+
+<p>Like I said earlier, a poorly assembled, poorly packed cardboard box quickly becomes a mushy paper bag with broken crap inside that you eventually have to dispose of. Guess what we had a bunch of!</p>
+
+<h4 id="moving-the-cats">Moving the cats</h4>
+
+<p>A few days before the move, I went to the pet supply store and picked up a big kennel on clearance. Sabrina went to the vet, and was given Xanax (seriously, human Xanax in human doses). We dosed the cats the morning of, and they liked it at first. Abby sat in the window, purring to herself, and Panther was jumping around swatting at things that weren&rsquo;t there. When we put them in the car, however, they haaaated it so bad. Sabrina said that they were meowing non-stop, and at one point they actually started to fight. Maybe we&rsquo;ll try some sort of sedative next time.</p>
+
+<p>Having too much stuff</p>
+
+<p>Seriously. I have no place for a telescope in Chicago! I should have started selling things months before.</p>
+
+<h4 id="moving-my-car">Moving my car</h4>
+
+<p>Sabrina&rsquo;s Mom can drive a stick shift, so she drove it up. I&rsquo;m not saying anything, but she might not be as good as the thinks she is. The car made it up in one piece, but I would have been a lot more comfortable if it had been moved professionally.</p>
+
+<h2 id="what-would-i-do-differently">What would I do differently?</h2>
+
+<p>Well, thank goodness, I don&rsquo;t have to move for another four years at least. I&rsquo;m going to start saving now, and maybe, just maybe, we&rsquo;ll hire a full service moving company. Sabrina and I will just get on a plane (and, doubtless, arrive to a pair of unhappy cats).</p>
+
+<p>*Seriously, the easiest move I ever had was the one where my house burned down.</p>
+
+    </p>
+    
+    <hr>
+  </div>
+
+  
+
+
+        </div>
+          <div class="medium-3 columns" data-sticky-container>
+  <div class="sticky" data-sticky data-anchor="content">
+
+  
+    <h4>About</h4>
+    <p>I&rsquo;m a helluva engineer and a software engineer living in Chicago now.</p>
+  
+
+  
+
+  <h4>Recent Posts</h4>
+  <ul>
+    
+      <li><a href="/blog/2017/04/24/rubens-tube-part-1/">
+        Rubens&rsquo; Tube Part 1
+      </a></li>
+    
+      <li><a href="/blog/2016/10/25/end-grain-cutting-board/">
+        End Grain Cutting Board
+      </a></li>
+    
+      <li><a href="/blog/2016/09/14/golang-philly-talk/">
+        Golang Philly talk
+      </a></li>
+    
+      <li><a href="/blog/2016/02/16/top-ten-home-thorium-core-reactor-tips/">
+        Top Ten Home Thorium Core Reactor Tips
+      </a></li>
+    
+      <li><a href="/blog/2016/01/10/jeep-box/">
+        Jeep Box
+      </a></li>
+    
+  </ul>
+
+  
+    <h4>Links</h4>
+    <ul>
+      
+        <li><a href="https://github.com/agocs">
+          Github
+        </a></li>
+      
+        <li><a href="https://mastodon.social/@agocs">
+          Mastodon
+        </a></li>
+      
+        <li><a href="https://agocs.org/resume.pdf">
+          My résumé
+        </a></li>
+      
+        <li><a href="https://twitter.com/agoX">
+          Twitter
+        </a></li>
+      
+    </ul>
+  
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="blog-footer">
+      <div class="row column">
+        <p>
+          
+          Blog template created by <a href="hhttps://github.com/zurb">@zurb</a>, ported to Hugo by <a href='https://github.com/htko89'>github.com/htko89</a>.
+          
+        </p>
+        <p>
+          <a href="https://agocs.org/blog/2013/08/10/moving-a-post-mortem/#">Back to top</a>
+        </p>
+      </div>
+    </footer>
+
+  <foot>
+
+    <script src="https://agocs.org/js/app.js"></script>
+
+  </foot>
+  </body>
+</html>

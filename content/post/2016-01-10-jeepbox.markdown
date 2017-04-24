@@ -1,0 +1,92 @@
+---
+title: "Jeep Box"
+date: "2016-01-10"
+categories:
+  - "Hacking"
+  - "Jeep"
+---
+
+One of the problems with Jeep Wrangler ownership is there's nowhere to store things out of sight. Your backpack, laptop, whatever, it's all hangin' out there in the open. Even when you've zipped the top up, there's nothing between your valuables and a set of sticky fingers besides a thin sheet of clear vinyl.
+
+<!--more-->
+
+I wanted to feel better about leaving things in the Jeep, and I wanted to design something sturdy so that I could still carry heavy things in the back of the Jeep. I also wanted to cut down on the general clutter in my cargo area, and I wanted to practice welding.
+
+I imagined something like this:
+
+<a href="https://agocs.smugmug.com/Other/Jeepquest/i-WhDR5Qd/A"><img src="https://agocs.smugmug.com/Other/Jeepquest/i-WhDR5Qd/0/L/IMG_20151213_233221-L.jpg" alt=""></a>
+
+
+So I started with some rough measurements.
+
+<a href="https://agocs.smugmug.com/Other/Jeepquest/i-pRWHkrf/A"><img src="https://agocs.smugmug.com/Other/Jeepquest/i-pRWHkrf/0/XL/IMG_20160110_164946-XL.jpg" alt=""></a>
+
+That's a top view and rear view of the back of the Jeep. I had 34.5" between the brackets where the rear seat would have mounted if I had one, 35" of length to work with, and 15.5" between the bottom of the opening and the bottom of the rear window. 
+
+So, to summarize, what I wanted was a drawer and a frame to hold that drawer that fit in the above-defined envelope. The frame would have to be reasonably sturdy, because I'd like to put things on top of it too. I'm the kind of person who thinks really well in design tools, so I fired up Autodesk and got to work.
+
+<a href="https://agocs.smugmug.com/Other/Jeepquest/i-BkMSCKq/A"><img src="https://agocs.smugmug.com/Other/Jeepquest/i-BkMSCKq/0/M/jeepbox0-M.png" alt=""></a>
+
+<a href="https://agocs.smugmug.com/Other/Jeepquest/i-f9XHK5m/A"><img src="https://agocs.smugmug.com/Other/Jeepquest/i-f9XHK5m/0/M/jeepbox-M.png" alt=""></a>
+
+This was the first pass, and some measurements. I ran it by some Internet folks, and they suggested diagonal bracing.
+
+<a href="https://agocs.smugmug.com/Other/Jeepquest/i-C39GHxD/A"><img src="https://agocs.smugmug.com/Other/Jeepquest/i-C39GHxD/0/M/jeepbox1-M.png" alt=""></a>
+
+My plan was to attach a sheet of plywood to the top using T-nuts and cap screws, and to put roller bearings on the horizontal bars running along the sides to act as drawer slides. The T-nuts and cap screws were entirely reasonably priced through McMaster-Carr, but the roller bearings were about $5 ea. I found equivalent skate bearings on Amazon for about $1 ea.
+
+Using the CAD drawings, I figured out what pieces I'd need. 
+
+<a href="https://agocs.smugmug.com/Other/Jeepquest/i-bkW8ccS/A"><img src="https://agocs.smugmug.com/Other/Jeepquest/i-bkW8ccS/0/L/IMG_20160110_165039-L.jpg" alt=""></a>
+
+<a href="https://agocs.smugmug.com/Other/Jeepquest/i-KpPPZbL/A"><img src="https://agocs.smugmug.com/Other/Jeepquest/i-KpPPZbL/0/L/IMG_20160110_165045-L.jpg" alt=""></a>
+
+I did some math, and figured I could fit that into 19 pieces of 37" x 1/2" square stock (N.B. I was wrong, and probably should have ordered 20 or 21 pieces). From Metals Supermarket, that was just over $50. 
+
+I got to welding.
+
+<a href="https://agocs.smugmug.com/Other/Jeepquest/i-hZ3gTBj/A"><img src="https://agocs.smugmug.com/Other/Jeepquest/i-hZ3gTBj/0/L/20151122202228-L.jpg" alt=""></a>
+
+<a href="https://agocs.smugmug.com/Other/Jeepquest/i-3THvt8F/A"><img src="https://agocs.smugmug.com/Other/Jeepquest/i-3THvt8F/0/L/20151127145653-L.jpg" alt=""></a>
+
+Then I realized, I'd have to mount this in the Jeep! I'd figured I'd use the rear seat belt mounting bolt, but I forgot to locate that with my previous measurements. I rectified that.
+
+<a href="https://agocs.smugmug.com/Other/Jeepquest/i-vdQh37C/A"><img src="https://agocs.smugmug.com/Other/Jeepquest/i-vdQh37C/0/L/IMG_20160110_165102-L.jpg" alt=""></a>
+
+I bought a sheet of flat steel stock, milled in a hole for the seat belt bolt, and welded that into place. A test-fit revealed that I'd milled the hole in the wrong place, so I had to fix that, first with the angle grinder, then with a plasma cutter.
+
+<a href="https://agocs.smugmug.com/Other/Jeepquest/i-vJ7hXHd/A"><img src="https://agocs.smugmug.com/Other/Jeepquest/i-vJ7hXHd/0/L/IMG_20151213_161552-L.jpg" alt=""></a>
+
+Finally, it went to paint! I wanted to powder coat it, but I got a $150 quote for powder coating. A little rich for my blood. I used a can and a half of Rustoleum black enamel instead. 
+
+<a href="https://agocs.smugmug.com/Other/Jeepquest/i-CZvPjPL/A"><img src="https://agocs.smugmug.com/Other/Jeepquest/i-CZvPjPL/0/L/IMG_20151213_161533-L.jpg" alt=""></a>
+
+While that was curing, I designed the wooden top and drawer. 
+
+<a href="https://agocs.smugmug.com/Other/Jeepquest/i-M5HxzpL/A"><img src="https://agocs.smugmug.com/Other/Jeepquest/i-M5HxzpL/0/L/IMG_20160110_165118-L.jpg" alt=""></a>
+
+<a href="https://agocs.smugmug.com/Other/Jeepquest/i-fzJvNqc/A"><img src="https://agocs.smugmug.com/Other/Jeepquest/i-fzJvNqc/0/L/IMG_20160110_165126-L.jpg" alt=""></a>
+
+I decided to make it all out of 1/2" plywood, cut from 1/2 sheets of plywood (because half sheets are easier to move than full sheets). The drawer, I figured I'd just use brads and glue to hold it together. If it fell apart, I could always re-do it.
+
+Because the wooden pieces were just rectangles, I let the robots take care of cutting them out. 
+
+<a href="https://agocs.smugmug.com/Other/Jeepquest/i-kXbHbZJ/A"><img src="https://agocs.smugmug.com/Other/Jeepquest/i-kXbHbZJ/0/L/IMG_20151213_190147-L.jpg" alt=""></a>
+
+The next night, I loaded up all the pieces and started attaching them together.
+
+<a href="https://agocs.smugmug.com/Other/Jeepquest/i-9MDj4c5/A"><img src="https://agocs.smugmug.com/Other/Jeepquest/i-9MDj4c5/0/L/IMG_20151215_214357-L.jpg" alt=""></a>
+
+<a href="https://agocs.smugmug.com/Other/Jeepquest/i-VKZjkqQ/A"><img src="https://agocs.smugmug.com/Other/Jeepquest/i-VKZjkqQ/0/L/IMG_20151215_214523-L.jpg" alt=""></a>
+
+The skate bearings I bought had an inner diameter that was just a little bigger than the screws I used, so I turned the screws into cones on the lathe to locate the bearings better (not pictured, but I wish I had). 
+
+Everything in the Jeep so far:
+
+<a href="https://agocs.smugmug.com/Other/Jeepquest/i-FbtLRtD/A"><img src="https://agocs.smugmug.com/Other/Jeepquest/i-FbtLRtD/0/L/IMG_20151215_220627-L.jpg" alt=""></a>
+
+<a href="https://agocs.smugmug.com/Other/Jeepquest/i-cNtzdDR/A"><img src="https://agocs.smugmug.com/Other/Jeepquest/i-cNtzdDR/0/L/IMG_20151215_220644-L.jpg" alt=""></a>
+
+It's been about a month since I finished all that, and I have the drawer together and installed; I just haven't taken pictures of it yet. It served us well on our trip to Georgia -- our valuables went into the drawer, and my wife's big suitcase got strapped to the top. 
+
+

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+<meta property="og:title" content="Tips for using RabbitMQ in Go" />
+<meta property="og:description" content="###Corrections:
+ 4% != .004% : When I was writing the article, my brain translated 99996 into 96000. Big difference. It turns out that I&rsquo;m unable to dequeue somewhere between .004% and .20% of messages in about half of test runs.  ###Note:
+I&rsquo;ve been chatting with some very helpful RabbitMQ-knowledgeable people, and they have some suggestions for the issues I&rsquo;m seeing that I&rsquo;m going to check out. I will update this article with my findings." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://agocs.org/blog/2014/08/19/tips-for-using-rabbitmq-in-go/" />
+
+
+<meta property="og:updated_time" content="2014-08-19T12:57:26-05:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Tips for using RabbitMQ in Go">
+<meta itemprop="description" content="###Corrections:
+ 4% != .004% : When I was writing the article, my brain translated 99996 into 96000. Big difference. It turns out that I&rsquo;m unable to dequeue somewhere between .004% and .20% of messages in about half of test runs.  ###Note:
+I&rsquo;ve been chatting with some very helpful RabbitMQ-knowledgeable people, and they have some suggestions for the issues I&rsquo;m seeing that I&rsquo;m going to check out. I will update this article with my findings.">
+
+
+<meta itemprop="dateModified" content="2014-08-19T12:57:26-05:00" />
+<meta itemprop="wordCount" content="1772">
+
+
+
+<meta itemprop="keywords" content="golang,hacking,jeep,kitchen,programming,rabbitmq,talks," />
+
+
+
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:title" content="Tips for using RabbitMQ in Go"/>
+<meta name="twitter:description" content="###Corrections:
+ 4% != .004% : When I was writing the article, my brain translated 99996 into 96000. Big difference. It turns out that I&rsquo;m unable to dequeue somewhere between .004% and .20% of messages in about half of test runs.  ###Note:
+I&rsquo;ve been chatting with some very helpful RabbitMQ-knowledgeable people, and they have some suggestions for the issues I&rsquo;m seeing that I&rsquo;m going to check out. I will update this article with my findings."/>
+<meta name="twitter:site" content="@@agox"/>
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+    <base href="https://agocs.org/">
+    <link rel="canonical" href="https://agocs.org/blog/2014/08/19/tips-for-using-rabbitmq-in-go/">
+    <title>Tips for using RabbitMQ in Go | Agocs.org</title>
+
+    <!-- CSS -->
+    <link href="https://agocs.org/css/app.css" rel="stylesheet">
+
+    
+
+    
+
+    
+    
+
+
+  </head>
+  <body>
+
+    <header class="nav">
+      <div class="top-bar">
+        <div class="row column">
+          <div class="top-bar-left">
+            <ul class="menu">
+              <li><a href="https://agocs.org/">
+                  Agocs.org
+                </a></li>
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="menu">
+              <li class=""><a href="https://agocs.org/">
+                Home
+              </a></li>
+              
+                
+                  <li><a href="https://agocs.org/">
+                    Agocs.org
+                  </a></li>
+                
+                  <li><a href="https://agocs.org/categories/">
+                    Categories
+                  </a></li>
+                
+                  <li><a href="https://agocs.org/categories/golang/">
+                    Golang
+                  </a></li>
+                
+                  <li><a href="https://agocs.org/categories/hacking/">
+                    Hacking
+                  </a></li>
+                
+                  <li><a href="https://agocs.org/categories/jeep/">
+                    Jeep
+                  </a></li>
+                
+                  <li><a href="https://agocs.org/categories/kitchen/">
+                    Kitchen
+                  </a></li>
+                
+                  <li><a href="https://agocs.org/post/">
+                    Posts
+                  </a></li>
+                
+                  <li><a href="https://agocs.org/categories/programming/">
+                    Programming
+                  </a></li>
+                
+                  <li><a href="https://agocs.org/categories/rabbitmq/">
+                    Rabbitmq
+                  </a></li>
+                
+                  <li><a href="https://agocs.org/categories/talks/">
+                    Talks
+                  </a></li>
+                
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <header class="blog-header">
+      <div class="callout large">
+        <div class="row column text-center">
+          <h1>
+            <a href="https://agocs.org/" rel="home">Agocs.org</a>
+          </h1>
+          
+            <p>
+              Programming and other interesting things
+            </p>
+          
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="row" id="content">
+        <div class="medium-8 columns">
+          
+  
+
+
+  <div class="blog-post">
+    <h3>
+      <a href="https://agocs.org/blog/2014/08/19/tips-for-using-rabbitmq-in-go/">Tips for using RabbitMQ in Go</a>
+    </h3>
+    <div class="callout small">
+      <small>
+        <time datetime="2014-08-19T12:57:26-05:00">
+          Tue 19 Aug, 2014
+        </time> by Christopher Agocs.
+        Categories: 
+  
+    
+      <a href="/categories/hacking">
+        hacking
+      </a>
+  
+    /
+    
+      <a href="/categories/golang">
+        golang
+      </a>
+  
+    /
+    
+      <a href="/categories/talks">
+        talks
+      </a>
+  
+
+.
+        
+        <br>
+        
+          Share
+
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fagocs.org%2fblog%2f2014%2f08%2f19%2ftips-for-using-rabbitmq-in-go%2f" title="Share on Facebook">
+      Facebook
+    </a>,
+
+
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fagocs.org%2fblog%2f2014%2f08%2f19%2ftips-for-using-rabbitmq-in-go%2f" title="Share on Google+">
+      Google+
+    </a>,
+
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fagocs.org%2fblog%2f2014%2f08%2f19%2ftips-for-using-rabbitmq-in-go%2f" title="Share on LinkedIn">
+      LinkedIn
+    </a>,
+
+
+    <a href="https://twitter.com/home?status=https%3a%2f%2fagocs.org%2fblog%2f2014%2f08%2f19%2ftips-for-using-rabbitmq-in-go%2f" title="Tweet this">
+      Twitter
+    </a>
+
+
+        
+      </small>
+    </div>
+    <p>
+      
+
+<p>###Corrections:</p>
+
+<ul>
+<li>4% != .004% : When I was writing the article, my brain translated 99996 into 96000. Big difference. It turns out that I&rsquo;m unable to dequeue somewhere between .004% and .20% of messages in about half of test runs.</li>
+</ul>
+
+<p>###Note:</p>
+
+<p><strong>I&rsquo;ve been chatting with some very helpful RabbitMQ-knowledgeable people, and they have some suggestions for the issues I&rsquo;m seeing that I&rsquo;m going to check out. I will update this article with my findings.</strong></p>
+
+<p>I want to thank <a href="https://twitter.com/old_sound">Alvaro Videla</a> and <a href="https://twitter.com/michaelklishin">Michael Klishin</a> for reading my first attempt at this post and suggesting different avenues to explore.</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>For the two of you who don&rsquo;t know, RabbitMQ is a really neat AMQP-compliant queue broker. It exists to facilitate the passing of messages between or within systems. I&rsquo;ve used it for a couple of different projects, and I&rsquo;ve found it to be tremendously capable: I&rsquo;ve seen a RabbitMQ instance running on a single, moderately sized, VM handle almost 3GB/s.</p>
+
+<p>I was doing some load testing with RabbitMQ recently, and I found that, if I started attempting to publish more than around 2500 10KB messages per second, <del>about 4%</del> as much as 0.2% of those messages wouldn&rsquo;t make it to the queue during some test runs. I am not sure if this is my code&rsquo;s fault or if I am running into the limits of the RabbitMQ instance I was testing against (probably the former), but with the help of the RabbitMQ community, I was able to come up with some best practices that I&rsquo;ve described below.</p>
+
+<p>The examples below are all in Go, but I&rsquo;ve tried my best to explain them in such a way that people who are not familiar with Go can understand them.</p>
+
+<h2 id="terminology">Terminology</h2>
+
+<p>If you&rsquo;re unfamiliar with AMQP, here&rsquo;s some terminology to help understand what&rsquo;s possible with a queue broker and what the words mean.</p>
+
+<ul>
+<li><strong>Connection</strong>: A connection is a long-lived TCP connection between an AMQP client and a queue broker. Maintaining a connection reduces TCP overhead. A client can re-use a connection, and can share a connection among threads.</li>
+<li><strong>Channel</strong>: A channel is a short-lived sub-connection between a client and a broker. The client can create and dispose of channels without incurring a lot of overhead.</li>
+<li><strong>Exchange</strong>: A client writes messages to an exchange. The exchange forwards each message on to zero or more queues based on the message&rsquo;s routing key.</li>
+<li><strong>Queue</strong>: A queue is a first-in, first out holder of messages. A client reads messages from a queue. The client can specify a queue name (useful, for example, for a work queue where multiple clients are consuming from the same queue), or allow the queue broker to assign it a queue name (useful if you want to distribute copies of a message to multiple clients).</li>
+<li><strong>Routing Key</strong>: A string (optionally) attached to each message. Depending on the exchange type, the exchange may or may not use the Routing Key to determine the queues to which it should publish the message.</li>
+<li><strong>Exchange types</strong>:
+
+<ul>
+<li><strong>Direct</strong>: Delivers all messages with the same routing key to the same queue(s).</li>
+<li><strong>Fanout</strong>: Ignores the routing key, delivers a copy of the message to each queue bound to it.</li>
+<li><strong>Topic</strong>: Each queue subscribes to a topic, which is a regular expression. The exchange delivers the message to a queue if the queue&rsquo;s subscribed topic matches the message.</li>
+<li><strong>Header</strong>: Ignores the routing key and delivers the message based on the AMQP header. Useful for certain kinds of messages.</li>
+</ul></li>
+</ul>
+
+<h2 id="testing-methodology">Testing methodology</h2>
+
+<p>Here is the load tester I wrote: <a href="https://github.com/backstop/rabbit-mq-stress-tester">https://github.com/backstop/rabbit-mq-stress-tester</a>. It uses the <a href="https://github.com/streadway/amqp">streadway/amqp library</a>. Per <a href="https://github.com/streadway/amqp/issues/93">this issue</a>, my stress tester does not share connections or channels between Goroutines &ndash; it launches a configurably-sized pool of Goroutines, each of which maintains its own connection to the RabbitMQ server.</p>
+
+<p>To run the same tests I was running:</p>
+
+<ul>
+<li><p>Clone the repo or install using <code>go get github.com/backstop/rabbit-mq-stress-tester</code></p></li>
+
+<li><p>Open two terminal windows. In one, run</p>
+
+<pre><code>./tester -s test-rmq-server -c 100000
+</code></pre></li>
+</ul>
+
+<p>That will launch the in Consumer mode. It defaults to 50 Goroutines, and will consume 100,000 messages before quitting.</p>
+
+<ul>
+<li><p>In the other terminal window, run</p>
+
+<pre><code>./tester -s test-rmq-server -p 100000 -b 10000 -n 100 -q
+</code></pre></li>
+</ul>
+
+<p>This will run the tester in Producer mode. It will (-p)roduce 100,000 messages of 10,000 (-b)ytes each. It will launch a pool of 100 Goroutines (-n), and it will work in (-q)uiet mode, only printing NACKs and final statistics to stdout.</p>
+
+<p>What I found is that, roughly half the time I run the above steps, the consumer will only consume 99,000 and change messages (typically greater than 99,980, but occasionally as low as 99,800). I was unable to find any descriptive error messages in the <code>rabbitmq@test-rmq-server.log</code> file.</p>
+
+<p>I can change that, though. If I run the producer like this:</p>
+
+<pre><code>    ./tester -s test-rmq-server -p 100000 -b 10000 -n 100 -q -a
+</code></pre>
+
+<p>then each Goroutine waits for an ACK or NACK from the RabbitMQ server before publishing the next message (that&rsquo;s what the -a flag does). I have never seen a missing message in this mode. The functionality of the -a flag is described in the next section.</p>
+
+<p>###Some things that I don&rsquo;t think are the culprit:</p>
+
+<ul>
+<li>Memory-based flow control: Memory usage as reported by <code>top</code> never exceeds approximately 22%. Also, no messages in the log file.</li>
+<li>Per-connection flow control: After fussing with <code>rabbitmqctl list_connections</code> for a while, I was not able to find evidence of a connection that had been blocked. I&rsquo;m not sure of these results, though, so if someone would be willing to give me a hand with this, that would be awesome.</li>
+</ul>
+
+<h2 id="ensuring-your-message-got-published">Ensuring your message got published</h2>
+
+<p>Like I said earlier, I was doing some stress testing against a RabbitMQ instance and a small number of messages that I attempted to publish did not get dequeued. I reached out to the RabbitMQ community, and someone on their IRC channel told me to look up Confirm Select.</p>
+
+<p>When you place a channel into Confirm Select, the AMQP broker will respond with an ACK with a for each message passed to it on that channel. Included with the ACK is an integer that increments with each ACK, similar to a TCP sequence ID. If something goes wrong, the broker will respond with a NACK. In Go, placing a channel into Confirm Select looks like this:</p>
+
+<p>``` go Putting a channel in Confirm Select
+    channel, err := connection.Channel()
+    if err != nil {
+        println(err.Error())
+        panic(err.Error())
+    }
+    channel.Confirm(false)</p>
+
+<pre><code>ack, nack := channel.NotifyConfirm(make(chan uint64, 1), make(chan uint64, 1))
+</code></pre>
+
+<pre><code>
+The above `channel.Confirm(false)` puts the channel into Confirm mode, and the `false` puts the client out of NoWait mode such that the client waits for an ACK or NACK after each message. `ack` and `nack` are golang `chan`s that receive the integers included with the ACKs or NACKs. If you were in NoWait mode, you could use them to bulk publish a bunch of messages and then figure out which messages did not make it.
+
+Listening for the ACK looks like this:
+
+``` go Publish a message and wait for confirmation
+		channel.Publish(&quot;&quot;, q.Name, true, false, amqp.Publishing{
+			Headers:         amqp.Table{},
+			ContentType:     &quot;text/plain&quot;,
+			ContentEncoding: &quot;UTF-8&quot;,
+			Body:            messageJson,
+			DeliveryMode:    amqp.Transient,
+			Priority:        0,
+		},
+		)
+
+		select {
+		case tag := &lt;-ack:
+			log.Println(&quot;Acked &quot;, tag)
+		case tag := &lt;-nack:
+			log.Println(&quot;Nack alert! &quot;, tag)
+		}
+</code></pre>
+
+<p>After each publish, I&rsquo;m performing a read off of the <code>ack</code> and <code>nack</code> chans (that is what <code>select</code> does). That read blocks until the client gets an ACK or NACK back from the broker.</p>
+
+<p>The above examples are in Go, but there&rsquo;s an equivalent in the other libraries I&rsquo;ve played with. Clojure (langohr) has <code>confirm/select</code> and <code>confirm/wait-for-confirms-or-die</code>.</p>
+
+<h3 id="can-we-do-better">Can we do better?</h3>
+
+<p>Yes. Rather than wait for an ACK after each publish, it&rsquo;s better to publish a bunch of messages, listen for ACKs, and then handle failures. I didn&rsquo;t, because I was already seeing performance several orders of magnitude better than I needed.</p>
+
+<p>We can also wrap blocks of messages in a transaction if we need to ensure that all messages get published and retain order, but doing that incurs something like a 250x performance penalty.</p>
+
+<h2 id="pool-your-goroutines-and-avoid-race-conditions">Pool your Goroutines and avoid race conditions</h2>
+
+<p><a href="https://github.com/streadway/amqp/issues/93">This issue</a> proved interesting (if ultimately not relevant to my problem). It looks like the person who filed the issue was running into two issues:</p>
+
+<ul>
+<li>There was a race condition in the code that counted ACKs / NACKs</li>
+<li>The one-Goroutine-per-publish strategy causes a condition where the 2000 goroutines waiting for network IO prevent the goroutine listening for ACKs / NACKs from receiving sufficient CPU cycles.</li>
+</ul>
+
+<p>I got around this in two ways: I have a fixed-size pool of Goroutines performing the publishing, and each goroutine handles its own Publish -&gt; Ack lifecycle.</p>
+
+<h2 id="ensuring-messages-get-handled-correctly">Ensuring messages get handled correctly</h2>
+
+<p>A message queue is of little use if messages just sit there, so it is prudent to include a consumer or two. But, what happens if your consumer crashes? Does your message get lost in the ether?</p>
+
+<p>The answer is <strong>AutoAck</strong>. More specifically, realizing that AutoAck is dangerous and wrong.</p>
+
+<p>When a consumer consumes a message from a queue, the queue broker waits for an ACK before discarding the message. When a consumer has AutoAck enabled, it sends the ACK (thus causing the message to be discarded) instantly upon receiving the message. It&rsquo;s smarter to read the next message on the queue, handle the message properly, and then send the ACK.</p>
+
+<p>```go Reading and acknowledging messages
+    autoAck := false</p>
+
+<pre><code>msgs, err := channel.Consume(q.Name, &quot;&quot;, autoAck, false, false, false, nil)
+if err != nil {
+    panic(err)
+}
+
+for d := range msgs { // the d stands for Delivery
+    log.Printf(string(d.Body[:])) // or whatever you want to do with the message
+    d.Ack(false)
+} 
+</code></pre>
+
+<p>```</p>
+
+<p>In the example above, <code>autoAck</code> is set to false. Every time I read a message (in the <code>for d := range msgs</code> loop), I send an ACK for that message. If I were to call <code>d.Ack(true)</code>, that would send an ACK for that message and all previous unacknowledged messages.</p>
+
+<p>If my consumer quits without acknowledging a message, that message is repeated to the next consumer to come by.</p>
+
+<h2 id="performant-results">Performant results</h2>
+
+<p>So, what kind of performance am I getting?</p>
+
+<p>The following numbers are all time to publish and consume 100,000 messages, each with a 10KB payload. The tester was running on my Macbook, and RabbitMQ was running on a Cloudstack VM.</p>
+
+<ul>
+<li>With Confirm Select
+
+<ul>
+<li>Publishing: 24.42s</li>
+<li>Consuming: 26.79s</li>
+</ul></li>
+<li>Without Confirm Select
+
+<ul>
+<li>Publishing: 16.32s</li>
+<li>Consuming: 26.13s</li>
+</ul></li>
+</ul>
+
+<p>The point is, RabbitMQ is fast and Go is fast. When we use one to stress test the other, messages get lost somewhere. If we take a little bit of time to ensure that messages get published and processed properly, we can prevent pesky data loss issues.</p>
+
+    </p>
+    
+    <hr>
+  </div>
+
+  
+
+
+        </div>
+          <div class="medium-3 columns" data-sticky-container>
+  <div class="sticky" data-sticky data-anchor="content">
+
+  
+    <h4>About</h4>
+    <p>I&rsquo;m a helluva engineer and a software engineer living in Chicago now.</p>
+  
+
+  
+
+  <h4>Recent Posts</h4>
+  <ul>
+    
+      <li><a href="/blog/2017/04/24/rubens-tube-part-1/">
+        Rubens&rsquo; Tube Part 1
+      </a></li>
+    
+      <li><a href="/blog/2016/10/25/end-grain-cutting-board/">
+        End Grain Cutting Board
+      </a></li>
+    
+      <li><a href="/blog/2016/09/14/golang-philly-talk/">
+        Golang Philly talk
+      </a></li>
+    
+      <li><a href="/blog/2016/02/16/top-ten-home-thorium-core-reactor-tips/">
+        Top Ten Home Thorium Core Reactor Tips
+      </a></li>
+    
+      <li><a href="/blog/2016/01/10/jeep-box/">
+        Jeep Box
+      </a></li>
+    
+  </ul>
+
+  
+    <h4>Links</h4>
+    <ul>
+      
+        <li><a href="https://github.com/agocs">
+          Github
+        </a></li>
+      
+        <li><a href="https://mastodon.social/@agocs">
+          Mastodon
+        </a></li>
+      
+        <li><a href="https://agocs.org/resume.pdf">
+          My résumé
+        </a></li>
+      
+        <li><a href="https://twitter.com/agoX">
+          Twitter
+        </a></li>
+      
+    </ul>
+  
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="blog-footer">
+      <div class="row column">
+        <p>
+          
+          Blog template created by <a href="hhttps://github.com/zurb">@zurb</a>, ported to Hugo by <a href='https://github.com/htko89'>github.com/htko89</a>.
+          
+        </p>
+        <p>
+          <a href="https://agocs.org/blog/2014/08/19/tips-for-using-rabbitmq-in-go/#">Back to top</a>
+        </p>
+      </div>
+    </footer>
+
+  <foot>
+
+    <script src="https://agocs.org/js/app.js"></script>
+
+  </foot>
+  </body>
+</html>

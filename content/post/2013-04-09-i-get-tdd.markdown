@@ -1,0 +1,15 @@
+---
+author: Chris Agocs
+date: 2013-04-09
+title: I'm beginning to really *get* test driven development.
+---
+
+I was working on a piece of code today, and I decided to refactor some of it. "This method is beginning to smell bad," I thought. "I should break this series of if/thens off into a different method."
+
+One thing led to another, and soon enough I had some considerably better-structured, more readable code. But did it _work?_ As luck would have it, this is the first project I'd gotten a chance to build from the ground up, and as such, the first project I'd been able to build with a whole stanking lot of test coverage.
+
+Well, I ran the tests. Bam! No, broken, syntax error, of course that variable doesn't exist, I got rid of it. Fix, fix, test again, and voila! Not only is my code cleaner and more readable, but I can objectively say it still does what it should do!
+
+Thanks, TDD!
+
+_Update_: Thinking about it from the comfort of my own home, I realized an improvement i should have made. You know what? Test driven development will be there in the morning to help me not make a huge mess of things.

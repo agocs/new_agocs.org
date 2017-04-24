@@ -1,0 +1,28 @@
+languageCode = "en-us"
+baseurl = "https://agocs.org"
+title = "Agocs dot org"
+theme = "hurock"
+
+[author]
+  name = "Christopher Agocs"
+  email = "chris@agocs.org"
+
+  github = "https://github.com/agocs"
+  twitter = "@agox"
+
+
+[params]
+  Description = "Blogs and Miscellanea"
+  # Optional
+  # disqusShortname = ""
+  # gaID = "Google Analytics Tracking ID"
+  # highlight_theme = "tomorrow-night"
+  notoc = false
+
+
+# Optional sections:
+[permalinks]
+  posts = "/:year/:month/:filename/"
+
+[blackfriday]
+  plainIdAnchors = true

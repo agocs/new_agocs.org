@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on Agocs.org</title>
+    <link>https://agocs.org/categories/programming/index.xml</link>
+    <description>Recent content in Programming on Agocs.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://agocs.org/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Introducing Uluru</title>
+      <link>https://agocs.org/blog/2015/08/20/introducing-uluru/</link>
+      <pubDate>Thu, 20 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://agocs.org/blog/2015/08/20/introducing-uluru/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/3/3e/Uluru_Panorama.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t work for &lt;a href=&#34;https://www.backstopsolutions.com/careers&#34;&gt;Backstop&lt;/a&gt; any more (but you should), but back when I did, we discovered we had no idea how long it took our users to load our tools. Hell, we couldn&amp;rsquo;t even figure out how many clicks per month we had! I was working with New Relic trying to get a quote from them, and the best I could do was 2 million plus or minus 800 thousand. We had insight into how long it took our servers to respond to requests, but no thought was given to DNS, loading outside resources, rendering DOM, etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;We tried New Relic Browser, but that failed for two reasons. First, something in the few-hundred-kilobytes of minified JavaScript was conflicting with something in our JavaScript in a way that broke automated testing. Second, on a sales call, we determined that Browser really wasn&amp;rsquo;t going to tell us the information we wanted to know. It&amp;rsquo;s a good tool, for sure, but it didn&amp;rsquo;t expose the depth of data we wanted.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/alarmingcow&#34;&gt;Colin&lt;/a&gt; found a tool called &lt;a href=&#34;https://github.com/yahoo/boomerang&#34;&gt;Yahoo Boomerang&lt;/a&gt; which seemed to do what we needed. It would collect metrics on how long it took the page, and various resources on the page, to load, and it would report those data back to a server over here. Simple, right?&lt;/p&gt;
+
+&lt;p&gt;I took two issues with Boomerang. First, it again broke our testing. Second, it used some ridiculous scheme of a GET request with URL parameters inside of an invisible iframe to get data back to the server without any cross-site request issues. This seemed entirely too complicated, and simplicity was one of my overarching goals. I decided to roll my own.&lt;/p&gt;
+
+&lt;p&gt;I was sitting in the audience at &lt;a href=&#34;http://monitorama.com/&#34;&gt;Monitorama&lt;/a&gt;, and one of the speakers mentioned logging how long clients spent loading pages. I asked him about it, and he mentioned something in Vanilla JavaScript that allowed for that. I did some research, found out about &lt;code&gt;window.performance.Timing&lt;/code&gt;, and thus Uluru was born.&lt;/p&gt;
+
+&lt;p&gt;The name, incidentally, came from back when I was experimenting with Boomerang. I needed a server to throw Boomerang data at, so I picked the famous Australian sandstone formation Uluru.&lt;/p&gt;
+
+&lt;h2 id=&#34;design-goals&#34;&gt;Design goals&lt;/h2&gt;
+
+&lt;p&gt;There exist other solutions, commercial and open source, for recording and reporting on browser telemetry. It was found, however, that these solutions were significantly complex, and in many cases interfered with JavaScript we were already using, causing JavaScript errors and preventing the browser from rendering UI elements. Therefore, the design goals of Uluru became:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Minimalism: Uluru.js is 47 lines of whitespace-heavy JavaScript. It should be extremely readable.&lt;/li&gt;
+&lt;li&gt;Light weight: When minified, Uluru.js squishes down under 500 bytes.&lt;/li&gt;
+&lt;li&gt;Speed: Uluru.js has no dependencies on other JS libraries.&lt;/li&gt;
+&lt;li&gt;No hacks: Uluru.js makes a single POST request to a remote server. It does not e.g. cram metrics into query parameters and make a series of requests GETting hidden images or iframes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;implementation&#34;&gt;Implementation&lt;/h2&gt;
+
+&lt;h3 id=&#34;client-side&#34;&gt;Client side&lt;/h3&gt;
+
+&lt;p&gt;Uluru is a function that, when called, gets the time since navigation started and some other metrics, and sends those to an endpoint. We&amp;rsquo;ve set it up such that &lt;code&gt;uluru(endpoint)&lt;/code&gt; is called when &lt;code&gt;window.onload&lt;/code&gt; fires, under the assumption that most of our product is useful by that point.&lt;/p&gt;
+
+&lt;p&gt;Uluru collects the following data:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;url: the &lt;code&gt;window.location.href&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;connectionTime: the time (ms since UNIX epoch) the connection was initiated.&lt;/li&gt;
+&lt;li&gt;connectionDelta: the time spent establishing a connection to the server&lt;/li&gt;
+&lt;li&gt;firstByte: the time spent waiting for the server to respond with the first byte of data&lt;/li&gt;
+&lt;li&gt;responseDelta: the time the server spent sending a response to the client&lt;/li&gt;
+&lt;li&gt;loadTime: time between the &lt;code&gt;navigationStart&lt;/code&gt; and &lt;code&gt;window.onload&lt;/code&gt; events.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It also calls &lt;code&gt;window.performance.getEntries()&lt;/code&gt; to provide specific timing on every resource (script, image, stylesheet, etc.) included in the page load.&lt;/p&gt;
+
+&lt;h3 id=&#34;server-side&#34;&gt;Server side&lt;/h3&gt;
+
+&lt;p&gt;Uluru rolls all the data it collects up into one PUT request. The easiest way to collect Uluru data is to include a data collection REST endpoint in your existent web application (or, if you&amp;rsquo;re feeling clever, make your web proxy route Uluru requests to a specific Uluru logging server.&lt;/p&gt;
+
+&lt;p&gt;Alternatively, you could set the &lt;code&gt;Access-Control-Allow-Origin&lt;/code&gt; header to allow the browser to make POST requests to a separate server you&amp;rsquo;ve spun up for this purpose.&lt;/p&gt;
+
+&lt;p&gt;Either way, what we&amp;rsquo;ve wound up doing is writing the Uluru data out to Splunk, and aggregating it there in interesting ways.&lt;/p&gt;
+
+&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
+
+&lt;p&gt;Here&amp;rsquo;s some of the data we were able to collect!&lt;/p&gt;
+
+&lt;h3 id=&#34;page-loads-and-appdexes&#34;&gt;Page loads and Appdexes&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Misc/i-6PnMZv4/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Misc/i-6PnMZv4/0/M/Screen%20Shot%202015-09-04%20at%201.57.31%20PM-M.png&#34; alt=&#34;Photo &amp;amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;One neat thing we didn&amp;rsquo;t have before is an easy way to count how many page loads our system saw, how many unique users we had actively using our system, or how many clients were logged in on a given day. When you start making changes to system performance, you start thinking about things differently when you consider the 1ms wait you just removed will be multiplied by 73,000 over the course of a day.&lt;/p&gt;
+
+&lt;p&gt;Appdex is an interesting measure of system speed. You select a goal speed (2 seconds on the left, 4 seconds on the right), and you count page loads. Every page load that took under the goal speed counts for 1. Every load that took greater than the goal speed but under twice the goal speed counts for .5, and the rest count for 0. You divide the counted page loads by the total page loads, and you get a number between 0 and 1 that gives you a decent metric for how happy or sad your users are.&lt;/p&gt;
+
+&lt;p&gt;One really interesting thing we saw from this, we found by looking at individual clients. One of our clients had a significantly lower Appdex than the rest. We did some digging, and found that a condition in their data made every JSP load a huge number of records from the database to generate a list they never used. We disabled that for them, and they got much happier without ever realizing they were sad!&lt;/p&gt;
+
+&lt;h3 id=&#34;speed-breakdown&#34;&gt;Speed breakdown&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Misc/i-trpgpLZ/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Misc/i-trpgpLZ/0/M/Screen%20Shot%202015-09-04%20at%201.58.09%20PM-M.png&#34; alt=&#34;Photo &amp;amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a bit more boring, but it lets us know how many page loads are fast, acceptable, slow, or super slow. Comparing, e.g., last hour with last 7 days lets us see any system wide problems before our clients call in.&lt;/p&gt;
+
+&lt;h3 id=&#34;page-load-histograms&#34;&gt;Page load histograms&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Misc/i-sh6FZWC/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Misc/i-sh6FZWC/0/M/Screen%20Shot%202015-09-04%20at%201.59.35%20PM-M.png&#34; alt=&#34;Photo &amp;amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;These let us know at a glance how our page loads are distributed. We could, for example, notice a bi-modal distribution. It wouldn&amp;rsquo;t affect our average or median scores, but it would be indicative of something fishy.&lt;/p&gt;
+
+&lt;p&gt;I once noticed a particular user sending back negative page load speeds. I investigated it for a little bit and decided it was just one of those weird things that happen when you rely on multiple sources of time.&lt;/p&gt;
+
+&lt;h3 id=&#34;slow-pages&#34;&gt;Slow pages&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Misc/i-X5dKdQs/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Misc/i-X5dKdQs/0/M/Screen%20Shot%202015-09-04%20at%201.59.45%20PM-M.png&#34; alt=&#34;Photo &amp;amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This report gives us some neat insight into what&amp;rsquo;s been taking a long time to load. You look at each one, make sure it makes sense, and then use this graph to help prioritize your projects.&lt;/p&gt;
+
+&lt;h3 id=&#34;time-sinks&#34;&gt;Time sinks&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Misc/i-RJRsk3M/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Misc/i-RJRsk3M/0/M/Screen%20Shot%202015-09-04%20at%201.59.53%20PM-M.png&#34; alt=&#34;Photo &amp;amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Likewise, just counting the total amount of time sunk into a resource is helpful. You might (much like we do) have a page that clients hit all the time. It might load in under two seconds, but if you can shave 10 % off of that, you&amp;rsquo;re saving 20 hours per week aggregated across all of your users.&lt;/p&gt;
+
+&lt;p&gt;You can get a lot of really interesting data from visualizations like this. Use these to help justify speed projects.&lt;/p&gt;
+
+&lt;h2 id=&#34;further-directions&#34;&gt;Further directions&lt;/h2&gt;
+
+&lt;p&gt;Currently, the Uluru project includes some stub code for a generic REST endpoint. I want to flush this out into something that writes logs for splunkd or logstash, or forwards data to services like Sensu or Riemann.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mergesort on all the spices in the kitchen</title>
+      <link>https://agocs.org/blog/2013/05/05/mergesort-on-all-the-spices-in-the-kitchen/</link>
+      <pubDate>Sun, 05 May 2013 04:05:48 +0000</pubDate>
+      
+      <guid>https://agocs.org/blog/2013/05/05/mergesort-on-all-the-spices-in-the-kitchen/</guid>
+      <description>&lt;p&gt;It bothered me that the spices in the kitchen were out of order. So, I sorted them using my favorite sorting algorithm, Mergesort. My cats helped.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.agocs.org/wp-content/uploads/2013/05/2013-05-04_23-33-19_905.jpg&#34;&gt;&lt;img src=&#34;http://www.agocs.org/wp-content/uploads/2013/05/2013-05-04_23-33-19_905-300x168.jpg&#34; alt=&#34;2013-05-04_23-33-19_905&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I started with an un-ordered list of spices.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.agocs.org/wp-content/uploads/2013/05/2013-05-04_23-34-08_418.jpg&#34;&gt;&lt;img src=&#34;http://www.agocs.org/wp-content/uploads/2013/05/2013-05-04_23-34-08_418-300x168.jpg&#34; alt=&#34;2013-05-04_23-34-08_418&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Then I started to divide the list up into smaller lists. Panther helped.&lt;/p&gt;
+
+&lt;p&gt;31 elements became 15 and 16.&lt;/p&gt;
+
+&lt;p&gt;Then 7, 8, 8, 8.&lt;/p&gt;
+
+&lt;p&gt;Then 3, 4, 4, 4, 4, 4, 4, 4.&lt;/p&gt;
+
+&lt;p&gt;Then 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.agocs.org/wp-content/uploads/2013/05/2013-05-04_23-35-32_948.jpg&#34;&gt;&lt;img src=&#34;http://www.agocs.org/wp-content/uploads/2013/05/2013-05-04_23-35-32_948-300x168.jpg&#34; alt=&#34;2013-05-04_23-35-32_948&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Then the sorting began. Each two element group, I sorted. Then I treated each one as a queue. For each set of two queues, I dequeued the head element of lowest alphabetical value, and enqueued it into a result queue. I repeated this until there was only one, sorted queue remaining.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.agocs.org/wp-content/uploads/2013/05/2013-05-04_23-46-38_85.jpg&#34;&gt;&lt;img src=&#34;http://www.agocs.org/wp-content/uploads/2013/05/2013-05-04_23-46-38_85-300x168.jpg&#34; alt=&#34;2013-05-04_23-46-38_85&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Then I put it back into the spice cabinet! When Sabrina asks, &amp;ldquo;Who got my spices out of order,&amp;rdquo; I will reply, &amp;ldquo;I got them &lt;em&gt;in&lt;/em&gt; order.&amp;rdquo;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
