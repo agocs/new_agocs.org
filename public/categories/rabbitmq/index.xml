@@ -2,18 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rabbitmq on Agocs.org</title>
-    <link>https://agocs.org/categories/rabbitmq/index.xml</link>
+    <link>https://agocs.org/categories/rabbitmq/</link>
     <description>Recent content in Rabbitmq on Agocs.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://agocs.org/categories/rabbitmq/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Dec 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://agocs.org/categories/rabbitmq/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Message Queues and Go</title>
-      <link>https://agocs.org/blog/2014/12/09/message-queues-and-go/</link>
+      <link>https://agocs.org/2014/12/message-queues-and-go/</link>
       <pubDate>Tue, 09 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://agocs.org/blog/2014/12/09/message-queues-and-go/</guid>
+      <guid>https://agocs.org/2014/12/message-queues-and-go/</guid>
       <description>&lt;p&gt;I gave a talk last night to the ChicaGoLang meetup entitled &amp;ldquo;Message Queues and Go.&amp;rdquo; It went over using a Message Queue Broker as a backbone to tie together a service oriented archetecture, with examples in Go.&lt;/p&gt;
 
 &lt;p&gt;I put my slides here:&lt;/p&gt;

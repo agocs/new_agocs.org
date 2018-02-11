@@ -2,150 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hacking on Agocs.org</title>
-    <link>https://agocs.org/categories/hacking/index.xml</link>
+    <link>https://agocs.org/categories/hacking/</link>
     <description>Recent content in Hacking on Agocs.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://agocs.org/categories/hacking/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Apr 2017 12:20:32 -0500</lastBuildDate>
+    
+	<atom:link href="https://agocs.org/categories/hacking/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Rubens&#39; Tube Part 1</title>
-      <link>https://agocs.org/blog/2017/04/24/rubens-tube-part-1/</link>
+      <link>https://agocs.org/2017/04/rubens-tube-part-1/</link>
       <pubDate>Mon, 24 Apr 2017 12:20:32 -0500</pubDate>
       
-      <guid>https://agocs.org/blog/2017/04/24/rubens-tube-part-1/</guid>
+      <guid>https://agocs.org/2017/04/rubens-tube-part-1/</guid>
       <description>&lt;p&gt;Hey, check out this Rubens&amp;rsquo; Tube!&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Misc/i-NTKgPZk/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Misc/i-NTKgPZk/0/c85bfe82/XL/IMG_20170422_162532-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;What&amp;rsquo;s a Rubens&amp;rsquo; Tube? It&amp;rsquo;s a tube filled with flammable gas with a transducer on one end and holes drilled in the top. You light the gas on fire. When you play a sound into the tube that is a harmonic of the tube&amp;rsquo;s resonant frequency, you get patterns in the flame!&lt;/p&gt;
-
-&lt;iframe width=&#34;1280&#34; height=&#34;720&#34; src=&#34;https://www.youtube.com/embed/nWuvzEMDqT0&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;I built this one at &lt;a href=&#34;https://sshchicago.org&#34;&gt;South Side Hackerspace: Chicago&lt;/a&gt; with the help of my friends Dmitriy and Josef.&lt;/p&gt;
-
-&lt;p&gt;Parts list:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Bernzomatic Camping Gas (propane)&lt;/li&gt;
-&lt;li&gt;Bernzomatic torch extension&lt;/li&gt;
-&lt;li&gt;1 &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;&amp;rdquo; iron pipe (6&amp;rdquo;)&lt;/li&gt;
-&lt;li&gt;1 &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;&amp;rdquo; iron pipe cap&lt;/li&gt;
-&lt;li&gt;Old computer speakers&lt;/li&gt;
-&lt;li&gt;Electrical tape&lt;/li&gt;
-&lt;li&gt;HVAC tape&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I started by cutting the end of the torch extension opposite the valve off (so you keep the valve and hose). I drilled a hole in the pipe cap to accept the torch extension hose, and used electricians tape to make a seal. Then I used an angle grinder to grind a flat in the top of the iron pipe, and drilled &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;8&lt;/sub&gt;&amp;rdquo; holes at &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;&amp;rdquo; intervals down the length of the pipe. I used HVAC tape to seal the opposite end of the pipe, and then broke open the computer speakers, removed the actual speaker, and taped that to the HVAC tape end of the iron pipe.&lt;/p&gt;
-
-&lt;p&gt;Next steps: I plan to do replace the length of iron pipe I have with a 1 meter long segment, do some math to figure out the harmonics, and present it at the &lt;a href=&#34;http://chicagonorthside.makerfaire.com/&#34;&gt;Chicago northside Mini Maker Faire&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>End Grain Cutting Board</title>
-      <link>https://agocs.org/blog/2016/10/25/end-grain-cutting-board/</link>
+      <link>https://agocs.org/2016/10/end-grain-cutting-board/</link>
       <pubDate>Tue, 25 Oct 2016 10:21:32 -0500</pubDate>
       
-      <guid>https://agocs.org/blog/2016/10/25/end-grain-cutting-board/</guid>
+      <guid>https://agocs.org/2016/10/end-grain-cutting-board/</guid>
       <description>&lt;p&gt;I made an end-grain cutting board, and it&amp;rsquo;s about the coolest thing. It&amp;rsquo;s 1 &lt;sup&gt;3&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt;&amp;rdquo; thick and made from white maple. I&amp;rsquo;ll take you through the steps I followed.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-QzGfq7D/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-QzGfq7D/0/XL/IMG_20161024_002802-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve been a metal guy for years now. I love welding, I love machining, but recently I discovered that glued wood joints can be far stronger than I ever thought. We kinda needed a second cutting board, so I watched a few videos and read a few guides and decided I could probably build one. Last Wednesday I sketched out some plans, and worked out that I needed two pieces of &lt;sup&gt;8&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt;&amp;rdquo; wood measuring at least 7 &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;&amp;rdquo; by 24&amp;rdquo;, ideally walnut or maple or cherry.&lt;/p&gt;
-
-&lt;p&gt;I went to Owl Hardwood on Wednesday night and picked up a really nice piece of &lt;sup&gt;8&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt;&amp;rdquo; maple, measuring about 49&amp;rdquo; by 10&amp;rdquo;. That piece was about $60 out the door (nice hardwood is surprisingly expensive!). I took it by the &lt;a href=&#34;https://sshchicago.org&#34;&gt;South Side Hackerspace&lt;/a&gt; on Friday, cleaned up the edges, and cut them into two inch strips, and got them glued together.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-QBC2KkV/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-QBC2KkV/0/XL/IMG_20161023_172226-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Of note, the table saw sled I used was not perfectly square. I wound up having to flip some of the strips around so that the resulting workpiece was more or less square. I&amp;rsquo;ll probably have to build a new table saw sled one of these days.&lt;/p&gt;
-
-&lt;p&gt;Wary of the out-of-square sled, I cleaned up the edges on the sliding compound miter saw. I was able to work quickly and keep burning to a minimum.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-5RxGPZ8/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-5RxGPZ8/0/XL/IMG_20161023_172532-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I made a jig out of a precision scrap of pine 2x6, and set that at 2&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-QWvP3kS/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-QWvP3kS/0/XL/IMG_20161023_173120-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Then I cut my workpiece crossgrain into 2&amp;rdquo; strips&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-2M6mLm9/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-2M6mLm9/0/XL/IMG_20161023_173758-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;and I set the strips on their sides, like so.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-FMCgh7G/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-FMCgh7G/0/XL/IMG_20161023_174011-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The strips had a little bit of tearout on the sides that was preventing them from joining up nicely with one another, so I put the smallest chamfer on the corners with a Stanley #27 block plane.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-h2FrHMV/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-h2FrHMV/0/XL/IMG_20161023_174916-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-VLnv7Fg/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-VLnv7Fg/0/XL/IMG_20161023_175002-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;When all was said and done, it looked like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-RXZ87WC/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-RXZ87WC/0/XL/IMG_20161023_180211-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I arranged the pieces in the clamps and flipped every other piece around to get a nice checkerboard pattern.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-4nDdcQK/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-4nDdcQK/0/XL/IMG_20161023_181206-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I reused the precision pine jig to make a custom pine glue spreader, like so:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-QDHXrvJ/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-QDHXrvJ/0/XL/IMG_20161023_181427-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Then I applied glue&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-s9VWFDn/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-s9VWFDn/0/XL/IMG_20161023_181628-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;and gave it the squeeze.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-ZrdW8rM/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-ZrdW8rM/0/XL/IMG_20161023_190815-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;After letting it sit about an hour, the glue was hard enough to work with. I squared up the miter sled on the table saw and cleaned up the edges.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-rQWb27B/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-rQWb27B/0/XL/IMG_20161023_195845-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-3zNBLfr/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-3zNBLfr/0/XL/IMG_20161023_200454-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I then planed the workpiece down. The planer was really disliking cutting the end grain like that, so I wound up having to go super slow, turning the height adjustment no more than 1/8th turn at a time (probably taking off somewhere between &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;64&lt;/sub&gt;&amp;rdquo; and &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;32&lt;/sub&gt;&amp;rdquo; at a time). The planer really beat the trailing edge to heck, so I cleaned that up on the table saw as well.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-QN7SbvK/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-QN7SbvK/0/XL/IMG_20161023_201829-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I put a &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt;&amp;rdquo; roundover on the corners with a router, then started sanding. Two problems exposed themselves here: First, I really should have bought new sandpaper (maybe starting with 80 grit, then moving up to 200 and finally 400 grit) rather than just using the 200 grit that I found. The planer&amp;rsquo;s blade needs replacing, and it left some deep scratches in the surface that sanding was able to minimize, but you can still see them. Second, sanding on the table saw like that caused me to pick up some of the 3 in 1 oil I used to oil the table. Whoops!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-QrnDZbQ/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-QrnDZbQ/0/XL/IMG_20161023_203522-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Finally the workpiece was sanded and ready to take home.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-KkrcBLV/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-KkrcBLV/0/XL/IMG_20161023_204529-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I bought a couple bottles of butcher block oil (just food grade mineral oil) and a thing of butcher block wax (just food grade mineral oil and bee&amp;rsquo;s wax) from the Home Depot. At this point my friend &lt;a href=&#34;http://hey-er.in/&#34;&gt;Erin&lt;/a&gt; will be yelling &amp;ldquo;No you idiot it&amp;rsquo;s so much cheaper to buy that oil in bulk! I told you I had some!&amp;rdquo; But it was late, and I was impatient, so I was willing to spend a few extra bucks to get it done.&lt;/p&gt;
-
-&lt;p&gt;Once home, I soaked both sides in oil. I poured a bunch on, spread it around with a paper towel, and waited 15 minutes. I did this three times per side with the oil, then once per side with the wax. The oil brought out the wood&amp;rsquo;s pattern, and it looks amazing.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-jxnQCXZ/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-jxnQCXZ/0/XL/IMG_20161023_221628-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-F2tsMVB/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-F2tsMVB/0/XL/IMG_20161023_221646-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;My wife helped me pick which side was the bottom, and I installed some anti-skid rubber feet. I might replace the screws with stainless hardware down the road, but this will work for now. Deciding to install feet on one side is a trade-off; I could leave both sides open and make the cutting board reversible, but having feet on the bottom makes it slip around less and also lets air flow on the underside to help it dry off. As an aside, installing the feet was my first chance to use my new Makita drill and driver, so I was excited!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-W8nr69t/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-W8nr69t/0/XL/IMG_20161024_002604-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I flipped it back over and let it sit overnight. The oil oxidizes and forms a semi-hard sealing layer. I re-coated the board the next morning, and again later the next day. I got to use it last night to chop some star fruit, and I can&amp;rsquo;t tell you how exciting it is to have made something this beautiful and functional with my hands.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-QzGfq7D/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-QzGfq7D/0/XL/IMG_20161024_002802-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Golang Philly talk</title>
-      <link>https://agocs.org/blog/2016/09/14/golang-philly-talk/</link>
+      <link>https://agocs.org/2016/09/golang-philly-talk/</link>
       <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://agocs.org/blog/2016/09/14/golang-philly-talk/</guid>
+      <guid>https://agocs.org/2016/09/golang-philly-talk/</guid>
       <description>&lt;p&gt;I gave a talk at Golang Philly last night! &lt;a href=&#34;https://agocs.org/assets/Golang_Philly_Home_Automation.pdf&#34;&gt;Here are some slides.&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -153,803 +50,123 @@
     
     <item>
       <title>Jeep Box</title>
-      <link>https://agocs.org/blog/2016/01/10/jeep-box/</link>
+      <link>https://agocs.org/2016/01/jeep-box/</link>
       <pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://agocs.org/blog/2016/01/10/jeep-box/</guid>
+      <guid>https://agocs.org/2016/01/jeep-box/</guid>
       <description>&lt;p&gt;One of the problems with Jeep Wrangler ownership is there&amp;rsquo;s nowhere to store things out of sight. Your backpack, laptop, whatever, it&amp;rsquo;s all hangin&amp;rsquo; out there in the open. Even when you&amp;rsquo;ve zipped the top up, there&amp;rsquo;s nothing between your valuables and a set of sticky fingers besides a thin sheet of clear vinyl.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;I wanted to feel better about leaving things in the Jeep, and I wanted to design something sturdy so that I could still carry heavy things in the back of the Jeep. I also wanted to cut down on the general clutter in my cargo area, and I wanted to practice welding.&lt;/p&gt;
-
-&lt;p&gt;I imagined something like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-WhDR5Qd/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-WhDR5Qd/0/L/IMG_20151213_233221-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;So I started with some rough measurements.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-pRWHkrf/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-pRWHkrf/0/XL/IMG_20160110_164946-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;That&amp;rsquo;s a top view and rear view of the back of the Jeep. I had 34.5&amp;rdquo; between the brackets where the rear seat would have mounted if I had one, 35&amp;rdquo; of length to work with, and 15.5&amp;rdquo; between the bottom of the opening and the bottom of the rear window.&lt;/p&gt;
-
-&lt;p&gt;So, to summarize, what I wanted was a drawer and a frame to hold that drawer that fit in the above-defined envelope. The frame would have to be reasonably sturdy, because I&amp;rsquo;d like to put things on top of it too. I&amp;rsquo;m the kind of person who thinks really well in design tools, so I fired up Autodesk and got to work.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-BkMSCKq/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-BkMSCKq/0/M/jeepbox0-M.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-f9XHK5m/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-f9XHK5m/0/M/jeepbox-M.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This was the first pass, and some measurements. I ran it by some Internet folks, and they suggested diagonal bracing.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-C39GHxD/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-C39GHxD/0/M/jeepbox1-M.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;My plan was to attach a sheet of plywood to the top using T-nuts and cap screws, and to put roller bearings on the horizontal bars running along the sides to act as drawer slides. The T-nuts and cap screws were entirely reasonably priced through McMaster-Carr, but the roller bearings were about $5 ea. I found equivalent skate bearings on Amazon for about $1 ea.&lt;/p&gt;
-
-&lt;p&gt;Using the CAD drawings, I figured out what pieces I&amp;rsquo;d need.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-bkW8ccS/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-bkW8ccS/0/L/IMG_20160110_165039-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-KpPPZbL/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-KpPPZbL/0/L/IMG_20160110_165045-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I did some math, and figured I could fit that into 19 pieces of 37&amp;rdquo; x &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;&amp;rdquo; square stock (N.B. I was wrong, and probably should have ordered 20 or 21 pieces). From Metals Supermarket, that was just over $50.&lt;/p&gt;
-
-&lt;p&gt;I got to welding.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-hZ3gTBj/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-hZ3gTBj/0/L/20151122202228-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-3THvt8F/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-3THvt8F/0/L/20151127145653-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Then I realized, I&amp;rsquo;d have to mount this in the Jeep! I&amp;rsquo;d figured I&amp;rsquo;d use the rear seat belt mounting bolt, but I forgot to locate that with my previous measurements. I rectified that.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-vdQh37C/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-vdQh37C/0/L/IMG_20160110_165102-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I bought a sheet of flat steel stock, milled in a hole for the seat belt bolt, and welded that into place. A test-fit revealed that I&amp;rsquo;d milled the hole in the wrong place, so I had to fix that, first with the angle grinder, then with a plasma cutter.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-vJ7hXHd/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-vJ7hXHd/0/L/IMG_20151213_161552-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Finally, it went to paint! I wanted to powder coat it, but I got a $150 quote for powder coating. A little rich for my blood. I used a can and a half of Rustoleum black enamel instead.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-CZvPjPL/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-CZvPjPL/0/L/IMG_20151213_161533-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;While that was curing, I designed the wooden top and drawer.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-M5HxzpL/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-M5HxzpL/0/L/IMG_20160110_165118-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-fzJvNqc/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-fzJvNqc/0/L/IMG_20160110_165126-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I decided to make it all out of &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;&amp;rdquo; plywood, cut from &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; sheets of plywood (because half sheets are easier to move than full sheets). The drawer, I figured I&amp;rsquo;d just use brads and glue to hold it together. If it fell apart, I could always re-do it.&lt;/p&gt;
-
-&lt;p&gt;Because the wooden pieces were just rectangles, I let the robots take care of cutting them out.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-kXbHbZJ/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-kXbHbZJ/0/L/IMG_20151213_190147-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The next night, I loaded up all the pieces and started attaching them together.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-9MDj4c5/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-9MDj4c5/0/L/IMG_20151215_214357-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-VKZjkqQ/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-VKZjkqQ/0/L/IMG_20151215_214523-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The skate bearings I bought had an inner diameter that was just a little bigger than the screws I used, so I turned the screws into cones on the lathe to locate the bearings better (not pictured, but I wish I had).&lt;/p&gt;
-
-&lt;p&gt;Everything in the Jeep so far:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-FbtLRtD/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-FbtLRtD/0/L/IMG_20151215_220627-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-cNtzdDR/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-cNtzdDR/0/L/IMG_20151215_220644-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s been about a month since I finished all that, and I have the drawer together and installed; I just haven&amp;rsquo;t taken pictures of it yet. It served us well on our trip to Georgia &amp;ndash; our valuables went into the drawer, and my wife&amp;rsquo;s big suitcase got strapped to the top.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Introducing Uluru</title>
-      <link>https://agocs.org/blog/2015/08/20/introducing-uluru/</link>
+      <link>https://agocs.org/2015/08/introducing-uluru/</link>
       <pubDate>Thu, 20 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://agocs.org/blog/2015/08/20/introducing-uluru/</guid>
+      <guid>https://agocs.org/2015/08/introducing-uluru/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/3/3e/Uluru_Panorama.jpg&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I don&amp;rsquo;t work for &lt;a href=&#34;https://www.backstopsolutions.com/careers&#34;&gt;Backstop&lt;/a&gt; any more (but you should), but back when I did, we discovered we had no idea how long it took our users to load our tools. Hell, we couldn&amp;rsquo;t even figure out how many clicks per month we had! I was working with New Relic trying to get a quote from them, and the best I could do was 2 million plus or minus 800 thousand. We had insight into how long it took our servers to respond to requests, but no thought was given to DNS, loading outside resources, rendering DOM, etc.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;We tried New Relic Browser, but that failed for two reasons. First, something in the few-hundred-kilobytes of minified JavaScript was conflicting with something in our JavaScript in a way that broke automated testing. Second, on a sales call, we determined that Browser really wasn&amp;rsquo;t going to tell us the information we wanted to know. It&amp;rsquo;s a good tool, for sure, but it didn&amp;rsquo;t expose the depth of data we wanted.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/alarmingcow&#34;&gt;Colin&lt;/a&gt; found a tool called &lt;a href=&#34;https://github.com/yahoo/boomerang&#34;&gt;Yahoo Boomerang&lt;/a&gt; which seemed to do what we needed. It would collect metrics on how long it took the page, and various resources on the page, to load, and it would report those data back to a server over here. Simple, right?&lt;/p&gt;
-
-&lt;p&gt;I took two issues with Boomerang. First, it again broke our testing. Second, it used some ridiculous scheme of a GET request with URL parameters inside of an invisible iframe to get data back to the server without any cross-site request issues. This seemed entirely too complicated, and simplicity was one of my overarching goals. I decided to roll my own.&lt;/p&gt;
-
-&lt;p&gt;I was sitting in the audience at &lt;a href=&#34;http://monitorama.com/&#34;&gt;Monitorama&lt;/a&gt;, and one of the speakers mentioned logging how long clients spent loading pages. I asked him about it, and he mentioned something in Vanilla JavaScript that allowed for that. I did some research, found out about &lt;code&gt;window.performance.Timing&lt;/code&gt;, and thus Uluru was born.&lt;/p&gt;
-
-&lt;p&gt;The name, incidentally, came from back when I was experimenting with Boomerang. I needed a server to throw Boomerang data at, so I picked the famous Australian sandstone formation Uluru.&lt;/p&gt;
-
-&lt;h2 id=&#34;design-goals&#34;&gt;Design goals&lt;/h2&gt;
-
-&lt;p&gt;There exist other solutions, commercial and open source, for recording and reporting on browser telemetry. It was found, however, that these solutions were significantly complex, and in many cases interfered with JavaScript we were already using, causing JavaScript errors and preventing the browser from rendering UI elements. Therefore, the design goals of Uluru became:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Minimalism: Uluru.js is 47 lines of whitespace-heavy JavaScript. It should be extremely readable.&lt;/li&gt;
-&lt;li&gt;Light weight: When minified, Uluru.js squishes down under 500 bytes.&lt;/li&gt;
-&lt;li&gt;Speed: Uluru.js has no dependencies on other JS libraries.&lt;/li&gt;
-&lt;li&gt;No hacks: Uluru.js makes a single POST request to a remote server. It does not e.g. cram metrics into query parameters and make a series of requests GETting hidden images or iframes.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;implementation&#34;&gt;Implementation&lt;/h2&gt;
-
-&lt;h3 id=&#34;client-side&#34;&gt;Client side&lt;/h3&gt;
-
-&lt;p&gt;Uluru is a function that, when called, gets the time since navigation started and some other metrics, and sends those to an endpoint. We&amp;rsquo;ve set it up such that &lt;code&gt;uluru(endpoint)&lt;/code&gt; is called when &lt;code&gt;window.onload&lt;/code&gt; fires, under the assumption that most of our product is useful by that point.&lt;/p&gt;
-
-&lt;p&gt;Uluru collects the following data:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;url: the &lt;code&gt;window.location.href&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;connectionTime: the time (ms since UNIX epoch) the connection was initiated.&lt;/li&gt;
-&lt;li&gt;connectionDelta: the time spent establishing a connection to the server&lt;/li&gt;
-&lt;li&gt;firstByte: the time spent waiting for the server to respond with the first byte of data&lt;/li&gt;
-&lt;li&gt;responseDelta: the time the server spent sending a response to the client&lt;/li&gt;
-&lt;li&gt;loadTime: time between the &lt;code&gt;navigationStart&lt;/code&gt; and &lt;code&gt;window.onload&lt;/code&gt; events.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It also calls &lt;code&gt;window.performance.getEntries()&lt;/code&gt; to provide specific timing on every resource (script, image, stylesheet, etc.) included in the page load.&lt;/p&gt;
-
-&lt;h3 id=&#34;server-side&#34;&gt;Server side&lt;/h3&gt;
-
-&lt;p&gt;Uluru rolls all the data it collects up into one PUT request. The easiest way to collect Uluru data is to include a data collection REST endpoint in your existent web application (or, if you&amp;rsquo;re feeling clever, make your web proxy route Uluru requests to a specific Uluru logging server.&lt;/p&gt;
-
-&lt;p&gt;Alternatively, you could set the &lt;code&gt;Access-Control-Allow-Origin&lt;/code&gt; header to allow the browser to make POST requests to a separate server you&amp;rsquo;ve spun up for this purpose.&lt;/p&gt;
-
-&lt;p&gt;Either way, what we&amp;rsquo;ve wound up doing is writing the Uluru data out to Splunk, and aggregating it there in interesting ways.&lt;/p&gt;
-
-&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
-
-&lt;p&gt;Here&amp;rsquo;s some of the data we were able to collect!&lt;/p&gt;
-
-&lt;h3 id=&#34;page-loads-and-appdexes&#34;&gt;Page loads and Appdexes&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Misc/i-6PnMZv4/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Misc/i-6PnMZv4/0/M/Screen%20Shot%202015-09-04%20at%201.57.31%20PM-M.png&#34; alt=&#34;Photo &amp;amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;One neat thing we didn&amp;rsquo;t have before is an easy way to count how many page loads our system saw, how many unique users we had actively using our system, or how many clients were logged in on a given day. When you start making changes to system performance, you start thinking about things differently when you consider the 1ms wait you just removed will be multiplied by 73,000 over the course of a day.&lt;/p&gt;
-
-&lt;p&gt;Appdex is an interesting measure of system speed. You select a goal speed (2 seconds on the left, 4 seconds on the right), and you count page loads. Every page load that took under the goal speed counts for 1. Every load that took greater than the goal speed but under twice the goal speed counts for .5, and the rest count for 0. You divide the counted page loads by the total page loads, and you get a number between 0 and 1 that gives you a decent metric for how happy or sad your users are.&lt;/p&gt;
-
-&lt;p&gt;One really interesting thing we saw from this, we found by looking at individual clients. One of our clients had a significantly lower Appdex than the rest. We did some digging, and found that a condition in their data made every JSP load a huge number of records from the database to generate a list they never used. We disabled that for them, and they got much happier without ever realizing they were sad!&lt;/p&gt;
-
-&lt;h3 id=&#34;speed-breakdown&#34;&gt;Speed breakdown&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Misc/i-trpgpLZ/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Misc/i-trpgpLZ/0/M/Screen%20Shot%202015-09-04%20at%201.58.09%20PM-M.png&#34; alt=&#34;Photo &amp;amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This is a bit more boring, but it lets us know how many page loads are fast, acceptable, slow, or super slow. Comparing, e.g., last hour with last 7 days lets us see any system wide problems before our clients call in.&lt;/p&gt;
-
-&lt;h3 id=&#34;page-load-histograms&#34;&gt;Page load histograms&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Misc/i-sh6FZWC/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Misc/i-sh6FZWC/0/M/Screen%20Shot%202015-09-04%20at%201.59.35%20PM-M.png&#34; alt=&#34;Photo &amp;amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;These let us know at a glance how our page loads are distributed. We could, for example, notice a bi-modal distribution. It wouldn&amp;rsquo;t affect our average or median scores, but it would be indicative of something fishy.&lt;/p&gt;
-
-&lt;p&gt;I once noticed a particular user sending back negative page load speeds. I investigated it for a little bit and decided it was just one of those weird things that happen when you rely on multiple sources of time.&lt;/p&gt;
-
-&lt;h3 id=&#34;slow-pages&#34;&gt;Slow pages&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Misc/i-X5dKdQs/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Misc/i-X5dKdQs/0/M/Screen%20Shot%202015-09-04%20at%201.59.45%20PM-M.png&#34; alt=&#34;Photo &amp;amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This report gives us some neat insight into what&amp;rsquo;s been taking a long time to load. You look at each one, make sure it makes sense, and then use this graph to help prioritize your projects.&lt;/p&gt;
-
-&lt;h3 id=&#34;time-sinks&#34;&gt;Time sinks&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Misc/i-RJRsk3M/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Misc/i-RJRsk3M/0/M/Screen%20Shot%202015-09-04%20at%201.59.53%20PM-M.png&#34; alt=&#34;Photo &amp;amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Likewise, just counting the total amount of time sunk into a resource is helpful. You might (much like we do) have a page that clients hit all the time. It might load in under two seconds, but if you can shave 10 % off of that, you&amp;rsquo;re saving 20 hours per week aggregated across all of your users.&lt;/p&gt;
-
-&lt;p&gt;You can get a lot of really interesting data from visualizations like this. Use these to help justify speed projects.&lt;/p&gt;
-
-&lt;h2 id=&#34;further-directions&#34;&gt;Further directions&lt;/h2&gt;
-
-&lt;p&gt;Currently, the Uluru project includes some stub code for a generic REST endpoint. I want to flush this out into something that writes logs for splunkd or logstash, or forwards data to services like Sensu or Riemann.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Internet Jukebox</title>
-      <link>https://agocs.org/blog/2015/07/30/internet-jukebox/</link>
+      <link>https://agocs.org/2015/07/internet-jukebox/</link>
       <pubDate>Thu, 30 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://agocs.org/blog/2015/07/30/internet-jukebox/</guid>
+      <guid>https://agocs.org/2015/07/internet-jukebox/</guid>
       <description>&lt;p&gt;One of the hackerspaces at which I am a member installed a Beaglebone Black on their door and put a speaker outside.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://imgur.com/v3esU7N&#34;&gt;&lt;img src=&#34;http://i.imgur.com/v3esU7Nl.jpg&#34; title=&#34;source: imgur.com&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;http://imgur.com/Pyb5A9A&#34;&gt;&lt;img src=&#34;http://i.imgur.com/Pyb5A9Al.jpg&#34; title=&#34;source: imgur.com&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Now we can play sounds to the street, but to do so, you have to ssh into the Beaglebone. That&amp;rsquo;s not bad, but it&amp;rsquo;s a hassle. Okay, so can I make a REST endpoint that plays music?&lt;/p&gt;
-
-&lt;p&gt;(The answer is yes.)&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s the &lt;a href=&#34;https://github.com/agocs/bbb_sound_server&#34;&gt;repo&lt;/a&gt;. Let&amp;rsquo;s go through it.&lt;/p&gt;
-
-&lt;h2 id=&#34;structure&#34;&gt;Structure&lt;/h2&gt;
-
-&lt;p&gt;There are two endpoints, &lt;code&gt;/&lt;/code&gt; and &lt;code&gt;/play/&lt;/code&gt;. &lt;code&gt;/&lt;/code&gt; returns a simple HTML form that lets the user upload a sound file. When the user clicks &lt;code&gt;Submit&lt;/code&gt;, a &lt;code&gt;POST&lt;/code&gt; request is made to &lt;code&gt;/play/&lt;/code&gt;. The sound file is extracted from the form data, and asynchronously processed.&lt;/p&gt;
-
-&lt;p&gt;The sound file process is thus: it is saved to a temporary file on disk, &lt;code&gt;mplayer&lt;/code&gt; is called on that file, and then when that process terminates, the sound file is removed.&lt;/p&gt;
-
-&lt;h3 id=&#34;serving-a-static-html-page&#34;&gt;Serving a static html page&lt;/h3&gt;
-
-&lt;p&gt;is easy.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;controlfs := http.FileServer(http.Dir(&amp;quot;control&amp;quot;))
-http.Handle(&amp;quot;/&amp;quot;, controlfs)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;There&amp;rsquo;s a directory called &lt;code&gt;control&lt;/code&gt;, and it contains &lt;code&gt;index.html&lt;/code&gt;. When you hit &lt;code&gt;/&lt;/code&gt;, you get index.html. Wildly easy.&lt;/p&gt;
-
-&lt;h3 id=&#34;creating-that-rest-endpoint&#34;&gt;Creating that REST endpoint&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;http.HandleFunc(&amp;quot;/play/&amp;quot;, func(w http.ResponseWriter, req *http.Request) {
-    if req.Method == &amp;quot;POST&amp;quot; {
-
-        if req.ContentLength &amp;gt; 10485760 {
-            w.WriteHeader(http.StatusBadRequest)
-            w.Write([]byte(&amp;quot;File size capped at 10mb&amp;quot;))
-            return
-        }
-
-        soundFile, headers, err := req.FormFile(&amp;quot;soundFile&amp;quot;)
-        if err != nil {
-            log.Printf(&amp;quot;Error getting soundFile from Form. \n %s&amp;quot;, err.Error())
-            w.WriteHeader(http.StatusServiceUnavailable)
-            return
-        }
-        log.Printf(&amp;quot;Recieved %s&amp;quot;, headers.Filename)
-        w.Write([]byte(&amp;quot;All done!&amp;quot;))
-        go playASound(soundFile)
-
-    } else {
-        w.WriteHeader(http.StatusMethodNotAllowed)
-
-        //TODO(cagocs): maybe return 200 with the name of the sound playing?
-    }
-})
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Briefly, here&amp;rsquo;s what we&amp;rsquo;re doing:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Setting up a url pattern, &lt;code&gt;/play&lt;/code&gt;/.&lt;/li&gt;
-&lt;li&gt;Defining an anonymous function that runs when you hit &lt;code&gt;/play&lt;/code&gt;/&lt;/li&gt;
-&lt;li&gt;Checking the request method.
-
-&lt;ul&gt;
-&lt;li&gt;if it&amp;rsquo;s &lt;code&gt;POST&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Check the content-length. If it&amp;rsquo;s greater than 10 MiB, return a status code 400.&lt;/li&gt;
-&lt;li&gt;Get the &lt;code&gt;soundFile&lt;/code&gt; out of the form.&lt;/li&gt;
-&lt;li&gt;Log the filename&lt;/li&gt;
-&lt;li&gt;Return a status code 200&lt;/li&gt;
-&lt;li&gt;Asynchronously play the file&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;if it isn&amp;rsquo;t
-
-&lt;ul&gt;
-&lt;li&gt;Return a status code 405&lt;/li&gt;
-&lt;li&gt;I considered returning a string representation of all the files playing, but didn&amp;rsquo;t.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;em&gt;One quick point:&lt;/em&gt; Yes, it&amp;rsquo;s possible to spoof the content-length in a request. I didn&amp;rsquo;t check for that. If you decide to run this in any sort of mission critical sense, maybe watch out for that.&lt;/p&gt;
-
-&lt;h3 id=&#34;playing-a-sound&#34;&gt;Playing a sound&lt;/h3&gt;
-
-&lt;p&gt;func playASound(file multipart.File) {
-        soundFile, err0 := ioutil.TempFile(&amp;ldquo;&amp;rdquo;, &amp;ldquo;sound_&amp;ldquo;)
-        if err0 != nil {
-            log.Printf(&amp;ldquo;Error initializing new file&amp;rdquo;)
-        }&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    buffer, err1 := ioutil.ReadAll(file)
-    if err1 != nil {
-        log.Printf(&amp;quot;Error reading mime multipart file&amp;quot;)
-    }
-
-    err2 := ioutil.WriteFile(soundFile.Name(), buffer, os.ModeTemporary)
-    if err2 != nil {
-        log.Printf(&amp;quot;Error writing file to disk&amp;quot;)
-    }
-
-    cmd := exec.Command(&amp;quot;mplayer&amp;quot;, soundFile.Name())
-
-    err3 := cmd.Run()
-    if err3 != nil {
-        log.Printf(&amp;quot;Error playing file %s&amp;quot;, soundFile.Name())
-    }
-
-    soundFile.Close()
-    err4 := os.Remove(soundFile.Name())
-    if err4 != nil {
-        log.Println(&amp;quot;Error deleting %s&amp;quot;, soundFile.Name())
-    }
-
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;So now we have a sound file in memory. How do we get it to the speakers? I spent a long time screwing around trying to figure out a &amp;ldquo;pure Go&amp;rdquo; solution, gave up, and decided to cheat. The Beaglebone Black will probably ship with &lt;a href=&#34;https://en.wikipedia.org/wiki/MPlayer&#34;&gt;MPlayer&lt;/a&gt;; why not use that?&lt;/p&gt;
-
-&lt;p&gt;I skimmed through some code examples and came up with the solution above. &lt;code&gt;playASound&lt;/code&gt; is running asynchronously, so it can spend some time doing what it needs to do. It creates a new &lt;code&gt;TempFile&lt;/code&gt;, and writes the sound file there. It then creates a &lt;code&gt;Command&lt;/code&gt; that calls &lt;code&gt;mplayer&lt;/code&gt; and passes the name of the temporary file to &lt;code&gt;mplayer&lt;/code&gt; as an argument. &lt;code&gt;Mplayer&lt;/code&gt; plays the file, and when the &lt;code&gt;mplayer&lt;/code&gt; process completes, our goroutine closes and removes the temporary file.&lt;/p&gt;
-
-&lt;h2 id=&#34;running&#34;&gt;Running&lt;/h2&gt;
-
-&lt;p&gt;I decided to not take my own advice and open this up to the general internet a few days ago. I used port forwarding on my router to forward :3030 on my external IP address to port :3030 on my laptop, and ran the program. I posted about it on IRC, forums, and made an Imgur post, and I got a few people participating.&lt;/p&gt;
-
-&lt;p&gt;I found it to be incredibly stable. No crashing, no issues running 4 to 6 instances of mplayer on top of one another. I was pleased with how the server handled unexpected EOFs and connection timeouts. Lastly, I discovered that letting people assault my ears with a barrage of mp3s is fun!&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Sun Visor Bracket</title>
-      <link>https://agocs.org/blog/2015/03/01/sun-visor-bracket/</link>
+      <link>https://agocs.org/2015/03/sun-visor-bracket/</link>
       <pubDate>Sun, 01 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://agocs.org/blog/2015/03/01/sun-visor-bracket/</guid>
+      <guid>https://agocs.org/2015/03/sun-visor-bracket/</guid>
       <description>&lt;p&gt;I shattered the sun visor bracket on my Jeep in the cold this winter, so I did the only sensible thing. I tried to machine a new one.&lt;/p&gt;
 
 &lt;p&gt;I started with a block of 2&amp;rdquo; by 4&amp;rdquo; aluminum stock. I cut 2&amp;rdquo; off of it with a band saw. The blade popped off of its guide with about &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;10&lt;/sub&gt;&amp;rdquo; left to go, so fixing that was a fun diversion.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;I finally got a piece mounted in the Bridgeport and milled a few reference surfaces. I sent this picture to my friend to ask about the finish on that side milling. He said it was normal, if a little fugly.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-P5TTwjH/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-P5TTwjH/0/L/20150301140926-L.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I call this picture, &amp;ldquo;Where the hell did I put my calipers?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-TwhTxdW/A&#34; title=&#34;&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-TwhTxdW/0/L/20150301_143828-L.jpg&#34; title=&#34;&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This is one of my favorite parts of machining. On the left, you can see the rough cut that&amp;rsquo;s out-of-square. On the right, the machined surface.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-wrpwHTL/A&#34; title=&#34;&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-wrpwHTL/0/L/20150301_144604-L.jpg&#34; title=&#34;&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I took a bunch more cuts, and got here.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-x8gJt6Q/A&#34; title=&#34;&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-x8gJt6Q/0/L/20150301_162907-L.jpg&#34; title=&#34;&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Then I messed up.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-Btb5N32/A&#34; title=&#34;&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-Btb5N32/0/L/20150301_215830-L.jpg&#34; title=&#34;&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Notice the middle part? That would be perfect, if the sun visor stuck up. Of course, it hangs down, so this part is completely worthless. Fortunately, I have enough stock to make a second one.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>AGOX Connectors</title>
-      <link>https://agocs.org/blog/2014/09/19/agox-connectors/</link>
+      <link>https://agocs.org/2014/09/agox-connectors/</link>
       <pubDate>Fri, 19 Sep 2014 10:23:41 -0500</pubDate>
       
-      <guid>https://agocs.org/blog/2014/09/19/agox-connectors/</guid>
+      <guid>https://agocs.org/2014/09/agox-connectors/</guid>
       <description>&lt;p&gt;###Or, how we hacked reality&lt;/p&gt;
 
 &lt;p&gt;This is an eight-pin AGOX connector:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://i.imgur.com/NHrH5hOl.jpg&#34;&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;In September of 2008, I was a student at the &lt;a href=&#34;http://www.gatech.edu&#34;&gt;North Avenue Trade School&lt;/a&gt; and heavily involved in the &lt;a href=&#34;http://www.wrek.org&#34;&gt;WREK&lt;/a&gt; radio station. One of my good friends at the time was &lt;a href=&#34;http://centrisian.com/&#34;&gt;Robert Wright&lt;/a&gt;. My &amp;ldquo;initials&amp;rdquo; (how we logged in, signed up for shifts, etc.) at the radio station were &amp;ldquo;AGOX&amp;rdquo;, and I signed all my emails that way. One afternoon, Robert pointed me toward the Wikipedia Talk page for USB: specifically at a section called &lt;a href=&#34;http://en.wikipedia.org/wiki/Talk:USB/Archive_4#Mystery_micro_plug&#34;&gt;Mystery Micro Plug&lt;/a&gt;. At the bottom, he wrote:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Based on personal knowledge, and having worked in the field for a few years, the &amp;lsquo;Mystery Plug&amp;rsquo; is internally named the &amp;lsquo;Agox connector&amp;rsquo; when used in combination with digital cameras. We refer to them this way because of the gentleman with whom I worked. 128.61.120.190 (talk) 22:49, 23 September 2008 (UTC)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I thought it was funny, so I replied.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;I think I remember seeing it called the &amp;lsquo;Agox Connector&amp;rsquo; in Nikon documentation somewhere. I always wondered why. 128.61.69.123 (talk) 22:56, 23 September 2008 (UTC)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It would have died at this point if another Wikipedia editor hadn&amp;rsquo;t gotten involved.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Hmmm&amp;hellip; very interesting. Do you have a reference for it anywhere??? ǝɹʎℲxoɯ (contrib) 06:33, 24 September 2008 (UTC)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Well&amp;hellip; One good lie begets another. Rob said:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;I&amp;rsquo;m no longer working there, but I could possibly try to get some documents from people who still work there. 128.61.120.190 (talk) 09:32, 24 September 2008 (UTC)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;And then, a few days later, he said:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;So, after having asked around, I&amp;rsquo;ve learned that the connector&amp;rsquo;s internal name of &amp;lsquo;Agox&amp;rsquo; is on some documentation that we haven&amp;rsquo;t released to the public yet. The name is perfectly fine to use for the article, but the Nikon documents cannot be released. If I could cite them here, I would, but alas, I am still bound not to release the information behind this. 24.98.65.137 (talk) 04:48, 30 September 2008 (UTC)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Finally, about a month later, I came up with the most ridiculous thing I could imagine.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;It stands for Asynchronous Gamma-Object Transfer (x=trans). In Nikon&amp;rsquo;s logical model, the alpha object acts as a server, the beta object acts as a client, and data that flows between the two are considered gamma objects. There are delta and epsilon objects as well, but those are too small to get into. 128.61.69.123 (talk) 23:27, 21 October 2008 (UTC)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;We left it at that. A few months later, Rob pointed me back at the main USB article. I scrolled through and saw this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/usgXmpCl.png&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;We&amp;rsquo;d done it! Someone took our lies and made them reality! It didn&amp;rsquo;t stop there. You could find Chinese companies selling AGOX cables and AGOX connectors, people mentioned AGOX connectors on forums, one guy even wrote a blog post about an AGOX to regular USB converter he made.&lt;/p&gt;
-
-&lt;p&gt;All good things must come to an end, and, rightly so, AGOX Connector got edited away. Wikipedia currently calls it a &amp;ldquo;UC-E6 proprietary (non-USB) plug&amp;rdquo;, but, in my heart of hearts, I know what it really is.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Celestron FirstScope</title>
-      <link>https://agocs.org/blog/2014/08/29/celestron-firstscope/</link>
+      <link>https://agocs.org/2014/08/celestron-firstscope/</link>
       <pubDate>Fri, 29 Aug 2014 16:01:13 -0500</pubDate>
       
-      <guid>https://agocs.org/blog/2014/08/29/celestron-firstscope/</guid>
+      <guid>https://agocs.org/2014/08/celestron-firstscope/</guid>
       <description>&lt;p&gt;I bought a Celestron FirstScope dobsinian telescope for a project that I&amp;rsquo;ve been kicking around. It&amp;rsquo;s not super duper, but for $50, it&amp;rsquo;s a functional telescope.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Misc/i-CjjQRdv/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Misc/i-CjjQRdv/0/L/20140829153602-L.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Before I bought it, I was looking for some dimension specs. Unable to find any, I decided to document it myself.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Misc/i-RwMDHNr/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Misc/i-RwMDHNr/0/M/20140829161147-M.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Measurements are in inches, and are &amp;ldquo;close enough&amp;rdquo;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Base diameter: 8&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Little rubber feet height: 1.25&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Lazy susan height: 1.25&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Floor to telescope tube mid-point: 9.5&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Telescope tube overall length: 10.5&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Telescope tube diameter: 4&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Eyepiece height (min): 2.5&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Eyepiece height (max): 4&amp;rdquo;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;###First Impressions&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s not half bad. Pretty easy to use. Probably needs to be collimated, but it&amp;rsquo;s definitely good enough for looking down on the city during the day. For $50, it&amp;rsquo;s a solid scope. I&amp;rsquo;m impressed.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s a picture I took of a barge. It&amp;rsquo;s a pretty hazy day today, unfortunately.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Misc/i-gmWWFq8/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Misc/i-gmWWFq8/0/L/20140829163122-L.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Tips for using RabbitMQ in Go</title>
-      <link>https://agocs.org/blog/2014/08/19/tips-for-using-rabbitmq-in-go/</link>
+      <link>https://agocs.org/2014/08/tips-for-using-rabbitmq-in-go/</link>
       <pubDate>Tue, 19 Aug 2014 12:57:26 -0500</pubDate>
       
-      <guid>https://agocs.org/blog/2014/08/19/tips-for-using-rabbitmq-in-go/</guid>
-      <description>
-
-&lt;p&gt;###Corrections:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;4% != .004% : When I was writing the article, my brain translated 99996 into 96000. Big difference. It turns out that I&amp;rsquo;m unable to dequeue somewhere between .004% and .20% of messages in about half of test runs.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;###Note:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I&amp;rsquo;ve been chatting with some very helpful RabbitMQ-knowledgeable people, and they have some suggestions for the issues I&amp;rsquo;m seeing that I&amp;rsquo;m going to check out. I will update this article with my findings.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;I want to thank &lt;a href=&#34;https://twitter.com/old_sound&#34;&gt;Alvaro Videla&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/michaelklishin&#34;&gt;Michael Klishin&lt;/a&gt; for reading my first attempt at this post and suggesting different avenues to explore.&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;For the two of you who don&amp;rsquo;t know, RabbitMQ is a really neat AMQP-compliant queue broker. It exists to facilitate the passing of messages between or within systems. I&amp;rsquo;ve used it for a couple of different projects, and I&amp;rsquo;ve found it to be tremendously capable: I&amp;rsquo;ve seen a RabbitMQ instance running on a single, moderately sized, VM handle almost 3GB/s.&lt;/p&gt;
-
-&lt;p&gt;I was doing some load testing with RabbitMQ recently, and I found that, if I started attempting to publish more than around 2500 10KB messages per second, &lt;del&gt;about 4%&lt;/del&gt; as much as 0.2% of those messages wouldn&amp;rsquo;t make it to the queue during some test runs. I am not sure if this is my code&amp;rsquo;s fault or if I am running into the limits of the RabbitMQ instance I was testing against (probably the former), but with the help of the RabbitMQ community, I was able to come up with some best practices that I&amp;rsquo;ve described below.&lt;/p&gt;
-
-&lt;p&gt;The examples below are all in Go, but I&amp;rsquo;ve tried my best to explain them in such a way that people who are not familiar with Go can understand them.&lt;/p&gt;
-
-&lt;h2 id=&#34;terminology&#34;&gt;Terminology&lt;/h2&gt;
-
-&lt;p&gt;If you&amp;rsquo;re unfamiliar with AMQP, here&amp;rsquo;s some terminology to help understand what&amp;rsquo;s possible with a queue broker and what the words mean.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Connection&lt;/strong&gt;: A connection is a long-lived TCP connection between an AMQP client and a queue broker. Maintaining a connection reduces TCP overhead. A client can re-use a connection, and can share a connection among threads.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Channel&lt;/strong&gt;: A channel is a short-lived sub-connection between a client and a broker. The client can create and dispose of channels without incurring a lot of overhead.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Exchange&lt;/strong&gt;: A client writes messages to an exchange. The exchange forwards each message on to zero or more queues based on the message&amp;rsquo;s routing key.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Queue&lt;/strong&gt;: A queue is a first-in, first out holder of messages. A client reads messages from a queue. The client can specify a queue name (useful, for example, for a work queue where multiple clients are consuming from the same queue), or allow the queue broker to assign it a queue name (useful if you want to distribute copies of a message to multiple clients).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Routing Key&lt;/strong&gt;: A string (optionally) attached to each message. Depending on the exchange type, the exchange may or may not use the Routing Key to determine the queues to which it should publish the message.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Exchange types&lt;/strong&gt;:
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Direct&lt;/strong&gt;: Delivers all messages with the same routing key to the same queue(s).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fanout&lt;/strong&gt;: Ignores the routing key, delivers a copy of the message to each queue bound to it.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Topic&lt;/strong&gt;: Each queue subscribes to a topic, which is a regular expression. The exchange delivers the message to a queue if the queue&amp;rsquo;s subscribed topic matches the message.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Header&lt;/strong&gt;: Ignores the routing key and delivers the message based on the AMQP header. Useful for certain kinds of messages.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;testing-methodology&#34;&gt;Testing methodology&lt;/h2&gt;
-
-&lt;p&gt;Here is the load tester I wrote: &lt;a href=&#34;https://github.com/backstop/rabbit-mq-stress-tester&#34;&gt;https://github.com/backstop/rabbit-mq-stress-tester&lt;/a&gt;. It uses the &lt;a href=&#34;https://github.com/streadway/amqp&#34;&gt;streadway/amqp library&lt;/a&gt;. Per &lt;a href=&#34;https://github.com/streadway/amqp/issues/93&#34;&gt;this issue&lt;/a&gt;, my stress tester does not share connections or channels between Goroutines &amp;ndash; it launches a configurably-sized pool of Goroutines, each of which maintains its own connection to the RabbitMQ server.&lt;/p&gt;
-
-&lt;p&gt;To run the same tests I was running:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Clone the repo or install using &lt;code&gt;go get github.com/backstop/rabbit-mq-stress-tester&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Open two terminal windows. In one, run&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;./tester -s test-rmq-server -c 100000
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;That will launch the in Consumer mode. It defaults to 50 Goroutines, and will consume 100,000 messages before quitting.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;In the other terminal window, run&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;./tester -s test-rmq-server -p 100000 -b 10000 -n 100 -q
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This will run the tester in Producer mode. It will (-p)roduce 100,000 messages of 10,000 (-b)ytes each. It will launch a pool of 100 Goroutines (-n), and it will work in (-q)uiet mode, only printing NACKs and final statistics to stdout.&lt;/p&gt;
-
-&lt;p&gt;What I found is that, roughly half the time I run the above steps, the consumer will only consume 99,000 and change messages (typically greater than 99,980, but occasionally as low as 99,800). I was unable to find any descriptive error messages in the &lt;code&gt;rabbitmq@test-rmq-server.log&lt;/code&gt; file.&lt;/p&gt;
-
-&lt;p&gt;I can change that, though. If I run the producer like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    ./tester -s test-rmq-server -p 100000 -b 10000 -n 100 -q -a
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;then each Goroutine waits for an ACK or NACK from the RabbitMQ server before publishing the next message (that&amp;rsquo;s what the -a flag does). I have never seen a missing message in this mode. The functionality of the -a flag is described in the next section.&lt;/p&gt;
-
-&lt;p&gt;###Some things that I don&amp;rsquo;t think are the culprit:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Memory-based flow control: Memory usage as reported by &lt;code&gt;top&lt;/code&gt; never exceeds approximately 22%. Also, no messages in the log file.&lt;/li&gt;
-&lt;li&gt;Per-connection flow control: After fussing with &lt;code&gt;rabbitmqctl list_connections&lt;/code&gt; for a while, I was not able to find evidence of a connection that had been blocked. I&amp;rsquo;m not sure of these results, though, so if someone would be willing to give me a hand with this, that would be awesome.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;ensuring-your-message-got-published&#34;&gt;Ensuring your message got published&lt;/h2&gt;
-
-&lt;p&gt;Like I said earlier, I was doing some stress testing against a RabbitMQ instance and a small number of messages that I attempted to publish did not get dequeued. I reached out to the RabbitMQ community, and someone on their IRC channel told me to look up Confirm Select.&lt;/p&gt;
-
-&lt;p&gt;When you place a channel into Confirm Select, the AMQP broker will respond with an ACK with a for each message passed to it on that channel. Included with the ACK is an integer that increments with each ACK, similar to a TCP sequence ID. If something goes wrong, the broker will respond with a NACK. In Go, placing a channel into Confirm Select looks like this:&lt;/p&gt;
-
-&lt;p&gt;``` go Putting a channel in Confirm Select
-    channel, err := connection.Channel()
-    if err != nil {
-        println(err.Error())
-        panic(err.Error())
-    }
-    channel.Confirm(false)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ack, nack := channel.NotifyConfirm(make(chan uint64, 1), make(chan uint64, 1))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;
-The above `channel.Confirm(false)` puts the channel into Confirm mode, and the `false` puts the client out of NoWait mode such that the client waits for an ACK or NACK after each message. `ack` and `nack` are golang `chan`s that receive the integers included with the ACKs or NACKs. If you were in NoWait mode, you could use them to bulk publish a bunch of messages and then figure out which messages did not make it.
-
-Listening for the ACK looks like this:
-
-``` go Publish a message and wait for confirmation
-		channel.Publish(&amp;quot;&amp;quot;, q.Name, true, false, amqp.Publishing{
-			Headers:         amqp.Table{},
-			ContentType:     &amp;quot;text/plain&amp;quot;,
-			ContentEncoding: &amp;quot;UTF-8&amp;quot;,
-			Body:            messageJson,
-			DeliveryMode:    amqp.Transient,
-			Priority:        0,
-		},
-		)
-
-		select {
-		case tag := &amp;lt;-ack:
-			log.Println(&amp;quot;Acked &amp;quot;, tag)
-		case tag := &amp;lt;-nack:
-			log.Println(&amp;quot;Nack alert! &amp;quot;, tag)
-		}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;After each publish, I&amp;rsquo;m performing a read off of the &lt;code&gt;ack&lt;/code&gt; and &lt;code&gt;nack&lt;/code&gt; chans (that is what &lt;code&gt;select&lt;/code&gt; does). That read blocks until the client gets an ACK or NACK back from the broker.&lt;/p&gt;
-
-&lt;p&gt;The above examples are in Go, but there&amp;rsquo;s an equivalent in the other libraries I&amp;rsquo;ve played with. Clojure (langohr) has &lt;code&gt;confirm/select&lt;/code&gt; and &lt;code&gt;confirm/wait-for-confirms-or-die&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;can-we-do-better&#34;&gt;Can we do better?&lt;/h3&gt;
-
-&lt;p&gt;Yes. Rather than wait for an ACK after each publish, it&amp;rsquo;s better to publish a bunch of messages, listen for ACKs, and then handle failures. I didn&amp;rsquo;t, because I was already seeing performance several orders of magnitude better than I needed.&lt;/p&gt;
-
-&lt;p&gt;We can also wrap blocks of messages in a transaction if we need to ensure that all messages get published and retain order, but doing that incurs something like a 250x performance penalty.&lt;/p&gt;
-
-&lt;h2 id=&#34;pool-your-goroutines-and-avoid-race-conditions&#34;&gt;Pool your Goroutines and avoid race conditions&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/streadway/amqp/issues/93&#34;&gt;This issue&lt;/a&gt; proved interesting (if ultimately not relevant to my problem). It looks like the person who filed the issue was running into two issues:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;There was a race condition in the code that counted ACKs / NACKs&lt;/li&gt;
-&lt;li&gt;The one-Goroutine-per-publish strategy causes a condition where the 2000 goroutines waiting for network IO prevent the goroutine listening for ACKs / NACKs from receiving sufficient CPU cycles.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I got around this in two ways: I have a fixed-size pool of Goroutines performing the publishing, and each goroutine handles its own Publish -&amp;gt; Ack lifecycle.&lt;/p&gt;
-
-&lt;h2 id=&#34;ensuring-messages-get-handled-correctly&#34;&gt;Ensuring messages get handled correctly&lt;/h2&gt;
-
-&lt;p&gt;A message queue is of little use if messages just sit there, so it is prudent to include a consumer or two. But, what happens if your consumer crashes? Does your message get lost in the ether?&lt;/p&gt;
-
-&lt;p&gt;The answer is &lt;strong&gt;AutoAck&lt;/strong&gt;. More specifically, realizing that AutoAck is dangerous and wrong.&lt;/p&gt;
-
-&lt;p&gt;When a consumer consumes a message from a queue, the queue broker waits for an ACK before discarding the message. When a consumer has AutoAck enabled, it sends the ACK (thus causing the message to be discarded) instantly upon receiving the message. It&amp;rsquo;s smarter to read the next message on the queue, handle the message properly, and then send the ACK.&lt;/p&gt;
-
-&lt;p&gt;```go Reading and acknowledging messages
-    autoAck := false&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;msgs, err := channel.Consume(q.Name, &amp;quot;&amp;quot;, autoAck, false, false, false, nil)
-if err != nil {
-    panic(err)
-}
-
-for d := range msgs { // the d stands for Delivery
-    log.Printf(string(d.Body[:])) // or whatever you want to do with the message
-    d.Ack(false)
-} 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;```&lt;/p&gt;
-
-&lt;p&gt;In the example above, &lt;code&gt;autoAck&lt;/code&gt; is set to false. Every time I read a message (in the &lt;code&gt;for d := range msgs&lt;/code&gt; loop), I send an ACK for that message. If I were to call &lt;code&gt;d.Ack(true)&lt;/code&gt;, that would send an ACK for that message and all previous unacknowledged messages.&lt;/p&gt;
-
-&lt;p&gt;If my consumer quits without acknowledging a message, that message is repeated to the next consumer to come by.&lt;/p&gt;
-
-&lt;h2 id=&#34;performant-results&#34;&gt;Performant results&lt;/h2&gt;
-
-&lt;p&gt;So, what kind of performance am I getting?&lt;/p&gt;
-
-&lt;p&gt;The following numbers are all time to publish and consume 100,000 messages, each with a 10KB payload. The tester was running on my Macbook, and RabbitMQ was running on a Cloudstack VM.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;With Confirm Select
-
-&lt;ul&gt;
-&lt;li&gt;Publishing: 24.42s&lt;/li&gt;
-&lt;li&gt;Consuming: 26.79s&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Without Confirm Select
-
-&lt;ul&gt;
-&lt;li&gt;Publishing: 16.32s&lt;/li&gt;
-&lt;li&gt;Consuming: 26.13s&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The point is, RabbitMQ is fast and Go is fast. When we use one to stress test the other, messages get lost somewhere. If we take a little bit of time to ensure that messages get published and processed properly, we can prevent pesky data loss issues.&lt;/p&gt;
-</description>
+      <guid>https://agocs.org/2014/08/tips-for-using-rabbitmq-in-go/</guid>
+      <description>###Corrections:
+ 4% != .004% : When I was writing the article, my brain translated 99996 into 96000. Big difference. It turns out that I&amp;rsquo;m unable to dequeue somewhere between .004% and .20% of messages in about half of test runs.  ###Note:
+I&amp;rsquo;ve been chatting with some very helpful RabbitMQ-knowledgeable people, and they have some suggestions for the issues I&amp;rsquo;m seeing that I&amp;rsquo;m going to check out. I will update this article with my findings.</description>
     </item>
     
     <item>
       <title>How to: disable capslock at the hardware level</title>
-      <link>https://agocs.org/blog/2013/07/21/how-to-disable-capslock-at-the-hardware-level/</link>
+      <link>https://agocs.org/2013/07/how-to-disable-capslock-at-the-hardware-level/</link>
       <pubDate>Sun, 21 Jul 2013 05:09:09 +0000</pubDate>
       
-      <guid>https://agocs.org/blog/2013/07/21/how-to-disable-capslock-at-the-hardware-level/</guid>
-      <description>&lt;p&gt;I hate capslock. It&amp;rsquo;s a horrible, horrible key, and it gets even more in the way on my split ergonomic keyboards at work. I&amp;rsquo;ve tried registry hacks to kill it, but they don&amp;rsquo;t seem to work. Here&amp;rsquo;s how I deal with capslock:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Obtain a small, flat-headed screwdriver. Insert it beneath the Capslock key.
-[&lt;img src=&#34;http://www.agocs.org/wp-content/uploads/2013/07/20130719_1104211-300x168.jpg&#34; alt=&#34;20130719_110421[1]&#34; /&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;](&lt;a href=&#34;http://www.agocs.org/wp-content/uploads/2013/07/20130719_1104211.jpg&#34;&gt;http://www.agocs.org/wp-content/uploads/2013/07/20130719_1104211.jpg&lt;/a&gt;)&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Pry downward.
-&lt;a href=&#34;http://www.agocs.org/wp-content/uploads/2013/07/20130719_1104371.jpg&#34;&gt;&lt;img src=&#34;http://www.agocs.org/wp-content/uploads/2013/07/20130719_1104371-300x168.jpg&#34; alt=&#34;20130719_110437[1]&#34; /&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;If you ever need capslock later, just use a pen to poke the little capacitive sensor. I put the key into a drawer in case I ever need to reassemble the keyboard later.&lt;/p&gt;
-</description>
+      <guid>https://agocs.org/2013/07/how-to-disable-capslock-at-the-hardware-level/</guid>
+      <description>I hate capslock. It&amp;rsquo;s a horrible, horrible key, and it gets even more in the way on my split ergonomic keyboards at work. I&amp;rsquo;ve tried registry hacks to kill it, but they don&amp;rsquo;t seem to work. Here&amp;rsquo;s how I deal with capslock:
+ Obtain a small, flat-headed screwdriver. Insert it beneath the Capslock key. [  ](http://www.agocs.org/wp-content/uploads/2013/07/20130719_1104211.jpg)
+ Pry downward.   If you ever need capslock later, just use a pen to poke the little capacitive sensor.</description>
     </item>
     
     <item>
       <title>Reverse Engineering Doubleclick Part II</title>
-      <link>https://agocs.org/blog/2013/05/17/reverse-engineering-doubleclick-part-ii/</link>
+      <link>https://agocs.org/2013/05/reverse-engineering-doubleclick-part-ii/</link>
       <pubDate>Fri, 17 May 2013 15:27:30 +0000</pubDate>
       
-      <guid>https://agocs.org/blog/2013/05/17/reverse-engineering-doubleclick-part-ii/</guid>
-      <description>&lt;p&gt;Once every three seconds, that&amp;rsquo;s the magic number.&lt;/p&gt;
+      <guid>https://agocs.org/2013/05/reverse-engineering-doubleclick-part-ii/</guid>
+      <description>Once every three seconds, that&amp;rsquo;s the magic number.
+Some more interesting information: I pointed a Doubleclick click counter at a super-simple web service I wrote, running on a web server I rent, and I ran a test that follows the DLCK redirect. Here are the results:
 
-&lt;p&gt;Some more interesting information: I pointed a Doubleclick click counter at a super-simple web service I wrote, running on a web server I rent, and I ran a test that follows the DLCK redirect. Here are the results:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.agocs.org/wp-content/uploads/2013/05/Delay_Between_Requests.png&#34;&gt;&lt;img src=&#34;http://www.agocs.org/wp-content/uploads/2013/05/Delay_Between_Requests-300x113.png&#34; alt=&#34;Delay_Between_Requests&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I ran 300 clicks at 4s per click, then 500 clicks at 2s per click. As you can see, almost all of the first 300 clicks made it to the web service, but only around &lt;sup&gt;380&lt;/sup&gt;&amp;frasl;&lt;sub&gt;500&lt;/sub&gt; 2s per click clicks made it. Here&amp;rsquo;s the same graph with a log scale y axis:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.agocs.org/wp-content/uploads/2013/05/Delay_Between_Requests_log_scale.png&#34;&gt;&lt;img src=&#34;http://www.agocs.org/wp-content/uploads/2013/05/Delay_Between_Requests_log_scale-300x113.png&#34; alt=&#34;Delay_Between_Requests_log_scale&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;You can see that the first 300 clicks made it with roughly 3 seconds between clicks (modulo some variance in the first 100 because I was using a gaussian random delay, and a hiccough at #100 because I stopped and restarted the test). The 380 clicks that made it at 2s per click mostly showed up in 2s intervals, but there were at least seven delays of greater than 10 seconds. In fact, I determined that if there was a delay of &amp;gt;4 seconds, it was almost certain that clicks received during this delay would not be delivered. This indicates to me that DLCK is actively watching for clickthrough rates of greater than a certain amount from a certain IP address, and dropping clicks.&lt;/p&gt;
-
-&lt;p&gt;Neat!&lt;/p&gt;
-
-&lt;p&gt;I tried spoofing DLCK cookies. I have yet to be successful.&lt;/p&gt;
-</description>
+I ran 300 clicks at 4s per click, then 500 clicks at 2s per click. As you can see, almost all of the first 300 clicks made it to the web service, but only around 380&amp;frasl;500 2s per click clicks made it.</description>
     </item>
     
     <item>
       <title>Reverse Engineering Doubleclick Ad Statistics (Part 1)</title>
-      <link>https://agocs.org/blog/2013/05/07/reverse-engineering-doubleclick-ad-statistics-part-1/</link>
+      <link>https://agocs.org/2013/05/reverse-engineering-doubleclick-ad-statistics-part-1/</link>
       <pubDate>Tue, 07 May 2013 17:44:16 +0000</pubDate>
       
-      <guid>https://agocs.org/blog/2013/05/07/reverse-engineering-doubleclick-ad-statistics-part-1/</guid>
-      <description>&lt;p&gt;One of the projects I&amp;rsquo;m on seeks to proxy web beacons. Basically, I have a WSGI app that serves a 1x1 px gif, and then triggers a Celery app that goes out and actually &amp;ldquo;clicks&amp;rdquo; on the intended web beacon. During preliminary load testing with a Doubleclick beacon (actually a Doubleclick link counter), we discovered that requesting that beacon 1000 times in 5 minutes (one request ever &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; second) only reported around 30 &amp;ldquo;clicks.&amp;rdquo; We&amp;rsquo;ve been throwing tests at Doubleclick to see what it reports under different scenarios:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;1000 clicks evenly distributed over 5 minutes: 30 clicks&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;1000 clicks chunked into 50 groups of 20 (I misunderstood how JMeter works): 50 clicks&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;300 clicks over an hour (1 per 12 seconds): 300 clicks&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;500 clicks with spoofed User_agent strings (1 per 12 seconds): 500 clicks&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;So it appears that Doubleclick has a &amp;ldquo;cooldown&amp;rdquo; between clicks and doesn&amp;rsquo;t really care about the User_agent. How long is that cooldown? We know it&amp;rsquo;s greater than &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; second and less than 12 seconds.&lt;/p&gt;
-
-&lt;p&gt;Today, I&amp;rsquo;m running a test that looks like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Number of clicks&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Rate of clicks&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Delay between clicks&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Total time&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;10240&lt;/p&gt;
-
-&lt;p&gt;240 per minute&lt;/p&gt;
-
-&lt;p&gt;.25 seconds&lt;/p&gt;
-
-&lt;p&gt;2560 s (42.6m)&lt;/p&gt;
-
-&lt;p&gt;5120&lt;/p&gt;
-
-&lt;p&gt;120 per minute&lt;/p&gt;
-
-&lt;p&gt;.5 seconds&lt;/p&gt;
-
-&lt;p&gt;2560 s (42.6m)&lt;/p&gt;
-
-&lt;p&gt;2560&lt;/p&gt;
-
-&lt;p&gt;80 per minute&lt;/p&gt;
-
-&lt;p&gt;.75 seconds&lt;/p&gt;
-
-&lt;p&gt;1920 s (32m)&lt;/p&gt;
-
-&lt;p&gt;1280&lt;/p&gt;
-
-&lt;p&gt;40 per minute&lt;/p&gt;
-
-&lt;p&gt;1.5 seconds&lt;/p&gt;
-
-&lt;p&gt;1920 s (32m)****&lt;/p&gt;
-
-&lt;p&gt;640&lt;/p&gt;
-
-&lt;p&gt;20 per minute&lt;/p&gt;
-
-&lt;p&gt;3 seconds&lt;/p&gt;
-
-&lt;p&gt;1920 s (32m)&lt;/p&gt;
-
-&lt;p&gt;320&lt;/p&gt;
-
-&lt;p&gt;10 per minute&lt;/p&gt;
-
-&lt;p&gt;6 seconds&lt;/p&gt;
-
-&lt;p&gt;1920 s (32m)&lt;/p&gt;
-
-&lt;p&gt;By taking the total number of clicks recorded today (which I&amp;rsquo;ll know tomorrow), I&amp;rsquo;ll be able to start approximating the cooldown (for example, if I see 2240 and change clicks, I&amp;rsquo;ll know that the cooldown is between 1.5 and .75 seconds).&lt;/p&gt;
-
-&lt;p&gt;Will update later.&lt;/p&gt;
-</description>
+      <guid>https://agocs.org/2013/05/reverse-engineering-doubleclick-ad-statistics-part-1/</guid>
+      <description>One of the projects I&amp;rsquo;m on seeks to proxy web beacons. Basically, I have a WSGI app that serves a 1x1 px gif, and then triggers a Celery app that goes out and actually &amp;ldquo;clicks&amp;rdquo; on the intended web beacon. During preliminary load testing with a Doubleclick beacon (actually a Doubleclick link counter), we discovered that requesting that beacon 1000 times in 5 minutes (one request ever 1&amp;frasl;3 second) only reported around 30 &amp;ldquo;clicks.</description>
     </item>
     
   </channel>

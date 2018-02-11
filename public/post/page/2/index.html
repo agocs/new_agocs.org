@@ -1,603 +1,487 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Posts  &middot; My blog</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-<meta property="og:title" content="Posts" />
-<meta property="og:description" content="Programming and other interesting things" />
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+<link rel="author" href="http://plus.google.com/+Myprofile">
+
+
+<meta property="og:title" content="Posts  &middot; My blog ">
+<meta property="og:site_name" content="My blog"/>
+<meta property="og:url" content="/post/" />
+<meta property="og:locale" content="en">
+
+
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://agocs.org/post/" />
-
-
-<meta property="og:updated_time" content="2014-12-09T00:00:00&#43;00:00"/>
 
 
 
+<link href="/post/index.xml" rel="alternate" type="application/rss+xml" title="Posts" />
+
+<link rel="canonical" href="/post/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+<link rel="icon" href="/favicon.png">
+<meta name="generator" content="Hugo 0.36" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
 
 
 
+    <link rel="stylesheet" href="/css/bootswatch/paper/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/style.css">
+
+
+<link rel="stylesheet" href="/css/style_custom.css">
 
 
 
-
-<meta itemprop="name" content="Posts">
-<meta itemprop="description" content="Programming and other interesting things">
+  <link rel="stylesheet" href="/css/highlight/default.css">
 
 
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="/">
+            <img alt="My awsome blog" src="http://blog.appernetic.io/images/apperneticlogo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
 
+              <a href="https://appernetic.io/app/#/about" >
+                <i class='fa fa-road'></i>
+                About
+              </a>
+            </li>
+            
+            <li class="active">
 
+              <a href="/post/" >
+                
+                Blog
+              </a>
+            </li>
+            
+            <li class="">
 
-
-
-
-<meta name="generator" content="Hugo 0.18.1" />
-
-
-    <base href="https://agocs.org/">
-    <link rel="canonical" href="https://agocs.org/post/">
-    <title>Agocs.org</title>
-
-    <!-- CSS -->
-    <link href="https://agocs.org/css/app.css" rel="stylesheet">
-
-    
-      <!-- RSS 2.0 feed -->
-      <link href="https://agocs.org/post/index.xml" rel="alternate" type="application/rss+xml" title="Agocs.org" />
-      <link href="https://agocs.org/post/index.xml" rel="feed" type="application/rss+xml" title="Agocs.org" />
-    
-
-    
-
-    
-    
-
-
-  </head>
-  <body>
-
-    <header class="nav">
-      <div class="top-bar">
-        <div class="row column">
-          <div class="top-bar-left">
-            <ul class="menu">
-              <li><a href="https://agocs.org/">
-                  Agocs.org
-                </a></li>
-            </ul>
-          </div>
-          <div class="top-bar-right">
-            <ul class="menu">
-              <li class=""><a href="https://agocs.org/">
-                Home
-              </a></li>
+              <a href="https://appernetic.io/app/" >
+                
+                Dashboard
+              </a>
+            </li>
+            
+            
               
-                
-                  <li><a href="https://agocs.org/">
-                    Agocs.org
-                  </a></li>
-                
-                  <li><a href="https://agocs.org/categories/">
-                    Categories
-                  </a></li>
-                
-                  <li><a href="https://agocs.org/categories/golang/">
-                    Golang
-                  </a></li>
-                
-                  <li><a href="https://agocs.org/categories/hacking/">
-                    Hacking
-                  </a></li>
-                
-                  <li><a href="https://agocs.org/categories/jeep/">
-                    Jeep
-                  </a></li>
-                
-                  <li><a href="https://agocs.org/categories/kitchen/">
-                    Kitchen
-                  </a></li>
-                
-                  <li><a href="https://agocs.org/post/">
-                    Posts
-                  </a></li>
-                
-                  <li><a href="https://agocs.org/categories/programming/">
-                    Programming
-                  </a></li>
-                
-                  <li><a href="https://agocs.org/categories/rabbitmq/">
-                    Rabbitmq
-                  </a></li>
-                
-                  <li><a href="https://agocs.org/categories/talks/">
-                    Talks
-                  </a></li>
-                
-              
-            </ul>
-          </div>
+          </ul>
         </div>
+        
       </div>
-    </header>
-
-    <header class="blog-header">
-      <div class="callout large">
-        <div class="row column text-center">
-          <h1>
-            <a href="https://agocs.org/" rel="home">Agocs.org</a>
-          </h1>
-          
-            <p>
-              Programming and other interesting things
-            </p>
-          
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <div class="row" id="content">
-        <div class="medium-8 columns">
-          
+    </nav>
+  </header>
 
 
+<div id="main-content" class="container">
+  <header>
+    <h1>Posts
+</h1>
 
+  </header>
   
+    <div>
+  <h2><a href="/2015/03/01/2015-03-01-sun-visor-bracket/">Sun Visor Bracket</a>
+</h2>
 
-<div class="blog-post">
-  <h3>
-    <a href="https://agocs.org/blog/2014/12/09/message-queues-and-go/">Message Queues and Go</a>
-  </h3>
-  <div class="callout small">
+  <div class="margin-10">
     <small>
-      <time datetime="2014-12-09T00:00:00Z">
-        Tue 09 Dec, 2014
-      </time> by Chris Agocs.
-      Categories: 
-  
-    
-      <a href="/categories/golang">
-        Golang
-      </a>
-  
-    /
-    
-      <a href="/categories/rabbitmq">
-        RabbitMQ
-      </a>
-  
-    /
-    
-      <a href="/categories/talks">
-        talks
-      </a>
-  
+  <i class="fa fa-calendar"></i>
+  <time datetime="2015-03-01">1 Mar, 2015</time>
+</small>
 
-.
-      
-    </small>
+    
+
   </div>
-  <p>
-    <p>I gave a talk last night to the ChicaGoLang meetup entitled &ldquo;Message Queues and Go.&rdquo; It went over using a Message Queue Broker as a backbone to tie together a service oriented archetecture, with examples in Go.</p>
-
-<p>I put my slides here:</p>
-
-<p><a href="http://go-talks.appspot.com/github.com/agocs/golangRabbitMQ/rmq.slide#1">http://go-talks.appspot.com/github.com/agocs/golangRabbitMQ/rmq.slide#1</a></p>
-
-<p>and you can follow along with the video here:</p>
-
-<iframe width="854" height="510" src="//www.youtube.com/embed/-S0-qgl8120?list=UUoGyPn-NIuAgkhlN7NAMhqw" frameborder="0" allowfullscreen></iframe>
-
-<p>The examples in the code will, unfortunately, not work because they rely on RabbitMQ running on a specific IP address / port.</p>
-
-<p>Let me know if there&rsquo;s anything I got wrong or missed!</p>
-
-<p></p>
-  </p>
-  <a href='https://agocs.org/blog/2014/12/09/message-queues-and-go/'>Read more →</a>
-  <hr>
 </div>
 
 
   
+    <div>
+  <h2><a href="/2014/12/09/2014-12-09-message-queues-and-go/">Message Queues and Go</a>
+</h2>
 
-<div class="blog-post">
-  <h3>
-    <a href="https://agocs.org/blog/2014/11/29/jeep-quest-part-4/">Jeep Quest Part 4</a>
-  </h3>
-  <div class="callout small">
+  <div class="margin-10">
     <small>
-      <time datetime="2014-11-29T00:00:00Z">
-        Sat 29 Nov, 2014
-      </time> by Chris Agocs.
-      Categories: 
-  
+  <i class="fa fa-calendar"></i>
+  <time datetime="2014-12-09">9 Dec, 2014</time>
+</small>
+
     
-      <a href="/categories/jeep">
-        Jeep
-      </a>
-  
 
-.
-      
-    </small>
   </div>
-  <p>
-    <p>Jeepquest is at an end!</p>
-
-<p>Thank you all so much for bearing with my inconsistently numbered posts.</p>
-
-<p><a href="http://agocs.smugmug.com/Other/Jeepquest/i-2kq7TjG/A" title="Photo & Video Sharing by SmugMug"><img src="http://agocs.smugmug.com/Other/Jeepquest/i-2kq7TjG/0/L/20141129_133006-L.jpg" title="Photo & Video Sharing by SmugMug" alt="Photo & Video Sharing by SmugMug"></a></p>
-
-<p>Today, Sabrina and I drove up to Kenosha, WI to take a look at this 2002 Wrangler X. First, we had breakfast at a place called The Coffee Pot, where the only not-so-great thing was their coffee. Afterwards, we went to Dan Stipler&rsquo;s Auto World.</p>
-
-<p></p>
-  </p>
-  <a href='https://agocs.org/blog/2014/11/29/jeep-quest-part-4/'>Read more →</a>
-  <hr>
 </div>
 
 
   
+    <div>
+  <h2><a href="/2014/11/29/2014-11-29-jeep-quest-part-4/">Jeep Quest Part 4</a>
+</h2>
 
-<div class="blog-post">
-  <h3>
-    <a href="https://agocs.org/blog/2014/11/25/cincinnati-chili/">Cincinnati Chili</a>
-  </h3>
-  <div class="callout small">
+  <div class="margin-10">
     <small>
-      <time datetime="2014-11-25T00:00:00Z">
-        Tue 25 Nov, 2014
-      </time> by Chris Agocs.
-      Categories: 
-  
+  <i class="fa fa-calendar"></i>
+  <time datetime="2014-11-29">29 Nov, 2014</time>
+</small>
+
     
-      <a href="/categories/kitchen">
-        Kitchen
-      </a>
-  
 
-.
-      
-    </small>
   </div>
-  <p>
-    <p>One of my favorite foods to make is Cincinnati Chili.</p>
-
-<p><a href="http://agocs.smugmug.com/Other/Misc/i-FqqCCFQ/A" title="Photo & Video Sharing by SmugMug"><img src="http://agocs.smugmug.com/Other/Misc/i-FqqCCFQ/0/M/20141021214234-M.jpg" title="Photo & Video Sharing by SmugMug" alt="Photo & Video Sharing by SmugMug"></a></p>
-
-<p></p>
-  </p>
-  <a href='https://agocs.org/blog/2014/11/25/cincinnati-chili/'>Read more →</a>
-  <hr>
 </div>
 
 
   
+    <div>
+  <h2><a href="/2014/11/25/2014-11-25-cincinnati-chili/">Cincinnati Chili</a>
+</h2>
 
-<div class="blog-post">
-  <h3>
-    <a href="https://agocs.org/blog/2014/11/18/jeep-quest-part-3/">Jeep Quest part 3</a>
-  </h3>
-  <div class="callout small">
+  <div class="margin-10">
     <small>
-      <time datetime="2014-11-18T00:00:00Z">
-        Tue 18 Nov, 2014
-      </time> by Chris Agocs.
-      Categories: 
-  
+  <i class="fa fa-calendar"></i>
+  <time datetime="2014-11-25">25 Nov, 2014</time>
+</small>
+
     
-      <a href="/categories/jeep">
-        Jeep
-      </a>
-  
 
-.
-      
-    </small>
   </div>
-  <p>
-    <p>I took a vacation day today and saw another Jeep!</p>
-
-<p><a href="http://agocs.smugmug.com/Other/Jeepquest/i-GM5XjVz/A" title="Photo & Video Sharing by SmugMug"><img src="http://agocs.smugmug.com/Other/Jeepquest/i-GM5XjVz/0/M/20141118121516-M.jpg" title="Photo & Video Sharing by SmugMug" alt="Photo & Video Sharing by SmugMug"></a></p>
-
-<p>It was in a (blessedly indoor) used car lot way up on Pulaski and Addison. It took me, no joke, three busses and an hour and a half to get there. I walked past the place once, walked past it in the other direction, and then went into the wrong business where they were helpful enough to give me directions (turn right and go two doors down).</p>
-
-<p></p>
-  </p>
-  <a href='https://agocs.org/blog/2014/11/18/jeep-quest-part-3/'>Read more →</a>
-  <hr>
 </div>
 
 
   
+    <div>
+  <h2><a href="/2014/11/18/2014-11-18-jeep-quest-part-3/">Jeep Quest part 3</a>
+</h2>
 
-<div class="blog-post">
-  <h3>
-    <a href="https://agocs.org/blog/2014/11/16/jeep-quest-part-ii/">Jeep Quest part II</a>
-  </h3>
-  <div class="callout small">
+  <div class="margin-10">
     <small>
-      <time datetime="2014-11-16T00:00:00Z">
-        Sun 16 Nov, 2014
-      </time> by Chris Agocs.
-      Categories: 
-  
+  <i class="fa fa-calendar"></i>
+  <time datetime="2014-11-18">18 Nov, 2014</time>
+</small>
+
     
-      <a href="/categories/jeep">
-        Jeep
-      </a>
-  
 
-.
-      
-    </small>
   </div>
-  <p>
-    <p>We saw a Jeep today! The first we&rsquo;ve seen as part of Jeep Quest. It was a 2000 Wrangler with 167,000 miles, owned by an older Russian man who was asking $6,500.</p>
-
-<p><a href="http://agocs.smugmug.com/Other/Misc/i-JHrhXJ7/A" title="Photo & Video Sharing by SmugMug"><img src="http://agocs.smugmug.com/Other/Misc/i-JHrhXJ7/0/L/20141116122017-L.jpg" title="Photo & Video Sharing by SmugMug" alt="Photo & Video Sharing by SmugMug"></a></p>
-
-<p>The guy said it had a five inch lift of unknown origin, and that his son was going to take the hard top off and put a soft top on. He&rsquo;d just replaced the cooling system and catalytic converter. There was some wacky bumper on the front. The body was in great condition, and there was very little rust on the frame. The interior was okay &ndash; the son had fitted some ridiculous CD player with DVD nonsense, and there were a few stray wires poking out from under the dash. We took it on a test drive around the block. Sabrina commented that she had forgotten how bouncy Jeeps were, but she liked it overall.</p>
-
-<p></p>
-  </p>
-  <a href='https://agocs.org/blog/2014/11/16/jeep-quest-part-ii/'>Read more →</a>
-  <hr>
 </div>
 
 
   
+    <div>
+  <h2><a href="/2014/11/16/2014-11-16-jeep-quest-part-ii/">Jeep Quest part II</a>
+</h2>
 
-<div class="blog-post">
-  <h3>
-    <a href="https://agocs.org/blog/2014/11/16/jeep-quest-part-1/">Jeep-Quest Part 1</a>
-  </h3>
-  <div class="callout small">
+  <div class="margin-10">
     <small>
-      <time datetime="2014-11-16T00:00:00Z">
-        Sun 16 Nov, 2014
-      </time> by Chris Agocs.
-      Categories: 
-  
+  <i class="fa fa-calendar"></i>
+  <time datetime="2014-11-16">16 Nov, 2014</time>
+</small>
+
     
-      <a href="/categories/jeep">
-        Jeep
-      </a>
-  
 
-.
-      
-    </small>
   </div>
-  <p>
-    <p>When Sabrina and I moved to Chicago a year and a half ago, we sold both our cars. I&rsquo;m not saying that was a mistake, but I have to spend an hour each way on public transit for both hackerspaces and the radio station, and the grocery delivery people always manage to surprise you. We decided we wanted a reliable vehicle to see us through the next few years here in the Second City. I, being me, want something fun and a little ridiculous. I managed to talk Sabrina into a TJ Wrangler.</p>
-
-<p></p>
-  </p>
-  <a href='https://agocs.org/blog/2014/11/16/jeep-quest-part-1/'>Read more →</a>
-  <hr>
 </div>
 
 
   
+    <div>
+  <h2><a href="/2014/11/16/2014-11-16-jeep-quest-part-1/">Jeep-Quest Part 1</a>
+</h2>
 
-<div class="blog-post">
-  <h3>
-    <a href="https://agocs.org/blog/2014/09/23/pictures-of-my-blog/">Pictures of my Blog</a>
-  </h3>
-  <div class="callout small">
+  <div class="margin-10">
     <small>
-      <time datetime="2014-09-23T10:34:20-05:00">
-        Tue 23 Sep, 2014
-      </time> by Chris Agocs.
-      
-      
-    </small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2014-11-16">16 Nov, 2014</time>
+</small>
+
+    
+
   </div>
-  <p>
-    <p><a href="http://agocs.smugmug.com/Other/Misc/i-CMhRqgS/A" title="Photo & Video Sharing by SmugMug"><img src="http://agocs.smugmug.com/Other/Misc/i-CMhRqgS/0/L/Screenshot_2014-09-23-10-33-13-L.png" title="Photo & Video Sharing by SmugMug" alt="Photo & Video Sharing by SmugMug"></a></p>
-
-<p>&ldquo;Tell McHugh that I will tweet pictures of my blog as often as I want.&rdquo;</p>
-
-<p></p>
-  </p>
-  <a href='https://agocs.org/blog/2014/09/23/pictures-of-my-blog/'>Read more →</a>
-  <hr>
 </div>
 
 
   
+    <div>
+  <h2><a href="/2014/09/23/2014-09-23-pictures-of-my-blog/">Pictures of my Blog</a>
+</h2>
 
-<div class="blog-post">
-  <h3>
-    <a href="https://agocs.org/blog/2014/09/22/surge-soup/">Surge Soup</a>
-  </h3>
-  <div class="callout small">
+  <div class="margin-10">
     <small>
-      <time datetime="2014-09-22T15:56:58-05:00">
-        Mon 22 Sep, 2014
-      </time> by Chris Agocs.
-      
-      
-    </small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2014-09-23">23 Sep, 2014</time>
+</small>
+
+    
+
   </div>
-  <p>
-    <p>At Backstop, we name releases after soups. In order for something to be considered a soup, you must be able to find a picture of it in a bowl on the Internet. According, therefore,  to the rules at <a href="https://www.backstopsolutions.com/careers">Backstop Solutions Group</a>, this constitutes An Ice Cold Glass of Surge soup:</p>
-
-<p><a href="http://agocs.smugmug.com/Other/Misc/i-FSSp2mP/A" title="Photo & Video Sharing by SmugMug"><img src="http://agocs.smugmug.com/Other/Misc/i-FSSp2mP/0/L/20140922155242-L.jpg" title="Photo & Video Sharing by SmugMug" alt="Photo & Video Sharing by SmugMug"></a></p>
-
-<p>If you like this and other kookyness, you should work at Backstop!</p>
-
-<p></p>
-  </p>
-  <a href='https://agocs.org/blog/2014/09/22/surge-soup/'>Read more →</a>
-  <hr>
 </div>
 
 
   
+    <div>
+  <h2><a href="/2014/09/22/2014-09-22-surge-soup/">Surge Soup</a>
+</h2>
 
-<div class="blog-post">
-  <h3>
-    <a href="https://agocs.org/blog/2014/09/19/agox-connectors/">AGOX Connectors</a>
-  </h3>
-  <div class="callout small">
+  <div class="margin-10">
     <small>
-      <time datetime="2014-09-19T10:23:41-05:00">
-        Fri 19 Sep, 2014
-      </time> by Chris Agocs.
-      Categories: 
-  
+  <i class="fa fa-calendar"></i>
+  <time datetime="2014-09-22">22 Sep, 2014</time>
+</small>
+
     
-      <a href="/categories/hacking">
-        hacking
-      </a>
-  
 
-.
-      
-    </small>
   </div>
-  <p>
-    <p>###Or, how we hacked reality</p>
-
-<p>This is an eight-pin AGOX connector:</p>
-
-<p><img src="http://i.imgur.com/NHrH5hOl.jpg"></p>
-
-<p></p>
-  </p>
-  <a href='https://agocs.org/blog/2014/09/19/agox-connectors/'>Read more →</a>
-  <hr>
 </div>
 
 
   
+    <div>
+  <h2><a href="/2014/09/19/2014-09-19-agox-connectors/">AGOX Connectors</a>
+</h2>
 
-<div class="blog-post">
-  <h3>
-    <a href="https://agocs.org/blog/2014/09/15/telescope-update/">Telescope Update</a>
-  </h3>
-  <div class="callout small">
+  <div class="margin-10">
     <small>
-      <time datetime="2014-09-15T07:53:44-05:00">
-        Mon 15 Sep, 2014
-      </time> by Chris Agocs.
-      
-      
-    </small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2014-09-19">19 Sep, 2014</time>
+</small>
+
+    
+
   </div>
-  <p>
-    <p>I went to the <a href="http://sshchicago.org">Southside Hackerspace</a> this weekend to do some work on the telescope project. No major developments, but the following is worth pointing out:</p>
-
-<p>###Driving a wood screw through Teflon is <strong>hard</strong>.</p>
-
-<p></p>
-  </p>
-  <a href='https://agocs.org/blog/2014/09/15/telescope-update/'>Read more →</a>
-  <hr>
 </div>
 
 
-
-
-  <div>
-    
-      <a class="button" href="/post/">Previous page</a>
-      <a class="button" href="/post/page/3/">Next page</a>
-    
-    
-    
-    <hr>
-  </div>
-
-
-
-        </div>
-          <div class="medium-3 columns" data-sticky-container>
-  <div class="sticky" data-sticky data-anchor="content">
-
   
-    <h4>About</h4>
-    <p>I&rsquo;m a helluva engineer and a software engineer living in Chicago now.</p>
   
+<nav>
+  <ul class="pagination">
+    
 
-  
 
-  <h4>Recent Posts</h4>
-  <ul>
-    
-      <li><a href="/blog/2017/04/24/rubens-tube-part-1/">
-        Rubens&rsquo; Tube Part 1
-      </a></li>
-    
-      <li><a href="/blog/2016/10/25/end-grain-cutting-board/">
-        End Grain Cutting Board
-      </a></li>
-    
-      <li><a href="/blog/2016/09/14/golang-philly-talk/">
-        Golang Philly talk
-      </a></li>
-    
-      <li><a href="/blog/2016/02/16/top-ten-home-thorium-core-reactor-tips/">
-        Top Ten Home Thorium Core Reactor Tips
-      </a></li>
-    
-      <li><a href="/blog/2016/01/10/jeep-box/">
-        Jeep Box
-      </a></li>
-    
+<li >
+  <a aria-label="First" href="//post/">
+    <span aria-hidden="true">&laquo;&laquo;</span>
+  </a>
+</li>
+
+<li >
+  <a aria-label="Previous" href="//post/">
+    <span aria-hidden="true">&laquo;</span>
+    </a>
+</li>
+
+<li >
+  <a href="//post/">
+    1
+    </a>
+</li>
+
+<li  class="active" >
+  <a href="//post/page/2/">
+    2
+    </a>
+</li>
+
+<li >
+  <a href="//post/page/3/">
+    3
+    </a>
+</li>
+
+<li >
+  <a href="//post/page/4/">
+    4
+    </a>
+</li>
+
+<li >
+  <a href="//post/page/5/">
+    5
+    </a>
+</li>
+
+
+<li >
+  <a aria-label="Next" href="//post/page/3/">
+    <span aria-hidden="true">&raquo;</span>
+    </a>
+</li>
+<li >
+  <a aria-label="Last" href="//post/page/5/">
+    <span aria-hidden="true">&raquo;&raquo;</span>
+  </a>
+</li>
+
+
   </ul>
+</nav>
 
-  
-    <h4>Links</h4>
-    <ul>
-      
-        <li><a href="https://github.com/agocs">
-          Github
-        </a></li>
-      
-        <li><a href="https://mastodon.social/@agocs">
-          Mastodon
-        </a></li>
-      
-        <li><a href="https://agocs.org/resume.pdf">
-          My résumé
-        </a></li>
-      
-        <li><a href="https://twitter.com/agoX">
-          Twitter
-        </a></li>
-      
-    </ul>
-  
 
-  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+<a href="/disclaimer/">Disclaimer</a> <i>&middot;</i>
+
+<a href="/terms/">Terms</a> 
+
 </div>
 
-      </div>
-    </main>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i>
 
-    <footer class="blog-footer">
-      <div class="row column">
-        <p>
-          
-          Blog template created by <a href="hhttps://github.com/zurb">@zurb</a>, ported to Hugo by <a href='https://github.com/htko89'>github.com/htko89</a>.
-          
-        </p>
-        <p>
-          <a href="https://agocs.org/post/#">Back to top</a>
-        </p>
-      </div>
-    </footer>
+</small>
+</div>
 
-  <foot>
 
-    <script src="https://agocs.org/js/app.js"></script>
+    
+<div class="container copyright">
+    <small>
+  &copy; 2016 Copyright my blog
 
-  </foot>
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+
+<script src="/js/angular.min.js"></script>
+<script src="/js/popover/angular-storage.min.js"></script>
+
+<script src="/js/highlight.pack.js"></script>
+<script src="/js/site.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  true , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "//placehold.it/1000x600",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE = ""; 
+</script>
+
+
+
+<script src="/js/popover/angular-modal-service.min.js"></script>
+<script src="/js/angular-ismobile.min.js"></script>
+<script src="/js/popover/popover.min.js"></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+
   </body>
 </html>
+

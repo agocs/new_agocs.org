@@ -2,18 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golang on Agocs.org</title>
-    <link>https://agocs.org/categories/golang/index.xml</link>
+    <link>https://agocs.org/categories/golang/</link>
     <description>Recent content in Golang on Agocs.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://agocs.org/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Dec 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://agocs.org/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Message Queues and Go</title>
-      <link>https://agocs.org/blog/2014/12/09/message-queues-and-go/</link>
+      <link>https://agocs.org/2014/12/message-queues-and-go/</link>
       <pubDate>Tue, 09 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://agocs.org/blog/2014/12/09/message-queues-and-go/</guid>
+      <guid>https://agocs.org/2014/12/message-queues-and-go/</guid>
       <description>&lt;p&gt;I gave a talk last night to the ChicaGoLang meetup entitled &amp;ldquo;Message Queues and Go.&amp;rdquo; It went over using a Message Queue Broker as a backbone to tie together a service oriented archetecture, with examples in Go.&lt;/p&gt;
 
 &lt;p&gt;I put my slides here:&lt;/p&gt;
@@ -33,308 +36,25 @@
     
     <item>
       <title>Tips for using RabbitMQ in Go</title>
-      <link>https://agocs.org/blog/2014/08/19/tips-for-using-rabbitmq-in-go/</link>
+      <link>https://agocs.org/2014/08/tips-for-using-rabbitmq-in-go/</link>
       <pubDate>Tue, 19 Aug 2014 12:57:26 -0500</pubDate>
       
-      <guid>https://agocs.org/blog/2014/08/19/tips-for-using-rabbitmq-in-go/</guid>
-      <description>
-
-&lt;p&gt;###Corrections:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;4% != .004% : When I was writing the article, my brain translated 99996 into 96000. Big difference. It turns out that I&amp;rsquo;m unable to dequeue somewhere between .004% and .20% of messages in about half of test runs.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;###Note:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I&amp;rsquo;ve been chatting with some very helpful RabbitMQ-knowledgeable people, and they have some suggestions for the issues I&amp;rsquo;m seeing that I&amp;rsquo;m going to check out. I will update this article with my findings.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;I want to thank &lt;a href=&#34;https://twitter.com/old_sound&#34;&gt;Alvaro Videla&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/michaelklishin&#34;&gt;Michael Klishin&lt;/a&gt; for reading my first attempt at this post and suggesting different avenues to explore.&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;For the two of you who don&amp;rsquo;t know, RabbitMQ is a really neat AMQP-compliant queue broker. It exists to facilitate the passing of messages between or within systems. I&amp;rsquo;ve used it for a couple of different projects, and I&amp;rsquo;ve found it to be tremendously capable: I&amp;rsquo;ve seen a RabbitMQ instance running on a single, moderately sized, VM handle almost 3GB/s.&lt;/p&gt;
-
-&lt;p&gt;I was doing some load testing with RabbitMQ recently, and I found that, if I started attempting to publish more than around 2500 10KB messages per second, &lt;del&gt;about 4%&lt;/del&gt; as much as 0.2% of those messages wouldn&amp;rsquo;t make it to the queue during some test runs. I am not sure if this is my code&amp;rsquo;s fault or if I am running into the limits of the RabbitMQ instance I was testing against (probably the former), but with the help of the RabbitMQ community, I was able to come up with some best practices that I&amp;rsquo;ve described below.&lt;/p&gt;
-
-&lt;p&gt;The examples below are all in Go, but I&amp;rsquo;ve tried my best to explain them in such a way that people who are not familiar with Go can understand them.&lt;/p&gt;
-
-&lt;h2 id=&#34;terminology&#34;&gt;Terminology&lt;/h2&gt;
-
-&lt;p&gt;If you&amp;rsquo;re unfamiliar with AMQP, here&amp;rsquo;s some terminology to help understand what&amp;rsquo;s possible with a queue broker and what the words mean.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Connection&lt;/strong&gt;: A connection is a long-lived TCP connection between an AMQP client and a queue broker. Maintaining a connection reduces TCP overhead. A client can re-use a connection, and can share a connection among threads.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Channel&lt;/strong&gt;: A channel is a short-lived sub-connection between a client and a broker. The client can create and dispose of channels without incurring a lot of overhead.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Exchange&lt;/strong&gt;: A client writes messages to an exchange. The exchange forwards each message on to zero or more queues based on the message&amp;rsquo;s routing key.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Queue&lt;/strong&gt;: A queue is a first-in, first out holder of messages. A client reads messages from a queue. The client can specify a queue name (useful, for example, for a work queue where multiple clients are consuming from the same queue), or allow the queue broker to assign it a queue name (useful if you want to distribute copies of a message to multiple clients).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Routing Key&lt;/strong&gt;: A string (optionally) attached to each message. Depending on the exchange type, the exchange may or may not use the Routing Key to determine the queues to which it should publish the message.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Exchange types&lt;/strong&gt;:
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Direct&lt;/strong&gt;: Delivers all messages with the same routing key to the same queue(s).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Fanout&lt;/strong&gt;: Ignores the routing key, delivers a copy of the message to each queue bound to it.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Topic&lt;/strong&gt;: Each queue subscribes to a topic, which is a regular expression. The exchange delivers the message to a queue if the queue&amp;rsquo;s subscribed topic matches the message.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Header&lt;/strong&gt;: Ignores the routing key and delivers the message based on the AMQP header. Useful for certain kinds of messages.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;testing-methodology&#34;&gt;Testing methodology&lt;/h2&gt;
-
-&lt;p&gt;Here is the load tester I wrote: &lt;a href=&#34;https://github.com/backstop/rabbit-mq-stress-tester&#34;&gt;https://github.com/backstop/rabbit-mq-stress-tester&lt;/a&gt;. It uses the &lt;a href=&#34;https://github.com/streadway/amqp&#34;&gt;streadway/amqp library&lt;/a&gt;. Per &lt;a href=&#34;https://github.com/streadway/amqp/issues/93&#34;&gt;this issue&lt;/a&gt;, my stress tester does not share connections or channels between Goroutines &amp;ndash; it launches a configurably-sized pool of Goroutines, each of which maintains its own connection to the RabbitMQ server.&lt;/p&gt;
-
-&lt;p&gt;To run the same tests I was running:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Clone the repo or install using &lt;code&gt;go get github.com/backstop/rabbit-mq-stress-tester&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Open two terminal windows. In one, run&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;./tester -s test-rmq-server -c 100000
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;That will launch the in Consumer mode. It defaults to 50 Goroutines, and will consume 100,000 messages before quitting.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;In the other terminal window, run&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;./tester -s test-rmq-server -p 100000 -b 10000 -n 100 -q
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This will run the tester in Producer mode. It will (-p)roduce 100,000 messages of 10,000 (-b)ytes each. It will launch a pool of 100 Goroutines (-n), and it will work in (-q)uiet mode, only printing NACKs and final statistics to stdout.&lt;/p&gt;
-
-&lt;p&gt;What I found is that, roughly half the time I run the above steps, the consumer will only consume 99,000 and change messages (typically greater than 99,980, but occasionally as low as 99,800). I was unable to find any descriptive error messages in the &lt;code&gt;rabbitmq@test-rmq-server.log&lt;/code&gt; file.&lt;/p&gt;
-
-&lt;p&gt;I can change that, though. If I run the producer like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    ./tester -s test-rmq-server -p 100000 -b 10000 -n 100 -q -a
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;then each Goroutine waits for an ACK or NACK from the RabbitMQ server before publishing the next message (that&amp;rsquo;s what the -a flag does). I have never seen a missing message in this mode. The functionality of the -a flag is described in the next section.&lt;/p&gt;
-
-&lt;p&gt;###Some things that I don&amp;rsquo;t think are the culprit:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Memory-based flow control: Memory usage as reported by &lt;code&gt;top&lt;/code&gt; never exceeds approximately 22%. Also, no messages in the log file.&lt;/li&gt;
-&lt;li&gt;Per-connection flow control: After fussing with &lt;code&gt;rabbitmqctl list_connections&lt;/code&gt; for a while, I was not able to find evidence of a connection that had been blocked. I&amp;rsquo;m not sure of these results, though, so if someone would be willing to give me a hand with this, that would be awesome.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;ensuring-your-message-got-published&#34;&gt;Ensuring your message got published&lt;/h2&gt;
-
-&lt;p&gt;Like I said earlier, I was doing some stress testing against a RabbitMQ instance and a small number of messages that I attempted to publish did not get dequeued. I reached out to the RabbitMQ community, and someone on their IRC channel told me to look up Confirm Select.&lt;/p&gt;
-
-&lt;p&gt;When you place a channel into Confirm Select, the AMQP broker will respond with an ACK with a for each message passed to it on that channel. Included with the ACK is an integer that increments with each ACK, similar to a TCP sequence ID. If something goes wrong, the broker will respond with a NACK. In Go, placing a channel into Confirm Select looks like this:&lt;/p&gt;
-
-&lt;p&gt;``` go Putting a channel in Confirm Select
-    channel, err := connection.Channel()
-    if err != nil {
-        println(err.Error())
-        panic(err.Error())
-    }
-    channel.Confirm(false)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ack, nack := channel.NotifyConfirm(make(chan uint64, 1), make(chan uint64, 1))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;
-The above `channel.Confirm(false)` puts the channel into Confirm mode, and the `false` puts the client out of NoWait mode such that the client waits for an ACK or NACK after each message. `ack` and `nack` are golang `chan`s that receive the integers included with the ACKs or NACKs. If you were in NoWait mode, you could use them to bulk publish a bunch of messages and then figure out which messages did not make it.
-
-Listening for the ACK looks like this:
-
-``` go Publish a message and wait for confirmation
-		channel.Publish(&amp;quot;&amp;quot;, q.Name, true, false, amqp.Publishing{
-			Headers:         amqp.Table{},
-			ContentType:     &amp;quot;text/plain&amp;quot;,
-			ContentEncoding: &amp;quot;UTF-8&amp;quot;,
-			Body:            messageJson,
-			DeliveryMode:    amqp.Transient,
-			Priority:        0,
-		},
-		)
-
-		select {
-		case tag := &amp;lt;-ack:
-			log.Println(&amp;quot;Acked &amp;quot;, tag)
-		case tag := &amp;lt;-nack:
-			log.Println(&amp;quot;Nack alert! &amp;quot;, tag)
-		}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;After each publish, I&amp;rsquo;m performing a read off of the &lt;code&gt;ack&lt;/code&gt; and &lt;code&gt;nack&lt;/code&gt; chans (that is what &lt;code&gt;select&lt;/code&gt; does). That read blocks until the client gets an ACK or NACK back from the broker.&lt;/p&gt;
-
-&lt;p&gt;The above examples are in Go, but there&amp;rsquo;s an equivalent in the other libraries I&amp;rsquo;ve played with. Clojure (langohr) has &lt;code&gt;confirm/select&lt;/code&gt; and &lt;code&gt;confirm/wait-for-confirms-or-die&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;can-we-do-better&#34;&gt;Can we do better?&lt;/h3&gt;
-
-&lt;p&gt;Yes. Rather than wait for an ACK after each publish, it&amp;rsquo;s better to publish a bunch of messages, listen for ACKs, and then handle failures. I didn&amp;rsquo;t, because I was already seeing performance several orders of magnitude better than I needed.&lt;/p&gt;
-
-&lt;p&gt;We can also wrap blocks of messages in a transaction if we need to ensure that all messages get published and retain order, but doing that incurs something like a 250x performance penalty.&lt;/p&gt;
-
-&lt;h2 id=&#34;pool-your-goroutines-and-avoid-race-conditions&#34;&gt;Pool your Goroutines and avoid race conditions&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/streadway/amqp/issues/93&#34;&gt;This issue&lt;/a&gt; proved interesting (if ultimately not relevant to my problem). It looks like the person who filed the issue was running into two issues:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;There was a race condition in the code that counted ACKs / NACKs&lt;/li&gt;
-&lt;li&gt;The one-Goroutine-per-publish strategy causes a condition where the 2000 goroutines waiting for network IO prevent the goroutine listening for ACKs / NACKs from receiving sufficient CPU cycles.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I got around this in two ways: I have a fixed-size pool of Goroutines performing the publishing, and each goroutine handles its own Publish -&amp;gt; Ack lifecycle.&lt;/p&gt;
-
-&lt;h2 id=&#34;ensuring-messages-get-handled-correctly&#34;&gt;Ensuring messages get handled correctly&lt;/h2&gt;
-
-&lt;p&gt;A message queue is of little use if messages just sit there, so it is prudent to include a consumer or two. But, what happens if your consumer crashes? Does your message get lost in the ether?&lt;/p&gt;
-
-&lt;p&gt;The answer is &lt;strong&gt;AutoAck&lt;/strong&gt;. More specifically, realizing that AutoAck is dangerous and wrong.&lt;/p&gt;
-
-&lt;p&gt;When a consumer consumes a message from a queue, the queue broker waits for an ACK before discarding the message. When a consumer has AutoAck enabled, it sends the ACK (thus causing the message to be discarded) instantly upon receiving the message. It&amp;rsquo;s smarter to read the next message on the queue, handle the message properly, and then send the ACK.&lt;/p&gt;
-
-&lt;p&gt;```go Reading and acknowledging messages
-    autoAck := false&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;msgs, err := channel.Consume(q.Name, &amp;quot;&amp;quot;, autoAck, false, false, false, nil)
-if err != nil {
-    panic(err)
-}
-
-for d := range msgs { // the d stands for Delivery
-    log.Printf(string(d.Body[:])) // or whatever you want to do with the message
-    d.Ack(false)
-} 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;```&lt;/p&gt;
-
-&lt;p&gt;In the example above, &lt;code&gt;autoAck&lt;/code&gt; is set to false. Every time I read a message (in the &lt;code&gt;for d := range msgs&lt;/code&gt; loop), I send an ACK for that message. If I were to call &lt;code&gt;d.Ack(true)&lt;/code&gt;, that would send an ACK for that message and all previous unacknowledged messages.&lt;/p&gt;
-
-&lt;p&gt;If my consumer quits without acknowledging a message, that message is repeated to the next consumer to come by.&lt;/p&gt;
-
-&lt;h2 id=&#34;performant-results&#34;&gt;Performant results&lt;/h2&gt;
-
-&lt;p&gt;So, what kind of performance am I getting?&lt;/p&gt;
-
-&lt;p&gt;The following numbers are all time to publish and consume 100,000 messages, each with a 10KB payload. The tester was running on my Macbook, and RabbitMQ was running on a Cloudstack VM.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;With Confirm Select
-
-&lt;ul&gt;
-&lt;li&gt;Publishing: 24.42s&lt;/li&gt;
-&lt;li&gt;Consuming: 26.79s&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Without Confirm Select
-
-&lt;ul&gt;
-&lt;li&gt;Publishing: 16.32s&lt;/li&gt;
-&lt;li&gt;Consuming: 26.13s&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The point is, RabbitMQ is fast and Go is fast. When we use one to stress test the other, messages get lost somewhere. If we take a little bit of time to ensure that messages get published and processed properly, we can prevent pesky data loss issues.&lt;/p&gt;
-</description>
+      <guid>https://agocs.org/2014/08/tips-for-using-rabbitmq-in-go/</guid>
+      <description>###Corrections:
+ 4% != .004% : When I was writing the article, my brain translated 99996 into 96000. Big difference. It turns out that I&amp;rsquo;m unable to dequeue somewhere between .004% and .20% of messages in about half of test runs.  ###Note:
+I&amp;rsquo;ve been chatting with some very helpful RabbitMQ-knowledgeable people, and they have some suggestions for the issues I&amp;rsquo;m seeing that I&amp;rsquo;m going to check out. I will update this article with my findings.</description>
     </item>
     
     <item>
       <title>Intro to Golang</title>
-      <link>https://agocs.org/blog/2014/03/16/intro-to-golang/</link>
+      <link>https://agocs.org/2014/03/intro-to-golang/</link>
       <pubDate>Sun, 16 Mar 2014 15:15:39 -0500</pubDate>
       
-      <guid>https://agocs.org/blog/2014/03/16/intro-to-golang/</guid>
-      <description>&lt;p&gt;Hey everybody, check out this intro to the Go programming language I put together for a talk at Backstop the other week!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://go-talks.appspot.com/github.com/agocs/GolangIntro/golangIntro.slide#1&#34;&gt;Golang Slides&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I tried to keep the slides content-light, since I find that having too many things on the screen distracts from what I&amp;rsquo;m saying. I&amp;rsquo;ll recapitulate my notes below.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Title slide. Blah blah blah.&lt;/li&gt;
-
-&lt;li&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Around since 2009&lt;/strong&gt;
-Go started as a research project at Google in 2007. It was released as an open source project in 2009, and Go 1.0 dropped in March of 2012. It&amp;rsquo;s a real-live language!&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Static Typing&lt;/strong&gt;
-Kinda &amp;ndash;&amp;gt; Go uses Type Inference, but variables are statically typed once the type has been inferred. This is a reaction to the popularity of languages like JavaScript and Python, and gets away from the &amp;ldquo;cumbersome type systems&amp;rdquo; used in the C family and Java.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Object Oriented&lt;/strong&gt;
-Kinda &amp;ndash;&amp;gt; Go is object oriented, but it doesn&amp;rsquo;t have classes. I&amp;rsquo;ll get into this later.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Garbage Collected&lt;/strong&gt;
-Yes.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;What is it good at? Some of the notable features are quick compile times (which it achieves through clean dependency analysis and no wasted imports or declarations), creation of statically linked binaries, and concurrency, which I dive into later.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Why Go?&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Systems Programming&lt;/strong&gt; Go represents a next big step in systems programming. Systems programming is the creation of OSes, utilities, drivers, and so-forth. It has to be fast, resource-conscious, and rock solid. C has been the big name in systems programming, but that came out in 1972. C++ came out in 79, and since there, what has there been? D? PL/8? Go and Mozilla Rust are the two up and coming names in systems programming for this century.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Multicore Computers&lt;/strong&gt; Moore&amp;rsquo;s law no longer applies. We&amp;rsquo;re making computers faster by cramming more and more cores onto a processor and more and more processors onto a motherboard. If you look at concurrency support in C or Java or any other enterprise language, it&amp;rsquo;s all abysmal. Go has primitives for concurrency built in. It&amp;rsquo;s so beautiful, it&amp;rsquo;s crazy.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Make Programming Fun&lt;/strong&gt; I think so, at least. At the end of the talk, we wrote a little application that measures response time to a handful of websites and screwed around with it for a while. Not to toot my own horn, but a fellow dev told me it was &amp;ldquo;one of the best live coding exercises he had ever seen.&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Hello World&lt;/strong&gt; Nothing special here. &amp;lsquo;fmt&amp;rsquo; is the formatting package in Go&amp;rsquo;s standard library, much like Stdio.h.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Basic syntax&lt;/strong&gt; What I wanted to call out here is the difference between Go&amp;rsquo;s function declaration syntax and that in the C family. C-style declaration is really focused on what a variable / function evaluates to, while Go is more focused on what the thing &lt;em&gt;is&lt;/em&gt;. I talked a little bit about the Clockwise-Spiral rule.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Static Typing and Type Inference&lt;/strong&gt; I talked about how you declare variables. &lt;code&gt;myName&lt;/code&gt; is in the global address space, while &lt;code&gt;myAge&lt;/code&gt; is local to the &lt;code&gt;main&lt;/code&gt; method. Some key points:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;myAge := 26&lt;/code&gt; &amp;ndash; &lt;code&gt;:=&lt;/code&gt; is a shorthand form of declaration and assignment that only works in the local scope. Here, Go&amp;rsquo;s type inference is assuming that I want &lt;code&gt;myAge&lt;/code&gt; to be an int.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;var myAge = 26&lt;/code&gt; is just a longhand version of the above.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;var myAge int64 = 26&lt;/code&gt; &amp;ndash; Let&amp;rsquo;s say we live in a world where people live a very long time. Here, I&amp;rsquo;m overriding Go&amp;rsquo;s type inference and telling Go that &lt;code&gt;myAge&lt;/code&gt; will be a 64 bit int.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;myAge := 28 / myAge= := 26&lt;/code&gt; Let&amp;rsquo;s say I made a mistake and went to reassign 26 to &lt;code&gt;myAge&lt;/code&gt;. I can&amp;rsquo;t do it this way; the compiler says &amp;ldquo;You already declared &lt;code&gt;myAge&lt;/code&gt;, dumbass.&amp;rdquo; If you erase the &lt;code&gt;:&lt;/code&gt; on the  second line, you can reassign &lt;code&gt;myAge&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;myBrother := &amp;quot;Rob&amp;quot;&lt;/code&gt; &amp;ndash; We can&amp;rsquo;t declare a variable without using it. It throws a compiler error. This is part of how Go keeps compile times down.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Object Orientation &amp;ndash; Here&amp;rsquo;s a quick example of how Go is object oriented. We&amp;rsquo;re declaring a struct called littleBox that holds a couple of ints. We can create a litteBox and use it.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;More Object Orientation &amp;ndash; Here, we&amp;rsquo;re declaring a littleBox and a bigBox that holds a littleBox. The function&lt;/p&gt;
-
-&lt;pre&gt;func (bb bigBox) makeString() string {
-    return fmt.Sprintf(&#34;contains %d books and %d baseball cards&#34;, bb.numBooks, bb.little.numBaseballCards)
-}&lt;/pre&gt;
-
-&lt;p&gt;creates a function on bigBox that makes it into a string. This is how Go is object oriented, but eschews classes. Whats &lt;em&gt;neat&lt;/em&gt; is, if you change &lt;code&gt;func (bb bigBox) makeString()&lt;/code&gt; into &lt;code&gt;func (bb bigBox) String()&lt;/code&gt;, and change &lt;code&gt;fmt.Println(myBigBox.makeString())&lt;/code&gt; into &lt;code&gt;fmt.Println(myBigBox)&lt;/code&gt;, you&amp;rsquo;ve made bigBox &lt;em&gt;implement&lt;/em&gt; the Stringer interface! Did you explicitly do this? No! But you did it anyway! Isn&amp;rsquo;t that awesome?&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Compile times are quick. I wish I had a really big example to show you, but suffice to say that, every time you click &amp;ldquo;Run&amp;rdquo; on the presentation, the code is being sent back to the server, compiled, run, and the result is sent back to you.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Go compiles to native binaries. To demonstrate this, I opened iTerm, ran &lt;code&gt;go build hello_world.go&lt;/code&gt;, then ran &lt;code&gt;file hello_world&lt;/code&gt; to demonstrate that &lt;code&gt;hello_world&lt;/code&gt; had compiled to a binary. Then I moved &lt;code&gt;hello_world&lt;/code&gt; to &lt;code&gt;/opt/local/bin&lt;/code&gt; and ran &lt;code&gt;hello_world&lt;/code&gt;, which, of course, output:&lt;/p&gt;
-
-&lt;pre&gt;
-cagocs:~ christopheragocs$ hello_world
-Hello, world!
-&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Go comes with a number of primitives to handle concurrency. They are:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Goroutines&lt;/strong&gt; &amp;ndash; you can think of these as being super light, cheap threads. What really happens is a new stack frame is created in the same address space as the parent, and concurrent goroutines are multiplexed using threads. All of the actual thread juggling is handled behind the scenes.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Channels&lt;/strong&gt; &amp;ndash; these are concurrency-safe buffers used for communication between goroutines.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Select&lt;/strong&gt; &amp;ndash; selects between receiving channels.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Here&amp;rsquo;s a purposefully slow example. &lt;code&gt;aBigNumber&lt;/code&gt; calls a naive recursive implementation of the Fibonacci function, which delays execution for a few seconds. &lt;code&gt;aSmallNumber&lt;/code&gt; either never gets a chance to execute, or executes much later.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;In this one, we&amp;rsquo;ve created a channel called &lt;code&gt;results&lt;/code&gt;. We&amp;rsquo;ve prefixed the calls to &lt;code&gt;aSmallNumber()&lt;/code&gt; and &lt;code&gt;aBigNumber()&lt;/code&gt; with the &lt;code&gt;go&lt;/code&gt; keyword, which tells Go to execute them in separate goroutines. Both functions put the result onto the &lt;code&gt;results&lt;/code&gt; channel, and the main method reads the results off of the channel in that order. In this instance, it will print &amp;ldquo;7&amp;rdquo; first, and then whatever the huge fib(42) is (or else execution on the remote server will time out first).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;This was the programming exercise. You can look at the code on Github. In short, it accesses 24 different websites concurrently, and prints out the site, the access time, and the status code in order of completion. I wrote this with a really great group of developers, and we went off on a number of tangents trying different things to figure out some deep implementation details of Go (which explains the &lt;code&gt;time.Sleep(1000000000)&lt;/code&gt; on line 30.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I used the &amp;ldquo;Present&amp;rdquo; tool, which is part of the Golang tool kit. I enjoyed using it, as it lets you use code examples pretty heavily, and the code examples can be modified in-browser and executed live. When I posted the talk on Facebook, an old professor of mine asked me about that, which I thought was pretty cool.&lt;/p&gt;
-
-&lt;p&gt;Giving the talk to the developers I work with was a lot of fun. Backstop Solutions employs a bunch of really smart people, and it&amp;rsquo;s a pleasure when they ask deep probing questions that go beyond your knowledge. A++++, 10 stars, would present again.&lt;/p&gt;
-</description>
+      <guid>https://agocs.org/2014/03/intro-to-golang/</guid>
+      <description>Hey everybody, check out this intro to the Go programming language I put together for a talk at Backstop the other week!
+Golang Slides
+I tried to keep the slides content-light, since I find that having too many things on the screen distracts from what I&amp;rsquo;m saying. I&amp;rsquo;ll recapitulate my notes below.
+ Title slide. Blah blah blah.  Around since 2009 Go started as a research project at Google in 2007.</description>
     </item>
     
   </channel>

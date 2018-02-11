@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Server Migration" />
+<meta property="og:description" content="I know my site doesn&rsquo;t exactly have any dedicated watchers, but if anyone noticed a period of downtime earlier this week, it&rsquo;s because I was migrating from hosting on FatCow to hosting on a rented VPS through DigitalOcean. I also moved my domain registration from FatCow to Gandi.net. In this post, I plan to cover the hows, whys, and some lessons learned.
+I&rsquo;ll start with the juicy stuff.
+Why? There are a couple of reasons, but the root of it all is that I got fed up with FatCow." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://agocs.org/2014/04/server-migration/" />
+
+
+
+<meta property="article:published_time" content="2014-04-15T16:53:19-05:00"/>
+
+<meta property="article:modified_time" content="2014-04-15T16:53:19-05:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Server Migration"/>
+<meta name="twitter:description" content="I know my site doesn&rsquo;t exactly have any dedicated watchers, but if anyone noticed a period of downtime earlier this week, it&rsquo;s because I was migrating from hosting on FatCow to hosting on a rented VPS through DigitalOcean. I also moved my domain registration from FatCow to Gandi.net. In this post, I plan to cover the hows, whys, and some lessons learned.
+I&rsquo;ll start with the juicy stuff.
+Why? There are a couple of reasons, but the root of it all is that I got fed up with FatCow."/>
+<meta name="generator" content="Hugo 0.36" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Server Migration",
+  "url": "https://agocs.org/2014/04/server-migration/",
+  "wordCount": "910",
+  "datePublished": "2014-04-15T16:53:19-05:00",
+  "dateModified": "2014-04-15T16:53:19-05:00",
+  "author": {
+    "@type": "Person",
+    "name": "Chris Agocs"
+  }
+}
+</script>
+
+
+
+    <link rel="canonical" href="https://agocs.org/2014/04/server-migration/">
+
+    <title>Server Migration | Agocs.org</title>
+
+    <!-- combined, minified CSS -->
+    <link href="https://agocs.org/css/style.css" rel="stylesheet" integrity="sha384-CoMzlF7G4xk3ftqRr7leobnWP85AuISUJljMFjtTG/UHyP/&#43;bBwWAvBlXkB4VQQk" crossorigin="anonymous">
+
+    
+
+    
+
+    
+
+    
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="https://agocs.org/">Home</a>
+          
+          
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title"><a href="https://agocs.org/" rel="home">Agocs.org</a></h1>
+        <p class="lead blog-description">Helluva software engineer</p>
+      </div>
+    </header>
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title"><a href="https://agocs.org/2014/04/server-migration/">Server Migration</a></h2>
+    <p class="blog-post-meta"><time datetime="2014-04-15T16:53:19-05:00">Tue Apr 15, 2014</time> by Chris Agocs</p>
+  </header>
+  
+
+<p>I know my site doesn&rsquo;t exactly have any dedicated watchers, but if anyone noticed a period of downtime earlier this week, it&rsquo;s because I was migrating from hosting on FatCow to hosting on a rented VPS through DigitalOcean. I also moved my domain registration from FatCow to Gandi.net. In this post, I plan to cover the hows, whys, and some lessons learned.</p>
+
+<p>I&rsquo;ll start with the juicy stuff.</p>
+
+<h1 id="why">Why?</h1>
+
+<p>There are a couple of reasons, but the root of it all is that I got fed up with FatCow. It&rsquo;s not clear how their pricing <strike>varies</strike> increases from year to year, and it&rsquo;s obnoxious how, every few months, I find myself signed up for another &ldquo;free trial&rdquo; of some service out of which I have to opt. I can roll my own solution for less money, and with greater control.</p>
+
+<h2 id="why-move-away-from-fatcow">Why move away from FatCow?</h2>
+
+<p>Like I said above, money and annoyance. I have a few sites with FatCow, and the oldest is about to round the three year mark. When I signed up, I was offered a trial rate of around $30 for the first year. That&rsquo;s a very good deal. I barely used the site, but I ignored a few emails and, lo and behold, I found myself renewed automatically to the tune of $70-something. Okay, that&rsquo;s still not significantly more than $5/month. Pretty darn good for unlimited hosting, the fact that I&rsquo;m not using it notwithstanding. I turned off automatic renewal.</p>
+
+<p>A few months ago, I got a message saying that FatCow couldn&rsquo;t automatically renew that site because the card information I had stored was bad. I logged in, turned automatic renewal off again, and looked at the invoice &ndash; they were about to bill me $200-something for April 2014-April 2015! No way! That&rsquo;s way too much.</p>
+
+<p>I just renewed Agocs.org to the tune of $70-something with FatCow, but I decided it was in my best interests to break ties with that company completely, something I will be doing over the next few weeks.</p>
+
+<h2 id="why-gandi-net">Why Gandi.net?</h2>
+
+<p>Bluntly, they have a &ldquo;no bullshit&rdquo; policy. That, and they were recommended by a trusted coworker and friend, and they are a French corporation and French law meaningfully allows them to transfer ownership of &ldquo;Agocs.org&rdquo; over to me (most American registrars, I have been informed, retain ownership of the domain name and license its usage to you).</p>
+
+<p>The process of getting things set up with Gandi.net was a little rocky, as I will detail below, but they have a bunch of good help text and an extensive knowledge base. I was able to get up and running quickly and with minimal bugging of my more knowledgeable friends.</p>
+
+<h2 id="why-digitalocean">Why DigitalOcean?</h2>
+
+<p>I&rsquo;ve hosted a few VPSs with DigitalOcean before, and they are a joy to work with. I get full control of a Linux box (something I never got from FatCow), I can choose my web server (Nginx all the way) and database back-end (none for me please!), and set it up however I want. Write a script that uses rsync to publish new articles? Sure! Go nuts! I fought with FatCow for a while about that, and resorted to using FTP (which, once you&rsquo;ve started using rsync, sucks).</p>
+
+<p>Anyway, one small VPS costs me about five bones per month. Because I&rsquo;m just the tiniest bit clever, I can host several sites on the same VPS. They&rsquo;re all static content generated by Octopress, so it&rsquo;s not like I&rsquo;m going to outgrow the small server any time soon. It&rsquo;s <em>really</em> nice.</p>
+
+<h1 id="how-it-worked">How it worked</h1>
+
+<p>The process was straightforward. I set up the VPS with DigitalOcean first, copied my site over there, installed Nginx, and got that configured. Then I requested a transfer code from FatCow (I suspect, but cannot confirm, that they drag their feet on this), and initiated the transfer through Gandi. The transfer cost me about $13, but that means Agocs.org is mine for an additional year. When the transfer was complete, I created a DNS Zone file through Gandi&rsquo;s web interface that points to my VPS.</p>
+
+<h1 id="lessons-learned">Lessons learned</h1>
+
+<p>I made my fair share of mistakes, mostly in setting up the DNS Zonefile. My first attempt looked like this:</p>
+
+<pre><code>* 10800 IN A 162.243.76.63
+</code></pre>
+
+<p>www.agocs.org worked great, but no email and no plain ol&rsquo; agocs.org. Email was more critical, so around midnight that night I changed it to this:</p>
+
+<pre><code>* 10800 IN A 162.243.76.63
+imap 10800 IN CNAME access.mail.gandi.net.
+pop 10800 IN CNAME access.mail.gandi.net.
+smtp 10800 IN CNAME relay.mail.gandi.net.
+@ 10800 IN MX 50 fb.mail.gandi.net.
+@ 10800 IN MX 10 spool.mail.gandi.net.
+</code></pre>
+
+<p>The lines below were cribbed from Gandi.net&rsquo;s default Zone file. chris@agocs.org worked, but agocs.org did not. I did some research and then made the following change:</p>
+
+<pre><code>* 10800 IN A 162.243.76.63
+@ 10800 IN A 162.243.76.63
+imap 10800 IN CNAME access.mail.gandi.net.
+pop 10800 IN CNAME access.mail.gandi.net.
+smtp 10800 IN CNAME relay.mail.gandi.net.
+@ 10800 IN MX 50 fb.mail.gandi.net.
+@ 10800 IN MX 10 spool.mail.gandi.net.
+</code></pre>
+
+<p>I found out the * record points all _sub_domains to that IP address, but it does not point the root domain (i.e. agocs.org) there. The @ record points the root domain to that IP address.</p>
+
+<p>Finally, I noticed a problem with sent email. The last change I had to make was through Gmail, which was sending agocs.org traffic through an SMTP server run by FatCow. I&rsquo;m way too lazy to roll my own SMTP server, so I told Gmail to take care of it.</p>
+
+<p>There you have it.</p>
+
+
+  
+
+  
+  <hr>
+  <footer>
+
+  
+    <section>
+    <h4>Share</h4>
+    <nav class="nav sharing-icons">
+      <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fagocs.org%2f2014%2f04%2fserver-migration%2f" title="Share on Facebook"><span class="fa fa-facebook fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://plus.google.com/share?url=https%3a%2f%2fagocs.org%2f2014%2f04%2fserver-migration%2f" title="Share on Google+"><span class="fa fa-google-plus fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fagocs.org%2f2014%2f04%2fserver-migration%2f" title="Share on LinkedIn"><span class="fa fa-linkedin fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://twitter.com/home?status=https%3a%2f%2fagocs.org%2f2014%2f04%2fserver-migration%2f" title="Tweet this"><span class="fa fa-twitter fa-2x"></span></a>
+    </nav>
+  </section>
+
+  
+
+  
+  </footer>
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p>I&rsquo;m a Go enthusiast and a software engineer for <a href="https://nautiluslabs.co">Nautilus Labs</a></p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/2018/02/using-command-line-tools-to-analyze-a-crash/">Using command line tools to analyze a crash</a></li>
+
+<li><a href="/2017/04/rubens-tube-part-1/">Rubens&rsquo; Tube Part 1</a></li>
+
+<li><a href="/2016/10/end-grain-cutting-board/">End Grain Cutting Board</a></li>
+
+<li><a href="/2016/09/golang-philly-talk/">Golang Philly talk</a></li>
+
+<li><a href="/2016/02/top-ten-home-thorium-core-reactor-tips/">Top Ten Home Thorium Core Reactor Tips</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="https://github.com/agocs">Github</a></li>
+      
+      <li><a href="https://twitter.com/agoX">Twitter</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p>
+      
+      Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>

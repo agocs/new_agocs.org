@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Tips for using RabbitMQ in Go  &middot; My blog</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+<link rel="author" href="http://plus.google.com/+Myprofile">
+
+
+<meta property="og:title" content="Tips for using RabbitMQ in Go  &middot; My blog ">
+<meta property="og:site_name" content="My blog"/>
+<meta property="og:url" content="/2014/08/19/2014-08-19-rabbitmq-best-practices-in-go/" />
+<meta property="og:locale" content="en">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2014-08-19T12:57:26-05:00" />
+<meta property="og:article:modified_time" content="2014-08-19T12:57:26-05:00" />
+
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@Myprofile" />
+<meta name="twitter:creator" content="@Myprofile" />
+<meta name="twitter:title" content="Tips for using RabbitMQ in Go" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="/2014/08/19/2014-08-19-rabbitmq-best-practices-in-go/" />
+<meta name="twitter:domain" content="/">
+  
+
+  
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Tips for using RabbitMQ in Go",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+Myprofile?rel=author"
+    },
+    "datePublished": "2014-08-19",
+    "description": "",
+    "wordCount": 1772
+  }
+</script>
+  
+
+
+
+<link rel="canonical" href="/2014/08/19/2014-08-19-rabbitmq-best-practices-in-go/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+<link rel="icon" href="/favicon.png">
+<meta name="generator" content="Hugo 0.36" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+    <link rel="stylesheet" href="/css/bootswatch/paper/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/style.css">
+
+
+<link rel="stylesheet" href="/css/style_custom.css">
+
+
+
+  <link rel="stylesheet" href="/css/highlight/default.css">
+
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="/">
+            <img alt="My awsome blog" src="http://blog.appernetic.io/images/apperneticlogo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+
+              <a href="https://appernetic.io/app/#/about" >
+                <i class='fa fa-road'></i>
+                About
+              </a>
+            </li>
+            
+            <li class="">
+
+              <a href="/post/" >
+                
+                Blog
+              </a>
+            </li>
+            
+            <li class="">
+
+              <a href="https://appernetic.io/app/" >
+                
+                Dashboard
+              </a>
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="text-center">
+
+    <h1>Tips for using RabbitMQ in Go
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2014-08-19">19 Aug, 2014</time>
+</small>
+
+
+  <small>
+    &middot; by Christopher Agocs
+  
+  &middot; Read in about 9 min
+  &middot; (1772 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=%2f2014%2f08%2f19%2f2014-08-19-rabbitmq-best-practices-in-go%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Tips%20for%20using%20RabbitMQ%20in%20Go&amp;url=%2f2014%2f08%2f19%2f2014-08-19-rabbitmq-best-practices-in-go%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=%2f2014%2f08%2f19%2f2014-08-19-rabbitmq-best-practices-in-go%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=%2f2014%2f08%2f19%2f2014-08-19-rabbitmq-best-practices-in-go%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2f2014%2f08%2f19%2f2014-08-19-rabbitmq-best-practices-in-go%2f&amp;title=Tips%20for%20using%20RabbitMQ%20in%20Go" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Tips%20for%20using%20RabbitMQ%20in%20Go&amp;body=Check out this site %2f2014%2f08%2f19%2f2014-08-19-rabbitmq-best-practices-in-go%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+      <div class="content">
+  
+
+<p>###Corrections:</p>
+
+<ul>
+<li>4% != .004% : When I was writing the article, my brain translated 99996 into 96000. Big difference. It turns out that I&rsquo;m unable to dequeue somewhere between .004% and .20% of messages in about half of test runs.</li>
+</ul>
+
+<p>###Note:</p>
+
+<p><strong>I&rsquo;ve been chatting with some very helpful RabbitMQ-knowledgeable people, and they have some suggestions for the issues I&rsquo;m seeing that I&rsquo;m going to check out. I will update this article with my findings.</strong></p>
+
+<p>I want to thank <a href="https://twitter.com/old_sound">Alvaro Videla</a> and <a href="https://twitter.com/michaelklishin">Michael Klishin</a> for reading my first attempt at this post and suggesting different avenues to explore.</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>For the two of you who don&rsquo;t know, RabbitMQ is a really neat AMQP-compliant queue broker. It exists to facilitate the passing of messages between or within systems. I&rsquo;ve used it for a couple of different projects, and I&rsquo;ve found it to be tremendously capable: I&rsquo;ve seen a RabbitMQ instance running on a single, moderately sized, VM handle almost 3GB/s.</p>
+
+<p>I was doing some load testing with RabbitMQ recently, and I found that, if I started attempting to publish more than around 2500 10KB messages per second, <del>about 4%</del> as much as 0.2% of those messages wouldn&rsquo;t make it to the queue during some test runs. I am not sure if this is my code&rsquo;s fault or if I am running into the limits of the RabbitMQ instance I was testing against (probably the former), but with the help of the RabbitMQ community, I was able to come up with some best practices that I&rsquo;ve described below.</p>
+
+<p>The examples below are all in Go, but I&rsquo;ve tried my best to explain them in such a way that people who are not familiar with Go can understand them.</p>
+
+<h2 id="terminology">Terminology</h2>
+
+<p>If you&rsquo;re unfamiliar with AMQP, here&rsquo;s some terminology to help understand what&rsquo;s possible with a queue broker and what the words mean.</p>
+
+<ul>
+<li><strong>Connection</strong>: A connection is a long-lived TCP connection between an AMQP client and a queue broker. Maintaining a connection reduces TCP overhead. A client can re-use a connection, and can share a connection among threads.</li>
+<li><strong>Channel</strong>: A channel is a short-lived sub-connection between a client and a broker. The client can create and dispose of channels without incurring a lot of overhead.</li>
+<li><strong>Exchange</strong>: A client writes messages to an exchange. The exchange forwards each message on to zero or more queues based on the message&rsquo;s routing key.</li>
+<li><strong>Queue</strong>: A queue is a first-in, first out holder of messages. A client reads messages from a queue. The client can specify a queue name (useful, for example, for a work queue where multiple clients are consuming from the same queue), or allow the queue broker to assign it a queue name (useful if you want to distribute copies of a message to multiple clients).</li>
+<li><strong>Routing Key</strong>: A string (optionally) attached to each message. Depending on the exchange type, the exchange may or may not use the Routing Key to determine the queues to which it should publish the message.</li>
+<li><strong>Exchange types</strong>:
+
+<ul>
+<li><strong>Direct</strong>: Delivers all messages with the same routing key to the same queue(s).</li>
+<li><strong>Fanout</strong>: Ignores the routing key, delivers a copy of the message to each queue bound to it.</li>
+<li><strong>Topic</strong>: Each queue subscribes to a topic, which is a regular expression. The exchange delivers the message to a queue if the queue&rsquo;s subscribed topic matches the message.</li>
+<li><strong>Header</strong>: Ignores the routing key and delivers the message based on the AMQP header. Useful for certain kinds of messages.</li>
+</ul></li>
+</ul>
+
+<h2 id="testing-methodology">Testing methodology</h2>
+
+<p>Here is the load tester I wrote: <a href="https://github.com/backstop/rabbit-mq-stress-tester">https://github.com/backstop/rabbit-mq-stress-tester</a>. It uses the <a href="https://github.com/streadway/amqp">streadway/amqp library</a>. Per <a href="https://github.com/streadway/amqp/issues/93">this issue</a>, my stress tester does not share connections or channels between Goroutines &ndash; it launches a configurably-sized pool of Goroutines, each of which maintains its own connection to the RabbitMQ server.</p>
+
+<p>To run the same tests I was running:</p>
+
+<ul>
+<li><p>Clone the repo or install using <code>go get github.com/backstop/rabbit-mq-stress-tester</code></p></li>
+
+<li><p>Open two terminal windows. In one, run</p>
+
+<pre><code>./tester -s test-rmq-server -c 100000
+</code></pre></li>
+</ul>
+
+<p>That will launch the in Consumer mode. It defaults to 50 Goroutines, and will consume 100,000 messages before quitting.</p>
+
+<ul>
+<li><p>In the other terminal window, run</p>
+
+<pre><code>./tester -s test-rmq-server -p 100000 -b 10000 -n 100 -q
+</code></pre></li>
+</ul>
+
+<p>This will run the tester in Producer mode. It will (-p)roduce 100,000 messages of 10,000 (-b)ytes each. It will launch a pool of 100 Goroutines (-n), and it will work in (-q)uiet mode, only printing NACKs and final statistics to stdout.</p>
+
+<p>What I found is that, roughly half the time I run the above steps, the consumer will only consume 99,000 and change messages (typically greater than 99,980, but occasionally as low as 99,800). I was unable to find any descriptive error messages in the <code>rabbitmq@test-rmq-server.log</code> file.</p>
+
+<p>I can change that, though. If I run the producer like this:</p>
+
+<pre><code>    ./tester -s test-rmq-server -p 100000 -b 10000 -n 100 -q -a
+</code></pre>
+
+<p>then each Goroutine waits for an ACK or NACK from the RabbitMQ server before publishing the next message (that&rsquo;s what the -a flag does). I have never seen a missing message in this mode. The functionality of the -a flag is described in the next section.</p>
+
+<p>###Some things that I don&rsquo;t think are the culprit:</p>
+
+<ul>
+<li>Memory-based flow control: Memory usage as reported by <code>top</code> never exceeds approximately 22%. Also, no messages in the log file.</li>
+<li>Per-connection flow control: After fussing with <code>rabbitmqctl list_connections</code> for a while, I was not able to find evidence of a connection that had been blocked. I&rsquo;m not sure of these results, though, so if someone would be willing to give me a hand with this, that would be awesome.</li>
+</ul>
+
+<h2 id="ensuring-your-message-got-published">Ensuring your message got published</h2>
+
+<p>Like I said earlier, I was doing some stress testing against a RabbitMQ instance and a small number of messages that I attempted to publish did not get dequeued. I reached out to the RabbitMQ community, and someone on their IRC channel told me to look up Confirm Select.</p>
+
+<p>When you place a channel into Confirm Select, the AMQP broker will respond with an ACK with a for each message passed to it on that channel. Included with the ACK is an integer that increments with each ACK, similar to a TCP sequence ID. If something goes wrong, the broker will respond with a NACK. In Go, placing a channel into Confirm Select looks like this:</p>
+
+<p>``` go Putting a channel in Confirm Select
+    channel, err := connection.Channel()
+    if err != nil {
+        println(err.Error())
+        panic(err.Error())
+    }
+    channel.Confirm(false)</p>
+
+<pre><code>ack, nack := channel.NotifyConfirm(make(chan uint64, 1), make(chan uint64, 1))
+</code></pre>
+
+<pre><code>
+The above `channel.Confirm(false)` puts the channel into Confirm mode, and the `false` puts the client out of NoWait mode such that the client waits for an ACK or NACK after each message. `ack` and `nack` are golang `chan`s that receive the integers included with the ACKs or NACKs. If you were in NoWait mode, you could use them to bulk publish a bunch of messages and then figure out which messages did not make it.
+
+Listening for the ACK looks like this:
+
+``` go Publish a message and wait for confirmation
+		channel.Publish(&quot;&quot;, q.Name, true, false, amqp.Publishing{
+			Headers:         amqp.Table{},
+			ContentType:     &quot;text/plain&quot;,
+			ContentEncoding: &quot;UTF-8&quot;,
+			Body:            messageJson,
+			DeliveryMode:    amqp.Transient,
+			Priority:        0,
+		},
+		)
+
+		select {
+		case tag := &lt;-ack:
+			log.Println(&quot;Acked &quot;, tag)
+		case tag := &lt;-nack:
+			log.Println(&quot;Nack alert! &quot;, tag)
+		}
+</code></pre>
+
+<p>After each publish, I&rsquo;m performing a read off of the <code>ack</code> and <code>nack</code> chans (that is what <code>select</code> does). That read blocks until the client gets an ACK or NACK back from the broker.</p>
+
+<p>The above examples are in Go, but there&rsquo;s an equivalent in the other libraries I&rsquo;ve played with. Clojure (langohr) has <code>confirm/select</code> and <code>confirm/wait-for-confirms-or-die</code>.</p>
+
+<h3 id="can-we-do-better">Can we do better?</h3>
+
+<p>Yes. Rather than wait for an ACK after each publish, it&rsquo;s better to publish a bunch of messages, listen for ACKs, and then handle failures. I didn&rsquo;t, because I was already seeing performance several orders of magnitude better than I needed.</p>
+
+<p>We can also wrap blocks of messages in a transaction if we need to ensure that all messages get published and retain order, but doing that incurs something like a 250x performance penalty.</p>
+
+<h2 id="pool-your-goroutines-and-avoid-race-conditions">Pool your Goroutines and avoid race conditions</h2>
+
+<p><a href="https://github.com/streadway/amqp/issues/93">This issue</a> proved interesting (if ultimately not relevant to my problem). It looks like the person who filed the issue was running into two issues:</p>
+
+<ul>
+<li>There was a race condition in the code that counted ACKs / NACKs</li>
+<li>The one-Goroutine-per-publish strategy causes a condition where the 2000 goroutines waiting for network IO prevent the goroutine listening for ACKs / NACKs from receiving sufficient CPU cycles.</li>
+</ul>
+
+<p>I got around this in two ways: I have a fixed-size pool of Goroutines performing the publishing, and each goroutine handles its own Publish -&gt; Ack lifecycle.</p>
+
+<h2 id="ensuring-messages-get-handled-correctly">Ensuring messages get handled correctly</h2>
+
+<p>A message queue is of little use if messages just sit there, so it is prudent to include a consumer or two. But, what happens if your consumer crashes? Does your message get lost in the ether?</p>
+
+<p>The answer is <strong>AutoAck</strong>. More specifically, realizing that AutoAck is dangerous and wrong.</p>
+
+<p>When a consumer consumes a message from a queue, the queue broker waits for an ACK before discarding the message. When a consumer has AutoAck enabled, it sends the ACK (thus causing the message to be discarded) instantly upon receiving the message. It&rsquo;s smarter to read the next message on the queue, handle the message properly, and then send the ACK.</p>
+
+<p>```go Reading and acknowledging messages
+    autoAck := false</p>
+
+<pre><code>msgs, err := channel.Consume(q.Name, &quot;&quot;, autoAck, false, false, false, nil)
+if err != nil {
+    panic(err)
+}
+
+for d := range msgs { // the d stands for Delivery
+    log.Printf(string(d.Body[:])) // or whatever you want to do with the message
+    d.Ack(false)
+} 
+</code></pre>
+
+<p>```</p>
+
+<p>In the example above, <code>autoAck</code> is set to false. Every time I read a message (in the <code>for d := range msgs</code> loop), I send an ACK for that message. If I were to call <code>d.Ack(true)</code>, that would send an ACK for that message and all previous unacknowledged messages.</p>
+
+<p>If my consumer quits without acknowledging a message, that message is repeated to the next consumer to come by.</p>
+
+<h2 id="performant-results">Performant results</h2>
+
+<p>So, what kind of performance am I getting?</p>
+
+<p>The following numbers are all time to publish and consume 100,000 messages, each with a 10KB payload. The tester was running on my Macbook, and RabbitMQ was running on a Cloudstack VM.</p>
+
+<ul>
+<li>With Confirm Select
+
+<ul>
+<li>Publishing: 24.42s</li>
+<li>Consuming: 26.79s</li>
+</ul></li>
+<li>Without Confirm Select
+
+<ul>
+<li>Publishing: 16.32s</li>
+<li>Consuming: 26.13s</li>
+</ul></li>
+</ul>
+
+<p>The point is, RabbitMQ is fast and Go is fast. When we use one to stress test the other, messages get lost somewhere. If we take a little bit of time to ensure that messages get published and processed properly, we can prevent pesky data loss issues.</p>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=%2f2014%2f08%2f19%2f2014-08-19-rabbitmq-best-practices-in-go%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Tips%20for%20using%20RabbitMQ%20in%20Go&amp;url=%2f2014%2f08%2f19%2f2014-08-19-rabbitmq-best-practices-in-go%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=%2f2014%2f08%2f19%2f2014-08-19-rabbitmq-best-practices-in-go%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=%2f2014%2f08%2f19%2f2014-08-19-rabbitmq-best-practices-in-go%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2f2014%2f08%2f19%2f2014-08-19-rabbitmq-best-practices-in-go%2f&amp;title=Tips%20for%20using%20RabbitMQ%20in%20Go" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Tips%20for%20using%20RabbitMQ%20in%20Go&amp;body=Check out this site %2f2014%2f08%2f19%2f2014-08-19-rabbitmq-best-practices-in-go%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="/2014/08/16/2014-08-16-the-joke/" title="The Joke">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+      <li class="next">
+        <a href="/2014/08/29/2014-08-29-celestron-firstscope/" title="Celestron FirstScope">
+            Next <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//shortname.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="/2018/02/10/2018-02-10-anatomy-of-a-crash/">Using command line tools to analyze a crash</a>
+          </li>
+        
+          <li>
+          <a href="/2017/04/24/2017-04-24-rubens-tube/">Rubens&#39; Tube Part 1</a>
+          </li>
+        
+          <li>
+          <a href="/2016/10/25/2016-10-25-end-grain-cutting-board/">End Grain Cutting Board</a>
+          </li>
+        
+          <li>
+          <a href="/2016/09/14/2016-09-14-golang-philly-talk/">Golang Philly talk</a>
+          </li>
+        
+          <li>
+          <a href="/2016/02/16/2016-02-16-ten-top-tips-to-keep-your-home-thorium-core-reactor-in-tip-top-shape/">Top Ten Home Thorium Core Reactor Tips</a>
+          </li>
+        
+          <li>
+          <a href="/2016/01/10/2016-01-10-jeepbox/">Jeep Box</a>
+          </li>
+        
+          <li>
+          <a href="/2015/11/12/2015-11-12-how-i-clean-my-boots/">How I clean my boots</a>
+          </li>
+        
+          <li>
+          <a href="/2015/10/10/2015-10-10-assigning-globals-in-go/">Assigning Globals in Go</a>
+          </li>
+        
+          <li>
+          <a href="/2015/08/20/2015-08-20-introducing-uluru/">Introducing Uluru</a>
+          </li>
+        
+          <li>
+          <a href="/2015/07/30/2015-07-30-internet-jukebox/">Internet Jukebox</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+<a href="/disclaimer/">Disclaimer</a> <i>&middot;</i>
+
+<a href="/terms/">Terms</a> 
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i>
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2016 Copyright my blog
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+
+<script src="/js/angular.min.js"></script>
+<script src="/js/popover/angular-storage.min.js"></script>
+
+<script src="/js/highlight.pack.js"></script>
+<script src="/js/site.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  true , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "//placehold.it/1000x600",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE = ""; 
+</script>
+
+
+
+<script src="/js/popover/angular-modal-service.min.js"></script>
+<script src="/js/angular-ismobile.min.js"></script>
+<script src="/js/popover/popover.min.js"></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

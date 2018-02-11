@@ -1,152 +1,71 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Agocs.org</title>
-    <link>https://agocs.org/post/index.xml</link>
-    <description>Recent content in Posts on Agocs.org</description>
+    <title>Posts on My blog</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on My blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 24 Apr 2017 12:20:32 -0500</lastBuildDate>
-    <atom:link href="https://agocs.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <managingEditor>yourname@example.com (yourname)</managingEditor>
+    <webMaster>yourname@example.com (yourname)</webMaster>
+    <copyright>(c) 2016 Copyright my blog</copyright>
+    <lastBuildDate>Sat, 10 Feb 2018 11:50:00 -0500</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using command line tools to analyze a crash</title>
+      <link>/2018/02/10/2018-02-10-anatomy-of-a-crash/</link>
+      <pubDate>Sat, 10 Feb 2018 11:50:00 -0500</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2018/02/10/2018-02-10-anatomy-of-a-crash/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Norway/i-SLPwjgK/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Norway/i-SLPwjgK/1/808af843/XL/IMG_20170924_070751-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;At &lt;a href=&#34;https://nautiluslabs.co&#34;&gt;Nautilus Labs&lt;/a&gt;, we&amp;rsquo;re advancing the efficiency
+of maritime transportation by collecting data and recognizing patterns. An
+interesting side effect of this is that we have insight into a ships&amp;rsquo; actions,
+not just day-by-day, but second-by-second. It&amp;rsquo;s not as simple as dots on a
+map either; engine power, wind, rate-of-turn, it&amp;rsquo;s all important.&lt;/p&gt;
+
+&lt;p&gt;We worked with one of our clients to take advantage of this recently. A few
+days ago, one of their ships struck a jetty during a berthing maneuver.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Rubens&#39; Tube Part 1</title>
-      <link>https://agocs.org/blog/2017/04/24/rubens-tube-part-1/</link>
+      <link>/2017/04/24/2017-04-24-rubens-tube/</link>
       <pubDate>Mon, 24 Apr 2017 12:20:32 -0500</pubDate>
-      
-      <guid>https://agocs.org/blog/2017/04/24/rubens-tube-part-1/</guid>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2017/04/24/2017-04-24-rubens-tube/</guid>
       <description>&lt;p&gt;Hey, check out this Rubens&amp;rsquo; Tube!&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Misc/i-NTKgPZk/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Misc/i-NTKgPZk/0/c85bfe82/XL/IMG_20170422_162532-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;What&amp;rsquo;s a Rubens&amp;rsquo; Tube? It&amp;rsquo;s a tube filled with flammable gas with a transducer on one end and holes drilled in the top. You light the gas on fire. When you play a sound into the tube that is a harmonic of the tube&amp;rsquo;s resonant frequency, you get patterns in the flame!&lt;/p&gt;
-
-&lt;iframe width=&#34;1280&#34; height=&#34;720&#34; src=&#34;https://www.youtube.com/embed/nWuvzEMDqT0&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;I built this one at &lt;a href=&#34;https://sshchicago.org&#34;&gt;South Side Hackerspace: Chicago&lt;/a&gt; with the help of my friends Dmitriy and Josef.&lt;/p&gt;
-
-&lt;p&gt;Parts list:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Bernzomatic Camping Gas (propane)&lt;/li&gt;
-&lt;li&gt;Bernzomatic torch extension&lt;/li&gt;
-&lt;li&gt;1 &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;&amp;rdquo; iron pipe (6&amp;rdquo;)&lt;/li&gt;
-&lt;li&gt;1 &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;&amp;rdquo; iron pipe cap&lt;/li&gt;
-&lt;li&gt;Old computer speakers&lt;/li&gt;
-&lt;li&gt;Electrical tape&lt;/li&gt;
-&lt;li&gt;HVAC tape&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I started by cutting the end of the torch extension opposite the valve off (so you keep the valve and hose). I drilled a hole in the pipe cap to accept the torch extension hose, and used electricians tape to make a seal. Then I used an angle grinder to grind a flat in the top of the iron pipe, and drilled &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;8&lt;/sub&gt;&amp;rdquo; holes at &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;&amp;rdquo; intervals down the length of the pipe. I used HVAC tape to seal the opposite end of the pipe, and then broke open the computer speakers, removed the actual speaker, and taped that to the HVAC tape end of the iron pipe.&lt;/p&gt;
-
-&lt;p&gt;Next steps: I plan to do replace the length of iron pipe I have with a 1 meter long segment, do some math to figure out the harmonics, and present it at the &lt;a href=&#34;http://chicagonorthside.makerfaire.com/&#34;&gt;Chicago northside Mini Maker Faire&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>End Grain Cutting Board</title>
-      <link>https://agocs.org/blog/2016/10/25/end-grain-cutting-board/</link>
+      <link>/2016/10/25/2016-10-25-end-grain-cutting-board/</link>
       <pubDate>Tue, 25 Oct 2016 10:21:32 -0500</pubDate>
-      
-      <guid>https://agocs.org/blog/2016/10/25/end-grain-cutting-board/</guid>
-      <description>&lt;p&gt;I made an end-grain cutting board, and it&amp;rsquo;s about the coolest thing. It&amp;rsquo;s 1 &lt;sup&gt;3&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt;&amp;rdquo; thick and made from white maple. I&amp;rsquo;ll take you through the steps I followed.&lt;/p&gt;
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2016/10/25/2016-10-25-end-grain-cutting-board/</guid>
+      <description>&lt;p&gt;I made an end-grain cutting board, and it&amp;rsquo;s about the coolest thing. It&amp;rsquo;s 1 &amp;frac34;&amp;raquo; thick and made from white maple. I&amp;rsquo;ll take you through the steps I followed.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-QzGfq7D/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-QzGfq7D/0/XL/IMG_20161024_002802-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve been a metal guy for years now. I love welding, I love machining, but recently I discovered that glued wood joints can be far stronger than I ever thought. We kinda needed a second cutting board, so I watched a few videos and read a few guides and decided I could probably build one. Last Wednesday I sketched out some plans, and worked out that I needed two pieces of &lt;sup&gt;8&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt;&amp;rdquo; wood measuring at least 7 &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;&amp;rdquo; by 24&amp;rdquo;, ideally walnut or maple or cherry.&lt;/p&gt;
-
-&lt;p&gt;I went to Owl Hardwood on Wednesday night and picked up a really nice piece of &lt;sup&gt;8&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt;&amp;rdquo; maple, measuring about 49&amp;rdquo; by 10&amp;rdquo;. That piece was about $60 out the door (nice hardwood is surprisingly expensive!). I took it by the &lt;a href=&#34;https://sshchicago.org&#34;&gt;South Side Hackerspace&lt;/a&gt; on Friday, cleaned up the edges, and cut them into two inch strips, and got them glued together.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-QBC2KkV/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-QBC2KkV/0/XL/IMG_20161023_172226-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Of note, the table saw sled I used was not perfectly square. I wound up having to flip some of the strips around so that the resulting workpiece was more or less square. I&amp;rsquo;ll probably have to build a new table saw sled one of these days.&lt;/p&gt;
-
-&lt;p&gt;Wary of the out-of-square sled, I cleaned up the edges on the sliding compound miter saw. I was able to work quickly and keep burning to a minimum.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-5RxGPZ8/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-5RxGPZ8/0/XL/IMG_20161023_172532-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I made a jig out of a precision scrap of pine 2x6, and set that at 2&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-QWvP3kS/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-QWvP3kS/0/XL/IMG_20161023_173120-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Then I cut my workpiece crossgrain into 2&amp;rdquo; strips&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-2M6mLm9/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-2M6mLm9/0/XL/IMG_20161023_173758-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;and I set the strips on their sides, like so.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-FMCgh7G/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-FMCgh7G/0/XL/IMG_20161023_174011-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The strips had a little bit of tearout on the sides that was preventing them from joining up nicely with one another, so I put the smallest chamfer on the corners with a Stanley #27 block plane.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-h2FrHMV/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-h2FrHMV/0/XL/IMG_20161023_174916-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-VLnv7Fg/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-VLnv7Fg/0/XL/IMG_20161023_175002-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;When all was said and done, it looked like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-RXZ87WC/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-RXZ87WC/0/XL/IMG_20161023_180211-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I arranged the pieces in the clamps and flipped every other piece around to get a nice checkerboard pattern.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-4nDdcQK/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-4nDdcQK/0/XL/IMG_20161023_181206-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I reused the precision pine jig to make a custom pine glue spreader, like so:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-QDHXrvJ/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-QDHXrvJ/0/XL/IMG_20161023_181427-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Then I applied glue&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-s9VWFDn/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-s9VWFDn/0/XL/IMG_20161023_181628-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;and gave it the squeeze.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-ZrdW8rM/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-ZrdW8rM/0/XL/IMG_20161023_190815-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;After letting it sit about an hour, the glue was hard enough to work with. I squared up the miter sled on the table saw and cleaned up the edges.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-rQWb27B/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-rQWb27B/0/XL/IMG_20161023_195845-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-3zNBLfr/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-3zNBLfr/0/XL/IMG_20161023_200454-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I then planed the workpiece down. The planer was really disliking cutting the end grain like that, so I wound up having to go super slow, turning the height adjustment no more than 1/8th turn at a time (probably taking off somewhere between &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;64&lt;/sub&gt;&amp;rdquo; and &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;32&lt;/sub&gt;&amp;rdquo; at a time). The planer really beat the trailing edge to heck, so I cleaned that up on the table saw as well.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-QN7SbvK/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-QN7SbvK/0/XL/IMG_20161023_201829-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I put a &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt;&amp;rdquo; roundover on the corners with a router, then started sanding. Two problems exposed themselves here: First, I really should have bought new sandpaper (maybe starting with 80 grit, then moving up to 200 and finally 400 grit) rather than just using the 200 grit that I found. The planer&amp;rsquo;s blade needs replacing, and it left some deep scratches in the surface that sanding was able to minimize, but you can still see them. Second, sanding on the table saw like that caused me to pick up some of the 3 in 1 oil I used to oil the table. Whoops!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-QrnDZbQ/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-QrnDZbQ/0/XL/IMG_20161023_203522-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Finally the workpiece was sanded and ready to take home.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-KkrcBLV/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-KkrcBLV/0/XL/IMG_20161023_204529-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I bought a couple bottles of butcher block oil (just food grade mineral oil) and a thing of butcher block wax (just food grade mineral oil and bee&amp;rsquo;s wax) from the Home Depot. At this point my friend &lt;a href=&#34;http://hey-er.in/&#34;&gt;Erin&lt;/a&gt; will be yelling &amp;ldquo;No you idiot it&amp;rsquo;s so much cheaper to buy that oil in bulk! I told you I had some!&amp;rdquo; But it was late, and I was impatient, so I was willing to spend a few extra bucks to get it done.&lt;/p&gt;
-
-&lt;p&gt;Once home, I soaked both sides in oil. I poured a bunch on, spread it around with a paper towel, and waited 15 minutes. I did this three times per side with the oil, then once per side with the wax. The oil brought out the wood&amp;rsquo;s pattern, and it looks amazing.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-jxnQCXZ/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-jxnQCXZ/0/XL/IMG_20161023_221628-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-F2tsMVB/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-F2tsMVB/0/XL/IMG_20161023_221646-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;My wife helped me pick which side was the bottom, and I installed some anti-skid rubber feet. I might replace the screws with stainless hardware down the road, but this will work for now. Deciding to install feet on one side is a trade-off; I could leave both sides open and make the cutting board reversible, but having feet on the bottom makes it slip around less and also lets air flow on the underside to help it dry off. As an aside, installing the feet was my first chance to use my new Makita drill and driver, so I was excited!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-W8nr69t/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-W8nr69t/0/XL/IMG_20161024_002604-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I flipped it back over and let it sit overnight. The oil oxidizes and forms a semi-hard sealing layer. I re-coated the board the next morning, and again later the next day. I got to use it last night to chop some star fruit, and I can&amp;rsquo;t tell you how exciting it is to have made something this beautiful and functional with my hands.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-QzGfq7D/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-QzGfq7D/0/XL/IMG_20161024_002802-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Golang Philly talk</title>
-      <link>https://agocs.org/blog/2016/09/14/golang-philly-talk/</link>
+      <link>/2016/09/14/2016-09-14-golang-philly-talk/</link>
       <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://agocs.org/blog/2016/09/14/golang-philly-talk/</guid>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2016/09/14/2016-09-14-golang-philly-talk/</guid>
       <description>&lt;p&gt;I gave a talk at Golang Philly last night! &lt;a href=&#34;https://agocs.org/assets/Golang_Philly_Home_Automation.pdf&#34;&gt;Here are some slides.&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -154,620 +73,100 @@
     
     <item>
       <title>Top Ten Home Thorium Core Reactor Tips</title>
-      <link>https://agocs.org/blog/2016/02/16/top-ten-home-thorium-core-reactor-tips/</link>
+      <link>/2016/02/16/2016-02-16-ten-top-tips-to-keep-your-home-thorium-core-reactor-in-tip-top-shape/</link>
       <pubDate>Tue, 16 Feb 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://agocs.org/blog/2016/02/16/top-ten-home-thorium-core-reactor-tips/</guid>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2016/02/16/2016-02-16-ten-top-tips-to-keep-your-home-thorium-core-reactor-in-tip-top-shape/</guid>
       <description>&lt;p&gt;&lt;em&gt;This is the first in what I hope may be a series of retrofuturistic pieces styled after 1950s era Popular Mechanics DIY home improvement articles. I hope it&amp;rsquo;s fun to read!&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;More and more homeowners nowadays find themselves switching away from antiquated electricity sources like geothermal and municipal grid, and adopting a super-efficient Home Thorium Core Reactor instead. Known for their safety and low waste, these reactors will power a home for pennies a day. However, ask Thorium Core Reactor early adopters, and you&amp;rsquo;ll hear many stories about their fickle nature.&lt;/p&gt;
-
-&lt;p&gt;The editorial team here at Popular Robotics has compiled a list of tips to keep your Home Thorium Core Reactor working like new. We hope you&amp;rsquo;ll find them useful.&lt;/p&gt;
-
-&lt;h2 id=&#34;1-use-high-quality-thorium&#34;&gt;1) Use High Quality Thorium&lt;/h2&gt;
-
-&lt;p&gt;It may be tempting to purchase your thorium at the local home improvement superstore, but impurities in your fuel will lead to nasty buildup on the primary heat exchanger coil. Your radioelectric efficiency (W/Sv, or watts per sievert) will drop, and you&amp;rsquo;ll have to power down your reactor more frequently for maintenance. It&amp;rsquo;s well worth the few extra dollars to find an independent isotope fuel distributor and purchase Grade 5 (that&amp;rsquo;s 99.5% pure) or better thorium.&lt;/p&gt;
-
-&lt;p&gt;That said, if you have a bag of cheap thorium that you want to use, grind it finely and mix it 10 parts to 1 part charcoal ash and 2 parts deionized water. Let that sit overnight, then use a minimum of 10 parts DI water to rinse away the ash. The remaining thorium will be at least Grade 3.&lt;/p&gt;
-
-&lt;h2 id=&#34;2-clean-your-coils&#34;&gt;2) Clean Your Coils&lt;/h2&gt;
-
-&lt;p&gt;Even using high quality fuel, you&amp;rsquo;ll want to keep your Home Thorium Core Reactor running at peak efficiency, right? The easiest way to do this is to power your unit down at least twice a year to clean buildup from your primary and secondary heat exchanger coils. Scouring with a paste made from baking soda will take care of most of it, but excess sulfur scaling may need to be dissolved away using a weak lye solution. Your coils don&amp;rsquo;t need a bright finish, but they should appear clean and free of debris before going back in the reactor.&lt;/p&gt;
-
-&lt;p&gt;We like to plan our maintenance right around the Spring and Fall Equinoxes. You&amp;rsquo;ll be without power for a few hours, so it&amp;rsquo;s important to pick a nice time of year so your home doesn&amp;rsquo;t get too hot or too cold.&lt;/p&gt;
-
-&lt;h2 id=&#34;3-capacity-planning&#34;&gt;3) Capacity Planning&lt;/h2&gt;
-
-&lt;p&gt;Your Home Thorium Core Reactor may be rated at 24kW peak, but it will wear a lot more slowly running continuously at 25% max power than at 75%. If you&amp;rsquo;re planning to convert to Home Thorium Core Reactor power, or if you&amp;rsquo;re planning to replace an aging first generation unit, it may be better to size up rather than choosing the smallest unit that fits your needs.&lt;/p&gt;
-
-&lt;p&gt;Larger Home Thorium Core Reactors don&amp;rsquo;t just last longer &amp;ndash; they&amp;rsquo;re more efficient too! Your bigger heat exchangers will collect buildup much more slowly, and beefier dingle arms will withstand more output changes.&lt;/p&gt;
-
-&lt;h2 id=&#34;4-keep-your-output-steady&#34;&gt;4) Keep Your Output Steady&lt;/h2&gt;
-
-&lt;p&gt;It may be tempting to buy a flash Home Thorium Core Reactor that can respond to demand spikes in seconds, but rapid output cycling goes hand in hand with rapid thermal cycling, which, of course, leads to premature manifold cracking. Replacing a damaged manifold can take a few days, during which your family will have to go without power or purchase expensive municipal power.&lt;/p&gt;
-
-&lt;p&gt;Instead, you may find it more economical to purchase a capacitor bank and place it in line with your power output. The bank will handle any sudden surges in demand, allowing your reactor to sedately adjust output.&lt;/p&gt;
-
-&lt;h2 id=&#34;5-check-your-dingle-arms&#34;&gt;5) Check Your Dingle Arms&lt;/h2&gt;
-
-&lt;p&gt;The dingle arms move the control rods that moderate your Home Thorium Core Reactor&amp;rsquo;s power output. Like all moving parts, they wear. A seized dingle arm can prevent your reactor from powering up, or, worse, prevent it from powering down. In the second case, you run the risk of a thermal runaway, and your reactor would SCRAM itself. That&amp;rsquo;s a costly repair that can take several weeks, during which time you&amp;rsquo;ll be left with little choice but to buy expensive municipal power.&lt;/p&gt;
-
-&lt;p&gt;When you take your reactor down for maintenance, inspect each dingle arm. Make sure they move freely, and check the bearing surfaces for excessive pitting or scoring.&lt;/p&gt;
-
-&lt;h2 id=&#34;6-keep-spare-dingle-arm-bushings-on-hand&#34;&gt;6) Keep Spare Dingle Arm Bushings On Hand&lt;/h2&gt;
-
-&lt;p&gt;If you find a worn dingle arm and you don&amp;rsquo;t have spare bushings on hand, you&amp;rsquo;ve got a few choices:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Bring the reactor back on line, order a spare, and then take the reactor back off line when it comes in&lt;/li&gt;
-&lt;li&gt;Keep your reactor off line until the spare comes in&lt;/li&gt;
-&lt;li&gt;Bring your reactor back on line, order a spare, and hope nothing goes wrong until the next scheduled reactor maintenance&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;None of these are very pleasant. If you had a handful of spare bushings sitting in your tool box, this would not be a concern.&lt;/p&gt;
-
-&lt;h2 id=&#34;7-use-rubber-bushings&#34;&gt;7) Use Rubber Bushings&lt;/h2&gt;
-
-&lt;p&gt;Fast output adjusting Home Thorium Core Reactors use expensive polyurethane bushings because they&amp;rsquo;re firm and afford for very fast dingle arm adjustment. They also transmit a lot of harsh vibrations back into the control module. Some Home Thorium Core Reactors have oversized stepper motors to account for this, but yours might not.&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;ve followed our advice by overplanning for capacity and installing a capacitor bank, you don&amp;rsquo;t need fast output adjustment. Use the rubber bushings. They&amp;rsquo;re cheaper, they last longer, and they&amp;rsquo;ll cause a lot less wear on your control module.&lt;/p&gt;
-
-&lt;h2 id=&#34;8-keep-your-cool&#34;&gt;8) Keep Your Cool&lt;/h2&gt;
-
-&lt;p&gt;Your Home Thorium Core Reactor works on the basic principle of moving energy from a hot area to a cool area. If the temperature around your unit gets too high, your radioelectric efficiency will drop. We&amp;rsquo;ve seen drops as great as 50W/Sv in a 12kW unit mounted in direct sunlight in the middle of a South Florida summer.&lt;/p&gt;
-
-&lt;p&gt;The obvious place for a Home Thorium Core Reactor is in the basement, but basements just aren&amp;rsquo;t common in some parts of the country. If that&amp;rsquo;s not an option for you, we recommend the north side of your house (for those of you in the northern hemisphere, of course). That will keep your reactor in the shade during the heat of the summer day, and you&amp;rsquo;ll see the returns in the form of less thorium fuel spent.&lt;/p&gt;
-
-&lt;h2 id=&#34;9-get-up-to-code&#34;&gt;9) Get Up To Code&lt;/h2&gt;
-
-&lt;p&gt;You&amp;rsquo;ll want to make sure your home wiring is up to code when you install your Home Thorium Core Reactor. In most municipalities, you should have pulled a permit and had your installation inspected before the first power up, but we understand that doesn&amp;rsquo;t always happen. Weak aluminum to copper connections can act like resistive loads, wasting power and consuming excess fuel, causing your reactor to run much harder than it would otherwise. Make sure your breaker box and breakers are up to at least the 2145 standard, because your home reactor is capable of delivering more power than the municipal grid, and you need the protection and heat dissipation offered by modern breakers.&lt;/p&gt;
-
-&lt;h2 id=&#34;10-to-insulate-or-not-to-insulate&#34;&gt;10) To Insulate or not To Insulate&lt;/h2&gt;
-
-&lt;p&gt;Surprisingly, given the low cost of Home Thorium Core Reactor generated power, it may not be worth upgrading your home insulation! For the average home, unless you&amp;rsquo;re adding more than 20 R value points to the roof and walls, it&amp;rsquo;s cheaper to simply heat and cool the space as necessary when amortized across the 20 year operational life that can be expected from a well-maintained reactor before it needs its first major overhaul. Additionally, if you live somewhere with very cold winters, we&amp;rsquo;ve seen kits that pass water or glycol around your secondary heat exchanger windings and can be used to run a radiator system or pre-warm your forced air heating. You can expect to see around 2W/Sv efficiency decrease running a system like that in the winter, but you wind up spending less fuel overall heating your home.&lt;/p&gt;
-
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;Over the past decade, Home Thorium Core Reactor technology has proved itself an economical and reliable alternative to municipal power sources, and we expect to see adoption increase in the future. Whether you&amp;rsquo;re on the fence about installing your first reactor, planning your next upgrade, or simply enjoying economical, clean energy, you can follow these simple steps to get years of reliable power generation.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Jeep Box</title>
-      <link>https://agocs.org/blog/2016/01/10/jeep-box/</link>
+      <link>/2016/01/10/2016-01-10-jeepbox/</link>
       <pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://agocs.org/blog/2016/01/10/jeep-box/</guid>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2016/01/10/2016-01-10-jeepbox/</guid>
       <description>&lt;p&gt;One of the problems with Jeep Wrangler ownership is there&amp;rsquo;s nowhere to store things out of sight. Your backpack, laptop, whatever, it&amp;rsquo;s all hangin&amp;rsquo; out there in the open. Even when you&amp;rsquo;ve zipped the top up, there&amp;rsquo;s nothing between your valuables and a set of sticky fingers besides a thin sheet of clear vinyl.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;I wanted to feel better about leaving things in the Jeep, and I wanted to design something sturdy so that I could still carry heavy things in the back of the Jeep. I also wanted to cut down on the general clutter in my cargo area, and I wanted to practice welding.&lt;/p&gt;
-
-&lt;p&gt;I imagined something like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-WhDR5Qd/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-WhDR5Qd/0/L/IMG_20151213_233221-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;So I started with some rough measurements.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-pRWHkrf/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-pRWHkrf/0/XL/IMG_20160110_164946-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;That&amp;rsquo;s a top view and rear view of the back of the Jeep. I had 34.5&amp;rdquo; between the brackets where the rear seat would have mounted if I had one, 35&amp;rdquo; of length to work with, and 15.5&amp;rdquo; between the bottom of the opening and the bottom of the rear window.&lt;/p&gt;
-
-&lt;p&gt;So, to summarize, what I wanted was a drawer and a frame to hold that drawer that fit in the above-defined envelope. The frame would have to be reasonably sturdy, because I&amp;rsquo;d like to put things on top of it too. I&amp;rsquo;m the kind of person who thinks really well in design tools, so I fired up Autodesk and got to work.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-BkMSCKq/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-BkMSCKq/0/M/jeepbox0-M.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-f9XHK5m/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-f9XHK5m/0/M/jeepbox-M.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This was the first pass, and some measurements. I ran it by some Internet folks, and they suggested diagonal bracing.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-C39GHxD/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-C39GHxD/0/M/jeepbox1-M.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;My plan was to attach a sheet of plywood to the top using T-nuts and cap screws, and to put roller bearings on the horizontal bars running along the sides to act as drawer slides. The T-nuts and cap screws were entirely reasonably priced through McMaster-Carr, but the roller bearings were about $5 ea. I found equivalent skate bearings on Amazon for about $1 ea.&lt;/p&gt;
-
-&lt;p&gt;Using the CAD drawings, I figured out what pieces I&amp;rsquo;d need.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-bkW8ccS/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-bkW8ccS/0/L/IMG_20160110_165039-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-KpPPZbL/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-KpPPZbL/0/L/IMG_20160110_165045-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I did some math, and figured I could fit that into 19 pieces of 37&amp;rdquo; x &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;&amp;rdquo; square stock (N.B. I was wrong, and probably should have ordered 20 or 21 pieces). From Metals Supermarket, that was just over $50.&lt;/p&gt;
-
-&lt;p&gt;I got to welding.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-hZ3gTBj/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-hZ3gTBj/0/L/20151122202228-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-3THvt8F/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-3THvt8F/0/L/20151127145653-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Then I realized, I&amp;rsquo;d have to mount this in the Jeep! I&amp;rsquo;d figured I&amp;rsquo;d use the rear seat belt mounting bolt, but I forgot to locate that with my previous measurements. I rectified that.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-vdQh37C/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-vdQh37C/0/L/IMG_20160110_165102-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I bought a sheet of flat steel stock, milled in a hole for the seat belt bolt, and welded that into place. A test-fit revealed that I&amp;rsquo;d milled the hole in the wrong place, so I had to fix that, first with the angle grinder, then with a plasma cutter.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-vJ7hXHd/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-vJ7hXHd/0/L/IMG_20151213_161552-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Finally, it went to paint! I wanted to powder coat it, but I got a $150 quote for powder coating. A little rich for my blood. I used a can and a half of Rustoleum black enamel instead.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-CZvPjPL/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-CZvPjPL/0/L/IMG_20151213_161533-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;While that was curing, I designed the wooden top and drawer.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-M5HxzpL/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-M5HxzpL/0/L/IMG_20160110_165118-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-fzJvNqc/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-fzJvNqc/0/L/IMG_20160110_165126-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I decided to make it all out of &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;&amp;rdquo; plywood, cut from &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; sheets of plywood (because half sheets are easier to move than full sheets). The drawer, I figured I&amp;rsquo;d just use brads and glue to hold it together. If it fell apart, I could always re-do it.&lt;/p&gt;
-
-&lt;p&gt;Because the wooden pieces were just rectangles, I let the robots take care of cutting them out.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-kXbHbZJ/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-kXbHbZJ/0/L/IMG_20151213_190147-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The next night, I loaded up all the pieces and started attaching them together.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-9MDj4c5/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-9MDj4c5/0/L/IMG_20151215_214357-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-VKZjkqQ/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-VKZjkqQ/0/L/IMG_20151215_214523-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The skate bearings I bought had an inner diameter that was just a little bigger than the screws I used, so I turned the screws into cones on the lathe to locate the bearings better (not pictured, but I wish I had).&lt;/p&gt;
-
-&lt;p&gt;Everything in the Jeep so far:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-FbtLRtD/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-FbtLRtD/0/L/IMG_20151215_220627-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-cNtzdDR/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-cNtzdDR/0/L/IMG_20151215_220644-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s been about a month since I finished all that, and I have the drawer together and installed; I just haven&amp;rsquo;t taken pictures of it yet. It served us well on our trip to Georgia &amp;ndash; our valuables went into the drawer, and my wife&amp;rsquo;s big suitcase got strapped to the top.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How I clean my boots</title>
-      <link>https://agocs.org/blog/2015/11/12/how-i-clean-my-boots/</link>
+      <link>/2015/11/12/2015-11-12-how-i-clean-my-boots/</link>
       <pubDate>Thu, 12 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://agocs.org/blog/2015/11/12/how-i-clean-my-boots/</guid>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2015/11/12/2015-11-12-how-i-clean-my-boots/</guid>
       <description>&lt;p&gt;I own a pair of Redwing leather boots. I really like these boots. They&amp;rsquo;re formal enough to be worn with dress clothes, but sturdy enough that I can grub around fixing cars and installing drywall. Good boots take care, especially to keep them waterproof and looking clean. This is what I&amp;rsquo;ve been doing.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Boots/i-tzM95Xg/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Boots/i-tzM95Xg/0/L/20151112132901-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;I start with some dirty boots. Look at that dirt!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Boots/i-jjzVkjC/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Boots/i-jjzVkjC/0/XL/20151112132910-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;We gotta get rid of all that dirt. I use an old microfiber towel. I normally wipe the dirt off every few days, but for a deep clean I&amp;rsquo;ll remove the laces and really go at it.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Boots/i-xLvtPHD/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Boots/i-xLvtPHD/0/XL/20151112133247-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It looks okay, but you can see the dust stuck in some of the natural wrinkles of the leather, as well as the boot&amp;rsquo;s seams. To get that, I go at it with a stiff plastic brush.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Boots/i-FF6vpn6/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Boots/i-FF6vpn6/0/XL/20151112133545-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I brush against the grain, sometimes stretching the boots to get into the wrinkles. I also brush inside all the seams, and around the base of the upper.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Boots/i-dJLzTpg/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Boots/i-dJLzTpg/0/XL/20151112134907-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I follow up with Saddle Soap and a toothbrush. I put a sliver of saddle soap into an old coffee mug that&amp;rsquo;s &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt; full of hot water, stir that up well, and go to town. I get all the seams, re-touch all the wrinkles, and really scrub wherever I&amp;rsquo;ve scuffed the leather. The saddle soap contains glycerin (so I&amp;rsquo;m told) that helps to protect the leather. I scrub one shoe, then the other, then I rub them both dry with the same microfiber towel.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Boots/i-znGdxFH/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Boots/i-znGdxFH/0/XL/20151112140024-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Dried on the left, still wet on the right. We&amp;rsquo;re already doing pretty well, but we could do better.&lt;/p&gt;
-
-&lt;p&gt;I pre-heat the oven to 170 degrees (the lowest it will go), remove the top rack, and put aluminum foil on the bottom rack. I stick the shoes in the oven for 20 minutes or so. This dries the shoes out, gets them nice and warm, and opens up the pores in the leather. Then I rub the shoes with mink oil.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Boots/i-Pnt7Knd/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Boots/i-Pnt7Knd/0/XL/20151112143913-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The mink oil makes the leather more supple, it hides scratches and scuffs, and it adds water resistance. I smear it on heavily, especially the scuffed areas on the toes. Those areas seem to drink up mink oil, so I add more and more until they stop.&lt;/p&gt;
-
-&lt;p&gt;The shoes go back in the oven for another few minutes to let the mink oil really soak in, then I pull them out and turn the oven off. I take a clean rag (or old tee shirt, or old sock) and buff the shoes to a medium luster.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Boots/i-S8CFvkD/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Boots/i-S8CFvkD/0/XL/20151112145809-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Shoe polish? I don&amp;rsquo;t use it on these shoes. I like the look of the natural leather, and I&amp;rsquo;m going to keep caring for these boots in this way as they wear in.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Assigning Globals in Go</title>
-      <link>https://agocs.org/blog/2015/10/10/assigning-globals-in-go/</link>
+      <link>/2015/10/10/2015-10-10-assigning-globals-in-go/</link>
       <pubDate>Sat, 10 Oct 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://agocs.org/blog/2015/10/10/assigning-globals-in-go/</guid>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2015/10/10/2015-10-10-assigning-globals-in-go/</guid>
       <description>&lt;p&gt;This has bitten me in the butt a few times this week, so I figured I&amp;rsquo;d blog about it.&lt;/p&gt;
 
 &lt;h3 id=&#34;be-careful-with-your-scope-when-you-re-assigning-values-to-global-variables-in-go&#34;&gt;Be careful with your scope when you&amp;rsquo;re assigning values to global variables in Go!&lt;/h3&gt;
 
 &lt;p&gt;Here&amp;rsquo;s a quick little example. We have a globally scoped variable, &lt;code&gt;foo&lt;/code&gt;. In our &lt;code&gt;main()&lt;/code&gt;, we call &lt;code&gt;makeSomething()&lt;/code&gt;, which returns to us, we hope, a &lt;code&gt;something&lt;/code&gt; and a &lt;code&gt;nil&lt;/code&gt; error. Then we make that global &lt;code&gt;foo&lt;/code&gt; variable point to that variable.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package main
-
-var foo int
-
-func anInt()(int, error){
-	return 7, nil
-}
-
-func main(){
-	foo, err := anInt()
-	if err != nil {
-		print (&amp;quot;Oh god!&amp;quot;)
-	}
-	println(&amp;quot;foo was assigned the value of&amp;quot;, foo)
-	printFoo()
-}
-
-func printFoo(){
-	println(&amp;quot;I see foo as&amp;quot;, foo)
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Easy peasy, right? Nope.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ go run stuff.go
-foo was assigned the value of 7
-I see foo as 0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;What we&amp;rsquo;ve done is created a &lt;strong&gt;locally scoped&lt;/strong&gt; variable &lt;code&gt;foo&lt;/code&gt; that disappears once we exit &lt;code&gt;main()&lt;/code&gt;! That&amp;rsquo;s because &lt;code&gt;:=&lt;/code&gt; is a short-form variable declaration and assignment. The compiler believes we are declaring a variable &lt;code&gt;foo&lt;/code&gt; and assigning it the value returned by &lt;code&gt;anInt()&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s run through a few possible variations:&lt;/p&gt;
-
-&lt;h3 id=&#34;foo-alreay-exists&#34;&gt;foo alreay exists&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;func main(){
-        foo := 3
-        foo, err := anInt()			// Weirdly, no error here
-        if err != nil {					// Local foo is delcared,
-                print (&amp;quot;Oh god!&amp;quot;)		// assigned 3, then assigned 7.
-        }
-        println(&amp;quot;foo was assigned the value of &amp;quot;, foo)
-        printFoo()
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;just-assign&#34;&gt;Just assign&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;func main(){
-        foo, err = anInt()			// Compiler error!
-        if err != nil {				// undefined: err
-                print (&amp;quot;Oh god!&amp;quot;)
-        }
-        println(&amp;quot;foo was assigned the value of&amp;quot;, foo)
-        printFoo()
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;use-a-temporary-variable&#34;&gt;Use a temporary variable&lt;/h3&gt;
-
-&lt;p&gt;Of course, if we do this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;func main(){
-        f, err := anInt()
-        if err != nil {
-                print (&amp;quot;Oh god!&amp;quot;)
-        }
-	foo = f
-        println(&amp;quot;foo was assigned the value of&amp;quot;, foo)
-        printFoo()
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;we see:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ go run stuff.go
-foo was assigned the value of  7
-I see foo as 7
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&amp;hellip;which is what we&amp;rsquo;d expect. However, that&amp;rsquo;s a little fugly. Let&amp;rsquo;s tidy that up a bit.&lt;/p&gt;
-
-&lt;h3 id=&#34;pre-declare-your-error&#34;&gt;Pre-declare your error&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;func main(){
-        var err error
-        foo, err = anInt()
-        if err != nil {
-                print (&amp;quot;Oh god!&amp;quot;)
-        }
-        println(&amp;quot;foo was assigned the value of &amp;quot;, foo)
-        printFoo()
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Declare an &lt;code&gt;error&lt;/code&gt; called &lt;code&gt;err&lt;/code&gt;, do the assignment, and then go on with your day.&lt;/p&gt;
-
-&lt;p&gt;Anyway, lesson learned. When you&amp;rsquo;re dealing with globally scoped variables and multiple return values and something doesn&amp;rsquo;t behave the way you think it should, make sure you&amp;rsquo;re using the variable you think you&amp;rsquo;re using.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Introducing Uluru</title>
-      <link>https://agocs.org/blog/2015/08/20/introducing-uluru/</link>
+      <link>/2015/08/20/2015-08-20-introducing-uluru/</link>
       <pubDate>Thu, 20 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://agocs.org/blog/2015/08/20/introducing-uluru/</guid>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2015/08/20/2015-08-20-introducing-uluru/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/3/3e/Uluru_Panorama.jpg&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I don&amp;rsquo;t work for &lt;a href=&#34;https://www.backstopsolutions.com/careers&#34;&gt;Backstop&lt;/a&gt; any more (but you should), but back when I did, we discovered we had no idea how long it took our users to load our tools. Hell, we couldn&amp;rsquo;t even figure out how many clicks per month we had! I was working with New Relic trying to get a quote from them, and the best I could do was 2 million plus or minus 800 thousand. We had insight into how long it took our servers to respond to requests, but no thought was given to DNS, loading outside resources, rendering DOM, etc.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;We tried New Relic Browser, but that failed for two reasons. First, something in the few-hundred-kilobytes of minified JavaScript was conflicting with something in our JavaScript in a way that broke automated testing. Second, on a sales call, we determined that Browser really wasn&amp;rsquo;t going to tell us the information we wanted to know. It&amp;rsquo;s a good tool, for sure, but it didn&amp;rsquo;t expose the depth of data we wanted.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/alarmingcow&#34;&gt;Colin&lt;/a&gt; found a tool called &lt;a href=&#34;https://github.com/yahoo/boomerang&#34;&gt;Yahoo Boomerang&lt;/a&gt; which seemed to do what we needed. It would collect metrics on how long it took the page, and various resources on the page, to load, and it would report those data back to a server over here. Simple, right?&lt;/p&gt;
-
-&lt;p&gt;I took two issues with Boomerang. First, it again broke our testing. Second, it used some ridiculous scheme of a GET request with URL parameters inside of an invisible iframe to get data back to the server without any cross-site request issues. This seemed entirely too complicated, and simplicity was one of my overarching goals. I decided to roll my own.&lt;/p&gt;
-
-&lt;p&gt;I was sitting in the audience at &lt;a href=&#34;http://monitorama.com/&#34;&gt;Monitorama&lt;/a&gt;, and one of the speakers mentioned logging how long clients spent loading pages. I asked him about it, and he mentioned something in Vanilla JavaScript that allowed for that. I did some research, found out about &lt;code&gt;window.performance.Timing&lt;/code&gt;, and thus Uluru was born.&lt;/p&gt;
-
-&lt;p&gt;The name, incidentally, came from back when I was experimenting with Boomerang. I needed a server to throw Boomerang data at, so I picked the famous Australian sandstone formation Uluru.&lt;/p&gt;
-
-&lt;h2 id=&#34;design-goals&#34;&gt;Design goals&lt;/h2&gt;
-
-&lt;p&gt;There exist other solutions, commercial and open source, for recording and reporting on browser telemetry. It was found, however, that these solutions were significantly complex, and in many cases interfered with JavaScript we were already using, causing JavaScript errors and preventing the browser from rendering UI elements. Therefore, the design goals of Uluru became:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Minimalism: Uluru.js is 47 lines of whitespace-heavy JavaScript. It should be extremely readable.&lt;/li&gt;
-&lt;li&gt;Light weight: When minified, Uluru.js squishes down under 500 bytes.&lt;/li&gt;
-&lt;li&gt;Speed: Uluru.js has no dependencies on other JS libraries.&lt;/li&gt;
-&lt;li&gt;No hacks: Uluru.js makes a single POST request to a remote server. It does not e.g. cram metrics into query parameters and make a series of requests GETting hidden images or iframes.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;implementation&#34;&gt;Implementation&lt;/h2&gt;
-
-&lt;h3 id=&#34;client-side&#34;&gt;Client side&lt;/h3&gt;
-
-&lt;p&gt;Uluru is a function that, when called, gets the time since navigation started and some other metrics, and sends those to an endpoint. We&amp;rsquo;ve set it up such that &lt;code&gt;uluru(endpoint)&lt;/code&gt; is called when &lt;code&gt;window.onload&lt;/code&gt; fires, under the assumption that most of our product is useful by that point.&lt;/p&gt;
-
-&lt;p&gt;Uluru collects the following data:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;url: the &lt;code&gt;window.location.href&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;connectionTime: the time (ms since UNIX epoch) the connection was initiated.&lt;/li&gt;
-&lt;li&gt;connectionDelta: the time spent establishing a connection to the server&lt;/li&gt;
-&lt;li&gt;firstByte: the time spent waiting for the server to respond with the first byte of data&lt;/li&gt;
-&lt;li&gt;responseDelta: the time the server spent sending a response to the client&lt;/li&gt;
-&lt;li&gt;loadTime: time between the &lt;code&gt;navigationStart&lt;/code&gt; and &lt;code&gt;window.onload&lt;/code&gt; events.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It also calls &lt;code&gt;window.performance.getEntries()&lt;/code&gt; to provide specific timing on every resource (script, image, stylesheet, etc.) included in the page load.&lt;/p&gt;
-
-&lt;h3 id=&#34;server-side&#34;&gt;Server side&lt;/h3&gt;
-
-&lt;p&gt;Uluru rolls all the data it collects up into one PUT request. The easiest way to collect Uluru data is to include a data collection REST endpoint in your existent web application (or, if you&amp;rsquo;re feeling clever, make your web proxy route Uluru requests to a specific Uluru logging server.&lt;/p&gt;
-
-&lt;p&gt;Alternatively, you could set the &lt;code&gt;Access-Control-Allow-Origin&lt;/code&gt; header to allow the browser to make POST requests to a separate server you&amp;rsquo;ve spun up for this purpose.&lt;/p&gt;
-
-&lt;p&gt;Either way, what we&amp;rsquo;ve wound up doing is writing the Uluru data out to Splunk, and aggregating it there in interesting ways.&lt;/p&gt;
-
-&lt;h2 id=&#34;data&#34;&gt;Data&lt;/h2&gt;
-
-&lt;p&gt;Here&amp;rsquo;s some of the data we were able to collect!&lt;/p&gt;
-
-&lt;h3 id=&#34;page-loads-and-appdexes&#34;&gt;Page loads and Appdexes&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Misc/i-6PnMZv4/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Misc/i-6PnMZv4/0/M/Screen%20Shot%202015-09-04%20at%201.57.31%20PM-M.png&#34; alt=&#34;Photo &amp;amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;One neat thing we didn&amp;rsquo;t have before is an easy way to count how many page loads our system saw, how many unique users we had actively using our system, or how many clients were logged in on a given day. When you start making changes to system performance, you start thinking about things differently when you consider the 1ms wait you just removed will be multiplied by 73,000 over the course of a day.&lt;/p&gt;
-
-&lt;p&gt;Appdex is an interesting measure of system speed. You select a goal speed (2 seconds on the left, 4 seconds on the right), and you count page loads. Every page load that took under the goal speed counts for 1. Every load that took greater than the goal speed but under twice the goal speed counts for .5, and the rest count for 0. You divide the counted page loads by the total page loads, and you get a number between 0 and 1 that gives you a decent metric for how happy or sad your users are.&lt;/p&gt;
-
-&lt;p&gt;One really interesting thing we saw from this, we found by looking at individual clients. One of our clients had a significantly lower Appdex than the rest. We did some digging, and found that a condition in their data made every JSP load a huge number of records from the database to generate a list they never used. We disabled that for them, and they got much happier without ever realizing they were sad!&lt;/p&gt;
-
-&lt;h3 id=&#34;speed-breakdown&#34;&gt;Speed breakdown&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Misc/i-trpgpLZ/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Misc/i-trpgpLZ/0/M/Screen%20Shot%202015-09-04%20at%201.58.09%20PM-M.png&#34; alt=&#34;Photo &amp;amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This is a bit more boring, but it lets us know how many page loads are fast, acceptable, slow, or super slow. Comparing, e.g., last hour with last 7 days lets us see any system wide problems before our clients call in.&lt;/p&gt;
-
-&lt;h3 id=&#34;page-load-histograms&#34;&gt;Page load histograms&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Misc/i-sh6FZWC/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Misc/i-sh6FZWC/0/M/Screen%20Shot%202015-09-04%20at%201.59.35%20PM-M.png&#34; alt=&#34;Photo &amp;amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;These let us know at a glance how our page loads are distributed. We could, for example, notice a bi-modal distribution. It wouldn&amp;rsquo;t affect our average or median scores, but it would be indicative of something fishy.&lt;/p&gt;
-
-&lt;p&gt;I once noticed a particular user sending back negative page load speeds. I investigated it for a little bit and decided it was just one of those weird things that happen when you rely on multiple sources of time.&lt;/p&gt;
-
-&lt;h3 id=&#34;slow-pages&#34;&gt;Slow pages&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Misc/i-X5dKdQs/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Misc/i-X5dKdQs/0/M/Screen%20Shot%202015-09-04%20at%201.59.45%20PM-M.png&#34; alt=&#34;Photo &amp;amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This report gives us some neat insight into what&amp;rsquo;s been taking a long time to load. You look at each one, make sure it makes sense, and then use this graph to help prioritize your projects.&lt;/p&gt;
-
-&lt;h3 id=&#34;time-sinks&#34;&gt;Time sinks&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Misc/i-RJRsk3M/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Misc/i-RJRsk3M/0/M/Screen%20Shot%202015-09-04%20at%201.59.53%20PM-M.png&#34; alt=&#34;Photo &amp;amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Likewise, just counting the total amount of time sunk into a resource is helpful. You might (much like we do) have a page that clients hit all the time. It might load in under two seconds, but if you can shave 10 % off of that, you&amp;rsquo;re saving 20 hours per week aggregated across all of your users.&lt;/p&gt;
-
-&lt;p&gt;You can get a lot of really interesting data from visualizations like this. Use these to help justify speed projects.&lt;/p&gt;
-
-&lt;h2 id=&#34;further-directions&#34;&gt;Further directions&lt;/h2&gt;
-
-&lt;p&gt;Currently, the Uluru project includes some stub code for a generic REST endpoint. I want to flush this out into something that writes logs for splunkd or logstash, or forwards data to services like Sensu or Riemann.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Internet Jukebox</title>
-      <link>https://agocs.org/blog/2015/07/30/internet-jukebox/</link>
+      <link>/2015/07/30/2015-07-30-internet-jukebox/</link>
       <pubDate>Thu, 30 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://agocs.org/blog/2015/07/30/internet-jukebox/</guid>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2015/07/30/2015-07-30-internet-jukebox/</guid>
       <description>&lt;p&gt;One of the hackerspaces at which I am a member installed a Beaglebone Black on their door and put a speaker outside.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://imgur.com/v3esU7N&#34;&gt;&lt;img src=&#34;http://i.imgur.com/v3esU7Nl.jpg&#34; title=&#34;source: imgur.com&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;http://imgur.com/Pyb5A9A&#34;&gt;&lt;img src=&#34;http://i.imgur.com/Pyb5A9Al.jpg&#34; title=&#34;source: imgur.com&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Now we can play sounds to the street, but to do so, you have to ssh into the Beaglebone. That&amp;rsquo;s not bad, but it&amp;rsquo;s a hassle. Okay, so can I make a REST endpoint that plays music?&lt;/p&gt;
-
-&lt;p&gt;(The answer is yes.)&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s the &lt;a href=&#34;https://github.com/agocs/bbb_sound_server&#34;&gt;repo&lt;/a&gt;. Let&amp;rsquo;s go through it.&lt;/p&gt;
-
-&lt;h2 id=&#34;structure&#34;&gt;Structure&lt;/h2&gt;
-
-&lt;p&gt;There are two endpoints, &lt;code&gt;/&lt;/code&gt; and &lt;code&gt;/play/&lt;/code&gt;. &lt;code&gt;/&lt;/code&gt; returns a simple HTML form that lets the user upload a sound file. When the user clicks &lt;code&gt;Submit&lt;/code&gt;, a &lt;code&gt;POST&lt;/code&gt; request is made to &lt;code&gt;/play/&lt;/code&gt;. The sound file is extracted from the form data, and asynchronously processed.&lt;/p&gt;
-
-&lt;p&gt;The sound file process is thus: it is saved to a temporary file on disk, &lt;code&gt;mplayer&lt;/code&gt; is called on that file, and then when that process terminates, the sound file is removed.&lt;/p&gt;
-
-&lt;h3 id=&#34;serving-a-static-html-page&#34;&gt;Serving a static html page&lt;/h3&gt;
-
-&lt;p&gt;is easy.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;controlfs := http.FileServer(http.Dir(&amp;quot;control&amp;quot;))
-http.Handle(&amp;quot;/&amp;quot;, controlfs)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;There&amp;rsquo;s a directory called &lt;code&gt;control&lt;/code&gt;, and it contains &lt;code&gt;index.html&lt;/code&gt;. When you hit &lt;code&gt;/&lt;/code&gt;, you get index.html. Wildly easy.&lt;/p&gt;
-
-&lt;h3 id=&#34;creating-that-rest-endpoint&#34;&gt;Creating that REST endpoint&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;http.HandleFunc(&amp;quot;/play/&amp;quot;, func(w http.ResponseWriter, req *http.Request) {
-    if req.Method == &amp;quot;POST&amp;quot; {
-
-        if req.ContentLength &amp;gt; 10485760 {
-            w.WriteHeader(http.StatusBadRequest)
-            w.Write([]byte(&amp;quot;File size capped at 10mb&amp;quot;))
-            return
-        }
-
-        soundFile, headers, err := req.FormFile(&amp;quot;soundFile&amp;quot;)
-        if err != nil {
-            log.Printf(&amp;quot;Error getting soundFile from Form. \n %s&amp;quot;, err.Error())
-            w.WriteHeader(http.StatusServiceUnavailable)
-            return
-        }
-        log.Printf(&amp;quot;Recieved %s&amp;quot;, headers.Filename)
-        w.Write([]byte(&amp;quot;All done!&amp;quot;))
-        go playASound(soundFile)
-
-    } else {
-        w.WriteHeader(http.StatusMethodNotAllowed)
-
-        //TODO(cagocs): maybe return 200 with the name of the sound playing?
-    }
-})
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Briefly, here&amp;rsquo;s what we&amp;rsquo;re doing:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Setting up a url pattern, &lt;code&gt;/play&lt;/code&gt;/.&lt;/li&gt;
-&lt;li&gt;Defining an anonymous function that runs when you hit &lt;code&gt;/play&lt;/code&gt;/&lt;/li&gt;
-&lt;li&gt;Checking the request method.
-
-&lt;ul&gt;
-&lt;li&gt;if it&amp;rsquo;s &lt;code&gt;POST&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Check the content-length. If it&amp;rsquo;s greater than 10 MiB, return a status code 400.&lt;/li&gt;
-&lt;li&gt;Get the &lt;code&gt;soundFile&lt;/code&gt; out of the form.&lt;/li&gt;
-&lt;li&gt;Log the filename&lt;/li&gt;
-&lt;li&gt;Return a status code 200&lt;/li&gt;
-&lt;li&gt;Asynchronously play the file&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;if it isn&amp;rsquo;t
-
-&lt;ul&gt;
-&lt;li&gt;Return a status code 405&lt;/li&gt;
-&lt;li&gt;I considered returning a string representation of all the files playing, but didn&amp;rsquo;t.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;em&gt;One quick point:&lt;/em&gt; Yes, it&amp;rsquo;s possible to spoof the content-length in a request. I didn&amp;rsquo;t check for that. If you decide to run this in any sort of mission critical sense, maybe watch out for that.&lt;/p&gt;
-
-&lt;h3 id=&#34;playing-a-sound&#34;&gt;Playing a sound&lt;/h3&gt;
-
-&lt;p&gt;func playASound(file multipart.File) {
-        soundFile, err0 := ioutil.TempFile(&amp;ldquo;&amp;rdquo;, &amp;ldquo;sound_&amp;ldquo;)
-        if err0 != nil {
-            log.Printf(&amp;ldquo;Error initializing new file&amp;rdquo;)
-        }&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    buffer, err1 := ioutil.ReadAll(file)
-    if err1 != nil {
-        log.Printf(&amp;quot;Error reading mime multipart file&amp;quot;)
-    }
-
-    err2 := ioutil.WriteFile(soundFile.Name(), buffer, os.ModeTemporary)
-    if err2 != nil {
-        log.Printf(&amp;quot;Error writing file to disk&amp;quot;)
-    }
-
-    cmd := exec.Command(&amp;quot;mplayer&amp;quot;, soundFile.Name())
-
-    err3 := cmd.Run()
-    if err3 != nil {
-        log.Printf(&amp;quot;Error playing file %s&amp;quot;, soundFile.Name())
-    }
-
-    soundFile.Close()
-    err4 := os.Remove(soundFile.Name())
-    if err4 != nil {
-        log.Println(&amp;quot;Error deleting %s&amp;quot;, soundFile.Name())
-    }
-
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;So now we have a sound file in memory. How do we get it to the speakers? I spent a long time screwing around trying to figure out a &amp;ldquo;pure Go&amp;rdquo; solution, gave up, and decided to cheat. The Beaglebone Black will probably ship with &lt;a href=&#34;https://en.wikipedia.org/wiki/MPlayer&#34;&gt;MPlayer&lt;/a&gt;; why not use that?&lt;/p&gt;
-
-&lt;p&gt;I skimmed through some code examples and came up with the solution above. &lt;code&gt;playASound&lt;/code&gt; is running asynchronously, so it can spend some time doing what it needs to do. It creates a new &lt;code&gt;TempFile&lt;/code&gt;, and writes the sound file there. It then creates a &lt;code&gt;Command&lt;/code&gt; that calls &lt;code&gt;mplayer&lt;/code&gt; and passes the name of the temporary file to &lt;code&gt;mplayer&lt;/code&gt; as an argument. &lt;code&gt;Mplayer&lt;/code&gt; plays the file, and when the &lt;code&gt;mplayer&lt;/code&gt; process completes, our goroutine closes and removes the temporary file.&lt;/p&gt;
-
-&lt;h2 id=&#34;running&#34;&gt;Running&lt;/h2&gt;
-
-&lt;p&gt;I decided to not take my own advice and open this up to the general internet a few days ago. I used port forwarding on my router to forward :3030 on my external IP address to port :3030 on my laptop, and ran the program. I posted about it on IRC, forums, and made an Imgur post, and I got a few people participating.&lt;/p&gt;
-
-&lt;p&gt;I found it to be incredibly stable. No crashing, no issues running 4 to 6 instances of mplayer on top of one another. I was pleased with how the server handled unexpected EOFs and connection timeouts. Lastly, I discovered that letting people assault my ears with a barrage of mp3s is fun!&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Sun Visor Bracket</title>
-      <link>https://agocs.org/blog/2015/03/01/sun-visor-bracket/</link>
+      <link>/2015/03/01/2015-03-01-sun-visor-bracket/</link>
       <pubDate>Sun, 01 Mar 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://agocs.org/blog/2015/03/01/sun-visor-bracket/</guid>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2015/03/01/2015-03-01-sun-visor-bracket/</guid>
       <description>&lt;p&gt;I shattered the sun visor bracket on my Jeep in the cold this winter, so I did the only sensible thing. I tried to machine a new one.&lt;/p&gt;
 
-&lt;p&gt;I started with a block of 2&amp;rdquo; by 4&amp;rdquo; aluminum stock. I cut 2&amp;rdquo; off of it with a band saw. The blade popped off of its guide with about &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;10&lt;/sub&gt;&amp;rdquo; left to go, so fixing that was a fun diversion.&lt;/p&gt;
+&lt;p&gt;I started with a block of 2&amp;raquo; by 4&amp;raquo; aluminum stock. I cut 2&amp;raquo; off of it with a band saw. The blade popped off of its guide with about 1/10&amp;raquo; left to go, so fixing that was a fun diversion.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;I finally got a piece mounted in the Bridgeport and milled a few reference surfaces. I sent this picture to my friend to ask about the finish on that side milling. He said it was normal, if a little fugly.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-P5TTwjH/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-P5TTwjH/0/L/20150301140926-L.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I call this picture, &amp;ldquo;Where the hell did I put my calipers?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-TwhTxdW/A&#34; title=&#34;&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-TwhTxdW/0/L/20150301_143828-L.jpg&#34; title=&#34;&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This is one of my favorite parts of machining. On the left, you can see the rough cut that&amp;rsquo;s out-of-square. On the right, the machined surface.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-wrpwHTL/A&#34; title=&#34;&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-wrpwHTL/0/L/20150301_144604-L.jpg&#34; title=&#34;&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I took a bunch more cuts, and got here.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-x8gJt6Q/A&#34; title=&#34;&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-x8gJt6Q/0/L/20150301_162907-L.jpg&#34; title=&#34;&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Then I messed up.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-Btb5N32/A&#34; title=&#34;&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-Btb5N32/0/L/20150301_215830-L.jpg&#34; title=&#34;&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Notice the middle part? That would be perfect, if the sun visor stuck up. Of course, it hangs down, so this part is completely worthless. Fortunately, I have enough stock to make a second one.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Message Queues and Go</title>
-      <link>https://agocs.org/blog/2014/12/09/message-queues-and-go/</link>
+      <link>/2014/12/09/2014-12-09-message-queues-and-go/</link>
       <pubDate>Tue, 09 Dec 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://agocs.org/blog/2014/12/09/message-queues-and-go/</guid>
-      <description>&lt;p&gt;I gave a talk last night to the ChicaGoLang meetup entitled &amp;ldquo;Message Queues and Go.&amp;rdquo; It went over using a Message Queue Broker as a backbone to tie together a service oriented archetecture, with examples in Go.&lt;/p&gt;
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2014/12/09/2014-12-09-message-queues-and-go/</guid>
+      <description>&lt;p&gt;I gave a talk last night to the ChicaGoLang meetup entitled &amp;laquo;Message Queues and Go.&amp;raquo; It went over using a Message Queue Broker as a backbone to tie together a service oriented archetecture, with examples in Go.&lt;/p&gt;
 
 &lt;p&gt;I put my slides here:&lt;/p&gt;
 
@@ -786,10 +185,10 @@ http.Handle(&amp;quot;/&amp;quot;, controlfs)
     
     <item>
       <title>Jeep Quest Part 4</title>
-      <link>https://agocs.org/blog/2014/11/29/jeep-quest-part-4/</link>
+      <link>/2014/11/29/2014-11-29-jeep-quest-part-4/</link>
       <pubDate>Sat, 29 Nov 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://agocs.org/blog/2014/11/29/jeep-quest-part-4/</guid>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2014/11/29/2014-11-29-jeep-quest-part-4/</guid>
       <description>&lt;p&gt;Jeepquest is at an end!&lt;/p&gt;
 
 &lt;p&gt;Thank you all so much for bearing with my inconsistently numbered posts.&lt;/p&gt;
@@ -798,186 +197,390 @@ http.Handle(&amp;quot;/&amp;quot;, controlfs)
 
 &lt;p&gt;Today, Sabrina and I drove up to Kenosha, WI to take a look at this 2002 Wrangler X. First, we had breakfast at a place called The Coffee Pot, where the only not-so-great thing was their coffee. Afterwards, we went to Dan Stipler&amp;rsquo;s Auto World.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;This Wrangler looks almost bone stock. It has an aftermarket headunit and no rear seats, but beyond that, it&amp;rsquo;s amazingly clean. What&amp;rsquo;s better: no rust! According to the paperwork, this Jeep is from Arizona. The frame and suspension are utterly pristine.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-BMb8gf4/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-BMb8gf4/0/M/20141129_133037-M.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The salesman admitted he couldn&amp;rsquo;t drive stick, so he asked me to pull it around. As cold as it&amp;rsquo;s been, the Jeep needed a jump. It started right up once we did that, and Sabrina and I went for a test drive. We remarked on how smooth the engine felt relative to the other Jeep we&amp;rsquo;d test driven together, how smooth the ride was once we got to the nicer roads, and how well it pulled.&lt;/p&gt;
-
-&lt;p&gt;The fuel light was on and we&amp;rsquo;d been test driving for almost 20 minutes, so we stopped at a gas station to throw $5 worth of fuel in it. I got back in the Jeep to get back home, and it wouldn&amp;rsquo;t start! I noticed a Toyota Landcruiser with bull bars and Star Wars vinyl decals on it, and I asked them if they&amp;rsquo;d give me a jump. We get to talking, and they&amp;rsquo;ve driven up from Florida. Sabrina and them talked about Tampa for a minute, then we got the Jeep started.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-2LtX85D/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-2LtX85D/0/M/20141129_133017-M.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;We drove back to the dealership and talked about it. Sabrina liked this Jeep a lot, and we decided on some negotiating tactics. They were asking 10,955. I&amp;rsquo;d point out the high mileage and lack of rear seat, and offer 8. Our highest was 9,500.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-wkLtvhd/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-wkLtvhd/0/M/20141129_133043-M.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I sat down with the salesman and we did just that (when I mentioned the missing seat, the salesman gave me a look that let me know I had him over a barrel a little bit). We agreed on a final price, and they wouldn&amp;rsquo;t be replacing the rear seat. Sabrina got back on the road while I signed the paperwork.&lt;/p&gt;
-
-&lt;p&gt;On the way back, I stopped by Mars Cheese Castle!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-nzsX7jT/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-nzsX7jT/0/M/20141129155154-M.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;A bonus that came with the Jeep: a CD labeled &amp;ldquo;Vegas 2012&amp;rdquo;. I listened to it for a while, seemed to mostly be West Coast rap I didn&amp;rsquo;t recognize. I switched to NPR.&lt;/p&gt;
-
-&lt;p&gt;Success!&lt;/p&gt;
-
-&lt;p&gt;Stuff to get/replace:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Rear seat&lt;/li&gt;
-&lt;li&gt;Windshield wipers are looking gnarly&lt;/li&gt;
-&lt;li&gt;One of the rubber windshield hood rests (ordered)&lt;/li&gt;
-&lt;li&gt;Head unit with a less ugly one&lt;/li&gt;
-&lt;li&gt;Locking underseat storage drawer&lt;/li&gt;
-&lt;li&gt;Spare tire is looking a little old and cracked, despite never having been used. The other tires are worn, but not egregiously so. They are M+S rated Firestone ATs. I&amp;rsquo;ll replace all the tires in probably six months&amp;rsquo; time.&lt;/li&gt;
-&lt;li&gt;Tow hooks&lt;/li&gt;
-&lt;li&gt;Grab handles&lt;/li&gt;
-&lt;li&gt;Side steps&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Stuff it could probably use:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Oil change (Little darker than I&amp;rsquo;d like)
-
-&lt;ul&gt;
-&lt;li&gt;Blackstone Labs analysis&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Coolant flush/fill (looked OK, do eventually)&lt;/li&gt;
-&lt;li&gt;Other fluids eventually&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Cincinnati Chili</title>
-      <link>https://agocs.org/blog/2014/11/25/cincinnati-chili/</link>
+      <link>/2014/11/25/2014-11-25-cincinnati-chili/</link>
       <pubDate>Tue, 25 Nov 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://agocs.org/blog/2014/11/25/cincinnati-chili/</guid>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2014/11/25/2014-11-25-cincinnati-chili/</guid>
       <description>&lt;p&gt;One of my favorite foods to make is Cincinnati Chili.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Misc/i-FqqCCFQ/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Misc/i-FqqCCFQ/0/M/20141021214234-M.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Cincinnati Chili is interesting for two reasons. First, the texture is different from that of most chilis. Rather than browning ground beef, the chili substrate is made by breaking raw ground beef up into cold water and bringing that to a boil. You wind up with a much finer texture than you would otherwise. Second, Cincinnati Chili gets a lot of its flavor from cocoa powder and cinnamon. It&amp;rsquo;s not sweet by any means, but it&amp;rsquo;s much different from other chilis.&lt;/p&gt;
-
-&lt;p&gt;I used to rely on &lt;a href=&#34;http://en.wikibooks.org/wiki/Cookbook:Cincinnati-Style_Chili&#34;&gt;this recipe from Wikibooks&lt;/a&gt;, but measuring out all the spices takes forever. I recently re-coded the recipe to use weights, and I can throw together the spice mixture in less than ten minutes. It&amp;rsquo;s impressive.&lt;/p&gt;
-
-&lt;p&gt;Anyway, grab a medium-sized bowl and put it on top of your favorite kitchen scale. If you don&amp;rsquo;t have .25 gram precision, don&amp;rsquo;t worry about it too much. Just kinda winging it is okay, we&amp;rsquo;re not baking here.&lt;/p&gt;
-
-&lt;p&gt;Into that bowl, put the following:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Vinegar &amp;ndash; 13 g&lt;/li&gt;
-&lt;li&gt;Worstershire sauce &amp;ndash; 4 g&lt;/li&gt;
-&lt;li&gt;Chili powder &amp;ndash; 23 g&lt;/li&gt;
-&lt;li&gt;Salt &amp;ndash; 23 g&lt;/li&gt;
-&lt;li&gt;Cocoa powder (unsweetened) &amp;ndash; 3 g&lt;/li&gt;
-&lt;li&gt;Cumin (ground) &amp;ndash; 1 g&lt;/li&gt;
-&lt;li&gt;Oreagano &amp;ndash; .5 g&lt;/li&gt;
-&lt;li&gt;Cayanne pepper &amp;ndash; .5 g&lt;/li&gt;
-&lt;li&gt;Black pepper (ground) &amp;ndash; .5 g&lt;/li&gt;
-&lt;li&gt;Cinnamon &amp;ndash; .5 g&lt;/li&gt;
-&lt;li&gt;Allspice (ground) &amp;ndash; .5 g&lt;/li&gt;
-&lt;li&gt;Marjoram &amp;ndash; .25 g&lt;/li&gt;
-&lt;li&gt;Bay leaves &amp;ndash; 2&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Add to that&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Garlic, 2 cloves finely chopped&lt;/li&gt;
-&lt;li&gt;Onion, 1 large or 2 small, chopped&lt;/li&gt;
-&lt;li&gt;Tomato paste, 1 can&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Put that aside. Get a decent sized pot, and put in one quart of cold water. Put two pounds of ground beef in there along with your spice mixture, then get your hands in there. You want to make a thin beef slurry.&lt;/p&gt;
-
-&lt;p&gt;Bring that to a boil, cover, and let it simmer for about two hours. You&amp;rsquo;ll know it&amp;rsquo;s getting ready when it starts taking on a reddish tinge like this.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Misc/i-cKKjddd/A&#34; title=&#34;&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Misc/i-cKKjddd/0/M/20141021211059-M.jpg&#34; title=&#34;&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Serve over spaghetti, covered with a generous portion of grated cheddar cheese and oyster crackers. Add beans if you must. Serves around 6.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Jeep Quest part 3</title>
-      <link>https://agocs.org/blog/2014/11/18/jeep-quest-part-3/</link>
+      <link>/2014/11/18/2014-11-18-jeep-quest-part-3/</link>
       <pubDate>Tue, 18 Nov 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://agocs.org/blog/2014/11/18/jeep-quest-part-3/</guid>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2014/11/18/2014-11-18-jeep-quest-part-3/</guid>
       <description>&lt;p&gt;I took a vacation day today and saw another Jeep!&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-GM5XjVz/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-GM5XjVz/0/M/20141118121516-M.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;It was in a (blessedly indoor) used car lot way up on Pulaski and Addison. It took me, no joke, three busses and an hour and a half to get there. I walked past the place once, walked past it in the other direction, and then went into the wrong business where they were helpful enough to give me directions (turn right and go two doors down).&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;The Jeep is clean. The lot wants almost $8,000 for it, and it has 187,000 miles. It&amp;rsquo;s got the Sahara trim package, and the interior is really quite nice. The only problem I could find is the resistor pack for the blower motor is shot. That&amp;rsquo;s a $13 part on Amazon, though, and it would take like 30 minutes to change. It&amp;rsquo;s a haggling point.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-KfDFJFJ/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-KfDFJFJ/0/M/20141118121540-M.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The exterior is solid. Paint is worn off in a few weird places, and there&amp;rsquo;s a little bit of surface rust in the back. The tires are decent, but I would really feel more comfortable with a fresher set &amp;ndash; especially the rears.&lt;/p&gt;
-
-&lt;p&gt;It &lt;em&gt;does&lt;/em&gt; have the hard top, though. I&amp;rsquo;d prefer the soft top. Honestly, though, I could probably sell the hard top, turn around and buy a new soft top, and still wind up pocketing a little bit of cash.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-P59HNxs/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-P59HNxs/0/M/20141118121558-M.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-8G42Qf7/A&#34; title=&#34;&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-8G42Qf7/0/M/20141118121641-M.jpg&#34; title=&#34;&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The engine, on the other hand, is clean and all the pieces are there.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-MQRWBR8/A&#34; title=&#34;&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-MQRWBR8/0/M/20141118121446-M.jpg&#34; title=&#34;&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The engine took a second to crank. The battery looked ok, but the terminals were a little corroded. That might be something to fix. Once it started up, however, it was really smooth; much better than the last Jeep I looked at.&lt;/p&gt;
-
-&lt;p&gt;It does have the 3 speed automatic transmission, which is a down-side to me. The shifts (both of &amp;lsquo;em) were smoother than I expected. It acutally feels quit nicely geared around town, but the engine sounds like it&amp;rsquo;s working a little harder than I would like it to work on the highway. I imagine (traffic, even at noon on a Tuesday, was too heavy to get it up past 55) it would cruise around 65 mph at 3,000 RPM, which is okay. The cruise control is a little slow to react.&lt;/p&gt;
-
-&lt;p&gt;I stopped in a neighborhood and tried to figure out the four wheel drive modes. The first time I tried it, I wound up stuck for a minute with the transfer case in neutral after coming out of 4 low with an Audi beeping at me to move. I fiddled with it for a second and finally found 2 high in time to move out of the way. I pulled over a little later, and the transfer case was a lot easier to work with.&lt;/p&gt;
-
-&lt;p&gt;Fun fact: stepping on the brake hard enough to keep the car stopped with the transmission in drive and the transfer case  in 2 high will not keep the car stopped in 4 low. It&amp;rsquo;s a little disconcerting just how much the Jeep wants to &lt;em&gt;go&lt;/em&gt; when it&amp;rsquo;s in 4 low.&lt;/p&gt;
-
-&lt;p&gt;I will talk it over with Sabrina. I might show it to her, and offer the guy $5,000 hoping to settle in the $6,000 range. The mileage really doesn&amp;rsquo;t scare me that much. It looks like the previous owner really cared for the vehicle, as evidenced by the lack of tacky mods and the Glacier National Park bumper sticker on the back.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Jeep Quest part II</title>
-      <link>https://agocs.org/blog/2014/11/16/jeep-quest-part-ii/</link>
+      <link>/2014/11/16/2014-11-16-jeep-quest-part-ii/</link>
       <pubDate>Sun, 16 Nov 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://agocs.org/blog/2014/11/16/jeep-quest-part-ii/</guid>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2014/11/16/2014-11-16-jeep-quest-part-ii/</guid>
       <description>&lt;p&gt;We saw a Jeep today! The first we&amp;rsquo;ve seen as part of Jeep Quest. It was a 2000 Wrangler with 167,000 miles, owned by an older Russian man who was asking $6,500.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Misc/i-JHrhXJ7/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Misc/i-JHrhXJ7/0/L/20141116122017-L.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;The guy said it had a five inch lift of unknown origin, and that his son was going to take the hard top off and put a soft top on. He&amp;rsquo;d just replaced the cooling system and catalytic converter. There was some wacky bumper on the front. The body was in great condition, and there was very little rust on the frame. The interior was okay &amp;ndash; the son had fitted some ridiculous CD player with DVD nonsense, and there were a few stray wires poking out from under the dash. We took it on a test drive around the block. Sabrina commented that she had forgotten how bouncy Jeeps were, but she liked it overall.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Jeep-Quest Part 1</title>
+      <link>/2014/11/16/2014-11-16-jeep-quest-part-1/</link>
+      <pubDate>Sun, 16 Nov 2014 00:00:00 +0000</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2014/11/16/2014-11-16-jeep-quest-part-1/</guid>
+      <description>&lt;p&gt;When Sabrina and I moved to Chicago a year and a half ago, we sold both our cars. I&amp;rsquo;m not saying that was a mistake, but I have to spend an hour each way on public transit for both hackerspaces and the radio station, and the grocery delivery people always manage to surprise you. We decided we wanted a reliable vehicle to see us through the next few years here in the Second City. I, being me, want something fun and a little ridiculous. I managed to talk Sabrina into a TJ Wrangler.&lt;/p&gt;
 
-&lt;p&gt;Major issues:&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pictures of my Blog</title>
+      <link>/2014/09/23/2014-09-23-pictures-of-my-blog/</link>
+      <pubDate>Tue, 23 Sep 2014 10:34:20 -0500</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2014/09/23/2014-09-23-pictures-of-my-blog/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Misc/i-CMhRqgS/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Misc/i-CMhRqgS/0/L/Screenshot_2014-09-23-10-33-13-L.png&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;laquo;Tell McHugh that I will tweet pictures of my blog as often as I want.&amp;raquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Surge Soup</title>
+      <link>/2014/09/22/2014-09-22-surge-soup/</link>
+      <pubDate>Mon, 22 Sep 2014 15:56:58 -0500</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2014/09/22/2014-09-22-surge-soup/</guid>
+      <description>&lt;p&gt;At Backstop, we name releases after soups. In order for something to be considered a soup, you must be able to find a picture of it in a bowl on the Internet. According, therefore,  to the rules at &lt;a href=&#34;https://www.backstopsolutions.com/careers&#34;&gt;Backstop Solutions Group&lt;/a&gt;, this constitutes An Ice Cold Glass of Surge soup:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Misc/i-FSSp2mP/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Misc/i-FSSp2mP/0/L/20140922155242-L.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If you like this and other kookyness, you should work at Backstop!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AGOX Connectors</title>
+      <link>/2014/09/19/2014-09-19-agox-connectors/</link>
+      <pubDate>Fri, 19 Sep 2014 10:23:41 -0500</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2014/09/19/2014-09-19-agox-connectors/</guid>
+      <description>&lt;p&gt;###Or, how we hacked reality&lt;/p&gt;
+
+&lt;p&gt;This is an eight-pin AGOX connector:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://i.imgur.com/NHrH5hOl.jpg&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Telescope Update</title>
+      <link>/2014/09/15/2014-09-15-telescope-update/</link>
+      <pubDate>Mon, 15 Sep 2014 07:53:44 -0500</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2014/09/15/2014-09-15-telescope-update/</guid>
+      <description>&lt;p&gt;I went to the &lt;a href=&#34;http://sshchicago.org&#34;&gt;Southside Hackerspace&lt;/a&gt; this weekend to do some work on the telescope project. No major developments, but the following is worth pointing out:&lt;/p&gt;
+
+&lt;p&gt;###Driving a wood screw through Teflon is &lt;strong&gt;hard&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cancelling Comcast</title>
+      <link>/2014/09/11/2014-09-11-cancelling-comcast/</link>
+      <pubDate>Thu, 11 Sep 2014 12:14:06 -0500</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2014/09/11/2014-09-11-cancelling-comcast/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Write down your account number.&lt;/li&gt;
+&lt;li&gt;Call Comcast: (1-800-934-6489)&lt;/li&gt;
+&lt;li&gt;Sit through the phone tree. The correct options are:
 
 &lt;ul&gt;
-&lt;li&gt;Price was way high&lt;/li&gt;
-&lt;li&gt;Mileage was high&lt;/li&gt;
-&lt;li&gt;Transmission kept popping out of second when the clutch was pressed in&lt;/li&gt;
-&lt;li&gt;Lots of rough edges. It was a little bubba&amp;rsquo;d. E.g. the battery was held down by a bungee cord.&lt;/li&gt;
-&lt;li&gt;5 inch lift of unknown origin&lt;/li&gt;
-&lt;li&gt;Check engine light&lt;/li&gt;
-&lt;li&gt;Skid plate was welded in place because someone stripped a bolt at some point&lt;/li&gt;
-&lt;li&gt;Rear tires were on their way out&lt;/li&gt;
+&lt;li&gt;1: Yes, my phone number is the phone number associated with the account.&lt;/li&gt;
+&lt;li&gt;5: Remove services&lt;/li&gt;
+&lt;li&gt;3: Cancel all services&lt;/li&gt;
+&lt;li&gt;2: No, please don&amp;rsquo;t call me later.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Get confused when your phone makes the hanging up noise.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Finally, tell me if you can see what&amp;rsquo;s wrong in this picture.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Celestron FirstScope</title>
+      <link>/2014/08/29/2014-08-29-celestron-firstscope/</link>
+      <pubDate>Fri, 29 Aug 2014 16:01:13 -0500</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2014/08/29/2014-08-29-celestron-firstscope/</guid>
+      <description>&lt;p&gt;I bought a Celestron FirstScope dobsinian telescope for a project that I&amp;rsquo;ve been kicking around. It&amp;rsquo;s not super duper, but for $50, it&amp;rsquo;s a functional telescope.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Misc/i-JfdCdK7/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Misc/i-JfdCdK7/0/L/20141116121931-L.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Misc/i-CjjQRdv/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Misc/i-CjjQRdv/0/L/20140829153602-L.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;If you look at the valve cover, to the left of the big intake hose, that&amp;rsquo;s where the oil fill cap should go.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Tips for using RabbitMQ in Go</title>
+      <link>/2014/08/19/2014-08-19-rabbitmq-best-practices-in-go/</link>
+      <pubDate>Tue, 19 Aug 2014 12:57:26 -0500</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2014/08/19/2014-08-19-rabbitmq-best-practices-in-go/</guid>
+      <description>###Corrections:
+ 4% != .004% : When I was writing the article, my brain translated 99996 into 96000. Big difference. It turns out that I&amp;rsquo;m unable to dequeue somewhere between .004% and .20% of messages in about half of test runs.  ###Note:
+I&amp;rsquo;ve been chatting with some very helpful RabbitMQ-knowledgeable people, and they have some suggestions for the issues I&amp;rsquo;m seeing that I&amp;rsquo;m going to check out. I will update this article with my findings.</description>
+    </item>
+    
+    <item>
+      <title>The Joke</title>
+      <link>/2014/08/16/2014-08-16-the-joke/</link>
+      <pubDate>Sat, 16 Aug 2014 17:47:53 -0500</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2014/08/16/2014-08-16-the-joke/</guid>
+      <description>Last night, I had a dream that I was telling a joke. It was a long one. I got almost all the way to the punchline before I woke up, and, thinking back on it, I had completely botched the setup. Shame on me.
+Here&amp;rsquo;s the joke:
+In eastern Europe, some time in the 15th century, there was a young rabbi. He was just out of training and was not ready to settle down, so he was wandering the countryside performing good deeds.</description>
+    </item>
+    
+    <item>
+      <title>Arduino Workshop</title>
+      <link>/2014/06/26/2014-06-26-arduino-workshop/</link>
+      <pubDate>Thu, 26 Jun 2014 09:33:30 -0500</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2014/06/26/2014-06-26-arduino-workshop/</guid>
+      <description>Sometimes, shit doesn&amp;rsquo;t work out. For example: Mike&amp;rsquo;s Hard Lemonade contacted me at the Southside Hackerspace, wanting us to modify a golf cart as part of their &amp;laquo;Mike&amp;rsquo;s Hacks&amp;raquo; summer ad campaign. I dumped a lot of time (and just a little money) into the project, but everything went south at the last minute.
+But this isn&amp;rsquo;t about that.
+At the same time, Mason Donahue put me in touch with Chicago Girls in Computing.</description>
+    </item>
+    
+    <item>
+      <title>Robot Finds Kitten as a Service</title>
+      <link>/2014/04/24/2014-04-24-robot-finds-kitten-as-a-service/</link>
+      <pubDate>Thu, 24 Apr 2014 16:12:37 -0500</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2014/04/24/2014-04-24-robot-finds-kitten-as-a-service/</guid>
+      <description>&lt;p&gt;I put together a webservice that serves 700 items that are not kittens.&lt;/p&gt;
 
-&lt;p&gt;Scary stuff. I might have been motivated to buy for $3,500 if I was single, but I&amp;rsquo;m looking for a quality vehicle instead of a project car. The search continues.&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://github.com/agocs/RobotFindsKittenServer&#34;&gt;Github link&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://agocs.org/robotfindskitten/non-kitten-item/&#34;&gt;Watch it go&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Server Migration</title>
+      <link>/2014/04/15/2014-04-15-migration/</link>
+      <pubDate>Tue, 15 Apr 2014 16:53:19 -0500</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2014/04/15/2014-04-15-migration/</guid>
+      <description>I know my site doesn&amp;rsquo;t exactly have any dedicated watchers, but if anyone noticed a period of downtime earlier this week, it&amp;rsquo;s because I was migrating from hosting on FatCow to hosting on a rented VPS through DigitalOcean. I also moved my domain registration from FatCow to Gandi.net. In this post, I plan to cover the hows, whys, and some lessons learned.
+I&amp;rsquo;ll start with the juicy stuff.
+Why? There are a couple of reasons, but the root of it all is that I got fed up with FatCow.</description>
+    </item>
+    
+    <item>
+      <title>Someone stole the T</title>
+      <link>/2014/03/18/2014-03-18-someone-stole-the-t/</link>
+      <pubDate>Tue, 18 Mar 2014 13:17:14 -0500</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2014/03/18/2014-03-18-someone-stole-the-t/</guid>
+      <description>Hoooooly shit! Somebody did it! Somebody stole the T!
+
+Haha, awesome!
+
+Whoever did this, bravo! Bra-vo! I hope they let you graduate.</description>
+    </item>
+    
+    <item>
+      <title>Intro to Golang</title>
+      <link>/2014/03/16/2014-03-16-intro-to-golang-presentation/</link>
+      <pubDate>Sun, 16 Mar 2014 15:15:39 -0500</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2014/03/16/2014-03-16-intro-to-golang-presentation/</guid>
+      <description>Hey everybody, check out this intro to the Go programming language I put together for a talk at Backstop the other week!
+Golang Slides
+I tried to keep the slides content-light, since I find that having too many things on the screen distracts from what I&amp;rsquo;m saying. I&amp;rsquo;ll recapitulate my notes below.
+ Title slide. Blah blah blah.  Around since 2009 Go started as a research project at Google in 2007.</description>
+    </item>
+    
+    <item>
+      <title>Cold brew coffee: try # 1</title>
+      <link>/2013/09/11/2013-09-11-cold-brew-coffee-try-1/</link>
+      <pubDate>Wed, 11 Sep 2013 03:34:15 +0000</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2013/09/11/2013-09-11-cold-brew-coffee-try-1/</guid>
+      <description>I saw a Kickstarter for a cold brew coffee device today, and I started reading about it. Cold Brew is supposed to taste different from your traditional hot brews &amp;ndash; it gets less of the acidic flavors than traditionally brewed coffee, so you wind up with a smoother beverage. Also, cold brew techniques produce a coffee concentrate that you&amp;rsquo;re supposed to dilute, and the idea of mixing up 50/50 cold brew and milk is interesting.</description>
+    </item>
+    
+    <item>
+      <title>Moving: a post-mortem</title>
+      <link>/2013/08/10/2013-08-10-moving-a-post-mortem/</link>
+      <pubDate>Sat, 10 Aug 2013 04:34:48 +0000</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2013/08/10/2013-08-10-moving-a-post-mortem/</guid>
+      <description>Last month, I moved from Atlanta to Chicago. Moving always sucks; that&amp;rsquo;s a universal constant*, but I think this one went better than most. I&amp;rsquo;ve compiled a list of what worked and what didn&amp;rsquo;t, and some notes on what to do better next time.
+What Worked Trello Sabrina and I planned the move and tracked our tasks on Trello.com. I have to say, the ability to put together dynamic kanban-style task boards on the fly really helped us keep everything straight.</description>
+    </item>
+    
+    <item>
+      <title>How to: disable capslock at the hardware level</title>
+      <link>/2013/07/21/2013-07-21-how-to-disable-capslock-at-the-hardware-level/</link>
+      <pubDate>Sun, 21 Jul 2013 05:09:09 +0000</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2013/07/21/2013-07-21-how-to-disable-capslock-at-the-hardware-level/</guid>
+      <description>I hate capslock. It&amp;rsquo;s a horrible, horrible key, and it gets even more in the way on my split ergonomic keyboards at work. I&amp;rsquo;ve tried registry hacks to kill it, but they don&amp;rsquo;t seem to work. Here&amp;rsquo;s how I deal with capslock:
+ Obtain a small, flat-headed screwdriver. Insert it beneath the Capslock key. [  ](http://www.agocs.org/wp-content/uploads/2013/07/20130719_1104211.jpg)
+ Pry downward.   If you ever need capslock later, just use a pen to poke the little capacitive sensor.</description>
+    </item>
+    
+    <item>
+      <title>Reverse Engineering Doubleclick Part II</title>
+      <link>/2013/05/17/2013-05-17-reverse-engineering-doubleclick-part-ii/</link>
+      <pubDate>Fri, 17 May 2013 15:27:30 +0000</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2013/05/17/2013-05-17-reverse-engineering-doubleclick-part-ii/</guid>
+      <description>Once every three seconds, that&amp;rsquo;s the magic number.
+Some more interesting information: I pointed a Doubleclick click counter at a super-simple web service I wrote, running on a web server I rent, and I ran a test that follows the DLCK redirect. Here are the results:
+
+I ran 300 clicks at 4s per click, then 500 clicks at 2s per click. As you can see, almost all of the first 300 clicks made it to the web service, but only around 380/500 2s per click clicks made it.</description>
+    </item>
+    
+    <item>
+      <title>Reverse Engineering Doubleclick Ad Statistics (Part 1)</title>
+      <link>/2013/05/07/2013-05-07-reverse-engineering-doubleclick-ad-statistics-part-1/</link>
+      <pubDate>Tue, 07 May 2013 17:44:16 +0000</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2013/05/07/2013-05-07-reverse-engineering-doubleclick-ad-statistics-part-1/</guid>
+      <description>One of the projects I&amp;rsquo;m on seeks to proxy web beacons. Basically, I have a WSGI app that serves a 1x1 px gif, and then triggers a Celery app that goes out and actually &amp;laquo;clicks&amp;raquo; on the intended web beacon. During preliminary load testing with a Doubleclick beacon (actually a Doubleclick link counter), we discovered that requesting that beacon 1000 times in 5 minutes (one request ever 1/3 second) only reported around 30 &amp;laquo;clicks.</description>
+    </item>
+    
+    <item>
+      <title>Mergesort on all the spices in the kitchen</title>
+      <link>/2013/05/05/2013-05-05-mergesort-spices/</link>
+      <pubDate>Sun, 05 May 2013 04:05:48 +0000</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2013/05/05/2013-05-05-mergesort-spices/</guid>
+      <description>It bothered me that the spices in the kitchen were out of order. So, I sorted them using my favorite sorting algorithm, Mergesort. My cats helped.
+
+I started with an un-ordered list of spices.
+
+Then I started to divide the list up into smaller lists. Panther helped.
+31 elements became 15 and 16.
+Then 7, 8, 8, 8.
+Then 3, 4, 4, 4, 4, 4, 4, 4.
+Then 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2</description>
+    </item>
+    
+    <item>
+      <title>Box Fan Beef Jerky, part 2</title>
+      <link>/2013/04/23/2013-04-23-box-fan-beef-jerky-part-2/</link>
+      <pubDate>Tue, 23 Apr 2013 00:00:00 +0000</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2013/04/23/2013-04-23-box-fan-beef-jerky-part-2/</guid>
+      <description>In this post, I started making box fan beef jerky. If you can&amp;rsquo;t remember where I was when I left off, go take a peek.
+Okay, so. The meat sat in the marinade overnight, and come morning I loaded it onto a 20&amp;raquo; by 20&amp;raquo; HVAC filter, courtesy of The Home Depot.
+
+The cats were very interested.
+
+I assembled the filters and strapped them to the fan.</description>
+    </item>
+    
+    <item>
+      <title>How to UrlEncode a String in C# using .Net 4.0 or less</title>
+      <link>/2013/04/23/2013-04-23-how-to-urlencode-a-string-in-c-using-net-4-0-or-less/</link>
+      <pubDate>Tue, 23 Apr 2013 00:00:00 +0000</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2013/04/23/2013-04-23-how-to-urlencode-a-string-in-c-using-net-4-0-or-less/</guid>
+      <description>The boffins over at Microsoft added a handy method to .Net 4.5: Webutility.UrlEncode. Unfortunately for those of us who don&amp;rsquo;t have Visual Studio 2012, we can&amp;rsquo;t use it! How then can we properly encode strings for use in URLs?
+(What do I mean? Let&amp;rsquo;s say I want to pass a URL inside another URL as an argument. So, for example, I want to pass http://www.bar.com/?a=b&amp;amp;c=d _as a query string variable_ to foo.</description>
+    </item>
+    
+    <item>
+      <title>Box Fan Beef Jerky, part 1</title>
+      <link>/2013/04/18/2013-04-18-box-fan-beef-jerky-part-1/</link>
+      <pubDate>Thu, 18 Apr 2013 00:00:00 +0000</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2013/04/18/2013-04-18-box-fan-beef-jerky-part-1/</guid>
+      <description>I realized this morning that I&amp;rsquo;m about six months late in changing my air conditioner filter. I was in Home Depot, and I thought, &amp;laquo;You know what goes really well with air filters? Beef jerky!&amp;raquo;
+That&amp;rsquo;s right, I&amp;rsquo;m an unabashed Alton Brown fan. I saw this episode of Good Eats a few years ago, and I occasionally think, &amp;laquo;Huh, I could do that.&amp;raquo; Well, I bought three of the cheapest 20x20 filters and 1.</description>
+    </item>
+    
+    <item>
+      <title>Cast Iron Skillet Pizza</title>
+      <link>/2013/04/17/2013-04-17-cast-iron-skillet-pizza/</link>
+      <pubDate>Wed, 17 Apr 2013 00:00:00 +0000</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2013/04/17/2013-04-17-cast-iron-skillet-pizza/</guid>
+      <description>I am the proud owner of a Lodge 10&amp;raquo; Cast Iron Skillet. I bought it at the Lodge Factory Store in Tennessee for, like, $12 because of a small blemish. I&amp;rsquo;d heard about making pizza in a cast iron skillet, and tonight, I thought, why not? I largely used this guy&amp;rsquo;s recipe (minus the part where he made his own dough and sauce. Maybe later.): http://www.macheesmo.com/2011/03/cast-iron-pizza/
+One trip to Whole Foods later, and I had some Ingredients!</description>
+    </item>
+    
+    <item>
+      <title>I&#39;m beginning to really *get* test driven development.</title>
+      <link>/2013/04/09/2013-04-09-i-get-tdd/</link>
+      <pubDate>Tue, 09 Apr 2013 00:00:00 +0000</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2013/04/09/2013-04-09-i-get-tdd/</guid>
+      <description>I was working on a piece of code today, and I decided to refactor some of it. &amp;laquo;This method is beginning to smell bad,&amp;raquo; I thought. &amp;laquo;I should break this series of if/thens off into a different method.&amp;raquo;
+One thing led to another, and soon enough I had some considerably better-structured, more readable code. But did it work? As luck would have it, this is the first project I&amp;rsquo;d gotten a chance to build from the ground up, and as such, the first project I&amp;rsquo;d been able to build with a whole stanking lot of test coverage.</description>
+    </item>
+    
+    <item>
+      <title>First Arduino project</title>
+      <link>/2013/04/05/2013-04-05-first-arduino-project/</link>
+      <pubDate>Fri, 05 Apr 2013 00:00:00 +0000</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2013/04/05/2013-04-05-first-arduino-project/</guid>
+      <description>So, I know I&amp;rsquo;m way behind the curve on the Arduino. I got caught in a vicious cycle of, &amp;laquo;Can I justify ordering an Arduino? No, I don&amp;rsquo;t really have a project for it.&amp;raquo; &amp;laquo;Should I start this project? No, I don&amp;rsquo;t really have an Arduino.&amp;raquo;
+Well all that changed, because I have an Arduino now (finally! Gosh!). I&amp;rsquo;d ordered a bag of resistors and LEDs on Amazon, and I have a passive IR motion sensor, so while watching Watership Down this evening I assembled my very first project.</description>
+    </item>
+    
+    <item>
+      <title>Hey, Chris Agocs, click this:</title>
+      <link>/2013/04/03/2013-04-03-hey-chris-agocs-click-this/</link>
+      <pubDate>Wed, 03 Apr 2013 00:00:00 +0000</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2013/04/03/2013-04-03-hey-chris-agocs-click-this/</guid>
+      <description>local host colon eighty eighty
+An explanation for non-Chris Agocs people to follow&amp;hellip;
+One of the projects I&amp;rsquo;m on is capturing the referrer information from a browser. Just to try it out, I spun up a Bottle server and printed the poorly spelled HTTP_REFERER. It works.</description>
+    </item>
+    
+    <item>
+      <title>RadioShack is worth a damn again!</title>
+      <link>/2013/04/01/2013-04-01-radiosmack/</link>
+      <pubDate>Mon, 01 Apr 2013 00:00:00 +0000</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/2013/04/01/2013-04-01-radiosmack/</guid>
+      <description>I remember a day before cell phones when you could go to RadioShack and get electronic components, Ham Radio gear, and a bunch of other really useful stuff. Times changed, and all they were good for was cell phones, overpriced batteries, and people yelling about the above. I&amp;rsquo;ve pretty much been ignoring Radio Shack for the past six or seven years.
+I&amp;rsquo;d heard that things had changed. I walked into a RadioShack near me today, and walked out with an Arduino and a motion sensor.</description>
     </item>
     
   </channel>

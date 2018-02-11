@@ -2,142 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jeep on Agocs.org</title>
-    <link>https://agocs.org/categories/jeep/index.xml</link>
+    <link>https://agocs.org/categories/jeep/</link>
     <description>Recent content in Jeep on Agocs.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://agocs.org/categories/jeep/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://agocs.org/categories/jeep/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Jeep Box</title>
-      <link>https://agocs.org/blog/2016/01/10/jeep-box/</link>
+      <link>https://agocs.org/2016/01/jeep-box/</link>
       <pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://agocs.org/blog/2016/01/10/jeep-box/</guid>
+      <guid>https://agocs.org/2016/01/jeep-box/</guid>
       <description>&lt;p&gt;One of the problems with Jeep Wrangler ownership is there&amp;rsquo;s nowhere to store things out of sight. Your backpack, laptop, whatever, it&amp;rsquo;s all hangin&amp;rsquo; out there in the open. Even when you&amp;rsquo;ve zipped the top up, there&amp;rsquo;s nothing between your valuables and a set of sticky fingers besides a thin sheet of clear vinyl.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;I wanted to feel better about leaving things in the Jeep, and I wanted to design something sturdy so that I could still carry heavy things in the back of the Jeep. I also wanted to cut down on the general clutter in my cargo area, and I wanted to practice welding.&lt;/p&gt;
-
-&lt;p&gt;I imagined something like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-WhDR5Qd/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-WhDR5Qd/0/L/IMG_20151213_233221-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;So I started with some rough measurements.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-pRWHkrf/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-pRWHkrf/0/XL/IMG_20160110_164946-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;That&amp;rsquo;s a top view and rear view of the back of the Jeep. I had 34.5&amp;rdquo; between the brackets where the rear seat would have mounted if I had one, 35&amp;rdquo; of length to work with, and 15.5&amp;rdquo; between the bottom of the opening and the bottom of the rear window.&lt;/p&gt;
-
-&lt;p&gt;So, to summarize, what I wanted was a drawer and a frame to hold that drawer that fit in the above-defined envelope. The frame would have to be reasonably sturdy, because I&amp;rsquo;d like to put things on top of it too. I&amp;rsquo;m the kind of person who thinks really well in design tools, so I fired up Autodesk and got to work.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-BkMSCKq/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-BkMSCKq/0/M/jeepbox0-M.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-f9XHK5m/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-f9XHK5m/0/M/jeepbox-M.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This was the first pass, and some measurements. I ran it by some Internet folks, and they suggested diagonal bracing.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-C39GHxD/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-C39GHxD/0/M/jeepbox1-M.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;My plan was to attach a sheet of plywood to the top using T-nuts and cap screws, and to put roller bearings on the horizontal bars running along the sides to act as drawer slides. The T-nuts and cap screws were entirely reasonably priced through McMaster-Carr, but the roller bearings were about $5 ea. I found equivalent skate bearings on Amazon for about $1 ea.&lt;/p&gt;
-
-&lt;p&gt;Using the CAD drawings, I figured out what pieces I&amp;rsquo;d need.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-bkW8ccS/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-bkW8ccS/0/L/IMG_20160110_165039-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-KpPPZbL/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-KpPPZbL/0/L/IMG_20160110_165045-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I did some math, and figured I could fit that into 19 pieces of 37&amp;rdquo; x &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;&amp;rdquo; square stock (N.B. I was wrong, and probably should have ordered 20 or 21 pieces). From Metals Supermarket, that was just over $50.&lt;/p&gt;
-
-&lt;p&gt;I got to welding.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-hZ3gTBj/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-hZ3gTBj/0/L/20151122202228-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-3THvt8F/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-3THvt8F/0/L/20151127145653-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Then I realized, I&amp;rsquo;d have to mount this in the Jeep! I&amp;rsquo;d figured I&amp;rsquo;d use the rear seat belt mounting bolt, but I forgot to locate that with my previous measurements. I rectified that.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-vdQh37C/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-vdQh37C/0/L/IMG_20160110_165102-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I bought a sheet of flat steel stock, milled in a hole for the seat belt bolt, and welded that into place. A test-fit revealed that I&amp;rsquo;d milled the hole in the wrong place, so I had to fix that, first with the angle grinder, then with a plasma cutter.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-vJ7hXHd/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-vJ7hXHd/0/L/IMG_20151213_161552-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Finally, it went to paint! I wanted to powder coat it, but I got a $150 quote for powder coating. A little rich for my blood. I used a can and a half of Rustoleum black enamel instead.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-CZvPjPL/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-CZvPjPL/0/L/IMG_20151213_161533-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;While that was curing, I designed the wooden top and drawer.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-M5HxzpL/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-M5HxzpL/0/L/IMG_20160110_165118-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-fzJvNqc/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-fzJvNqc/0/L/IMG_20160110_165126-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I decided to make it all out of &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;&amp;rdquo; plywood, cut from &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; sheets of plywood (because half sheets are easier to move than full sheets). The drawer, I figured I&amp;rsquo;d just use brads and glue to hold it together. If it fell apart, I could always re-do it.&lt;/p&gt;
-
-&lt;p&gt;Because the wooden pieces were just rectangles, I let the robots take care of cutting them out.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-kXbHbZJ/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-kXbHbZJ/0/L/IMG_20151213_190147-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The next night, I loaded up all the pieces and started attaching them together.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-9MDj4c5/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-9MDj4c5/0/L/IMG_20151215_214357-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-VKZjkqQ/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-VKZjkqQ/0/L/IMG_20151215_214523-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The skate bearings I bought had an inner diameter that was just a little bigger than the screws I used, so I turned the screws into cones on the lathe to locate the bearings better (not pictured, but I wish I had).&lt;/p&gt;
-
-&lt;p&gt;Everything in the Jeep so far:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-FbtLRtD/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-FbtLRtD/0/L/IMG_20151215_220627-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-cNtzdDR/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Jeepquest/i-cNtzdDR/0/L/IMG_20151215_220644-L.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s been about a month since I finished all that, and I have the drawer together and installed; I just haven&amp;rsquo;t taken pictures of it yet. It served us well on our trip to Georgia &amp;ndash; our valuables went into the drawer, and my wife&amp;rsquo;s big suitcase got strapped to the top.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Sun Visor Bracket</title>
-      <link>https://agocs.org/blog/2015/03/01/sun-visor-bracket/</link>
+      <link>https://agocs.org/2015/03/sun-visor-bracket/</link>
       <pubDate>Sun, 01 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://agocs.org/blog/2015/03/01/sun-visor-bracket/</guid>
+      <guid>https://agocs.org/2015/03/sun-visor-bracket/</guid>
       <description>&lt;p&gt;I shattered the sun visor bracket on my Jeep in the cold this winter, so I did the only sensible thing. I tried to machine a new one.&lt;/p&gt;
 
 &lt;p&gt;I started with a block of 2&amp;rdquo; by 4&amp;rdquo; aluminum stock. I cut 2&amp;rdquo; off of it with a band saw. The blade popped off of its guide with about &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;10&lt;/sub&gt;&amp;rdquo; left to go, so fixing that was a fun diversion.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;I finally got a piece mounted in the Bridgeport and milled a few reference surfaces. I sent this picture to my friend to ask about the finish on that side milling. He said it was normal, if a little fugly.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-P5TTwjH/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-P5TTwjH/0/L/20150301140926-L.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I call this picture, &amp;ldquo;Where the hell did I put my calipers?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-TwhTxdW/A&#34; title=&#34;&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-TwhTxdW/0/L/20150301_143828-L.jpg&#34; title=&#34;&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This is one of my favorite parts of machining. On the left, you can see the rough cut that&amp;rsquo;s out-of-square. On the right, the machined surface.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-wrpwHTL/A&#34; title=&#34;&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-wrpwHTL/0/L/20150301_144604-L.jpg&#34; title=&#34;&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I took a bunch more cuts, and got here.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-x8gJt6Q/A&#34; title=&#34;&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-x8gJt6Q/0/L/20150301_162907-L.jpg&#34; title=&#34;&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Then I messed up.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-Btb5N32/A&#34; title=&#34;&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-Btb5N32/0/L/20150301_215830-L.jpg&#34; title=&#34;&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Notice the middle part? That would be perfect, if the sun visor stuck up. Of course, it hangs down, so this part is completely worthless. Fortunately, I have enough stock to make a second one.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Jeep Quest Part 4</title>
-      <link>https://agocs.org/blog/2014/11/29/jeep-quest-part-4/</link>
+      <link>https://agocs.org/2014/11/jeep-quest-part-4/</link>
       <pubDate>Sat, 29 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://agocs.org/blog/2014/11/29/jeep-quest-part-4/</guid>
+      <guid>https://agocs.org/2014/11/jeep-quest-part-4/</guid>
       <description>&lt;p&gt;Jeepquest is at an end!&lt;/p&gt;
 
 &lt;p&gt;Thank you all so much for bearing with my inconsistently numbered posts.&lt;/p&gt;
@@ -146,177 +49,48 @@
 
 &lt;p&gt;Today, Sabrina and I drove up to Kenosha, WI to take a look at this 2002 Wrangler X. First, we had breakfast at a place called The Coffee Pot, where the only not-so-great thing was their coffee. Afterwards, we went to Dan Stipler&amp;rsquo;s Auto World.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;This Wrangler looks almost bone stock. It has an aftermarket headunit and no rear seats, but beyond that, it&amp;rsquo;s amazingly clean. What&amp;rsquo;s better: no rust! According to the paperwork, this Jeep is from Arizona. The frame and suspension are utterly pristine.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-BMb8gf4/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-BMb8gf4/0/M/20141129_133037-M.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The salesman admitted he couldn&amp;rsquo;t drive stick, so he asked me to pull it around. As cold as it&amp;rsquo;s been, the Jeep needed a jump. It started right up once we did that, and Sabrina and I went for a test drive. We remarked on how smooth the engine felt relative to the other Jeep we&amp;rsquo;d test driven together, how smooth the ride was once we got to the nicer roads, and how well it pulled.&lt;/p&gt;
-
-&lt;p&gt;The fuel light was on and we&amp;rsquo;d been test driving for almost 20 minutes, so we stopped at a gas station to throw $5 worth of fuel in it. I got back in the Jeep to get back home, and it wouldn&amp;rsquo;t start! I noticed a Toyota Landcruiser with bull bars and Star Wars vinyl decals on it, and I asked them if they&amp;rsquo;d give me a jump. We get to talking, and they&amp;rsquo;ve driven up from Florida. Sabrina and them talked about Tampa for a minute, then we got the Jeep started.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-2LtX85D/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-2LtX85D/0/M/20141129_133017-M.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;We drove back to the dealership and talked about it. Sabrina liked this Jeep a lot, and we decided on some negotiating tactics. They were asking 10,955. I&amp;rsquo;d point out the high mileage and lack of rear seat, and offer 8. Our highest was 9,500.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-wkLtvhd/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-wkLtvhd/0/M/20141129_133043-M.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I sat down with the salesman and we did just that (when I mentioned the missing seat, the salesman gave me a look that let me know I had him over a barrel a little bit). We agreed on a final price, and they wouldn&amp;rsquo;t be replacing the rear seat. Sabrina got back on the road while I signed the paperwork.&lt;/p&gt;
-
-&lt;p&gt;On the way back, I stopped by Mars Cheese Castle!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-nzsX7jT/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-nzsX7jT/0/M/20141129155154-M.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;A bonus that came with the Jeep: a CD labeled &amp;ldquo;Vegas 2012&amp;rdquo;. I listened to it for a while, seemed to mostly be West Coast rap I didn&amp;rsquo;t recognize. I switched to NPR.&lt;/p&gt;
-
-&lt;p&gt;Success!&lt;/p&gt;
-
-&lt;p&gt;Stuff to get/replace:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Rear seat&lt;/li&gt;
-&lt;li&gt;Windshield wipers are looking gnarly&lt;/li&gt;
-&lt;li&gt;One of the rubber windshield hood rests (ordered)&lt;/li&gt;
-&lt;li&gt;Head unit with a less ugly one&lt;/li&gt;
-&lt;li&gt;Locking underseat storage drawer&lt;/li&gt;
-&lt;li&gt;Spare tire is looking a little old and cracked, despite never having been used. The other tires are worn, but not egregiously so. They are M+S rated Firestone ATs. I&amp;rsquo;ll replace all the tires in probably six months&amp;rsquo; time.&lt;/li&gt;
-&lt;li&gt;Tow hooks&lt;/li&gt;
-&lt;li&gt;Grab handles&lt;/li&gt;
-&lt;li&gt;Side steps&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Stuff it could probably use:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Oil change (Little darker than I&amp;rsquo;d like)
-
-&lt;ul&gt;
-&lt;li&gt;Blackstone Labs analysis&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Coolant flush/fill (looked OK, do eventually)&lt;/li&gt;
-&lt;li&gt;Other fluids eventually&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Jeep Quest part 3</title>
-      <link>https://agocs.org/blog/2014/11/18/jeep-quest-part-3/</link>
+      <link>https://agocs.org/2014/11/jeep-quest-part-3/</link>
       <pubDate>Tue, 18 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://agocs.org/blog/2014/11/18/jeep-quest-part-3/</guid>
+      <guid>https://agocs.org/2014/11/jeep-quest-part-3/</guid>
       <description>&lt;p&gt;I took a vacation day today and saw another Jeep!&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-GM5XjVz/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-GM5XjVz/0/M/20141118121516-M.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;It was in a (blessedly indoor) used car lot way up on Pulaski and Addison. It took me, no joke, three busses and an hour and a half to get there. I walked past the place once, walked past it in the other direction, and then went into the wrong business where they were helpful enough to give me directions (turn right and go two doors down).&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;The Jeep is clean. The lot wants almost $8,000 for it, and it has 187,000 miles. It&amp;rsquo;s got the Sahara trim package, and the interior is really quite nice. The only problem I could find is the resistor pack for the blower motor is shot. That&amp;rsquo;s a $13 part on Amazon, though, and it would take like 30 minutes to change. It&amp;rsquo;s a haggling point.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-KfDFJFJ/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-KfDFJFJ/0/M/20141118121540-M.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The exterior is solid. Paint is worn off in a few weird places, and there&amp;rsquo;s a little bit of surface rust in the back. The tires are decent, but I would really feel more comfortable with a fresher set &amp;ndash; especially the rears.&lt;/p&gt;
-
-&lt;p&gt;It &lt;em&gt;does&lt;/em&gt; have the hard top, though. I&amp;rsquo;d prefer the soft top. Honestly, though, I could probably sell the hard top, turn around and buy a new soft top, and still wind up pocketing a little bit of cash.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-P59HNxs/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-P59HNxs/0/M/20141118121558-M.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-8G42Qf7/A&#34; title=&#34;&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-8G42Qf7/0/M/20141118121641-M.jpg&#34; title=&#34;&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The engine, on the other hand, is clean and all the pieces are there.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-MQRWBR8/A&#34; title=&#34;&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-MQRWBR8/0/M/20141118121446-M.jpg&#34; title=&#34;&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The engine took a second to crank. The battery looked ok, but the terminals were a little corroded. That might be something to fix. Once it started up, however, it was really smooth; much better than the last Jeep I looked at.&lt;/p&gt;
-
-&lt;p&gt;It does have the 3 speed automatic transmission, which is a down-side to me. The shifts (both of &amp;lsquo;em) were smoother than I expected. It acutally feels quit nicely geared around town, but the engine sounds like it&amp;rsquo;s working a little harder than I would like it to work on the highway. I imagine (traffic, even at noon on a Tuesday, was too heavy to get it up past 55) it would cruise around 65 mph at 3,000 RPM, which is okay. The cruise control is a little slow to react.&lt;/p&gt;
-
-&lt;p&gt;I stopped in a neighborhood and tried to figure out the four wheel drive modes. The first time I tried it, I wound up stuck for a minute with the transfer case in neutral after coming out of 4 low with an Audi beeping at me to move. I fiddled with it for a second and finally found 2 high in time to move out of the way. I pulled over a little later, and the transfer case was a lot easier to work with.&lt;/p&gt;
-
-&lt;p&gt;Fun fact: stepping on the brake hard enough to keep the car stopped with the transmission in drive and the transfer case  in 2 high will not keep the car stopped in 4 low. It&amp;rsquo;s a little disconcerting just how much the Jeep wants to &lt;em&gt;go&lt;/em&gt; when it&amp;rsquo;s in 4 low.&lt;/p&gt;
-
-&lt;p&gt;I will talk it over with Sabrina. I might show it to her, and offer the guy $5,000 hoping to settle in the $6,000 range. The mileage really doesn&amp;rsquo;t scare me that much. It looks like the previous owner really cared for the vehicle, as evidenced by the lack of tacky mods and the Glacier National Park bumper sticker on the back.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Jeep Quest part II</title>
-      <link>https://agocs.org/blog/2014/11/16/jeep-quest-part-ii/</link>
+      <link>https://agocs.org/2014/11/jeep-quest-part-ii/</link>
       <pubDate>Sun, 16 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://agocs.org/blog/2014/11/16/jeep-quest-part-ii/</guid>
+      <guid>https://agocs.org/2014/11/jeep-quest-part-ii/</guid>
       <description>&lt;p&gt;We saw a Jeep today! The first we&amp;rsquo;ve seen as part of Jeep Quest. It was a 2000 Wrangler with 167,000 miles, owned by an older Russian man who was asking $6,500.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Misc/i-JHrhXJ7/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Misc/i-JHrhXJ7/0/L/20141116122017-L.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;The guy said it had a five inch lift of unknown origin, and that his son was going to take the hard top off and put a soft top on. He&amp;rsquo;d just replaced the cooling system and catalytic converter. There was some wacky bumper on the front. The body was in great condition, and there was very little rust on the frame. The interior was okay &amp;ndash; the son had fitted some ridiculous CD player with DVD nonsense, and there were a few stray wires poking out from under the dash. We took it on a test drive around the block. Sabrina commented that she had forgotten how bouncy Jeeps were, but she liked it overall.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Major issues:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Price was way high&lt;/li&gt;
-&lt;li&gt;Mileage was high&lt;/li&gt;
-&lt;li&gt;Transmission kept popping out of second when the clutch was pressed in&lt;/li&gt;
-&lt;li&gt;Lots of rough edges. It was a little bubba&amp;rsquo;d. E.g. the battery was held down by a bungee cord.&lt;/li&gt;
-&lt;li&gt;5 inch lift of unknown origin&lt;/li&gt;
-&lt;li&gt;Check engine light&lt;/li&gt;
-&lt;li&gt;Skid plate was welded in place because someone stripped a bolt at some point&lt;/li&gt;
-&lt;li&gt;Rear tires were on their way out&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Finally, tell me if you can see what&amp;rsquo;s wrong in this picture.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Misc/i-JfdCdK7/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Misc/i-JfdCdK7/0/L/20141116121931-L.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;If you look at the valve cover, to the left of the big intake hose, that&amp;rsquo;s where the oil fill cap should go.&lt;/p&gt;
-
-&lt;p&gt;Scary stuff. I might have been motivated to buy for $3,500 if I was single, but I&amp;rsquo;m looking for a quality vehicle instead of a project car. The search continues.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Jeep-Quest Part 1</title>
-      <link>https://agocs.org/blog/2014/11/16/jeep-quest-part-1/</link>
+      <link>https://agocs.org/2014/11/jeep-quest-part-1/</link>
       <pubDate>Sun, 16 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://agocs.org/blog/2014/11/16/jeep-quest-part-1/</guid>
+      <guid>https://agocs.org/2014/11/jeep-quest-part-1/</guid>
       <description>&lt;p&gt;When Sabrina and I moved to Chicago a year and a half ago, we sold both our cars. I&amp;rsquo;m not saying that was a mistake, but I have to spend an hour each way on public transit for both hackerspaces and the radio station, and the grocery delivery people always manage to surprise you. We decided we wanted a reliable vehicle to see us through the next few years here in the Second City. I, being me, want something fun and a little ridiculous. I managed to talk Sabrina into a TJ Wrangler.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;What&amp;rsquo;s a TJ Wrangler? Well, it&amp;rsquo;s Chrysler&amp;rsquo;s second stab at making a Jeep. Back in the mid-80s&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;Hang on, let me hit up Wikipedia here.&lt;/p&gt;
-
-&lt;p&gt;Okay. Back in 1987, the American Motors Corporation was bought by Chrysler. AMC made the vernerable Jeep CJ-7, a small, light weight, leaf-sprung, two door SUV with four wheel drive. Chrysler took that and made it into a slightly larger vehicle with slightly more creature comforts and called it the Jeep Wrangler. The first generation Jeep Wrangler, known as the YJ, was sold from 1987 to 1995. Much like the CJ, it had leaf springs and a rudamentary suspension. It was a weird compromise between the bare bones CJ and a passenger car.&lt;/p&gt;
-
-&lt;p&gt;I owned one, and it was an absolute blast.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepin/i-6FnNkSr/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepin/i-6FnNkSr/0/M/5738657392_ae8017eed8_o-M.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt; &lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepin/i-2JBgkDb/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepin/i-2JBgkDb/0/M/5738668746_7f921c5b59_o-M.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It had a lot of problems, so we sold it.&lt;/p&gt;
-
-&lt;p&gt;In 1996, Chrysler didn&amp;rsquo;t make a Wrangler (okay, they did, but they were sold as 1997 models). Instead, they re-designed and re-tooled the plants to produce the second generation wrangler, the TJ. The TJ was a little bit larger than the YJ, and had coil springs in the front rather than leaf springs. This gave it better road manners without sacrificing too much offroadability. Under the hood, it came with the same choice of I4 or I6 engines, the same AX-5 or AX-15 transmissions, the same NP231 transfer case, and the same Dana 30 front and Dana 35 rear axle (later years got a different transmission, Rubicons got a different transfer case and rear axle, non-Rubicons could be specified with a different rear axle, blah blah blah).&lt;/p&gt;
-
-&lt;p&gt;The thrust of all this is that TJs are sturdy vehicles, and intensely simple to work on. That I6 motor I mentioned makes an almost criminally low amount of power, but when the bombs drop, the last scrappy survivers will find perfect Jeep 4.0 engines still running. They&amp;rsquo;re hard to kill.&lt;/p&gt;
-
-&lt;p&gt;What am I looking for in a Jeep Wrangler? Well, sir:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;4.0 I6 &amp;ndash; They&amp;rsquo;ll last a good long time&lt;/li&gt;
-&lt;li&gt;Manual transmission&lt;/li&gt;
-&lt;li&gt;Reasonably unmodified. I&amp;rsquo;m okay with a little bumper action or a tasteful lift, but I&amp;rsquo;m not going to deal with a bubba&amp;rsquo;d-to-hell Jeep like the last one I bought.&lt;/li&gt;
-&lt;li&gt;2000 or later &amp;ndash; This is a Sabrina requirement. I&amp;rsquo;m OK with cars from the last century, but she isn&amp;rsquo;t.&lt;/li&gt;
-&lt;li&gt;150,000 miles or so &amp;ndash; Even I get a little unnerved buying a car with 200,000 miles on an odometer, even though I know I&amp;rsquo;ll probably see it some day.&lt;/li&gt;
-&lt;li&gt;Cloth top&lt;/li&gt;
-&lt;li&gt;Cruise control&lt;/li&gt;
-&lt;li&gt;AC&lt;/li&gt;
-&lt;li&gt;Minimal rust&lt;/li&gt;
-&lt;li&gt;ABS&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I&amp;rsquo;ll detail my journey to Wrangler-hood here. Jeep-quest! Here we go!&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

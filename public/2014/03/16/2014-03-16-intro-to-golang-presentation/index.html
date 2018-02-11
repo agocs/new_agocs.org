@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Intro to Golang  &middot; My blog</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+<link rel="author" href="http://plus.google.com/+Myprofile">
+
+
+<meta property="og:title" content="Intro to Golang  &middot; My blog ">
+<meta property="og:site_name" content="My blog"/>
+<meta property="og:url" content="/2014/03/16/2014-03-16-intro-to-golang-presentation/" />
+<meta property="og:locale" content="en">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2014-03-16T15:15:39-05:00" />
+<meta property="og:article:modified_time" content="2014-03-16T15:15:39-05:00" />
+
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@Myprofile" />
+<meta name="twitter:creator" content="@Myprofile" />
+<meta name="twitter:title" content="Intro to Golang" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="/2014/03/16/2014-03-16-intro-to-golang-presentation/" />
+<meta name="twitter:domain" content="/">
+  
+
+  
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Intro to Golang",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+Myprofile?rel=author"
+    },
+    "datePublished": "2014-03-16",
+    "description": "",
+    "wordCount": 1248
+  }
+</script>
+  
+
+
+
+<link rel="canonical" href="/2014/03/16/2014-03-16-intro-to-golang-presentation/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+<link rel="icon" href="/favicon.png">
+<meta name="generator" content="Hugo 0.36" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+    <link rel="stylesheet" href="/css/bootswatch/paper/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/style.css">
+
+
+<link rel="stylesheet" href="/css/style_custom.css">
+
+
+
+  <link rel="stylesheet" href="/css/highlight/default.css">
+
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="/">
+            <img alt="My awsome blog" src="http://blog.appernetic.io/images/apperneticlogo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+
+              <a href="https://appernetic.io/app/#/about" >
+                <i class='fa fa-road'></i>
+                About
+              </a>
+            </li>
+            
+            <li class="">
+
+              <a href="/post/" >
+                
+                Blog
+              </a>
+            </li>
+            
+            <li class="">
+
+              <a href="https://appernetic.io/app/" >
+                
+                Dashboard
+              </a>
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="text-center">
+
+    <h1>Intro to Golang
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2014-03-16">16 Mar, 2014</time>
+</small>
+
+
+  <small>
+  &middot; Read in about 6 min
+  &middot; (1248 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=%2f2014%2f03%2f16%2f2014-03-16-intro-to-golang-presentation%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Intro%20to%20Golang&amp;url=%2f2014%2f03%2f16%2f2014-03-16-intro-to-golang-presentation%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=%2f2014%2f03%2f16%2f2014-03-16-intro-to-golang-presentation%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=%2f2014%2f03%2f16%2f2014-03-16-intro-to-golang-presentation%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2f2014%2f03%2f16%2f2014-03-16-intro-to-golang-presentation%2f&amp;title=Intro%20to%20Golang" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Intro%20to%20Golang&amp;body=Check out this site %2f2014%2f03%2f16%2f2014-03-16-intro-to-golang-presentation%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+      <div class="content">
+  <p>Hey everybody, check out this intro to the Go programming language I put together for a talk at Backstop the other week!</p>
+
+<p><a href="http://go-talks.appspot.com/github.com/agocs/GolangIntro/golangIntro.slide#1">Golang Slides</a></p>
+
+<p>I tried to keep the slides content-light, since I find that having too many things on the screen distracts from what I&rsquo;m saying. I&rsquo;ll recapitulate my notes below.</p>
+
+<ol>
+<li>Title slide. Blah blah blah.</li>
+
+<li><ul>
+<li><p><strong>Around since 2009</strong>
+Go started as a research project at Google in 2007. It was released as an open source project in 2009, and Go 1.0 dropped in March of 2012. It&rsquo;s a real-live language!</p></li>
+
+<li><p><strong>Static Typing</strong>
+Kinda &ndash;&gt; Go uses Type Inference, but variables are statically typed once the type has been inferred. This is a reaction to the popularity of languages like JavaScript and Python, and gets away from the &laquo;cumbersome type systems&raquo; used in the C family and Java.</p></li>
+
+<li><p><strong>Object Oriented</strong>
+Kinda &ndash;&gt; Go is object oriented, but it doesn&rsquo;t have classes. I&rsquo;ll get into this later.</p></li>
+
+<li><p><strong>Garbage Collected</strong>
+Yes.</p></li>
+</ul></li>
+
+<li><p>What is it good at? Some of the notable features are quick compile times (which it achieves through clean dependency analysis and no wasted imports or declarations), creation of statically linked binaries, and concurrency, which I dive into later.</p></li>
+
+<li><p>Why Go?</p>
+
+<ul>
+<li><p><strong>Systems Programming</strong> Go represents a next big step in systems programming. Systems programming is the creation of OSes, utilities, drivers, and so-forth. It has to be fast, resource-conscious, and rock solid. C has been the big name in systems programming, but that came out in 1972. C++ came out in 79, and since there, what has there been? D? PL/8? Go and Mozilla Rust are the two up and coming names in systems programming for this century.</p></li>
+
+<li><p><strong>Multicore Computers</strong> Moore&rsquo;s law no longer applies. We&rsquo;re making computers faster by cramming more and more cores onto a processor and more and more processors onto a motherboard. If you look at concurrency support in C or Java or any other enterprise language, it&rsquo;s all abysmal. Go has primitives for concurrency built in. It&rsquo;s so beautiful, it&rsquo;s crazy.</p></li>
+
+<li><p><strong>Make Programming Fun</strong> I think so, at least. At the end of the talk, we wrote a little application that measures response time to a handful of websites and screwed around with it for a while. Not to toot my own horn, but a fellow dev told me it was &laquo;one of the best live coding exercises he had ever seen.&raquo;</p></li>
+</ul></li>
+
+<li><p><strong>Hello World</strong> Nothing special here. &lsquo;fmt&rsquo; is the formatting package in Go&rsquo;s standard library, much like Stdio.h.</p></li>
+
+<li><p><strong>Basic syntax</strong> What I wanted to call out here is the difference between Go&rsquo;s function declaration syntax and that in the C family. C-style declaration is really focused on what a variable / function evaluates to, while Go is more focused on what the thing <em>is</em>. I talked a little bit about the Clockwise-Spiral rule.</p></li>
+
+<li><p><strong>Static Typing and Type Inference</strong> I talked about how you declare variables. <code>myName</code> is in the global address space, while <code>myAge</code> is local to the <code>main</code> method. Some key points:</p>
+
+<ul>
+<li><p><code>myAge := 26</code> &ndash; <code>:=</code> is a shorthand form of declaration and assignment that only works in the local scope. Here, Go&rsquo;s type inference is assuming that I want <code>myAge</code> to be an int.</p></li>
+
+<li><p><code>var myAge = 26</code> is just a longhand version of the above.</p></li>
+
+<li><p><code>var myAge int64 = 26</code> &ndash; Let&rsquo;s say we live in a world where people live a very long time. Here, I&rsquo;m overriding Go&rsquo;s type inference and telling Go that <code>myAge</code> will be a 64 bit int.</p></li>
+
+<li><p><code>myAge := 28 / myAge= := 26</code> Let&rsquo;s say I made a mistake and went to reassign 26 to <code>myAge</code>. I can&rsquo;t do it this way; the compiler says &laquo;You already declared <code>myAge</code>, dumbass.&raquo; If you erase the <code>:</code> on the  second line, you can reassign <code>myAge</code>.</p></li>
+
+<li><p><code>myBrother := &quot;Rob&quot;</code> &ndash; We can&rsquo;t declare a variable without using it. It throws a compiler error. This is part of how Go keeps compile times down.</p></li>
+</ul></li>
+
+<li><p>Object Orientation &ndash; Here&rsquo;s a quick example of how Go is object oriented. We&rsquo;re declaring a struct called littleBox that holds a couple of ints. We can create a litteBox and use it.</p></li>
+
+<li><p>More Object Orientation &ndash; Here, we&rsquo;re declaring a littleBox and a bigBox that holds a littleBox. The function</p>
+
+<pre>func (bb bigBox) makeString() string {
+    return fmt.Sprintf("contains %d books and %d baseball cards", bb.numBooks, bb.little.numBaseballCards)
+}</pre>
+
+<p>creates a function on bigBox that makes it into a string. This is how Go is object oriented, but eschews classes. Whats <em>neat</em> is, if you change <code>func (bb bigBox) makeString()</code> into <code>func (bb bigBox) String()</code>, and change <code>fmt.Println(myBigBox.makeString())</code> into <code>fmt.Println(myBigBox)</code>, you&rsquo;ve made bigBox <em>implement</em> the Stringer interface! Did you explicitly do this? No! But you did it anyway! Isn&rsquo;t that awesome?</p></li>
+
+<li><p>Compile times are quick. I wish I had a really big example to show you, but suffice to say that, every time you click &laquo;Run&raquo; on the presentation, the code is being sent back to the server, compiled, run, and the result is sent back to you.</p></li>
+
+<li><p>Go compiles to native binaries. To demonstrate this, I opened iTerm, ran <code>go build hello_world.go</code>, then ran <code>file hello_world</code> to demonstrate that <code>hello_world</code> had compiled to a binary. Then I moved <code>hello_world</code> to <code>/opt/local/bin</code> and ran <code>hello_world</code>, which, of course, output:</p>
+
+<pre>
+cagocs:~ christopheragocs$ hello_world
+Hello, world!
+</pre></li>
+
+<li><p>Go comes with a number of primitives to handle concurrency. They are:</p>
+
+<ul>
+<li><p><strong>Goroutines</strong> &ndash; you can think of these as being super light, cheap threads. What really happens is a new stack frame is created in the same address space as the parent, and concurrent goroutines are multiplexed using threads. All of the actual thread juggling is handled behind the scenes.</p></li>
+
+<li><p><strong>Channels</strong> &ndash; these are concurrency-safe buffers used for communication between goroutines.</p></li>
+
+<li><p><strong>Select</strong> &ndash; selects between receiving channels.</p></li>
+</ul></li>
+
+<li><p>Here&rsquo;s a purposefully slow example. <code>aBigNumber</code> calls a naive recursive implementation of the Fibonacci function, which delays execution for a few seconds. <code>aSmallNumber</code> either never gets a chance to execute, or executes much later.</p></li>
+
+<li><p>In this one, we&rsquo;ve created a channel called <code>results</code>. We&rsquo;ve prefixed the calls to <code>aSmallNumber()</code> and <code>aBigNumber()</code> with the <code>go</code> keyword, which tells Go to execute them in separate goroutines. Both functions put the result onto the <code>results</code> channel, and the main method reads the results off of the channel in that order. In this instance, it will print &laquo;7&raquo; first, and then whatever the huge fib(42) is (or else execution on the remote server will time out first).</p></li>
+
+<li><p>This was the programming exercise. You can look at the code on Github. In short, it accesses 24 different websites concurrently, and prints out the site, the access time, and the status code in order of completion. I wrote this with a really great group of developers, and we went off on a number of tangents trying different things to figure out some deep implementation details of Go (which explains the <code>time.Sleep(1000000000)</code> on line 30.</p></li>
+</ol>
+
+<p>I used the &laquo;Present&raquo; tool, which is part of the Golang tool kit. I enjoyed using it, as it lets you use code examples pretty heavily, and the code examples can be modified in-browser and executed live. When I posted the talk on Facebook, an old professor of mine asked me about that, which I thought was pretty cool.</p>
+
+<p>Giving the talk to the developers I work with was a lot of fun. Backstop Solutions employs a bunch of really smart people, and it&rsquo;s a pleasure when they ask deep probing questions that go beyond your knowledge. A++++, 10 stars, would present again.</p>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=%2f2014%2f03%2f16%2f2014-03-16-intro-to-golang-presentation%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Intro%20to%20Golang&amp;url=%2f2014%2f03%2f16%2f2014-03-16-intro-to-golang-presentation%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=%2f2014%2f03%2f16%2f2014-03-16-intro-to-golang-presentation%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=%2f2014%2f03%2f16%2f2014-03-16-intro-to-golang-presentation%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2f2014%2f03%2f16%2f2014-03-16-intro-to-golang-presentation%2f&amp;title=Intro%20to%20Golang" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Intro%20to%20Golang&amp;body=Check out this site %2f2014%2f03%2f16%2f2014-03-16-intro-to-golang-presentation%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="/2013/09/11/2013-09-11-cold-brew-coffee-try-1/" title="Cold brew coffee: try # 1">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+      <li class="next">
+        <a href="/2014/03/18/2014-03-18-someone-stole-the-t/" title="Someone stole the T">
+            Next <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//shortname.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="/2018/02/10/2018-02-10-anatomy-of-a-crash/">Using command line tools to analyze a crash</a>
+          </li>
+        
+          <li>
+          <a href="/2017/04/24/2017-04-24-rubens-tube/">Rubens&#39; Tube Part 1</a>
+          </li>
+        
+          <li>
+          <a href="/2016/10/25/2016-10-25-end-grain-cutting-board/">End Grain Cutting Board</a>
+          </li>
+        
+          <li>
+          <a href="/2016/09/14/2016-09-14-golang-philly-talk/">Golang Philly talk</a>
+          </li>
+        
+          <li>
+          <a href="/2016/02/16/2016-02-16-ten-top-tips-to-keep-your-home-thorium-core-reactor-in-tip-top-shape/">Top Ten Home Thorium Core Reactor Tips</a>
+          </li>
+        
+          <li>
+          <a href="/2016/01/10/2016-01-10-jeepbox/">Jeep Box</a>
+          </li>
+        
+          <li>
+          <a href="/2015/11/12/2015-11-12-how-i-clean-my-boots/">How I clean my boots</a>
+          </li>
+        
+          <li>
+          <a href="/2015/10/10/2015-10-10-assigning-globals-in-go/">Assigning Globals in Go</a>
+          </li>
+        
+          <li>
+          <a href="/2015/08/20/2015-08-20-introducing-uluru/">Introducing Uluru</a>
+          </li>
+        
+          <li>
+          <a href="/2015/07/30/2015-07-30-internet-jukebox/">Internet Jukebox</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+<a href="/disclaimer/">Disclaimer</a> <i>&middot;</i>
+
+<a href="/terms/">Terms</a> 
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i>
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2016 Copyright my blog
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+
+<script src="/js/angular.min.js"></script>
+<script src="/js/popover/angular-storage.min.js"></script>
+
+<script src="/js/highlight.pack.js"></script>
+<script src="/js/site.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  true , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "//placehold.it/1000x600",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE = ""; 
+</script>
+
+
+
+<script src="/js/popover/angular-modal-service.min.js"></script>
+<script src="/js/angular-ismobile.min.js"></script>
+<script src="/js/popover/popover.min.js"></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Moving: a post-mortem  &middot; My blog</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+<link rel="author" href="http://plus.google.com/+Myprofile">
+
+
+<meta property="og:title" content="Moving: a post-mortem  &middot; My blog ">
+<meta property="og:site_name" content="My blog"/>
+<meta property="og:url" content="/2013/08/10/2013-08-10-moving-a-post-mortem/" />
+<meta property="og:locale" content="en">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2013-08-10T04:34:48Z" />
+<meta property="og:article:modified_time" content="2013-08-10T04:34:48Z" />
+
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@Myprofile" />
+<meta name="twitter:creator" content="@Myprofile" />
+<meta name="twitter:title" content="Moving: a post-mortem" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="/2013/08/10/2013-08-10-moving-a-post-mortem/" />
+<meta name="twitter:domain" content="/">
+  
+
+  
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Moving: a post-mortem",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+Myprofile?rel=author"
+    },
+    "datePublished": "2013-08-10",
+    "description": "",
+    "wordCount": 1038
+  }
+</script>
+  
+
+
+
+<link rel="canonical" href="/2013/08/10/2013-08-10-moving-a-post-mortem/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+<link rel="icon" href="/favicon.png">
+<meta name="generator" content="Hugo 0.36" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+    <link rel="stylesheet" href="/css/bootswatch/paper/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/style.css">
+
+
+<link rel="stylesheet" href="/css/style_custom.css">
+
+
+
+  <link rel="stylesheet" href="/css/highlight/default.css">
+
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="/">
+            <img alt="My awsome blog" src="http://blog.appernetic.io/images/apperneticlogo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+
+              <a href="https://appernetic.io/app/#/about" >
+                <i class='fa fa-road'></i>
+                About
+              </a>
+            </li>
+            
+            <li class="">
+
+              <a href="/post/" >
+                
+                Blog
+              </a>
+            </li>
+            
+            <li class="">
+
+              <a href="https://appernetic.io/app/" >
+                
+                Dashboard
+              </a>
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="text-center">
+
+    <h1>Moving: a post-mortem
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2013-08-10">10 Aug, 2013</time>
+</small>
+
+
+  <small>
+    &middot; by camerazn
+  
+  &middot; Read in about 5 min
+  &middot; (1038 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=%2f2013%2f08%2f10%2f2013-08-10-moving-a-post-mortem%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Moving%3a%20a%20post-mortem&amp;url=%2f2013%2f08%2f10%2f2013-08-10-moving-a-post-mortem%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=%2f2013%2f08%2f10%2f2013-08-10-moving-a-post-mortem%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=%2f2013%2f08%2f10%2f2013-08-10-moving-a-post-mortem%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2f2013%2f08%2f10%2f2013-08-10-moving-a-post-mortem%2f&amp;title=Moving%3a%20a%20post-mortem" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Moving%3a%20a%20post-mortem&amp;body=Check out this site %2f2013%2f08%2f10%2f2013-08-10-moving-a-post-mortem%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+      <div class="content">
+  
+
+<p>Last month, I moved from Atlanta to Chicago. Moving always sucks; that&rsquo;s a universal constant*, but I think this one went better than most. I&rsquo;ve compiled a list of what worked and what didn&rsquo;t, and some notes on what to do better next time.</p>
+
+<h2 id="what-worked">What Worked</h2>
+
+<h4 id="trello">Trello</h4>
+
+<p>Sabrina and I planned the move and tracked our tasks on Trello.com. I have to say, the ability to put together dynamic kanban-style task boards on the fly really helped us keep everything straight.</p>
+
+<h4 id="penske-trucks">Penske Trucks</h4>
+
+<p>We rented a 26&raquo; straight truck from Penske for this move. That&rsquo;s a big truck, but I decided it&rsquo;s better to have more truck than you need. It cost me less than $500 renting from Saturday - Wednesday, but what I neglected to consider was, on a move of that distance, I would need around 100 gallons of diesel fuel (right around $300-400).</p>
+
+<p>Another consideration is height &ndash; the truck was specified at 12&rsquo;7&raquo;. That&rsquo;s short enough to clear most bridges, but I did come across one 12&rsquo;6&raquo; bridge in downtown Chicago.</p>
+
+<p>Bridges aside, the Penske truck was comfortable and easy to drive. The AC worked great, and the stereo had an Aux input for my phone. It turned about as expected (surprisingly tight for a 30 foot truck), but it accelerated reasonably quickly and cruised comfortably at 70. I was concerned about a mountain in Monteagle, TN, but the truck made it up the grade easily when I dropped down to 5th, and I was never concerned about a runaway on the way down (again, engine braking in 4th or 5th).</p>
+
+<h4 id="audible-com">Audible.com</h4>
+
+<p>It&rsquo;s a long, long, long drive from Atlanta to Chicago. I made it better by listening to _A Supposedly Fun Thing I&rsquo;ll Never Do Again: Essays and Arguments _by David Foster Wallace, purchased through Audible. Audible made it really easy to pick an audiobook based on length (I didn&rsquo;t want to buy the 44 hour <em>Song of Ice and Fire</em>), and I actually turned to my Amazon recommendations for the book itself.</p>
+
+<p>The first essay in <em>A Supposedly Fun Thing</em>, entitled &laquo;Derivative Sport in Tornado Alley&raquo;, is about DFW&rsquo;s childhood in rural Illinois. It was interesting hearing his thoughts on the Illinois geography through the eyes of a child athlete.</p>
+
+<h4 id="rent-a-crate">Rent-A-Crate</h4>
+
+<p>Cardboard boxes suck.</p>
+
+<p>Let me rephrase that: Poorly assembled, poorly packed cardboard boxes suck. A properly assembled and packed cardboard box will bear (most of) the weight of the box(es) above it without destroying your stuff. An over-packed cardboard box means that the weight of the boxes above it is now being supported by your stuff, and when you&rsquo;re in frenzied packing mode, it&rsquo;s really easily to get sloppy in assembling and packing.</p>
+
+<p>There&rsquo;s a company called Rent-A-Crate with offices in several major cities around the country. They&rsquo;ll rent you these big orange crates for $3.50/crate/10 day period. They&rsquo;re sturdy, they nest, they stack stably, and they kick ass. I discovered that 20 crates fit into the back of my station wagon &ndash; just. I rented 25, and wound up taking them back in batches of 15 and 10.</p>
+
+<p>The only drawback (and some may see this as a positive) is that they force you to unpack your stuff, because you&rsquo;re paying for the crates otherwise.</p>
+
+<h4 id="the-home-depot">The Home Depot</h4>
+
+<p>I used to live down the street from not one but two Home Depot stores. It was great being able to run to The Home Depot to pick up bubble wrap, tape, more boxes (caveat, see previous section), and even the big god damn truck.</p>
+
+<h4 id="waze">Waze</h4>
+
+<p>I relied on Waze, a navigation app for my Android phone, to get me to Chicago. It&rsquo;s interesting because it dynamically rerouts you based on traffic, and it took me up US41, a rural highway that divides Indiana and Illinois, while Google took my girlfriend and her mother up I-65 through Indianapolis.</p>
+
+<p>Right as the sun was setting, the lightning bugs over the fields to either side of US41 were a sight to see.</p>
+
+<h4 id="movers">Movers</h4>
+
+<p>One thing I realized was that it would be a huge pain in the ass getting everything up and down stairs. We used Simple Moving Labor to hire movers in Atlanta and Chicago. These guys wrapped all of our furniture up securely and handled the heavy lifting and truck packing much better than we ever could have done. They were self-directed, and really knew their business They were around $350 on each end, but well worth the cost.</p>
+
+<h2 id="what-didn-t">What Didn&rsquo;t</h2>
+
+<h4 id="cardboard-boxes">Cardboard Boxes</h4>
+
+<p>Like I said earlier, a poorly assembled, poorly packed cardboard box quickly becomes a mushy paper bag with broken crap inside that you eventually have to dispose of. Guess what we had a bunch of!</p>
+
+<h4 id="moving-the-cats">Moving the cats</h4>
+
+<p>A few days before the move, I went to the pet supply store and picked up a big kennel on clearance. Sabrina went to the vet, and was given Xanax (seriously, human Xanax in human doses). We dosed the cats the morning of, and they liked it at first. Abby sat in the window, purring to herself, and Panther was jumping around swatting at things that weren&rsquo;t there. When we put them in the car, however, they haaaated it so bad. Sabrina said that they were meowing non-stop, and at one point they actually started to fight. Maybe we&rsquo;ll try some sort of sedative next time.</p>
+
+<p>Having too much stuff</p>
+
+<p>Seriously. I have no place for a telescope in Chicago! I should have started selling things months before.</p>
+
+<h4 id="moving-my-car">Moving my car</h4>
+
+<p>Sabrina&rsquo;s Mom can drive a stick shift, so she drove it up. I&rsquo;m not saying anything, but she might not be as good as the thinks she is. The car made it up in one piece, but I would have been a lot more comfortable if it had been moved professionally.</p>
+
+<h2 id="what-would-i-do-differently">What would I do differently?</h2>
+
+<p>Well, thank goodness, I don&rsquo;t have to move for another four years at least. I&rsquo;m going to start saving now, and maybe, just maybe, we&rsquo;ll hire a full service moving company. Sabrina and I will just get on a plane (and, doubtless, arrive to a pair of unhappy cats).</p>
+
+<p>*Seriously, the easiest move I ever had was the one where my house burned down.</p>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=%2f2013%2f08%2f10%2f2013-08-10-moving-a-post-mortem%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Moving%3a%20a%20post-mortem&amp;url=%2f2013%2f08%2f10%2f2013-08-10-moving-a-post-mortem%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=%2f2013%2f08%2f10%2f2013-08-10-moving-a-post-mortem%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=%2f2013%2f08%2f10%2f2013-08-10-moving-a-post-mortem%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2f2013%2f08%2f10%2f2013-08-10-moving-a-post-mortem%2f&amp;title=Moving%3a%20a%20post-mortem" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Moving%3a%20a%20post-mortem&amp;body=Check out this site %2f2013%2f08%2f10%2f2013-08-10-moving-a-post-mortem%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="/2013/07/21/2013-07-21-how-to-disable-capslock-at-the-hardware-level/" title="How to: disable capslock at the hardware level">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+      <li class="next">
+        <a href="/2013/09/11/2013-09-11-cold-brew-coffee-try-1/" title="Cold brew coffee: try # 1">
+            Next <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//shortname.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="/2018/02/10/2018-02-10-anatomy-of-a-crash/">Using command line tools to analyze a crash</a>
+          </li>
+        
+          <li>
+          <a href="/2017/04/24/2017-04-24-rubens-tube/">Rubens&#39; Tube Part 1</a>
+          </li>
+        
+          <li>
+          <a href="/2016/10/25/2016-10-25-end-grain-cutting-board/">End Grain Cutting Board</a>
+          </li>
+        
+          <li>
+          <a href="/2016/09/14/2016-09-14-golang-philly-talk/">Golang Philly talk</a>
+          </li>
+        
+          <li>
+          <a href="/2016/02/16/2016-02-16-ten-top-tips-to-keep-your-home-thorium-core-reactor-in-tip-top-shape/">Top Ten Home Thorium Core Reactor Tips</a>
+          </li>
+        
+          <li>
+          <a href="/2016/01/10/2016-01-10-jeepbox/">Jeep Box</a>
+          </li>
+        
+          <li>
+          <a href="/2015/11/12/2015-11-12-how-i-clean-my-boots/">How I clean my boots</a>
+          </li>
+        
+          <li>
+          <a href="/2015/10/10/2015-10-10-assigning-globals-in-go/">Assigning Globals in Go</a>
+          </li>
+        
+          <li>
+          <a href="/2015/08/20/2015-08-20-introducing-uluru/">Introducing Uluru</a>
+          </li>
+        
+          <li>
+          <a href="/2015/07/30/2015-07-30-internet-jukebox/">Internet Jukebox</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+<a href="/disclaimer/">Disclaimer</a> <i>&middot;</i>
+
+<a href="/terms/">Terms</a> 
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i>
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2016 Copyright my blog
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+
+<script src="/js/angular.min.js"></script>
+<script src="/js/popover/angular-storage.min.js"></script>
+
+<script src="/js/highlight.pack.js"></script>
+<script src="/js/site.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  true , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "//placehold.it/1000x600",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE = ""; 
+</script>
+
+
+
+<script src="/js/popover/angular-modal-service.min.js"></script>
+<script src="/js/angular-ismobile.min.js"></script>
+<script src="/js/popover/popover.min.js"></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Agocs.org</title>
+    <link>https://agocs.org/categories/</link>
+    <description>Recent content in Categories on Agocs.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://agocs.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Golang</title>
+      <link>https://agocs.org/categories/golang/</link>
+      <pubDate>Tue, 09 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://agocs.org/categories/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hacking</title>
+      <link>https://agocs.org/categories/hacking/</link>
+      <pubDate>Mon, 24 Apr 2017 12:20:32 -0500</pubDate>
+      
+      <guid>https://agocs.org/categories/hacking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jeep</title>
+      <link>https://agocs.org/categories/jeep/</link>
+      <pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://agocs.org/categories/jeep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kitchen</title>
+      <link>https://agocs.org/categories/kitchen/</link>
+      <pubDate>Tue, 25 Oct 2016 10:21:32 -0500</pubDate>
+      
+      <guid>https://agocs.org/categories/kitchen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://agocs.org/categories/programming/</link>
+      <pubDate>Sat, 10 Feb 2018 11:50:00 -0500</pubDate>
+      
+      <guid>https://agocs.org/categories/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rabbitmq</title>
+      <link>https://agocs.org/categories/rabbitmq/</link>
+      <pubDate>Tue, 09 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://agocs.org/categories/rabbitmq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Talks</title>
+      <link>https://agocs.org/categories/talks/</link>
+      <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://agocs.org/categories/talks/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

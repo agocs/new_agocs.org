@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Server Migration  &middot; My blog</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+<link rel="author" href="http://plus.google.com/+Myprofile">
+
+
+<meta property="og:title" content="Server Migration  &middot; My blog ">
+<meta property="og:site_name" content="My blog"/>
+<meta property="og:url" content="/2014/04/15/2014-04-15-migration/" />
+<meta property="og:locale" content="en">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2014-04-15T16:53:19-05:00" />
+<meta property="og:article:modified_time" content="2014-04-15T16:53:19-05:00" />
+
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@Myprofile" />
+<meta name="twitter:creator" content="@Myprofile" />
+<meta name="twitter:title" content="Server Migration" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="/2014/04/15/2014-04-15-migration/" />
+<meta name="twitter:domain" content="/">
+  
+
+  
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Server Migration",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+Myprofile?rel=author"
+    },
+    "datePublished": "2014-04-15",
+    "description": "",
+    "wordCount": 910
+  }
+</script>
+  
+
+
+
+<link rel="canonical" href="/2014/04/15/2014-04-15-migration/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+<link rel="icon" href="/favicon.png">
+<meta name="generator" content="Hugo 0.36" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+    <link rel="stylesheet" href="/css/bootswatch/paper/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/style.css">
+
+
+<link rel="stylesheet" href="/css/style_custom.css">
+
+
+
+  <link rel="stylesheet" href="/css/highlight/default.css">
+
+
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="/">
+            <img alt="My awsome blog" src="http://blog.appernetic.io/images/apperneticlogo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+
+              <a href="https://appernetic.io/app/#/about" >
+                <i class='fa fa-road'></i>
+                About
+              </a>
+            </li>
+            
+            <li class="">
+
+              <a href="/post/" >
+                
+                Blog
+              </a>
+            </li>
+            
+            <li class="">
+
+              <a href="https://appernetic.io/app/" >
+                
+                Dashboard
+              </a>
+            </li>
+            
+            
+              
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="text-center">
+
+    <h1>Server Migration
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2014-04-15">15 Apr, 2014</time>
+</small>
+
+
+  <small>
+  &middot; Read in about 5 min
+  &middot; (910 words)
+  &middot; 
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=%2f2014%2f04%2f15%2f2014-04-15-migration%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Server%20Migration&amp;url=%2f2014%2f04%2f15%2f2014-04-15-migration%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=%2f2014%2f04%2f15%2f2014-04-15-migration%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=%2f2014%2f04%2f15%2f2014-04-15-migration%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2f2014%2f04%2f15%2f2014-04-15-migration%2f&amp;title=Server%20Migration" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Server%20Migration&amp;body=Check out this site %2f2014%2f04%2f15%2f2014-04-15-migration%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  </small>
+
+<div class="margin-10">
+
+</div>
+
+<br>
+</div>
+
+  </div>
+</div>
+
+      <div class="content">
+  
+
+<p>I know my site doesn&rsquo;t exactly have any dedicated watchers, but if anyone noticed a period of downtime earlier this week, it&rsquo;s because I was migrating from hosting on FatCow to hosting on a rented VPS through DigitalOcean. I also moved my domain registration from FatCow to Gandi.net. In this post, I plan to cover the hows, whys, and some lessons learned.</p>
+
+<p>I&rsquo;ll start with the juicy stuff.</p>
+
+<h1 id="why">Why?</h1>
+
+<p>There are a couple of reasons, but the root of it all is that I got fed up with FatCow. It&rsquo;s not clear how their pricing <strike>varies</strike> increases from year to year, and it&rsquo;s obnoxious how, every few months, I find myself signed up for another &laquo;free trial&raquo; of some service out of which I have to opt. I can roll my own solution for less money, and with greater control.</p>
+
+<h2 id="why-move-away-from-fatcow">Why move away from FatCow?</h2>
+
+<p>Like I said above, money and annoyance. I have a few sites with FatCow, and the oldest is about to round the three year mark. When I signed up, I was offered a trial rate of around $30 for the first year. That&rsquo;s a very good deal. I barely used the site, but I ignored a few emails and, lo and behold, I found myself renewed automatically to the tune of $70-something. Okay, that&rsquo;s still not significantly more than $5/month. Pretty darn good for unlimited hosting, the fact that I&rsquo;m not using it notwithstanding. I turned off automatic renewal.</p>
+
+<p>A few months ago, I got a message saying that FatCow couldn&rsquo;t automatically renew that site because the card information I had stored was bad. I logged in, turned automatic renewal off again, and looked at the invoice &ndash; they were about to bill me $200-something for April 2014-April 2015! No way! That&rsquo;s way too much.</p>
+
+<p>I just renewed Agocs.org to the tune of $70-something with FatCow, but I decided it was in my best interests to break ties with that company completely, something I will be doing over the next few weeks.</p>
+
+<h2 id="why-gandi-net">Why Gandi.net?</h2>
+
+<p>Bluntly, they have a &laquo;no bullshit&raquo; policy. That, and they were recommended by a trusted coworker and friend, and they are a French corporation and French law meaningfully allows them to transfer ownership of &laquo;Agocs.org&raquo; over to me (most American registrars, I have been informed, retain ownership of the domain name and license its usage to you).</p>
+
+<p>The process of getting things set up with Gandi.net was a little rocky, as I will detail below, but they have a bunch of good help text and an extensive knowledge base. I was able to get up and running quickly and with minimal bugging of my more knowledgeable friends.</p>
+
+<h2 id="why-digitalocean">Why DigitalOcean?</h2>
+
+<p>I&rsquo;ve hosted a few VPSs with DigitalOcean before, and they are a joy to work with. I get full control of a Linux box (something I never got from FatCow), I can choose my web server (Nginx all the way) and database back-end (none for me please!), and set it up however I want. Write a script that uses rsync to publish new articles? Sure! Go nuts! I fought with FatCow for a while about that, and resorted to using FTP (which, once you&rsquo;ve started using rsync, sucks).</p>
+
+<p>Anyway, one small VPS costs me about five bones per month. Because I&rsquo;m just the tiniest bit clever, I can host several sites on the same VPS. They&rsquo;re all static content generated by Octopress, so it&rsquo;s not like I&rsquo;m going to outgrow the small server any time soon. It&rsquo;s <em>really</em> nice.</p>
+
+<h1 id="how-it-worked">How it worked</h1>
+
+<p>The process was straightforward. I set up the VPS with DigitalOcean first, copied my site over there, installed Nginx, and got that configured. Then I requested a transfer code from FatCow (I suspect, but cannot confirm, that they drag their feet on this), and initiated the transfer through Gandi. The transfer cost me about $13, but that means Agocs.org is mine for an additional year. When the transfer was complete, I created a DNS Zone file through Gandi&rsquo;s web interface that points to my VPS.</p>
+
+<h1 id="lessons-learned">Lessons learned</h1>
+
+<p>I made my fair share of mistakes, mostly in setting up the DNS Zonefile. My first attempt looked like this:</p>
+
+<pre><code>* 10800 IN A 162.243.76.63
+</code></pre>
+
+<p>www.agocs.org worked great, but no email and no plain ol&rsquo; agocs.org. Email was more critical, so around midnight that night I changed it to this:</p>
+
+<pre><code>* 10800 IN A 162.243.76.63
+imap 10800 IN CNAME access.mail.gandi.net.
+pop 10800 IN CNAME access.mail.gandi.net.
+smtp 10800 IN CNAME relay.mail.gandi.net.
+@ 10800 IN MX 50 fb.mail.gandi.net.
+@ 10800 IN MX 10 spool.mail.gandi.net.
+</code></pre>
+
+<p>The lines below were cribbed from Gandi.net&rsquo;s default Zone file. chris@agocs.org worked, but agocs.org did not. I did some research and then made the following change:</p>
+
+<pre><code>* 10800 IN A 162.243.76.63
+@ 10800 IN A 162.243.76.63
+imap 10800 IN CNAME access.mail.gandi.net.
+pop 10800 IN CNAME access.mail.gandi.net.
+smtp 10800 IN CNAME relay.mail.gandi.net.
+@ 10800 IN MX 50 fb.mail.gandi.net.
+@ 10800 IN MX 10 spool.mail.gandi.net.
+</code></pre>
+
+<p>I found out the * record points all _sub_domains to that IP address, but it does not point the root domain (i.e. agocs.org) there. The @ record points the root domain to that IP address.</p>
+
+<p>Finally, I noticed a problem with sent email. The last change I had to make was through Gmail, which was sending agocs.org traffic through an SMTP server run by FatCow. I&rsquo;m way too lazy to roll my own SMTP server, so I told Gmail to take care of it.</p>
+
+<p>There you have it.</p>
+
+</div>
+
+
+      <footer>
+  
+<span class="share-box">Share this on:
+    <a href="https://www.facebook.com/sharer/sharer.php?u=%2f2014%2f04%2f15%2f2014-04-15-migration%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Server%20Migration&amp;url=%2f2014%2f04%2f15%2f2014-04-15-migration%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
+
+    <a href="https://plus.google.com/share?url=%2f2014%2f04%2f15%2f2014-04-15-migration%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
+
+    <a href="http://www.reddit.com/submit?url=%2f2014%2f04%2f15%2f2014-04-15-migration%2f" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
+
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2f2014%2f04%2f15%2f2014-04-15-migration%2f&amp;title=Server%20Migration" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
+
+    <a href="mailto:?subject=Server%20Migration&amp;body=Check out this site %2f2014%2f04%2f15%2f2014-04-15-migration%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+  </span>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="/2014/03/18/2014-03-18-someone-stole-the-t/" title="Someone stole the T">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+      <li class="next">
+        <a href="/2014/04/24/2014-04-24-robot-finds-kitten-as-a-service/" title="Robot Finds Kitten as a Service">
+            Next <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//shortname.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="/2018/02/10/2018-02-10-anatomy-of-a-crash/">Using command line tools to analyze a crash</a>
+          </li>
+        
+          <li>
+          <a href="/2017/04/24/2017-04-24-rubens-tube/">Rubens&#39; Tube Part 1</a>
+          </li>
+        
+          <li>
+          <a href="/2016/10/25/2016-10-25-end-grain-cutting-board/">End Grain Cutting Board</a>
+          </li>
+        
+          <li>
+          <a href="/2016/09/14/2016-09-14-golang-philly-talk/">Golang Philly talk</a>
+          </li>
+        
+          <li>
+          <a href="/2016/02/16/2016-02-16-ten-top-tips-to-keep-your-home-thorium-core-reactor-in-tip-top-shape/">Top Ten Home Thorium Core Reactor Tips</a>
+          </li>
+        
+          <li>
+          <a href="/2016/01/10/2016-01-10-jeepbox/">Jeep Box</a>
+          </li>
+        
+          <li>
+          <a href="/2015/11/12/2015-11-12-how-i-clean-my-boots/">How I clean my boots</a>
+          </li>
+        
+          <li>
+          <a href="/2015/10/10/2015-10-10-assigning-globals-in-go/">Assigning Globals in Go</a>
+          </li>
+        
+          <li>
+          <a href="/2015/08/20/2015-08-20-introducing-uluru/">Introducing Uluru</a>
+          </li>
+        
+          <li>
+          <a href="/2015/07/30/2015-07-30-internet-jukebox/">Internet Jukebox</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+<a href="/disclaimer/">Disclaimer</a> <i>&middot;</i>
+
+<a href="/terms/">Terms</a> 
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i>
+
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2016 Copyright my blog
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+
+<script src="/js/angular.min.js"></script>
+<script src="/js/popover/angular-storage.min.js"></script>
+
+<script src="/js/highlight.pack.js"></script>
+<script src="/js/site.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  true , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "//placehold.it/1000x600",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE = ""; 
+</script>
+
+
+
+<script src="/js/popover/angular-modal-service.min.js"></script>
+<script src="/js/angular-ismobile.min.js"></script>
+<script src="/js/popover/popover.min.js"></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+
+  </body>
+</html>
+

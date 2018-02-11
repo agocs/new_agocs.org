@@ -1,318 +1,385 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Posts  &middot; My blog</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-<meta property="og:title" content="Posts" />
-<meta property="og:description" content="Programming and other interesting things" />
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+<link rel="author" href="http://plus.google.com/+Myprofile">
+
+
+<meta property="og:title" content="Posts  &middot; My blog ">
+<meta property="og:site_name" content="My blog"/>
+<meta property="og:url" content="/post/" />
+<meta property="og:locale" content="en">
+
+
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://agocs.org/post/" />
-
-
-<meta property="og:updated_time" content="2013-04-05T00:00:00&#43;00:00"/>
 
 
 
+<link href="/post/index.xml" rel="alternate" type="application/rss+xml" title="Posts" />
+
+<link rel="canonical" href="/post/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+<link rel="icon" href="/favicon.png">
+<meta name="generator" content="Hugo 0.36" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
 
 
 
+    <link rel="stylesheet" href="/css/bootswatch/paper/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/style.css">
+
+
+<link rel="stylesheet" href="/css/style_custom.css">
 
 
 
-
-<meta itemprop="name" content="Posts">
-<meta itemprop="description" content="Programming and other interesting things">
+  <link rel="stylesheet" href="/css/highlight/default.css">
 
 
+</head>
+<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="/">
+            <img alt="My awsome blog" src="http://blog.appernetic.io/images/apperneticlogo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
 
+              <a href="https://appernetic.io/app/#/about" >
+                <i class='fa fa-road'></i>
+                About
+              </a>
+            </li>
+            
+            <li class="active">
 
+              <a href="/post/" >
+                
+                Blog
+              </a>
+            </li>
+            
+            <li class="">
 
-
-
-
-<meta name="generator" content="Hugo 0.18.1" />
-
-
-    <base href="https://agocs.org/">
-    <link rel="canonical" href="https://agocs.org/post/">
-    <title>Agocs.org</title>
-
-    <!-- CSS -->
-    <link href="https://agocs.org/css/app.css" rel="stylesheet">
-
-    
-      <!-- RSS 2.0 feed -->
-      <link href="https://agocs.org/post/index.xml" rel="alternate" type="application/rss+xml" title="Agocs.org" />
-      <link href="https://agocs.org/post/index.xml" rel="feed" type="application/rss+xml" title="Agocs.org" />
-    
-
-    
-
-    
-    
-
-
-  </head>
-  <body>
-
-    <header class="nav">
-      <div class="top-bar">
-        <div class="row column">
-          <div class="top-bar-left">
-            <ul class="menu">
-              <li><a href="https://agocs.org/">
-                  Agocs.org
-                </a></li>
-            </ul>
-          </div>
-          <div class="top-bar-right">
-            <ul class="menu">
-              <li class=""><a href="https://agocs.org/">
-                Home
-              </a></li>
+              <a href="https://appernetic.io/app/" >
+                
+                Dashboard
+              </a>
+            </li>
+            
+            
               
-                
-                  <li><a href="https://agocs.org/">
-                    Agocs.org
-                  </a></li>
-                
-                  <li><a href="https://agocs.org/categories/">
-                    Categories
-                  </a></li>
-                
-                  <li><a href="https://agocs.org/categories/golang/">
-                    Golang
-                  </a></li>
-                
-                  <li><a href="https://agocs.org/categories/hacking/">
-                    Hacking
-                  </a></li>
-                
-                  <li><a href="https://agocs.org/categories/jeep/">
-                    Jeep
-                  </a></li>
-                
-                  <li><a href="https://agocs.org/categories/kitchen/">
-                    Kitchen
-                  </a></li>
-                
-                  <li><a href="https://agocs.org/post/">
-                    Posts
-                  </a></li>
-                
-                  <li><a href="https://agocs.org/categories/programming/">
-                    Programming
-                  </a></li>
-                
-                  <li><a href="https://agocs.org/categories/rabbitmq/">
-                    Rabbitmq
-                  </a></li>
-                
-                  <li><a href="https://agocs.org/categories/talks/">
-                    Talks
-                  </a></li>
-                
-              
-            </ul>
-          </div>
+          </ul>
         </div>
+        
       </div>
-    </header>
-
-    <header class="blog-header">
-      <div class="callout large">
-        <div class="row column text-center">
-          <h1>
-            <a href="https://agocs.org/" rel="home">Agocs.org</a>
-          </h1>
-          
-            <p>
-              Programming and other interesting things
-            </p>
-          
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <div class="row" id="content">
-        <div class="medium-8 columns">
-          
+    </nav>
+  </header>
 
 
+<div id="main-content" class="container">
+  <header>
+    <h1>Posts
+</h1>
 
+  </header>
   
+    <div>
+  <h2><a href="/2013/04/09/2013-04-09-i-get-tdd/">I&#39;m beginning to really *get* test driven development.</a>
+</h2>
 
-<div class="blog-post">
-  <h3>
-    <a href="https://agocs.org/blog/2013/04/05/first-arduino-project/">First Arduino project</a>
-  </h3>
-  <div class="callout small">
+  <div class="margin-10">
     <small>
-      <time datetime="2013-04-05T00:00:00Z">
-        Fri 05 Apr, 2013
-      </time> by Chris Agocs.
-      
-      
-    </small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2013-04-09">9 Apr, 2013</time>
+</small>
+
+    
+
   </div>
-  <p>
-    So, I know I&rsquo;m way behind the curve on the Arduino. I got caught in a vicious cycle of, &ldquo;Can I justify ordering an Arduino? No, I don&rsquo;t really have a project for it.&rdquo; &ldquo;Should I start this project? No, I don&rsquo;t really have an Arduino.&rdquo;
-Well all that changed, because I have an Arduino now (finally! Gosh!). I&rsquo;d ordered a bag of resistors and LEDs on Amazon, and I have a passive IR motion sensor, so while watching Watership Down this evening I assembled my very first project.
-  </p>
-  <a href='https://agocs.org/blog/2013/04/05/first-arduino-project/'>Read more →</a>
-  <hr>
 </div>
 
 
   
+    <div>
+  <h2><a href="/2013/04/05/2013-04-05-first-arduino-project/">First Arduino project</a>
+</h2>
 
-<div class="blog-post">
-  <h3>
-    <a href="https://agocs.org/blog/2013/04/03/hey-chris-agocs-click-this/">Hey, Chris Agocs, click this:</a>
-  </h3>
-  <div class="callout small">
+  <div class="margin-10">
     <small>
-      <time datetime="2013-04-03T00:00:00Z">
-        Wed 03 Apr, 2013
-      </time> by Chris Agocs.
-      
-      
-    </small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2013-04-05">5 Apr, 2013</time>
+</small>
+
+    
+
   </div>
-  <p>
-    local host colon eighty eighty
-An explanation for non-Chris Agocs people to follow&hellip;
-One of the projects I&rsquo;m on is capturing the referrer information from a browser. Just to try it out, I spun up a Bottle server and printed the poorly spelled HTTP_REFERER. It works.
-  </p>
-  <a href='https://agocs.org/blog/2013/04/03/hey-chris-agocs-click-this/'>Read more →</a>
-  <hr>
 </div>
 
 
   
+    <div>
+  <h2><a href="/2013/04/03/2013-04-03-hey-chris-agocs-click-this/">Hey, Chris Agocs, click this:</a>
+</h2>
 
-<div class="blog-post">
-  <h3>
-    <a href="https://agocs.org/blog/2013/04/01/radioshack-is-worth-a-damn-again/">RadioShack is worth a damn again!</a>
-  </h3>
-  <div class="callout small">
+  <div class="margin-10">
     <small>
-      <time datetime="2013-04-01T00:00:00Z">
-        Mon 01 Apr, 2013
-      </time> by Christopher Agocs.
-      
-      
-    </small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2013-04-03">3 Apr, 2013</time>
+</small>
+
+    
+
   </div>
-  <p>
-    I remember a day before cell phones when you could go to RadioShack and get electronic components, Ham Radio gear, and a bunch of other really useful stuff. Times changed, and all they were good for was cell phones, overpriced batteries, and people yelling about the above. I&rsquo;ve pretty much been ignoring Radio Shack for the past six or seven years.
-I&rsquo;d heard that things had changed. I walked into a RadioShack near me today, and walked out with an Arduino and a motion sensor.
-  </p>
-  <a href='https://agocs.org/blog/2013/04/01/radioshack-is-worth-a-damn-again/'>Read more →</a>
-  <hr>
 </div>
 
 
+  
+    <div>
+  <h2><a href="/2013/04/01/2013-04-01-radiosmack/">RadioShack is worth a damn again!</a>
+</h2>
 
+  <div class="margin-10">
+    <small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2013-04-01">1 Apr, 2013</time>
+</small>
 
-  <div>
     
-    
-      <a class="button" href="/post/page/4/">Previous page</a>
-      <a class="button disabled" href="#" aria-disabled="true">Next page</a>
-    
-    
-    <hr>
+
   </div>
+</div>
 
-
-
-        </div>
-          <div class="medium-3 columns" data-sticky-container>
-  <div class="sticky" data-sticky data-anchor="content">
 
   
-    <h4>About</h4>
-    <p>I&rsquo;m a helluva engineer and a software engineer living in Chicago now.</p>
   
+<nav>
+  <ul class="pagination">
+    
 
-  
 
-  <h4>Recent Posts</h4>
-  <ul>
-    
-      <li><a href="/blog/2017/04/24/rubens-tube-part-1/">
-        Rubens&rsquo; Tube Part 1
-      </a></li>
-    
-      <li><a href="/blog/2016/10/25/end-grain-cutting-board/">
-        End Grain Cutting Board
-      </a></li>
-    
-      <li><a href="/blog/2016/09/14/golang-philly-talk/">
-        Golang Philly talk
-      </a></li>
-    
-      <li><a href="/blog/2016/02/16/top-ten-home-thorium-core-reactor-tips/">
-        Top Ten Home Thorium Core Reactor Tips
-      </a></li>
-    
-      <li><a href="/blog/2016/01/10/jeep-box/">
-        Jeep Box
-      </a></li>
-    
+<li >
+  <a aria-label="First" href="//post/">
+    <span aria-hidden="true">&laquo;&laquo;</span>
+  </a>
+</li>
+
+<li >
+  <a aria-label="Previous" href="//post/page/4/">
+    <span aria-hidden="true">&laquo;</span>
+    </a>
+</li>
+
+<li >
+  <a href="//post/">
+    1
+    </a>
+</li>
+
+<li >
+  <a href="//post/page/2/">
+    2
+    </a>
+</li>
+
+<li >
+  <a href="//post/page/3/">
+    3
+    </a>
+</li>
+
+<li >
+  <a href="//post/page/4/">
+    4
+    </a>
+</li>
+
+<li  class="active" >
+  <a href="//post/page/5/">
+    5
+    </a>
+</li>
+
+
+<li  class="disabled" >
+  <a aria-label="Next" href="#">
+    <span aria-hidden="true">&raquo;</span>
+    </a>
+</li>
+<li  class="disabled" >
+  <a aria-label="Last" href="//post/page/5/">
+    <span aria-hidden="true">&raquo;&raquo;</span>
+  </a>
+</li>
+
+
   </ul>
+</nav>
 
-  
-    <h4>Links</h4>
-    <ul>
-      
-        <li><a href="https://github.com/agocs">
-          Github
-        </a></li>
-      
-        <li><a href="https://mastodon.social/@agocs">
-          Mastodon
-        </a></li>
-      
-        <li><a href="https://agocs.org/resume.pdf">
-          My résumé
-        </a></li>
-      
-        <li><a href="https://twitter.com/agoX">
-          Twitter
-        </a></li>
-      
-    </ul>
-  
 
-  </div>
+</div>
+    
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+<a href="/disclaimer/">Disclaimer</a> <i>&middot;</i>
+
+<a href="/terms/">Terms</a> 
+
 </div>
 
-      </div>
-    </main>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i>
 
-    <footer class="blog-footer">
-      <div class="row column">
-        <p>
-          
-          Blog template created by <a href="hhttps://github.com/zurb">@zurb</a>, ported to Hugo by <a href='https://github.com/htko89'>github.com/htko89</a>.
-          
-        </p>
-        <p>
-          <a href="https://agocs.org/post/#">Back to top</a>
-        </p>
-      </div>
-    </footer>
+</small>
+</div>
 
-  <foot>
 
-    <script src="https://agocs.org/js/app.js"></script>
+    
+<div class="container copyright">
+    <small>
+  &copy; 2016 Copyright my blog
 
-  </foot>
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+
+<script src="/js/angular.min.js"></script>
+<script src="/js/popover/angular-storage.min.js"></script>
+
+<script src="/js/highlight.pack.js"></script>
+<script src="/js/site.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER =  true , 
+EXPIRE_COOKIE =  5 , 
+SHOW_MODAL_TIMEOUT =  10000 , 
+MOUSE_LEAVE =  true , 
+MODAL_SIZE = "", 
+POST_URL = "https://zapier.com/hooks/catch/1227563/", 
+SIGNUP_HEADER = "Join Our Newsletter",
+HEADER_IMAGE = "//placehold.it/1000x600",
+IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
+SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
+INPUT_PLACEHOLDER = "Enter your email",
+SUBMIT_BUTTON = "Subscribe",
+SUCCESS_MESSAGE = "Thanks for your subscription!",
+ERROR_MESSAGE = "Submitting form failed!",
+OPTIN =  true ,
+COOKIE_NAME = "mycookie1",
+CONTENTLANGUAGE = ""; 
+</script>
+
+
+
+<script src="/js/popover/angular-modal-service.min.js"></script>
+<script src="/js/angular-ismobile.min.js"></script>
+<script src="/js/popover/popover.min.js"></script>
+
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    for(var all in MathJax.Hub.getAllJax()) {
+        all.SourceElement().parentNode.className += ' has-jax';
+
+    }
+});
+</script>
+
+
+
+
+
+
   </body>
 </html>
+

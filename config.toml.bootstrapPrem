@@ -1,0 +1,128 @@
+# hostname (and path) to the root eg. https://appernetic.github.io/
+baseurl = "https://agocs.org"
+
+# Remark if you want to disable multilingual support.
+DefaultContentLanguage = "en"
+
+# If you want all of the languages to be put below their respective language code,
+# enable DefaultContentLanguageInSubdir = true. Without enabling it english content
+# will be in the root and other languages in their respective subfolder such as /sv/.
+# See [Languages] settings at the end of this file.
+
+# Use this languageCode if it's not a multilingual site and also remove all language blocks and menus in the language sections to disable multilingual support.
+# language blocks.
+# Language
+#languageCode = "en"
+
+# SES friendly url:s
+canonifyurls = true
+
+# Frontmatter format
+# "yaml", "toml", "json"
+metaDataFormat = "toml"
+
+# Theme to use (located in /themes/THEMENAME/)
+theme = "hugo-bootstrap-premium"
+# Pagination
+paginate = 10
+paginatePath = "page"
+
+# Enable Disqus integration
+#disqusShortname = "shortname"
+
+
+[permalinks]
+post = "/:year/:month/:day/:filename/"
+code = "/:filename/"
+
+[taxonomies]
+tag = "tags"
+topic = "topics"
+
+[author]
+name = "Chris Agocs"
+email = "chris@agocs.org"
+
+#
+# All parameters below here are optional and can be mixed and matched.
+#
+
+
+[params]
+# bootswatch theme name, unmark and select one: cerulean, cosmo, cyborg, darkly,
+# default, flatly, journal,  lumen, paper, readable, sandstone, simplex,
+# slate, spacelab, superhero, united, yeti.
+
+bootswatchtheme = "paper"
+
+# menu for changing language. This changes languages with js and stores the choice with the help of JavaScript in a Cookie. Then the path is rewritten with pathnamereplace.js. The name of the md files needs to have the same name for each language abbreviation to work correctly. Example: showcase.en.md and showcase.sv.md. It only works if DefaultContentLanguageInSubdir = true
+switchlang = false
+# You can use markdown here.
+brand = "My awsome blog" # brand image alt text.
+topline = "Agocs.org"
+footline = ""
+
+customJS = []
+customCSS = ["/css/style_custom.css"]
+
+# Text for the top menu link, which goes to the root URL for the site.
+# Default (if omitted) is "Home".
+home = "home"
+
+mailmunchid = "" # Mailmunch site id
+sumomeid = "" # Sumome id
+mathjax = "2.7.1" # cdnjs hosted version; empty string to disable mathjax
+
+# Show a sidebar menu
+showRightSidebar = true
+# Select a syntax highlight.
+# Check the static/css/highlight directory for options.
+highlight = "default"
+
+# Google Analytics.
+# googleAnalytics = "Your Google Analytics tracking code"
+
+# Sidebar social links.
+github = "agocs" # Your Github profile ID
+linkedin = "christopher-agocs-3622a75" # Your LinkedIn profile ID (from public URL)
+twitter = "agox" # Your Twitter profile ID
+
+[blackfriday]
+angledQuotes = true
+fractions = false
+hrefTargetBlank = false
+latexDashes = true
+plainIdAnchors = true
+extensions = []
+extensionmask = []
+
+# Menus
+# If you want active menu items highlighted for internal pages don't add them here, they need to be added in each files front matter.
+# like this:
+#[menu]
+#     [menu.main]
+#        name = "Showcase"
+#        weight = 3
+#        identifier = "showcase"
+# i18n menus. A menu will be added for each language to the right in the top menu. This menu will switch to the selected language. Remember to add the corresponding language in pathnamereplace.js.
+#[[Languages.sv.menu.switchlang]]
+#  name = "English"
+#  identifier = ""
+#  weight = 4
+#  url = "en"
+
+
+[Languages]
+[Languages.en]
+languageCode = "en"
+weight = 1
+copyright = "(c) 2016 Copyright my blog"
+title = "My blog" # Site title
+
+[[Languages.en.menu.main]]
+name = "Blog"
+pre = ""
+weight = 2
+identifier = "post"
+url = "/post/"
+

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Agocs.org" />
+<meta property="og:description" content="Helluva software engineer" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://agocs.org/" />
+
+
+
+<meta property="og:updated_time" content="2013-05-05T04:05:48&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Agocs.org"/>
+<meta name="twitter:description" content="Helluva software engineer"/>
+<meta name="generator" content="Hugo 0.36" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Blog",
+  "headline": "Agocs.org",
+  "url" : "https://agocs.org/",
+  "author": {
+    "@type": "Person",
+    "name": "Chris Agocs"
+  },
+  "dateModified": "2013-05-05T04:05:48&#43;00:00",
+  "keywords": "golang,hacking,jeep,kitchen,programming,rabbitmq,talks,",
+  "description": "Helluva software engineer"
+}
+</script>
+
+
+    <link rel="canonical" href="https://agocs.org/">
+
+    <title>Agocs.org</title>
+
+    <!-- combined, minified CSS -->
+    <link href="https://agocs.org/css/style.css" rel="stylesheet" integrity="sha384-CoMzlF7G4xk3ftqRr7leobnWP85AuISUJljMFjtTG/UHyP/&#43;bBwWAvBlXkB4VQQk" crossorigin="anonymous">
+
+    
+    <!-- RSS 2.0 feed -->
+    <link href="https://agocs.org/index.xml" rel="alternate" type="application/rss+xml" title="Agocs.org" />
+    
+
+    
+
+    
+
+    
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link active" href="https://agocs.org/">Home</a>
+          
+          
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title"><a href="https://agocs.org/" rel="home">Agocs.org</a></h1>
+        <p class="lead blog-description">Helluva software engineer</p>
+      </div>
+    </header>
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title"><a href="https://agocs.org/2013/05/mergesort-on-all-the-spices-in-the-kitchen/">Mergesort on all the spices in the kitchen</a></h2>
+    <p class="blog-post-meta"><time datetime="2013-05-05T04:05:48Z">Sun May 05, 2013</time> by Chris Agocs in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/kitchen" rel="category tag">kitchen</a>, <a href="/categories/programming" rel="category tag">programming</a>
+
+
+</p>
+  </header>
+  It bothered me that the spices in the kitchen were out of order. So, I sorted them using my favorite sorting algorithm, Mergesort. My cats helped.
+
+I started with an un-ordered list of spices.
+
+Then I started to divide the list up into smaller lists. Panther helped.
+31 elements became 15 and 16.
+Then 7, 8, 8, 8.
+Then 3, 4, 4, 4, 4, 4, 4, 4.
+Then 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+  <a href='https://agocs.org/2013/05/mergesort-on-all-the-spices-in-the-kitchen/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title"><a href="https://agocs.org/2013/04/box-fan-beef-jerky-part-2/">Box Fan Beef Jerky, part 2</a></h2>
+    <p class="blog-post-meta"><time datetime="2013-04-23T00:00:00Z">Tue Apr 23, 2013</time> by Chris Agocs in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/kitchen" rel="category tag">kitchen</a>
+
+
+</p>
+  </header>
+  In this post, I started making box fan beef jerky. If you can&rsquo;t remember where I was when I left off, go take a peek.
+Okay, so. The meat sat in the marinade overnight, and come morning I loaded it onto a 20&rdquo; by 20&rdquo; HVAC filter, courtesy of The Home Depot.
+
+The cats were very interested.
+
+I assembled the filters and strapped them to the fan.
+  <a href='https://agocs.org/2013/04/box-fan-beef-jerky-part-2/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title"><a href="https://agocs.org/2013/04/how-to-urlencode-a-string-in-c#-using-.net-4.0-or-less/">How to UrlEncode a String in C# using .Net 4.0 or less</a></h2>
+    <p class="blog-post-meta"><time datetime="2013-04-23T00:00:00Z">Tue Apr 23, 2013</time> by Chris Agocs</p>
+  </header>
+  The boffins over at Microsoft added a handy method to .Net 4.5: Webutility.UrlEncode. Unfortunately for those of us who don&rsquo;t have Visual Studio 2012, we can&rsquo;t use it! How then can we properly encode strings for use in URLs?
+(What do I mean? Let&rsquo;s say I want to pass a URL inside another URL as an argument. So, for example, I want to pass http://www.bar.com/?a=b&amp;c=d _as a query string variable_ to foo.
+  <a href='https://agocs.org/2013/04/how-to-urlencode-a-string-in-c#-using-.net-4.0-or-less/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title"><a href="https://agocs.org/2013/04/box-fan-beef-jerky-part-1/">Box Fan Beef Jerky, part 1</a></h2>
+    <p class="blog-post-meta"><time datetime="2013-04-18T00:00:00Z">Thu Apr 18, 2013</time> by Chris Agocs in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/kitchen" rel="category tag">kitchen</a>
+
+
+</p>
+  </header>
+  I realized this morning that I&rsquo;m about six months late in changing my air conditioner filter. I was in Home Depot, and I thought, &ldquo;You know what goes really well with air filters? Beef jerky!&rdquo;
+That&rsquo;s right, I&rsquo;m an unabashed Alton Brown fan. I saw this episode of Good Eats a few years ago, and I occasionally think, &ldquo;Huh, I could do that.&rdquo; Well, I bought three of the cheapest 20x20 filters and 1.
+  <a href='https://agocs.org/2013/04/box-fan-beef-jerky-part-1/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title"><a href="https://agocs.org/2013/04/cast-iron-skillet-pizza/">Cast Iron Skillet Pizza</a></h2>
+    <p class="blog-post-meta"><time datetime="2013-04-17T00:00:00Z">Wed Apr 17, 2013</time> by Chris Agocs in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/kitchen" rel="category tag">kitchen</a>
+
+
+</p>
+  </header>
+  I am the proud owner of a Lodge 10&rdquo; Cast Iron Skillet. I bought it at the Lodge Factory Store in Tennessee for, like, $12 because of a small blemish. I&rsquo;d heard about making pizza in a cast iron skillet, and tonight, I thought, why not? I largely used this guy&rsquo;s recipe (minus the part where he made his own dough and sauce. Maybe later.): http://www.macheesmo.com/2011/03/cast-iron-pizza/
+One trip to Whole Foods later, and I had some Ingredients!
+  <a href='https://agocs.org/2013/04/cast-iron-skillet-pizza/'>Read more →</a>
+</article> 
+
+
+
+
+
+<nav class="blog-pagination">
+  
+  <a class="btn btn-outline-primary" href="/page/7/" rel="prev" role="button">Previous page</a>
+  <a class="btn btn-outline-primary" href="/page/9/" rel="next" role="button">Next page</a>
+  
+  
+  
+</nav>
+
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p>I&rsquo;m a Go enthusiast and a software engineer for <a href="https://nautiluslabs.co">Nautilus Labs</a></p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/2018/02/using-command-line-tools-to-analyze-a-crash/">Using command line tools to analyze a crash</a></li>
+
+<li><a href="/2017/04/rubens-tube-part-1/">Rubens&rsquo; Tube Part 1</a></li>
+
+<li><a href="/2016/10/end-grain-cutting-board/">End Grain Cutting Board</a></li>
+
+<li><a href="/2016/09/golang-philly-talk/">Golang Philly talk</a></li>
+
+<li><a href="/2016/02/top-ten-home-thorium-core-reactor-tips/">Top Ten Home Thorium Core Reactor Tips</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="https://github.com/agocs">Github</a></li>
+      
+      <li><a href="https://twitter.com/agoX">Twitter</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p>
+      
+      Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>

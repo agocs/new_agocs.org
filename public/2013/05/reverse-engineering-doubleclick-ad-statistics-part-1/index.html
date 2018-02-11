@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Reverse Engineering Doubleclick Ad Statistics (Part 1)" />
+<meta property="og:description" content="One of the projects I&rsquo;m on seeks to proxy web beacons. Basically, I have a WSGI app that serves a 1x1 px gif, and then triggers a Celery app that goes out and actually &ldquo;clicks&rdquo; on the intended web beacon. During preliminary load testing with a Doubleclick beacon (actually a Doubleclick link counter), we discovered that requesting that beacon 1000 times in 5 minutes (one request ever 1&frasl;3 second) only reported around 30 &ldquo;clicks." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://agocs.org/2013/05/reverse-engineering-doubleclick-ad-statistics-part-1/" />
+
+
+
+<meta property="article:published_time" content="2013-05-07T17:44:16&#43;00:00"/>
+
+<meta property="article:modified_time" content="2013-05-07T17:44:16&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Reverse Engineering Doubleclick Ad Statistics (Part 1)"/>
+<meta name="twitter:description" content="One of the projects I&rsquo;m on seeks to proxy web beacons. Basically, I have a WSGI app that serves a 1x1 px gif, and then triggers a Celery app that goes out and actually &ldquo;clicks&rdquo; on the intended web beacon. During preliminary load testing with a Doubleclick beacon (actually a Doubleclick link counter), we discovered that requesting that beacon 1000 times in 5 minutes (one request ever 1&frasl;3 second) only reported around 30 &ldquo;clicks."/>
+<meta name="generator" content="Hugo 0.36" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Reverse Engineering Doubleclick Ad Statistics (Part 1)",
+  "url": "https://agocs.org/2013/05/reverse-engineering-doubleclick-ad-statistics-part-1/",
+  "wordCount": "287",
+  "datePublished": "2013-05-07T17:44:16&#43;00:00",
+  "dateModified": "2013-05-07T17:44:16&#43;00:00",
+  "author": {
+    "@type": "Person",
+    "name": "camerazn"
+  },
+  "keywords": "hacking"
+}
+</script>
+
+
+
+    <link rel="canonical" href="https://agocs.org/2013/05/reverse-engineering-doubleclick-ad-statistics-part-1/">
+
+    <title>Reverse Engineering Doubleclick Ad Statistics (Part 1) | Agocs.org</title>
+
+    <!-- combined, minified CSS -->
+    <link href="https://agocs.org/css/style.css" rel="stylesheet" integrity="sha384-CoMzlF7G4xk3ftqRr7leobnWP85AuISUJljMFjtTG/UHyP/&#43;bBwWAvBlXkB4VQQk" crossorigin="anonymous">
+
+    
+
+    
+
+    
+
+    
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="https://agocs.org/">Home</a>
+          
+          
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title"><a href="https://agocs.org/" rel="home">Agocs.org</a></h1>
+        <p class="lead blog-description">Helluva software engineer</p>
+      </div>
+    </header>
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title"><a href="https://agocs.org/2013/05/reverse-engineering-doubleclick-ad-statistics-part-1/">Reverse Engineering Doubleclick Ad Statistics (Part 1)</a></h2>
+    <p class="blog-post-meta"><time datetime="2013-05-07T17:44:16Z">Tue May 07, 2013</time> by camerazn in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/hacking" rel="category tag">hacking</a>
+
+
+</p>
+  </header>
+  <p>One of the projects I&rsquo;m on seeks to proxy web beacons. Basically, I have a WSGI app that serves a 1x1 px gif, and then triggers a Celery app that goes out and actually &ldquo;clicks&rdquo; on the intended web beacon. During preliminary load testing with a Doubleclick beacon (actually a Doubleclick link counter), we discovered that requesting that beacon 1000 times in 5 minutes (one request ever <sup>1</sup>&frasl;<sub>3</sub> second) only reported around 30 &ldquo;clicks.&rdquo; We&rsquo;ve been throwing tests at Doubleclick to see what it reports under different scenarios:</p>
+
+<ul>
+<li><p>1000 clicks evenly distributed over 5 minutes: 30 clicks</p></li>
+
+<li><p>1000 clicks chunked into 50 groups of 20 (I misunderstood how JMeter works): 50 clicks</p></li>
+
+<li><p>300 clicks over an hour (1 per 12 seconds): 300 clicks</p></li>
+
+<li><p>500 clicks with spoofed User_agent strings (1 per 12 seconds): 500 clicks</p></li>
+</ul>
+
+<p>So it appears that Doubleclick has a &ldquo;cooldown&rdquo; between clicks and doesn&rsquo;t really care about the User_agent. How long is that cooldown? We know it&rsquo;s greater than <sup>1</sup>&frasl;<sub>3</sub> second and less than 12 seconds.</p>
+
+<p>Today, I&rsquo;m running a test that looks like this:</p>
+
+<p><strong>Number of clicks</strong></p>
+
+<p><strong>Rate of clicks</strong></p>
+
+<p><strong>Delay between clicks</strong></p>
+
+<p><strong>Total time</strong></p>
+
+<p>10240</p>
+
+<p>240 per minute</p>
+
+<p>.25 seconds</p>
+
+<p>2560 s (42.6m)</p>
+
+<p>5120</p>
+
+<p>120 per minute</p>
+
+<p>.5 seconds</p>
+
+<p>2560 s (42.6m)</p>
+
+<p>2560</p>
+
+<p>80 per minute</p>
+
+<p>.75 seconds</p>
+
+<p>1920 s (32m)</p>
+
+<p>1280</p>
+
+<p>40 per minute</p>
+
+<p>1.5 seconds</p>
+
+<p>1920 s (32m)****</p>
+
+<p>640</p>
+
+<p>20 per minute</p>
+
+<p>3 seconds</p>
+
+<p>1920 s (32m)</p>
+
+<p>320</p>
+
+<p>10 per minute</p>
+
+<p>6 seconds</p>
+
+<p>1920 s (32m)</p>
+
+<p>By taking the total number of clicks recorded today (which I&rsquo;ll know tomorrow), I&rsquo;ll be able to start approximating the cooldown (for example, if I see 2240 and change clicks, I&rsquo;ll know that the cooldown is between 1.5 and .75 seconds).</p>
+
+<p>Will update later.</p>
+
+
+  
+
+  
+  <hr>
+  <footer>
+
+  
+    <section>
+    <h4>Share</h4>
+    <nav class="nav sharing-icons">
+      <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fagocs.org%2f2013%2f05%2freverse-engineering-doubleclick-ad-statistics-part-1%2f" title="Share on Facebook"><span class="fa fa-facebook fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://plus.google.com/share?url=https%3a%2f%2fagocs.org%2f2013%2f05%2freverse-engineering-doubleclick-ad-statistics-part-1%2f" title="Share on Google+"><span class="fa fa-google-plus fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fagocs.org%2f2013%2f05%2freverse-engineering-doubleclick-ad-statistics-part-1%2f" title="Share on LinkedIn"><span class="fa fa-linkedin fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://twitter.com/home?status=https%3a%2f%2fagocs.org%2f2013%2f05%2freverse-engineering-doubleclick-ad-statistics-part-1%2f" title="Tweet this"><span class="fa fa-twitter fa-2x"></span></a>
+    </nav>
+  </section>
+
+  
+
+  
+  </footer>
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p>I&rsquo;m a Go enthusiast and a software engineer for <a href="https://nautiluslabs.co">Nautilus Labs</a></p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/2018/02/using-command-line-tools-to-analyze-a-crash/">Using command line tools to analyze a crash</a></li>
+
+<li><a href="/2017/04/rubens-tube-part-1/">Rubens&rsquo; Tube Part 1</a></li>
+
+<li><a href="/2016/10/end-grain-cutting-board/">End Grain Cutting Board</a></li>
+
+<li><a href="/2016/09/golang-philly-talk/">Golang Philly talk</a></li>
+
+<li><a href="/2016/02/top-ten-home-thorium-core-reactor-tips/">Top Ten Home Thorium Core Reactor Tips</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="https://github.com/agocs">Github</a></li>
+      
+      <li><a href="https://twitter.com/agoX">Twitter</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p>
+      
+      Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>
