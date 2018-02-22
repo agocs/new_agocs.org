@@ -4,6 +4,7 @@ title: "Using command line tools to analyze a crash"
 date: "2018-02-10 11:50:00 -0500"
 categories:
   - "Programming"
+draft: true
 ---
 
 <a href="https://agocs.smugmug.com/Other/Norway/i-SLPwjgK/A"><img src="https://photos.smugmug.com/Other/Norway/i-SLPwjgK/1/808af843/XL/IMG_20170924_070751-XL.jpg" alt=""></a>
