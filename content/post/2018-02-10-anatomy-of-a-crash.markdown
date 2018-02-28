@@ -4,7 +4,6 @@ title: "Using command line tools to analyze a crash"
 date: "2018-02-10 11:50:00 -0500"
 categories:
   - "Programming"
-draft: true
 ---
 
 <a href="https://agocs.smugmug.com/Other/Norway/i-SLPwjgK/A"><img src="https://photos.smugmug.com/Other/Norway/i-SLPwjgK/1/808af843/XL/IMG_20170924_070751-XL.jpg" alt=""></a>
@@ -20,12 +19,8 @@ days ago, one of their ships struck a jetty during a berthing maneuver.
 
 <!--more-->
 
-According to an email from the client:
-
-> Everyone’s fine – another avoidable mistake that’s going to keep our 
-> insurance premiums the highest amongst our peers.
-
-They asked for a high-resolution dump of data from that day so they could begin
+No one was hurt, but they need to gather data for their insurers. They asked 
+for a high-resolution dump of data from that day so they could begin
 investigating. That's a straightforward request, but we keep raw data encrypted
 in AWS S3 buckets. Pulling it down is easy (`aws s3 sync ...`), but it has to
 be decrypted and parsed. Fortunately, we've written the software to do that. 
@@ -143,12 +138,6 @@ or a mariner, so I'm hesitant to say what I think was the reason for the
 difference between the two approaches. 
 
 Nevertheless, I enjoyed the exercise. Working with these data sets is always 
-interesting. This is the feedback I got from the client:
-
-> Chris – thanks for spearheading the Google map, it’s exactly what we needed 
-> right now.  Our Head Counsel said, “Wow. This is incredibly useful.” when I 
-> showed him your map.
-
-Obviously nobody's happy this ship is out of service, but I believe we can 
+interesting. Nobody's happy this ship is out of service, but I believe we can 
 collect the data and effect the changes necessary to make incidents like these
 a thing of the past.

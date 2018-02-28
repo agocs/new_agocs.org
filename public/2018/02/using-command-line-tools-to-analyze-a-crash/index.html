@@ -61,7 +61,7 @@ days ago, one of their ships struck a jetty during a berthing maneuver.
   "@type": "BlogPosting",
   "headline": "Using command line tools to analyze a crash",
   "url": "https://agocs.org/2018/02/using-command-line-tools-to-analyze-a-crash/",
-  "wordCount": "920",
+  "wordCount": "868",
   "datePublished": "2018-02-10T11:50:00-05:00",
   "dateModified": "2018-02-10T11:50:00-05:00",
   "author": {
@@ -79,7 +79,7 @@ days ago, one of their ships struck a jetty during a berthing maneuver.
     <title>Using command line tools to analyze a crash | Agocs.org</title>
 
     <!-- combined, minified CSS -->
-    <link href="https://agocs.org/css/style.css" rel="stylesheet" integrity="sha384-CoMzlF7G4xk3ftqRr7leobnWP85AuISUJljMFjtTG/UHyP/&#43;bBwWAvBlXkB4VQQk" crossorigin="anonymous">
+    <link href="https://agocs.org/css/style.css" rel="stylesheet" integrity="sha384-1ZzMPGmNN1QIHKLU8i4Jhr9yokPw8iabR3UcoCgzbsPGJtlJxJONPbNOkOg0PYYJ" crossorigin="anonymous">
 
     
 
@@ -144,14 +144,8 @@ days ago, one of their ships struck a jetty during a berthing maneuver.</p>
 
 <p></p>
 
-<p>According to an email from the client:</p>
-
-<blockquote>
-<p>Everyone’s fine – another avoidable mistake that’s going to keep our
-insurance premiums the highest amongst our peers.</p>
-</blockquote>
-
-<p>They asked for a high-resolution dump of data from that day so they could begin
+<p>No one was hurt, but they need to gather data for their insurers. They asked
+for a high-resolution dump of data from that day so they could begin
 investigating. That&rsquo;s a straightforward request, but we keep raw data encrypted
 in AWS S3 buckets. Pulling it down is easy (<code>aws s3 sync ...</code>), but it has to
 be decrypted and parsed. Fortunately, we&rsquo;ve written the software to do that.
@@ -168,7 +162,7 @@ outputs these data points in a comma separated value format.</p>
 
 <p><code>client_parser | ( head -n 1 &amp;&amp; tail -n +2 | sort ) &gt; ship-data.csv</code></p>
 
-<p>The data coming out of <code>client_parser</code> is not necessarially ordered, so we want
+<p>The data coming out of <code>client_parser</code> is not necessarily ordered, so we want
 to fix that. The first line is always the CSV header, so
 we pull that off of the output stream with <code>head -n 1</code>. Lines 2 and greater are
 selected with <code>tail -n +2</code>, and passed through <code>sort</code>. Fortunately, we chose
@@ -195,7 +189,8 @@ so I figure out which line it&rsquo;s on using <code>grep -n</code>. I can do th
 January 16th, and determine that I only care about lines <code>318995</code> through
 <code>321875</code>. Let&rsquo;s make an easier to handle file that only has those.</p>
 
-<p><code>sed -n '1p;318995,321875p' ship-data.csv &gt; ship-jan-15.csv</code></p>
+<pre><code>sed -n '1p;318995,321875p' ship-data.csv &gt; ship-jan-15.csv
+</code></pre>
 
 <p>This prints the first line, and lines 318995-321875. The output is redirected
 to a new file.
@@ -214,7 +209,7 @@ $ sed -n '1p;786,796p' ship-jan-15.csv
 </code></pre>
 
 <p>You might be tempted to pipe the result of that <code>sed</code> to <code>less</code>, but the result
-is an impenitrable wall of text. We need a way to manipulate CSV data on the
+is an impenetrable wall of text. We need a way to manipulate CSV data on the
 command line. Enter <a href="https://csvkit.readthedocs.io/en/1.0.2/tutorial/1_getting_started.html#installing-csvkit">CSVKit</a>.</p>
 
 <p>Let&rsquo;s pipe that through CSVCut instead, to show us just a couple columns. To
@@ -259,19 +254,11 @@ most of the same steps and generated this:</p>
 <p><a href="https://agocs.smugmug.com/Other/Misc/i-kqwzhgK/A"><img src="https://photos.smugmug.com/Other/Misc/i-kqwzhgK/0/28433dd5/L/Screen%20Shot%202018-02-10%20at%205.37.54%20PM-L.png" alt=""></a></p>
 
 <p>That&rsquo;s obviously a very different profile. I&rsquo;m not an accident investigator
-or a mariner, so I&rsquo;m hesitent to say what I think was the reason for the
+or a mariner, so I&rsquo;m hesitant to say what I think was the reason for the
 difference between the two approaches.</p>
 
 <p>Nevertheless, I enjoyed the exercise. Working with these data sets is always
-interesting. This is the feedback I got from the client:</p>
-
-<blockquote>
-<p>Chris – thanks for spearheading the Google map, it’s exactly what we needed
-right now.  Our Head Counsel said, “Wow. This is incredibly useful.” when I
-showed him your map.</p>
-</blockquote>
-
-<p>Obviously nobody&rsquo;s happy this ship is out of service, but I believe we can
+interesting. Nobody&rsquo;s happy this ship is out of service, but I believe we can
 collect the data and effect the changes necessary to make incidents like these
 a thing of the past.</p>
 

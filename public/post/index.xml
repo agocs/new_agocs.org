@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My blog</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on My blog</description>
+    <title>Posts on Agocs.org</title>
+    <link>https://agocs.org/post/</link>
+    <description>Recent content in Posts on Agocs.org</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>yourname@example.com (yourname)</managingEditor>
-    <webMaster>yourname@example.com (yourname)</webMaster>
-    <copyright>(c) 2016 Copyright my blog</copyright>
+    <language>en-us</language>
     <lastBuildDate>Sat, 10 Feb 2018 11:50:00 -0500</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://agocs.org/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using command line tools to analyze a crash</title>
-      <link>/2018/02/10/2018-02-10-anatomy-of-a-crash/</link>
+      <link>https://agocs.org/2018/02/using-command-line-tools-to-analyze-a-crash/</link>
       <pubDate>Sat, 10 Feb 2018 11:50:00 -0500</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2018/02/10/2018-02-10-anatomy-of-a-crash/</guid>
+      
+      <guid>https://agocs.org/2018/02/using-command-line-tools-to-analyze-a-crash/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Norway/i-SLPwjgK/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Norway/i-SLPwjgK/1/808af843/XL/IMG_20170924_070751-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;At &lt;a href=&#34;https://nautiluslabs.co&#34;&gt;Nautilus Labs&lt;/a&gt;, we&amp;rsquo;re advancing the efficiency
@@ -36,10 +33,10 @@ days ago, one of their ships struck a jetty during a berthing maneuver.&lt;/p&gt
     
     <item>
       <title>Rubens&#39; Tube Part 1</title>
-      <link>/2017/04/24/2017-04-24-rubens-tube/</link>
+      <link>https://agocs.org/2017/04/rubens-tube-part-1/</link>
       <pubDate>Mon, 24 Apr 2017 12:20:32 -0500</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2017/04/24/2017-04-24-rubens-tube/</guid>
+      
+      <guid>https://agocs.org/2017/04/rubens-tube-part-1/</guid>
       <description>&lt;p&gt;Hey, check out this Rubens&amp;rsquo; Tube!&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Misc/i-NTKgPZk/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Misc/i-NTKgPZk/0/c85bfe82/XL/IMG_20170422_162532-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -49,11 +46,11 @@ days ago, one of their ships struck a jetty during a berthing maneuver.&lt;/p&gt
     
     <item>
       <title>End Grain Cutting Board</title>
-      <link>/2016/10/25/2016-10-25-end-grain-cutting-board/</link>
+      <link>https://agocs.org/2016/10/end-grain-cutting-board/</link>
       <pubDate>Tue, 25 Oct 2016 10:21:32 -0500</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2016/10/25/2016-10-25-end-grain-cutting-board/</guid>
-      <description>&lt;p&gt;I made an end-grain cutting board, and it&amp;rsquo;s about the coolest thing. It&amp;rsquo;s 1 &amp;frac34;&amp;raquo; thick and made from white maple. I&amp;rsquo;ll take you through the steps I followed.&lt;/p&gt;
+      
+      <guid>https://agocs.org/2016/10/end-grain-cutting-board/</guid>
+      <description>&lt;p&gt;I made an end-grain cutting board, and it&amp;rsquo;s about the coolest thing. It&amp;rsquo;s 1 &lt;sup&gt;3&lt;/sup&gt;&amp;frasl;&lt;sub&gt;4&lt;/sub&gt;&amp;rdquo; thick and made from white maple. I&amp;rsquo;ll take you through the steps I followed.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Cutting-board/i-QzGfq7D/A&#34;&gt;&lt;img src=&#34;https://photos.smugmug.com/Other/Cutting-board/i-QzGfq7D/0/XL/IMG_20161024_002802-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -62,10 +59,10 @@ days ago, one of their ships struck a jetty during a berthing maneuver.&lt;/p&gt
     
     <item>
       <title>Golang Philly talk</title>
-      <link>/2016/09/14/2016-09-14-golang-philly-talk/</link>
+      <link>https://agocs.org/2016/09/golang-philly-talk/</link>
       <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2016/09/14/2016-09-14-golang-philly-talk/</guid>
+      
+      <guid>https://agocs.org/2016/09/golang-philly-talk/</guid>
       <description>&lt;p&gt;I gave a talk at Golang Philly last night! &lt;a href=&#34;https://agocs.org/assets/Golang_Philly_Home_Automation.pdf&#34;&gt;Here are some slides.&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -73,10 +70,10 @@ days ago, one of their ships struck a jetty during a berthing maneuver.&lt;/p&gt
     
     <item>
       <title>Top Ten Home Thorium Core Reactor Tips</title>
-      <link>/2016/02/16/2016-02-16-ten-top-tips-to-keep-your-home-thorium-core-reactor-in-tip-top-shape/</link>
+      <link>https://agocs.org/2016/02/top-ten-home-thorium-core-reactor-tips/</link>
       <pubDate>Tue, 16 Feb 2016 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2016/02/16/2016-02-16-ten-top-tips-to-keep-your-home-thorium-core-reactor-in-tip-top-shape/</guid>
+      
+      <guid>https://agocs.org/2016/02/top-ten-home-thorium-core-reactor-tips/</guid>
       <description>&lt;p&gt;&lt;em&gt;This is the first in what I hope may be a series of retrofuturistic pieces styled after 1950s era Popular Mechanics DIY home improvement articles. I hope it&amp;rsquo;s fun to read!&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -84,10 +81,10 @@ days ago, one of their ships struck a jetty during a berthing maneuver.&lt;/p&gt
     
     <item>
       <title>Jeep Box</title>
-      <link>/2016/01/10/2016-01-10-jeepbox/</link>
+      <link>https://agocs.org/2016/01/jeep-box/</link>
       <pubDate>Sun, 10 Jan 2016 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2016/01/10/2016-01-10-jeepbox/</guid>
+      
+      <guid>https://agocs.org/2016/01/jeep-box/</guid>
       <description>&lt;p&gt;One of the problems with Jeep Wrangler ownership is there&amp;rsquo;s nowhere to store things out of sight. Your backpack, laptop, whatever, it&amp;rsquo;s all hangin&amp;rsquo; out there in the open. Even when you&amp;rsquo;ve zipped the top up, there&amp;rsquo;s nothing between your valuables and a set of sticky fingers besides a thin sheet of clear vinyl.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -95,10 +92,10 @@ days ago, one of their ships struck a jetty during a berthing maneuver.&lt;/p&gt
     
     <item>
       <title>How I clean my boots</title>
-      <link>/2015/11/12/2015-11-12-how-i-clean-my-boots/</link>
+      <link>https://agocs.org/2015/11/how-i-clean-my-boots/</link>
       <pubDate>Thu, 12 Nov 2015 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2015/11/12/2015-11-12-how-i-clean-my-boots/</guid>
+      
+      <guid>https://agocs.org/2015/11/how-i-clean-my-boots/</guid>
       <description>&lt;p&gt;I own a pair of Redwing leather boots. I really like these boots. They&amp;rsquo;re formal enough to be worn with dress clothes, but sturdy enough that I can grub around fixing cars and installing drywall. Good boots take care, especially to keep them waterproof and looking clean. This is what I&amp;rsquo;ve been doing.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://agocs.smugmug.com/Other/Boots/i-tzM95Xg/A&#34;&gt;&lt;img src=&#34;https://agocs.smugmug.com/Other/Boots/i-tzM95Xg/0/L/20151112132901-XL.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -108,10 +105,10 @@ days ago, one of their ships struck a jetty during a berthing maneuver.&lt;/p&gt
     
     <item>
       <title>Assigning Globals in Go</title>
-      <link>/2015/10/10/2015-10-10-assigning-globals-in-go/</link>
+      <link>https://agocs.org/2015/10/assigning-globals-in-go/</link>
       <pubDate>Sat, 10 Oct 2015 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2015/10/10/2015-10-10-assigning-globals-in-go/</guid>
+      
+      <guid>https://agocs.org/2015/10/assigning-globals-in-go/</guid>
       <description>&lt;p&gt;This has bitten me in the butt a few times this week, so I figured I&amp;rsquo;d blog about it.&lt;/p&gt;
 
 &lt;h3 id=&#34;be-careful-with-your-scope-when-you-re-assigning-values-to-global-variables-in-go&#34;&gt;Be careful with your scope when you&amp;rsquo;re assigning values to global variables in Go!&lt;/h3&gt;
@@ -123,10 +120,10 @@ days ago, one of their ships struck a jetty during a berthing maneuver.&lt;/p&gt
     
     <item>
       <title>Introducing Uluru</title>
-      <link>/2015/08/20/2015-08-20-introducing-uluru/</link>
+      <link>https://agocs.org/2015/08/introducing-uluru/</link>
       <pubDate>Thu, 20 Aug 2015 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2015/08/20/2015-08-20-introducing-uluru/</guid>
+      
+      <guid>https://agocs.org/2015/08/introducing-uluru/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/3/3e/Uluru_Panorama.jpg&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I don&amp;rsquo;t work for &lt;a href=&#34;https://www.backstopsolutions.com/careers&#34;&gt;Backstop&lt;/a&gt; any more (but you should), but back when I did, we discovered we had no idea how long it took our users to load our tools. Hell, we couldn&amp;rsquo;t even figure out how many clicks per month we had! I was working with New Relic trying to get a quote from them, and the best I could do was 2 million plus or minus 800 thousand. We had insight into how long it took our servers to respond to requests, but no thought was given to DNS, loading outside resources, rendering DOM, etc.&lt;/p&gt;
@@ -136,10 +133,10 @@ days ago, one of their ships struck a jetty during a berthing maneuver.&lt;/p&gt
     
     <item>
       <title>Internet Jukebox</title>
-      <link>/2015/07/30/2015-07-30-internet-jukebox/</link>
+      <link>https://agocs.org/2015/07/internet-jukebox/</link>
       <pubDate>Thu, 30 Jul 2015 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2015/07/30/2015-07-30-internet-jukebox/</guid>
+      
+      <guid>https://agocs.org/2015/07/internet-jukebox/</guid>
       <description>&lt;p&gt;One of the hackerspaces at which I am a member installed a Beaglebone Black on their door and put a speaker outside.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://imgur.com/v3esU7N&#34;&gt;&lt;img src=&#34;http://i.imgur.com/v3esU7Nl.jpg&#34; title=&#34;source: imgur.com&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;http://imgur.com/Pyb5A9A&#34;&gt;&lt;img src=&#34;http://i.imgur.com/Pyb5A9Al.jpg&#34; title=&#34;source: imgur.com&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -149,24 +146,24 @@ days ago, one of their ships struck a jetty during a berthing maneuver.&lt;/p&gt
     
     <item>
       <title>Sun Visor Bracket</title>
-      <link>/2015/03/01/2015-03-01-sun-visor-bracket/</link>
+      <link>https://agocs.org/2015/03/sun-visor-bracket/</link>
       <pubDate>Sun, 01 Mar 2015 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2015/03/01/2015-03-01-sun-visor-bracket/</guid>
+      
+      <guid>https://agocs.org/2015/03/sun-visor-bracket/</guid>
       <description>&lt;p&gt;I shattered the sun visor bracket on my Jeep in the cold this winter, so I did the only sensible thing. I tried to machine a new one.&lt;/p&gt;
 
-&lt;p&gt;I started with a block of 2&amp;raquo; by 4&amp;raquo; aluminum stock. I cut 2&amp;raquo; off of it with a band saw. The blade popped off of its guide with about 1/10&amp;raquo; left to go, so fixing that was a fun diversion.&lt;/p&gt;
+&lt;p&gt;I started with a block of 2&amp;rdquo; by 4&amp;rdquo; aluminum stock. I cut 2&amp;rdquo; off of it with a band saw. The blade popped off of its guide with about &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;10&lt;/sub&gt;&amp;rdquo; left to go, so fixing that was a fun diversion.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Message Queues and Go</title>
-      <link>/2014/12/09/2014-12-09-message-queues-and-go/</link>
+      <link>https://agocs.org/2014/12/message-queues-and-go/</link>
       <pubDate>Tue, 09 Dec 2014 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2014/12/09/2014-12-09-message-queues-and-go/</guid>
-      <description>&lt;p&gt;I gave a talk last night to the ChicaGoLang meetup entitled &amp;laquo;Message Queues and Go.&amp;raquo; It went over using a Message Queue Broker as a backbone to tie together a service oriented archetecture, with examples in Go.&lt;/p&gt;
+      
+      <guid>https://agocs.org/2014/12/message-queues-and-go/</guid>
+      <description>&lt;p&gt;I gave a talk last night to the ChicaGoLang meetup entitled &amp;ldquo;Message Queues and Go.&amp;rdquo; It went over using a Message Queue Broker as a backbone to tie together a service oriented archetecture, with examples in Go.&lt;/p&gt;
 
 &lt;p&gt;I put my slides here:&lt;/p&gt;
 
@@ -185,10 +182,10 @@ days ago, one of their ships struck a jetty during a berthing maneuver.&lt;/p&gt
     
     <item>
       <title>Jeep Quest Part 4</title>
-      <link>/2014/11/29/2014-11-29-jeep-quest-part-4/</link>
+      <link>https://agocs.org/2014/11/jeep-quest-part-4/</link>
       <pubDate>Sat, 29 Nov 2014 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2014/11/29/2014-11-29-jeep-quest-part-4/</guid>
+      
+      <guid>https://agocs.org/2014/11/jeep-quest-part-4/</guid>
       <description>&lt;p&gt;Jeepquest is at an end!&lt;/p&gt;
 
 &lt;p&gt;Thank you all so much for bearing with my inconsistently numbered posts.&lt;/p&gt;
@@ -202,10 +199,10 @@ days ago, one of their ships struck a jetty during a berthing maneuver.&lt;/p&gt
     
     <item>
       <title>Cincinnati Chili</title>
-      <link>/2014/11/25/2014-11-25-cincinnati-chili/</link>
+      <link>https://agocs.org/2014/11/cincinnati-chili/</link>
       <pubDate>Tue, 25 Nov 2014 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2014/11/25/2014-11-25-cincinnati-chili/</guid>
+      
+      <guid>https://agocs.org/2014/11/cincinnati-chili/</guid>
       <description>&lt;p&gt;One of my favorite foods to make is Cincinnati Chili.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Misc/i-FqqCCFQ/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Misc/i-FqqCCFQ/0/M/20141021214234-M.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -215,10 +212,10 @@ days ago, one of their ships struck a jetty during a berthing maneuver.&lt;/p&gt
     
     <item>
       <title>Jeep Quest part 3</title>
-      <link>/2014/11/18/2014-11-18-jeep-quest-part-3/</link>
+      <link>https://agocs.org/2014/11/jeep-quest-part-3/</link>
       <pubDate>Tue, 18 Nov 2014 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2014/11/18/2014-11-18-jeep-quest-part-3/</guid>
+      
+      <guid>https://agocs.org/2014/11/jeep-quest-part-3/</guid>
       <description>&lt;p&gt;I took a vacation day today and saw another Jeep!&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-GM5XjVz/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Jeepquest/i-GM5XjVz/0/M/20141118121516-M.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -230,10 +227,10 @@ days ago, one of their ships struck a jetty during a berthing maneuver.&lt;/p&gt
     
     <item>
       <title>Jeep Quest part II</title>
-      <link>/2014/11/16/2014-11-16-jeep-quest-part-ii/</link>
+      <link>https://agocs.org/2014/11/jeep-quest-part-ii/</link>
       <pubDate>Sun, 16 Nov 2014 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2014/11/16/2014-11-16-jeep-quest-part-ii/</guid>
+      
+      <guid>https://agocs.org/2014/11/jeep-quest-part-ii/</guid>
       <description>&lt;p&gt;We saw a Jeep today! The first we&amp;rsquo;ve seen as part of Jeep Quest. It was a 2000 Wrangler with 167,000 miles, owned by an older Russian man who was asking $6,500.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Misc/i-JHrhXJ7/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Misc/i-JHrhXJ7/0/L/20141116122017-L.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -245,10 +242,10 @@ days ago, one of their ships struck a jetty during a berthing maneuver.&lt;/p&gt
     
     <item>
       <title>Jeep-Quest Part 1</title>
-      <link>/2014/11/16/2014-11-16-jeep-quest-part-1/</link>
+      <link>https://agocs.org/2014/11/jeep-quest-part-1/</link>
       <pubDate>Sun, 16 Nov 2014 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2014/11/16/2014-11-16-jeep-quest-part-1/</guid>
+      
+      <guid>https://agocs.org/2014/11/jeep-quest-part-1/</guid>
       <description>&lt;p&gt;When Sabrina and I moved to Chicago a year and a half ago, we sold both our cars. I&amp;rsquo;m not saying that was a mistake, but I have to spend an hour each way on public transit for both hackerspaces and the radio station, and the grocery delivery people always manage to surprise you. We decided we wanted a reliable vehicle to see us through the next few years here in the Second City. I, being me, want something fun and a little ridiculous. I managed to talk Sabrina into a TJ Wrangler.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -256,23 +253,23 @@ days ago, one of their ships struck a jetty during a berthing maneuver.&lt;/p&gt
     
     <item>
       <title>Pictures of my Blog</title>
-      <link>/2014/09/23/2014-09-23-pictures-of-my-blog/</link>
+      <link>https://agocs.org/2014/09/pictures-of-my-blog/</link>
       <pubDate>Tue, 23 Sep 2014 10:34:20 -0500</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2014/09/23/2014-09-23-pictures-of-my-blog/</guid>
+      
+      <guid>https://agocs.org/2014/09/pictures-of-my-blog/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Misc/i-CMhRqgS/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Misc/i-CMhRqgS/0/L/Screenshot_2014-09-23-10-33-13-L.png&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&amp;laquo;Tell McHugh that I will tweet pictures of my blog as often as I want.&amp;raquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Tell McHugh that I will tweet pictures of my blog as often as I want.&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Surge Soup</title>
-      <link>/2014/09/22/2014-09-22-surge-soup/</link>
+      <link>https://agocs.org/2014/09/surge-soup/</link>
       <pubDate>Mon, 22 Sep 2014 15:56:58 -0500</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2014/09/22/2014-09-22-surge-soup/</guid>
+      
+      <guid>https://agocs.org/2014/09/surge-soup/</guid>
       <description>&lt;p&gt;At Backstop, we name releases after soups. In order for something to be considered a soup, you must be able to find a picture of it in a bowl on the Internet. According, therefore,  to the rules at &lt;a href=&#34;https://www.backstopsolutions.com/careers&#34;&gt;Backstop Solutions Group&lt;/a&gt;, this constitutes An Ice Cold Glass of Surge soup:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Misc/i-FSSp2mP/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Misc/i-FSSp2mP/0/L/20140922155242-L.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -284,10 +281,10 @@ days ago, one of their ships struck a jetty during a berthing maneuver.&lt;/p&gt
     
     <item>
       <title>AGOX Connectors</title>
-      <link>/2014/09/19/2014-09-19-agox-connectors/</link>
+      <link>https://agocs.org/2014/09/agox-connectors/</link>
       <pubDate>Fri, 19 Sep 2014 10:23:41 -0500</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2014/09/19/2014-09-19-agox-connectors/</guid>
+      
+      <guid>https://agocs.org/2014/09/agox-connectors/</guid>
       <description>&lt;p&gt;###Or, how we hacked reality&lt;/p&gt;
 
 &lt;p&gt;This is an eight-pin AGOX connector:&lt;/p&gt;
@@ -299,10 +296,10 @@ days ago, one of their ships struck a jetty during a berthing maneuver.&lt;/p&gt
     
     <item>
       <title>Telescope Update</title>
-      <link>/2014/09/15/2014-09-15-telescope-update/</link>
+      <link>https://agocs.org/2014/09/telescope-update/</link>
       <pubDate>Mon, 15 Sep 2014 07:53:44 -0500</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2014/09/15/2014-09-15-telescope-update/</guid>
+      
+      <guid>https://agocs.org/2014/09/telescope-update/</guid>
       <description>&lt;p&gt;I went to the &lt;a href=&#34;http://sshchicago.org&#34;&gt;Southside Hackerspace&lt;/a&gt; this weekend to do some work on the telescope project. No major developments, but the following is worth pointing out:&lt;/p&gt;
 
 &lt;p&gt;###Driving a wood screw through Teflon is &lt;strong&gt;hard&lt;/strong&gt;.&lt;/p&gt;
@@ -312,10 +309,10 @@ days ago, one of their ships struck a jetty during a berthing maneuver.&lt;/p&gt
     
     <item>
       <title>Cancelling Comcast</title>
-      <link>/2014/09/11/2014-09-11-cancelling-comcast/</link>
+      <link>https://agocs.org/2014/09/cancelling-comcast/</link>
       <pubDate>Thu, 11 Sep 2014 12:14:06 -0500</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2014/09/11/2014-09-11-cancelling-comcast/</guid>
+      
+      <guid>https://agocs.org/2014/09/cancelling-comcast/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Write down your account number.&lt;/li&gt;
 &lt;li&gt;Call Comcast: (1-800-934-6489)&lt;/li&gt;
@@ -335,10 +332,10 @@ days ago, one of their ships struck a jetty during a berthing maneuver.&lt;/p&gt
     
     <item>
       <title>Celestron FirstScope</title>
-      <link>/2014/08/29/2014-08-29-celestron-firstscope/</link>
+      <link>https://agocs.org/2014/08/celestron-firstscope/</link>
       <pubDate>Fri, 29 Aug 2014 16:01:13 -0500</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2014/08/29/2014-08-29-celestron-firstscope/</guid>
+      
+      <guid>https://agocs.org/2014/08/celestron-firstscope/</guid>
       <description>&lt;p&gt;I bought a Celestron FirstScope dobsinian telescope for a project that I&amp;rsquo;ve been kicking around. It&amp;rsquo;s not super duper, but for $50, it&amp;rsquo;s a functional telescope.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://agocs.smugmug.com/Other/Misc/i-CjjQRdv/A&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;img src=&#34;http://agocs.smugmug.com/Other/Misc/i-CjjQRdv/0/L/20140829153602-L.jpg&#34; title=&#34;Photo &amp; Video Sharing by SmugMug&#34; alt=&#34;Photo &amp; Video Sharing by SmugMug&#34;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -348,10 +345,10 @@ days ago, one of their ships struck a jetty during a berthing maneuver.&lt;/p&gt
     
     <item>
       <title>Tips for using RabbitMQ in Go</title>
-      <link>/2014/08/19/2014-08-19-rabbitmq-best-practices-in-go/</link>
+      <link>https://agocs.org/2014/08/tips-for-using-rabbitmq-in-go/</link>
       <pubDate>Tue, 19 Aug 2014 12:57:26 -0500</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2014/08/19/2014-08-19-rabbitmq-best-practices-in-go/</guid>
+      
+      <guid>https://agocs.org/2014/08/tips-for-using-rabbitmq-in-go/</guid>
       <description>###Corrections:
  4% != .004% : When I was writing the article, my brain translated 99996 into 96000. Big difference. It turns out that I&amp;rsquo;m unable to dequeue somewhere between .004% and .20% of messages in about half of test runs.  ###Note:
 I&amp;rsquo;ve been chatting with some very helpful RabbitMQ-knowledgeable people, and they have some suggestions for the issues I&amp;rsquo;m seeing that I&amp;rsquo;m going to check out. I will update this article with my findings.</description>
@@ -359,10 +356,10 @@ I&amp;rsquo;ve been chatting with some very helpful RabbitMQ-knowledgeable peopl
     
     <item>
       <title>The Joke</title>
-      <link>/2014/08/16/2014-08-16-the-joke/</link>
+      <link>https://agocs.org/2014/08/the-joke/</link>
       <pubDate>Sat, 16 Aug 2014 17:47:53 -0500</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2014/08/16/2014-08-16-the-joke/</guid>
+      
+      <guid>https://agocs.org/2014/08/the-joke/</guid>
       <description>Last night, I had a dream that I was telling a joke. It was a long one. I got almost all the way to the punchline before I woke up, and, thinking back on it, I had completely botched the setup. Shame on me.
 Here&amp;rsquo;s the joke:
 In eastern Europe, some time in the 15th century, there was a young rabbi. He was just out of training and was not ready to settle down, so he was wandering the countryside performing good deeds.</description>
@@ -370,21 +367,21 @@ In eastern Europe, some time in the 15th century, there was a young rabbi. He wa
     
     <item>
       <title>Arduino Workshop</title>
-      <link>/2014/06/26/2014-06-26-arduino-workshop/</link>
+      <link>https://agocs.org/2014/06/arduino-workshop/</link>
       <pubDate>Thu, 26 Jun 2014 09:33:30 -0500</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2014/06/26/2014-06-26-arduino-workshop/</guid>
-      <description>Sometimes, shit doesn&amp;rsquo;t work out. For example: Mike&amp;rsquo;s Hard Lemonade contacted me at the Southside Hackerspace, wanting us to modify a golf cart as part of their &amp;laquo;Mike&amp;rsquo;s Hacks&amp;raquo; summer ad campaign. I dumped a lot of time (and just a little money) into the project, but everything went south at the last minute.
+      
+      <guid>https://agocs.org/2014/06/arduino-workshop/</guid>
+      <description>Sometimes, shit doesn&amp;rsquo;t work out. For example: Mike&amp;rsquo;s Hard Lemonade contacted me at the Southside Hackerspace, wanting us to modify a golf cart as part of their &amp;ldquo;Mike&amp;rsquo;s Hacks&amp;rdquo; summer ad campaign. I dumped a lot of time (and just a little money) into the project, but everything went south at the last minute.
 But this isn&amp;rsquo;t about that.
 At the same time, Mason Donahue put me in touch with Chicago Girls in Computing.</description>
     </item>
     
     <item>
       <title>Robot Finds Kitten as a Service</title>
-      <link>/2014/04/24/2014-04-24-robot-finds-kitten-as-a-service/</link>
+      <link>https://agocs.org/2014/04/robot-finds-kitten-as-a-service/</link>
       <pubDate>Thu, 24 Apr 2014 16:12:37 -0500</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2014/04/24/2014-04-24-robot-finds-kitten-as-a-service/</guid>
+      
+      <guid>https://agocs.org/2014/04/robot-finds-kitten-as-a-service/</guid>
       <description>&lt;p&gt;I put together a webservice that serves 700 items that are not kittens.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/agocs/RobotFindsKittenServer&#34;&gt;Github link&lt;/a&gt;&lt;/p&gt;
@@ -396,10 +393,10 @@ At the same time, Mason Donahue put me in touch with Chicago Girls in Computing.
     
     <item>
       <title>Server Migration</title>
-      <link>/2014/04/15/2014-04-15-migration/</link>
+      <link>https://agocs.org/2014/04/server-migration/</link>
       <pubDate>Tue, 15 Apr 2014 16:53:19 -0500</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2014/04/15/2014-04-15-migration/</guid>
+      
+      <guid>https://agocs.org/2014/04/server-migration/</guid>
       <description>I know my site doesn&amp;rsquo;t exactly have any dedicated watchers, but if anyone noticed a period of downtime earlier this week, it&amp;rsquo;s because I was migrating from hosting on FatCow to hosting on a rented VPS through DigitalOcean. I also moved my domain registration from FatCow to Gandi.net. In this post, I plan to cover the hows, whys, and some lessons learned.
 I&amp;rsquo;ll start with the juicy stuff.
 Why? There are a couple of reasons, but the root of it all is that I got fed up with FatCow.</description>
@@ -407,10 +404,10 @@ Why? There are a couple of reasons, but the root of it all is that I got fed up 
     
     <item>
       <title>Someone stole the T</title>
-      <link>/2014/03/18/2014-03-18-someone-stole-the-t/</link>
+      <link>https://agocs.org/2014/03/someone-stole-the-t/</link>
       <pubDate>Tue, 18 Mar 2014 13:17:14 -0500</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2014/03/18/2014-03-18-someone-stole-the-t/</guid>
+      
+      <guid>https://agocs.org/2014/03/someone-stole-the-t/</guid>
       <description>Hoooooly shit! Somebody did it! Somebody stole the T!
 
 Haha, awesome!
@@ -420,10 +417,10 @@ Whoever did this, bravo! Bra-vo! I hope they let you graduate.</description>
     
     <item>
       <title>Intro to Golang</title>
-      <link>/2014/03/16/2014-03-16-intro-to-golang-presentation/</link>
+      <link>https://agocs.org/2014/03/intro-to-golang/</link>
       <pubDate>Sun, 16 Mar 2014 15:15:39 -0500</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2014/03/16/2014-03-16-intro-to-golang-presentation/</guid>
+      
+      <guid>https://agocs.org/2014/03/intro-to-golang/</guid>
       <description>Hey everybody, check out this intro to the Go programming language I put together for a talk at Backstop the other week!
 Golang Slides
 I tried to keep the slides content-light, since I find that having too many things on the screen distracts from what I&amp;rsquo;m saying. I&amp;rsquo;ll recapitulate my notes below.
@@ -432,29 +429,29 @@ I tried to keep the slides content-light, since I find that having too many thin
     
     <item>
       <title>Cold brew coffee: try # 1</title>
-      <link>/2013/09/11/2013-09-11-cold-brew-coffee-try-1/</link>
+      <link>https://agocs.org/2013/09/cold-brew-coffee-try-#-1/</link>
       <pubDate>Wed, 11 Sep 2013 03:34:15 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2013/09/11/2013-09-11-cold-brew-coffee-try-1/</guid>
-      <description>I saw a Kickstarter for a cold brew coffee device today, and I started reading about it. Cold Brew is supposed to taste different from your traditional hot brews &amp;ndash; it gets less of the acidic flavors than traditionally brewed coffee, so you wind up with a smoother beverage. Also, cold brew techniques produce a coffee concentrate that you&amp;rsquo;re supposed to dilute, and the idea of mixing up 50/50 cold brew and milk is interesting.</description>
+      
+      <guid>https://agocs.org/2013/09/cold-brew-coffee-try-#-1/</guid>
+      <description>I saw a Kickstarter for a cold brew coffee device today, and I started reading about it. Cold Brew is supposed to taste different from your traditional hot brews &amp;ndash; it gets less of the acidic flavors than traditionally brewed coffee, so you wind up with a smoother beverage. Also, cold brew techniques produce a coffee concentrate that you&amp;rsquo;re supposed to dilute, and the idea of mixing up 50&amp;frasl;50 cold brew and milk is interesting.</description>
     </item>
     
     <item>
       <title>Moving: a post-mortem</title>
-      <link>/2013/08/10/2013-08-10-moving-a-post-mortem/</link>
+      <link>https://agocs.org/2013/08/moving-a-post-mortem/</link>
       <pubDate>Sat, 10 Aug 2013 04:34:48 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2013/08/10/2013-08-10-moving-a-post-mortem/</guid>
+      
+      <guid>https://agocs.org/2013/08/moving-a-post-mortem/</guid>
       <description>Last month, I moved from Atlanta to Chicago. Moving always sucks; that&amp;rsquo;s a universal constant*, but I think this one went better than most. I&amp;rsquo;ve compiled a list of what worked and what didn&amp;rsquo;t, and some notes on what to do better next time.
 What Worked Trello Sabrina and I planned the move and tracked our tasks on Trello.com. I have to say, the ability to put together dynamic kanban-style task boards on the fly really helped us keep everything straight.</description>
     </item>
     
     <item>
       <title>How to: disable capslock at the hardware level</title>
-      <link>/2013/07/21/2013-07-21-how-to-disable-capslock-at-the-hardware-level/</link>
+      <link>https://agocs.org/2013/07/how-to-disable-capslock-at-the-hardware-level/</link>
       <pubDate>Sun, 21 Jul 2013 05:09:09 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2013/07/21/2013-07-21-how-to-disable-capslock-at-the-hardware-level/</guid>
+      
+      <guid>https://agocs.org/2013/07/how-to-disable-capslock-at-the-hardware-level/</guid>
       <description>I hate capslock. It&amp;rsquo;s a horrible, horrible key, and it gets even more in the way on my split ergonomic keyboards at work. I&amp;rsquo;ve tried registry hacks to kill it, but they don&amp;rsquo;t seem to work. Here&amp;rsquo;s how I deal with capslock:
  Obtain a small, flat-headed screwdriver. Insert it beneath the Capslock key. [  ](http://www.agocs.org/wp-content/uploads/2013/07/20130719_1104211.jpg)
  Pry downward.   If you ever need capslock later, just use a pen to poke the little capacitive sensor.</description>
@@ -462,31 +459,31 @@ What Worked Trello Sabrina and I planned the move and tracked our tasks on Trell
     
     <item>
       <title>Reverse Engineering Doubleclick Part II</title>
-      <link>/2013/05/17/2013-05-17-reverse-engineering-doubleclick-part-ii/</link>
+      <link>https://agocs.org/2013/05/reverse-engineering-doubleclick-part-ii/</link>
       <pubDate>Fri, 17 May 2013 15:27:30 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2013/05/17/2013-05-17-reverse-engineering-doubleclick-part-ii/</guid>
+      
+      <guid>https://agocs.org/2013/05/reverse-engineering-doubleclick-part-ii/</guid>
       <description>Once every three seconds, that&amp;rsquo;s the magic number.
 Some more interesting information: I pointed a Doubleclick click counter at a super-simple web service I wrote, running on a web server I rent, and I ran a test that follows the DLCK redirect. Here are the results:
 
-I ran 300 clicks at 4s per click, then 500 clicks at 2s per click. As you can see, almost all of the first 300 clicks made it to the web service, but only around 380/500 2s per click clicks made it.</description>
+I ran 300 clicks at 4s per click, then 500 clicks at 2s per click. As you can see, almost all of the first 300 clicks made it to the web service, but only around 380&amp;frasl;500 2s per click clicks made it.</description>
     </item>
     
     <item>
       <title>Reverse Engineering Doubleclick Ad Statistics (Part 1)</title>
-      <link>/2013/05/07/2013-05-07-reverse-engineering-doubleclick-ad-statistics-part-1/</link>
+      <link>https://agocs.org/2013/05/reverse-engineering-doubleclick-ad-statistics-part-1/</link>
       <pubDate>Tue, 07 May 2013 17:44:16 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2013/05/07/2013-05-07-reverse-engineering-doubleclick-ad-statistics-part-1/</guid>
-      <description>One of the projects I&amp;rsquo;m on seeks to proxy web beacons. Basically, I have a WSGI app that serves a 1x1 px gif, and then triggers a Celery app that goes out and actually &amp;laquo;clicks&amp;raquo; on the intended web beacon. During preliminary load testing with a Doubleclick beacon (actually a Doubleclick link counter), we discovered that requesting that beacon 1000 times in 5 minutes (one request ever 1/3 second) only reported around 30 &amp;laquo;clicks.</description>
+      
+      <guid>https://agocs.org/2013/05/reverse-engineering-doubleclick-ad-statistics-part-1/</guid>
+      <description>One of the projects I&amp;rsquo;m on seeks to proxy web beacons. Basically, I have a WSGI app that serves a 1x1 px gif, and then triggers a Celery app that goes out and actually &amp;ldquo;clicks&amp;rdquo; on the intended web beacon. During preliminary load testing with a Doubleclick beacon (actually a Doubleclick link counter), we discovered that requesting that beacon 1000 times in 5 minutes (one request ever 1&amp;frasl;3 second) only reported around 30 &amp;ldquo;clicks.</description>
     </item>
     
     <item>
       <title>Mergesort on all the spices in the kitchen</title>
-      <link>/2013/05/05/2013-05-05-mergesort-spices/</link>
+      <link>https://agocs.org/2013/05/mergesort-on-all-the-spices-in-the-kitchen/</link>
       <pubDate>Sun, 05 May 2013 04:05:48 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2013/05/05/2013-05-05-mergesort-spices/</guid>
+      
+      <guid>https://agocs.org/2013/05/mergesort-on-all-the-spices-in-the-kitchen/</guid>
       <description>It bothered me that the spices in the kitchen were out of order. So, I sorted them using my favorite sorting algorithm, Mergesort. My cats helped.
 
 I started with an un-ordered list of spices.
@@ -500,12 +497,12 @@ Then 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2</description>
     
     <item>
       <title>Box Fan Beef Jerky, part 2</title>
-      <link>/2013/04/23/2013-04-23-box-fan-beef-jerky-part-2/</link>
+      <link>https://agocs.org/2013/04/box-fan-beef-jerky-part-2/</link>
       <pubDate>Tue, 23 Apr 2013 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2013/04/23/2013-04-23-box-fan-beef-jerky-part-2/</guid>
+      
+      <guid>https://agocs.org/2013/04/box-fan-beef-jerky-part-2/</guid>
       <description>In this post, I started making box fan beef jerky. If you can&amp;rsquo;t remember where I was when I left off, go take a peek.
-Okay, so. The meat sat in the marinade overnight, and come morning I loaded it onto a 20&amp;raquo; by 20&amp;raquo; HVAC filter, courtesy of The Home Depot.
+Okay, so. The meat sat in the marinade overnight, and come morning I loaded it onto a 20&amp;rdquo; by 20&amp;rdquo; HVAC filter, courtesy of The Home Depot.
 
 The cats were very interested.
 
@@ -514,60 +511,60 @@ I assembled the filters and strapped them to the fan.</description>
     
     <item>
       <title>How to UrlEncode a String in C# using .Net 4.0 or less</title>
-      <link>/2013/04/23/2013-04-23-how-to-urlencode-a-string-in-c-using-net-4-0-or-less/</link>
+      <link>https://agocs.org/2013/04/how-to-urlencode-a-string-in-c#-using-.net-4.0-or-less/</link>
       <pubDate>Tue, 23 Apr 2013 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2013/04/23/2013-04-23-how-to-urlencode-a-string-in-c-using-net-4-0-or-less/</guid>
+      
+      <guid>https://agocs.org/2013/04/how-to-urlencode-a-string-in-c#-using-.net-4.0-or-less/</guid>
       <description>The boffins over at Microsoft added a handy method to .Net 4.5: Webutility.UrlEncode. Unfortunately for those of us who don&amp;rsquo;t have Visual Studio 2012, we can&amp;rsquo;t use it! How then can we properly encode strings for use in URLs?
 (What do I mean? Let&amp;rsquo;s say I want to pass a URL inside another URL as an argument. So, for example, I want to pass http://www.bar.com/?a=b&amp;amp;c=d _as a query string variable_ to foo.</description>
     </item>
     
     <item>
       <title>Box Fan Beef Jerky, part 1</title>
-      <link>/2013/04/18/2013-04-18-box-fan-beef-jerky-part-1/</link>
+      <link>https://agocs.org/2013/04/box-fan-beef-jerky-part-1/</link>
       <pubDate>Thu, 18 Apr 2013 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2013/04/18/2013-04-18-box-fan-beef-jerky-part-1/</guid>
-      <description>I realized this morning that I&amp;rsquo;m about six months late in changing my air conditioner filter. I was in Home Depot, and I thought, &amp;laquo;You know what goes really well with air filters? Beef jerky!&amp;raquo;
-That&amp;rsquo;s right, I&amp;rsquo;m an unabashed Alton Brown fan. I saw this episode of Good Eats a few years ago, and I occasionally think, &amp;laquo;Huh, I could do that.&amp;raquo; Well, I bought three of the cheapest 20x20 filters and 1.</description>
+      
+      <guid>https://agocs.org/2013/04/box-fan-beef-jerky-part-1/</guid>
+      <description>I realized this morning that I&amp;rsquo;m about six months late in changing my air conditioner filter. I was in Home Depot, and I thought, &amp;ldquo;You know what goes really well with air filters? Beef jerky!&amp;rdquo;
+That&amp;rsquo;s right, I&amp;rsquo;m an unabashed Alton Brown fan. I saw this episode of Good Eats a few years ago, and I occasionally think, &amp;ldquo;Huh, I could do that.&amp;rdquo; Well, I bought three of the cheapest 20x20 filters and 1.</description>
     </item>
     
     <item>
       <title>Cast Iron Skillet Pizza</title>
-      <link>/2013/04/17/2013-04-17-cast-iron-skillet-pizza/</link>
+      <link>https://agocs.org/2013/04/cast-iron-skillet-pizza/</link>
       <pubDate>Wed, 17 Apr 2013 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2013/04/17/2013-04-17-cast-iron-skillet-pizza/</guid>
-      <description>I am the proud owner of a Lodge 10&amp;raquo; Cast Iron Skillet. I bought it at the Lodge Factory Store in Tennessee for, like, $12 because of a small blemish. I&amp;rsquo;d heard about making pizza in a cast iron skillet, and tonight, I thought, why not? I largely used this guy&amp;rsquo;s recipe (minus the part where he made his own dough and sauce. Maybe later.): http://www.macheesmo.com/2011/03/cast-iron-pizza/
+      
+      <guid>https://agocs.org/2013/04/cast-iron-skillet-pizza/</guid>
+      <description>I am the proud owner of a Lodge 10&amp;rdquo; Cast Iron Skillet. I bought it at the Lodge Factory Store in Tennessee for, like, $12 because of a small blemish. I&amp;rsquo;d heard about making pizza in a cast iron skillet, and tonight, I thought, why not? I largely used this guy&amp;rsquo;s recipe (minus the part where he made his own dough and sauce. Maybe later.): http://www.macheesmo.com/2011/03/cast-iron-pizza/
 One trip to Whole Foods later, and I had some Ingredients!</description>
     </item>
     
     <item>
       <title>I&#39;m beginning to really *get* test driven development.</title>
-      <link>/2013/04/09/2013-04-09-i-get-tdd/</link>
+      <link>https://agocs.org/2013/04/im-beginning-to-really-get-test-driven-development./</link>
       <pubDate>Tue, 09 Apr 2013 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2013/04/09/2013-04-09-i-get-tdd/</guid>
-      <description>I was working on a piece of code today, and I decided to refactor some of it. &amp;laquo;This method is beginning to smell bad,&amp;raquo; I thought. &amp;laquo;I should break this series of if/thens off into a different method.&amp;raquo;
+      
+      <guid>https://agocs.org/2013/04/im-beginning-to-really-get-test-driven-development./</guid>
+      <description>I was working on a piece of code today, and I decided to refactor some of it. &amp;ldquo;This method is beginning to smell bad,&amp;rdquo; I thought. &amp;ldquo;I should break this series of if/thens off into a different method.&amp;rdquo;
 One thing led to another, and soon enough I had some considerably better-structured, more readable code. But did it work? As luck would have it, this is the first project I&amp;rsquo;d gotten a chance to build from the ground up, and as such, the first project I&amp;rsquo;d been able to build with a whole stanking lot of test coverage.</description>
     </item>
     
     <item>
       <title>First Arduino project</title>
-      <link>/2013/04/05/2013-04-05-first-arduino-project/</link>
+      <link>https://agocs.org/2013/04/first-arduino-project/</link>
       <pubDate>Fri, 05 Apr 2013 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2013/04/05/2013-04-05-first-arduino-project/</guid>
-      <description>So, I know I&amp;rsquo;m way behind the curve on the Arduino. I got caught in a vicious cycle of, &amp;laquo;Can I justify ordering an Arduino? No, I don&amp;rsquo;t really have a project for it.&amp;raquo; &amp;laquo;Should I start this project? No, I don&amp;rsquo;t really have an Arduino.&amp;raquo;
+      
+      <guid>https://agocs.org/2013/04/first-arduino-project/</guid>
+      <description>So, I know I&amp;rsquo;m way behind the curve on the Arduino. I got caught in a vicious cycle of, &amp;ldquo;Can I justify ordering an Arduino? No, I don&amp;rsquo;t really have a project for it.&amp;rdquo; &amp;ldquo;Should I start this project? No, I don&amp;rsquo;t really have an Arduino.&amp;rdquo;
 Well all that changed, because I have an Arduino now (finally! Gosh!). I&amp;rsquo;d ordered a bag of resistors and LEDs on Amazon, and I have a passive IR motion sensor, so while watching Watership Down this evening I assembled my very first project.</description>
     </item>
     
     <item>
       <title>Hey, Chris Agocs, click this:</title>
-      <link>/2013/04/03/2013-04-03-hey-chris-agocs-click-this/</link>
+      <link>https://agocs.org/2013/04/hey-chris-agocs-click-this/</link>
       <pubDate>Wed, 03 Apr 2013 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2013/04/03/2013-04-03-hey-chris-agocs-click-this/</guid>
+      
+      <guid>https://agocs.org/2013/04/hey-chris-agocs-click-this/</guid>
       <description>local host colon eighty eighty
 An explanation for non-Chris Agocs people to follow&amp;hellip;
 One of the projects I&amp;rsquo;m on is capturing the referrer information from a browser. Just to try it out, I spun up a Bottle server and printed the poorly spelled HTTP_REFERER. It works.</description>
@@ -575,10 +572,10 @@ One of the projects I&amp;rsquo;m on is capturing the referrer information from 
     
     <item>
       <title>RadioShack is worth a damn again!</title>
-      <link>/2013/04/01/2013-04-01-radiosmack/</link>
+      <link>https://agocs.org/2013/04/radioshack-is-worth-a-damn-again/</link>
       <pubDate>Mon, 01 Apr 2013 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (yourname)</author>
-      <guid>/2013/04/01/2013-04-01-radiosmack/</guid>
+      
+      <guid>https://agocs.org/2013/04/radioshack-is-worth-a-damn-again/</guid>
       <description>I remember a day before cell phones when you could go to RadioShack and get electronic components, Ham Radio gear, and a bunch of other really useful stuff. Times changed, and all they were good for was cell phones, overpriced batteries, and people yelling about the above. I&amp;rsquo;ve pretty much been ignoring Radio Shack for the past six or seven years.
 I&amp;rsquo;d heard that things had changed. I walked into a RadioShack near me today, and walked out with an Arduino and a motion sensor.</description>
     </item>

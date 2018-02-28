@@ -1,769 +1,308 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>My blog </title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
 
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta name="description" content="" />
-
-<meta name="keywords" content="">
-
-<link rel="author" href="http://plus.google.com/+Myprofile">
-
-
-<meta property="og:title" content="My blog ">
-<meta property="og:site_name" content="My blog"/>
-<meta property="og:url" content="/" />
-<meta property="og:locale" content="en">
-
-
+<meta property="og:title" content="Agocs.org" />
+<meta property="og:description" content="Helluva software engineer" />
 <meta property="og:type" content="website" />
+<meta property="og:url" content="https://agocs.org/" />
 
 
 
-<link href="/index.xml" rel="alternate" type="application/rss+xml" title="My blog" />
+<meta property="og:updated_time" content="2015-03-01T00:00:00&#43;00:00"/>
 
-<link rel="canonical" href="/" />
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
-<link rel="icon" href="/favicon.png">
+
+
+
+
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Agocs.org"/>
+<meta name="twitter:description" content="Helluva software engineer"/>
 <meta name="generator" content="Hugo 0.36" />
 
-  <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Blog",
+  "headline": "Agocs.org",
+  "url" : "https://agocs.org/",
+  "author": {
+    "@type": "Person",
+    "name": "Chris Agocs"
+  },
+  "dateModified": "2015-03-01T00:00:00&#43;00:00",
+  "keywords": "golang,hacking,jeep,kitchen,programming,rabbitmq,talks,",
+  "description": "Helluva software engineer"
+}
+</script>
 
 
+    <link rel="canonical" href="https://agocs.org/">
 
-    <link rel="stylesheet" href="/css/bootswatch/paper/bootstrap.min.css">
+    <title>Agocs.org</title>
 
+    <!-- combined, minified CSS -->
+    <link href="https://agocs.org/css/style.css" rel="stylesheet" integrity="sha384-1ZzMPGmNN1QIHKLU8i4Jhr9yokPw8iabR3UcoCgzbsPGJtlJxJONPbNOkOg0PYYJ" crossorigin="anonymous">
 
-<link rel="stylesheet" href="/css/font-awesome.min.css">
-<link rel="stylesheet" href="/css/style.css">
+    
+    <!-- RSS 2.0 feed -->
+    <link href="https://agocs.org/index.xml" rel="alternate" type="application/rss+xml" title="Agocs.org" />
+    
 
+    
 
-<link rel="stylesheet" href="/css/style_custom.css">
+    
 
+    
 
+  </head>
 
-  <link rel="stylesheet" href="/css/highlight/default.css">
+  <body>
 
-
-</head>
-<body data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
-    <header id="main-header">
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link active" href="https://agocs.org/">Home</a>
           
-          <a class="navbar-brand-img" href="/">
-            <img alt="My awsome blog" src="http://blog.appernetic.io/images/apperneticlogo.png">
-            
-          </a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            
-            
-            <li class="">
-
-              <a href="https://appernetic.io/app/#/about" >
-                <i class='fa fa-road'></i>
-                About
-              </a>
-            </li>
-            
-            <li class="">
-
-              <a href="/post/" >
-                
-                Blog
-              </a>
-            </li>
-            
-            <li class="">
-
-              <a href="https://appernetic.io/app/" >
-                
-                Dashboard
-              </a>
-            </li>
-            
-            
-              
-          </ul>
-        </div>
-        
+          
+        </nav>
       </div>
-    </nav>
+    </div>
+    
+
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title"><a href="https://agocs.org/" rel="home">Agocs.org</a></h1>
+        <p class="lead blog-description">Helluva software engineer</p>
+      </div>
+    </header>
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title"><a href="https://agocs.org/2015/03/sun-visor-bracket/">Sun Visor Bracket</a></h2>
+    <p class="blog-post-meta"><time datetime="2015-03-01T00:00:00Z">Sun Mar 01, 2015</time> by Chris Agocs in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/jeep" rel="category tag">Jeep</a>, <a href="/categories/hacking" rel="category tag">Hacking</a>
+
+
+</p>
   </header>
+  <p>I shattered the sun visor bracket on my Jeep in the cold this winter, so I did the only sensible thing. I tried to machine a new one.</p>
 
-
-  <div class="container">
-    
-    <div class="row">
-      <div class="col-sm-9">
-        
-        
-          <div class="row">
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <div>
-  <h2><a href="/2014/09/15/2014-09-15-telescope-update/">Telescope Update</a>
-</h2>
-
-  <div class="margin-10">
-    <small>
-  <i class="fa fa-calendar"></i>
-  <time datetime="2014-09-15">15 Sep, 2014</time>
-</small>
-
-    
-
-  </div>
-</div>
-
-    <p>
-  
-  
-    <p>I went to the <a href="http://sshchicago.org">Southside Hackerspace</a> this weekend to do some work on the telescope project. No major developments, but the following is worth pointing out:</p>
-
-<p>###Driving a wood screw through Teflon is <strong>hard</strong>.</p>
+<p>I started with a block of 2&rdquo; by 4&rdquo; aluminum stock. I cut 2&rdquo; off of it with a band saw. The blade popped off of its guide with about <sup>1</sup>&frasl;<sub>10</sub>&rdquo; left to go, so fixing that was a fun diversion.</p>
 
 <p></p>
-  
+  <a href='https://agocs.org/2015/03/sun-visor-bracket/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title"><a href="https://agocs.org/2014/12/message-queues-and-go/">Message Queues and Go</a></h2>
+    <p class="blog-post-meta"><time datetime="2014-12-09T00:00:00Z">Tue Dec 09, 2014</time> by Chris Agocs in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/golang" rel="category tag">Golang</a>, <a href="/categories/rabbitmq" rel="category tag">RabbitMQ</a>, <a href="/categories/talks" rel="category tag">talks</a>
 
 
 </p>
+  </header>
+  <p>I gave a talk last night to the ChicaGoLang meetup entitled &ldquo;Message Queues and Go.&rdquo; It went over using a Message Queue Broker as a backbone to tie together a service oriented archetecture, with examples in Go.</p>
 
+<p>I put my slides here:</p>
 
-    <p class="lead"><a href="/2014/09/15/2014-09-15-telescope-update/" class="btn btn-default">Read more &rarr;</a></p>
+<p><a href="http://go-talks.appspot.com/github.com/agocs/golangRabbitMQ/rmq.slide#1">http://go-talks.appspot.com/github.com/agocs/golangRabbitMQ/rmq.slide#1</a></p>
 
+<p>and you can follow along with the video here:</p>
 
-  </div>
-</div>
+<iframe width="854" height="510" src="//www.youtube.com/embed/-S0-qgl8120?list=UUoGyPn-NIuAgkhlN7NAMhqw" frameborder="0" allowfullscreen></iframe>
 
-        
-          <div class="row">
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <div>
-  <h2><a href="/2014/09/11/2014-09-11-cancelling-comcast/">Cancelling Comcast</a>
-</h2>
+<p>The examples in the code will, unfortunately, not work because they rely on RabbitMQ running on a specific IP address / port.</p>
 
-  <div class="margin-10">
-    <small>
-  <i class="fa fa-calendar"></i>
-  <time datetime="2014-09-11">11 Sep, 2014</time>
-</small>
-
-    
-
-  </div>
-</div>
-
-    <p>
-  
-  
-    <ul>
-<li>Write down your account number.</li>
-<li>Call Comcast: (1-800-934-6489)</li>
-<li>Sit through the phone tree. The correct options are:
-
-<ul>
-<li>1: Yes, my phone number is the phone number associated with the account.</li>
-<li>5: Remove services</li>
-<li>3: Cancel all services</li>
-<li>2: No, please don&rsquo;t call me later.</li>
-</ul></li>
-<li>Get confused when your phone makes the hanging up noise.</li>
-</ul>
+<p>Let me know if there&rsquo;s anything I got wrong or missed!</p>
 
 <p></p>
-  
+  <a href='https://agocs.org/2014/12/message-queues-and-go/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title"><a href="https://agocs.org/2014/11/jeep-quest-part-4/">Jeep Quest Part 4</a></h2>
+    <p class="blog-post-meta"><time datetime="2014-11-29T00:00:00Z">Sat Nov 29, 2014</time> by Chris Agocs in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/jeep" rel="category tag">Jeep</a>
 
 
 </p>
+  </header>
+  <p>Jeepquest is at an end!</p>
 
+<p>Thank you all so much for bearing with my inconsistently numbered posts.</p>
 
-    <p class="lead"><a href="/2014/09/11/2014-09-11-cancelling-comcast/" class="btn btn-default">Read more &rarr;</a></p>
+<p><a href="http://agocs.smugmug.com/Other/Jeepquest/i-2kq7TjG/A" title="Photo & Video Sharing by SmugMug"><img src="http://agocs.smugmug.com/Other/Jeepquest/i-2kq7TjG/0/L/20141129_133006-L.jpg" title="Photo & Video Sharing by SmugMug" alt="Photo & Video Sharing by SmugMug"></a></p>
 
-
-  </div>
-</div>
-
-        
-          <div class="row">
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <div>
-  <h2><a href="/2014/08/29/2014-08-29-celestron-firstscope/">Celestron FirstScope</a>
-</h2>
-
-  <div class="margin-10">
-    <small>
-  <i class="fa fa-calendar"></i>
-  <time datetime="2014-08-29">29 Aug, 2014</time>
-</small>
-
-    
-
-  </div>
-</div>
-
-    <p>
-  
-  
-    <p>I bought a Celestron FirstScope dobsinian telescope for a project that I&rsquo;ve been kicking around. It&rsquo;s not super duper, but for $50, it&rsquo;s a functional telescope.</p>
-
-<p><a href="http://agocs.smugmug.com/Other/Misc/i-CjjQRdv/A" title="Photo & Video Sharing by SmugMug"><img src="http://agocs.smugmug.com/Other/Misc/i-CjjQRdv/0/L/20140829153602-L.jpg" title="Photo & Video Sharing by SmugMug" alt="Photo & Video Sharing by SmugMug"></a></p>
+<p>Today, Sabrina and I drove up to Kenosha, WI to take a look at this 2002 Wrangler X. First, we had breakfast at a place called The Coffee Pot, where the only not-so-great thing was their coffee. Afterwards, we went to Dan Stipler&rsquo;s Auto World.</p>
 
 <p></p>
-  
+  <a href='https://agocs.org/2014/11/jeep-quest-part-4/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title"><a href="https://agocs.org/2014/11/cincinnati-chili/">Cincinnati Chili</a></h2>
+    <p class="blog-post-meta"><time datetime="2014-11-25T00:00:00Z">Tue Nov 25, 2014</time> by Chris Agocs in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/kitchen" rel="category tag">Kitchen</a>
 
 
 </p>
+  </header>
+  <p>One of my favorite foods to make is Cincinnati Chili.</p>
 
-
-    <p class="lead"><a href="/2014/08/29/2014-08-29-celestron-firstscope/" class="btn btn-default">Read more &rarr;</a></p>
-
-
-  </div>
-</div>
-
-        
-          <div class="row">
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <div>
-  <h2><a href="/2014/08/19/2014-08-19-rabbitmq-best-practices-in-go/">Tips for using RabbitMQ in Go</a>
-</h2>
-
-  <div class="margin-10">
-    <small>
-  <i class="fa fa-calendar"></i>
-  <time datetime="2014-08-19">19 Aug, 2014</time>
-</small>
-
-    
-
-  </div>
-</div>
-
-    <p>
-  
-  
-    ###Corrections:
- 4% != .004% : When I was writing the article, my brain translated 99996 into 96000. Big difference. It turns out that I&rsquo;m unable to dequeue somewhere between .004% and .20% of messages in about half of test runs.  ###Note:
-I&rsquo;ve been chatting with some very helpful RabbitMQ-knowledgeable people, and they have some suggestions for the issues I&rsquo;m seeing that I&rsquo;m going to check out. I will update this article with my findings.
-  
-
-
-</p>
-
-
-    <p class="lead"><a href="/2014/08/19/2014-08-19-rabbitmq-best-practices-in-go/" class="btn btn-default">Read more &rarr;</a></p>
-
-
-  </div>
-</div>
-
-        
-          <div class="row">
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <div>
-  <h2><a href="/2014/08/16/2014-08-16-the-joke/">The Joke</a>
-</h2>
-
-  <div class="margin-10">
-    <small>
-  <i class="fa fa-calendar"></i>
-  <time datetime="2014-08-16">16 Aug, 2014</time>
-</small>
-
-    
-
-  </div>
-</div>
-
-    <p>
-  
-  
-    Last night, I had a dream that I was telling a joke. It was a long one. I got almost all the way to the punchline before I woke up, and, thinking back on it, I had completely botched the setup. Shame on me.
-Here&rsquo;s the joke:
-In eastern Europe, some time in the 15th century, there was a young rabbi. He was just out of training and was not ready to settle down, so he was wandering the countryside performing good deeds.
-  
-
-
-</p>
-
-
-    <p class="lead"><a href="/2014/08/16/2014-08-16-the-joke/" class="btn btn-default">Read more &rarr;</a></p>
-
-
-  </div>
-</div>
-
-        
-          <div class="row">
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <div>
-  <h2><a href="/2014/06/26/2014-06-26-arduino-workshop/">Arduino Workshop</a>
-</h2>
-
-  <div class="margin-10">
-    <small>
-  <i class="fa fa-calendar"></i>
-  <time datetime="2014-06-26">26 Jun, 2014</time>
-</small>
-
-    
-
-  </div>
-</div>
-
-    <p>
-  
-  
-    Sometimes, shit doesn&rsquo;t work out. For example: Mike&rsquo;s Hard Lemonade contacted me at the Southside Hackerspace, wanting us to modify a golf cart as part of their &laquo;Mike&rsquo;s Hacks&raquo; summer ad campaign. I dumped a lot of time (and just a little money) into the project, but everything went south at the last minute.
-But this isn&rsquo;t about that.
-At the same time, Mason Donahue put me in touch with Chicago Girls in Computing.
-  
-
-
-</p>
-
-
-    <p class="lead"><a href="/2014/06/26/2014-06-26-arduino-workshop/" class="btn btn-default">Read more &rarr;</a></p>
-
-
-  </div>
-</div>
-
-        
-          <div class="row">
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <div>
-  <h2><a href="/2014/04/24/2014-04-24-robot-finds-kitten-as-a-service/">Robot Finds Kitten as a Service</a>
-</h2>
-
-  <div class="margin-10">
-    <small>
-  <i class="fa fa-calendar"></i>
-  <time datetime="2014-04-24">24 Apr, 2014</time>
-</small>
-
-    
-
-  </div>
-</div>
-
-    <p>
-  
-  
-    <p>I put together a webservice that serves 700 items that are not kittens.</p>
-
-<p><a href="https://github.com/agocs/RobotFindsKittenServer">Github link</a></p>
-
-<p><a href="http://agocs.org/robotfindskitten/non-kitten-item/">Watch it go</a></p>
+<p><a href="http://agocs.smugmug.com/Other/Misc/i-FqqCCFQ/A" title="Photo & Video Sharing by SmugMug"><img src="http://agocs.smugmug.com/Other/Misc/i-FqqCCFQ/0/M/20141021214234-M.jpg" title="Photo & Video Sharing by SmugMug" alt="Photo & Video Sharing by SmugMug"></a></p>
 
 <p></p>
-  
+  <a href='https://agocs.org/2014/11/cincinnati-chili/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title"><a href="https://agocs.org/2014/11/jeep-quest-part-3/">Jeep Quest part 3</a></h2>
+    <p class="blog-post-meta"><time datetime="2014-11-18T00:00:00Z">Tue Nov 18, 2014</time> by Chris Agocs in 
+<i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a href="/categories/jeep" rel="category tag">Jeep</a>
 
 
 </p>
+  </header>
+  <p>I took a vacation day today and saw another Jeep!</p>
+
+<p><a href="http://agocs.smugmug.com/Other/Jeepquest/i-GM5XjVz/A" title="Photo & Video Sharing by SmugMug"><img src="http://agocs.smugmug.com/Other/Jeepquest/i-GM5XjVz/0/M/20141118121516-M.jpg" title="Photo & Video Sharing by SmugMug" alt="Photo & Video Sharing by SmugMug"></a></p>
+
+<p>It was in a (blessedly indoor) used car lot way up on Pulaski and Addison. It took me, no joke, three busses and an hour and a half to get there. I walked past the place once, walked past it in the other direction, and then went into the wrong business where they were helpful enough to give me directions (turn right and go two doors down).</p>
+
+<p></p>
+  <a href='https://agocs.org/2014/11/jeep-quest-part-3/'>Read more →</a>
+</article> 
 
 
-    <p class="lead"><a href="/2014/04/24/2014-04-24-robot-finds-kitten-as-a-service/" class="btn btn-default">Read more &rarr;</a></p>
 
 
-  </div>
-</div>
 
-        
-          <div class="row">
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <div>
-  <h2><a href="/2014/04/15/2014-04-15-migration/">Server Migration</a>
-</h2>
-
-  <div class="margin-10">
-    <small>
-  <i class="fa fa-calendar"></i>
-  <time datetime="2014-04-15">15 Apr, 2014</time>
-</small>
-
-    
-
-  </div>
-</div>
-
-    <p>
+<nav class="blog-pagination">
+  
+  <a class="btn btn-outline-primary" href="/page/2/" rel="prev" role="button">Previous page</a>
+  <a class="btn btn-outline-primary" href="/page/4/" rel="next" role="button">Next page</a>
   
   
-    I know my site doesn&rsquo;t exactly have any dedicated watchers, but if anyone noticed a period of downtime earlier this week, it&rsquo;s because I was migrating from hosting on FatCow to hosting on a rented VPS through DigitalOcean. I also moved my domain registration from FatCow to Gandi.net. In this post, I plan to cover the hows, whys, and some lessons learned.
-I&rsquo;ll start with the juicy stuff.
-Why? There are a couple of reasons, but the root of it all is that I got fed up with FatCow.
   
-
-
-</p>
-
-
-    <p class="lead"><a href="/2014/04/15/2014-04-15-migration/" class="btn btn-default">Read more &rarr;</a></p>
-
-
-  </div>
-</div>
-
-        
-          <div class="row">
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <div>
-  <h2><a href="/2014/03/18/2014-03-18-someone-stole-the-t/">Someone stole the T</a>
-</h2>
-
-  <div class="margin-10">
-    <small>
-  <i class="fa fa-calendar"></i>
-  <time datetime="2014-03-18">18 Mar, 2014</time>
-</small>
-
-    
-
-  </div>
-</div>
-
-    <p>
-  
-  
-    Hoooooly shit! Somebody did it! Somebody stole the T!
-
-Haha, awesome!
-
-Whoever did this, bravo! Bra-vo! I hope they let you graduate.
-  
-
-
-</p>
-
-
-    <p class="lead"><a href="/2014/03/18/2014-03-18-someone-stole-the-t/" class="btn btn-default">Read more &rarr;</a></p>
-
-
-  </div>
-</div>
-
-        
-          <div class="row">
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <div>
-  <h2><a href="/2014/03/16/2014-03-16-intro-to-golang-presentation/">Intro to Golang</a>
-</h2>
-
-  <div class="margin-10">
-    <small>
-  <i class="fa fa-calendar"></i>
-  <time datetime="2014-03-16">16 Mar, 2014</time>
-</small>
-
-    
-
-  </div>
-</div>
-
-    <p>
-  
-  
-    Hey everybody, check out this intro to the Go programming language I put together for a talk at Backstop the other week!
-Golang Slides
-I tried to keep the slides content-light, since I find that having too many things on the screen distracts from what I&rsquo;m saying. I&rsquo;ll recapitulate my notes below.
- Title slide. Blah blah blah.  Around since 2009 Go started as a research project at Google in 2007.
-  
-
-
-</p>
-
-
-    <p class="lead"><a href="/2014/03/16/2014-03-16-intro-to-golang-presentation/" class="btn btn-default">Read more &rarr;</a></p>
-
-
-  </div>
-</div>
-
-        
-        
-<nav>
-  <ul class="pagination">
-    
-
-
-<li >
-  <a aria-label="First" href="//">
-    <span aria-hidden="true">&laquo;&laquo;</span>
-  </a>
-</li>
-
-<li >
-  <a aria-label="Previous" href="//page/2/">
-    <span aria-hidden="true">&laquo;</span>
-    </a>
-</li>
-
-<li >
-  <a href="//">
-    1
-    </a>
-</li>
-
-<li >
-  <a href="//page/2/">
-    2
-    </a>
-</li>
-
-<li  class="active" >
-  <a href="//page/3/">
-    3
-    </a>
-</li>
-
-<li >
-  <a href="//page/4/">
-    4
-    </a>
-</li>
-
-<li >
-  <a href="//page/5/">
-    5
-    </a>
-</li>
-
-
-<li >
-  <a aria-label="Next" href="//page/4/">
-    <span aria-hidden="true">&raquo;</span>
-    </a>
-</li>
-<li >
-  <a aria-label="Last" href="//page/5/">
-    <span aria-hidden="true">&raquo;&raquo;</span>
-  </a>
-</li>
-
-
-  </ul>
 </nav>
 
 
-      </div>
-      
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-          <div>
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p>I&rsquo;m a Go enthusiast and a software engineer for <a href="https://nautiluslabs.co">Nautilus Labs</a></p>
+  </section>
   
 
-    <div class="section">
-      <header><div class="title"><b>Latest Posts</b></div></header>
-      <div class="content">
-        <ul>
-        
-          <li>
-          <a href="/2018/02/10/2018-02-10-anatomy-of-a-crash/">Using command line tools to analyze a crash</a>
-          </li>
-        
-          <li>
-          <a href="/2017/04/24/2017-04-24-rubens-tube/">Rubens&#39; Tube Part 1</a>
-          </li>
-        
-          <li>
-          <a href="/2016/10/25/2016-10-25-end-grain-cutting-board/">End Grain Cutting Board</a>
-          </li>
-        
-          <li>
-          <a href="/2016/09/14/2016-09-14-golang-philly-talk/">Golang Philly talk</a>
-          </li>
-        
-          <li>
-          <a href="/2016/02/16/2016-02-16-ten-top-tips-to-keep-your-home-thorium-core-reactor-in-tip-top-shape/">Top Ten Home Thorium Core Reactor Tips</a>
-          </li>
-        
-          <li>
-          <a href="/2016/01/10/2016-01-10-jeepbox/">Jeep Box</a>
-          </li>
-        
-          <li>
-          <a href="/2015/11/12/2015-11-12-how-i-clean-my-boots/">How I clean my boots</a>
-          </li>
-        
-          <li>
-          <a href="/2015/10/10/2015-10-10-assigning-globals-in-go/">Assigning Globals in Go</a>
-          </li>
-        
-          <li>
-          <a href="/2015/08/20/2015-08-20-introducing-uluru/">Introducing Uluru</a>
-          </li>
-        
-          <li>
-          <a href="/2015/07/30/2015-07-30-internet-jukebox/">Internet Jukebox</a>
-          </li>
-        
-        </ul>
-      </div>
-    </div>
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
 
-    
+
+<li><a href="/2018/02/using-command-line-tools-to-analyze-a-crash/">Using command line tools to analyze a crash</a></li>
+
+<li><a href="/2017/04/rubens-tube-part-1/">Rubens&rsquo; Tube Part 1</a></li>
+
+<li><a href="/2016/10/end-grain-cutting-board/">End Grain Cutting Board</a></li>
+
+<li><a href="/2016/09/golang-philly-talk/">Golang Philly talk</a></li>
+
+<li><a href="/2016/02/top-ten-home-thorium-core-reactor-tips/">Top Ten Home Thorium Core Reactor Tips</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
       
+      <li><a href="https://github.com/agocs">Github</a></li>
       
-    
+      <li><a href="https://twitter.com/agoX">Twitter</a></li>
       
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p>
       
-    
-
-</div>
-
-        </div>
+      Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
       
-    </div>
-
-  </div>
-
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
     
-<footer class="footer hidden-print">
-  <div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-           <div class="pull-left">
-  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
-</div>
-<div class="pull-right">
-
-<a href="/disclaimer/">Disclaimer</a> <i>&middot;</i>
-
-<a href="/terms/">Terms</a> 
-
-</div>
-
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-              
-    
-<div class="container footline">
-    <small>
-  code with <i class='fa fa-heart'></i>
-
-</small>
-</div>
-
-
-    
-<div class="container copyright">
-    <small>
-  &copy; 2016 Copyright my blog
-
-  </small>
-</div>
-
-
-
-        </div>
-    </div>
-  </div>
-</footer>
-
-    
-
-<script src="/js/jquery.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-
-
-<script src="/js/angular.min.js"></script>
-<script src="/js/popover/angular-storage.min.js"></script>
-
-<script src="/js/highlight.pack.js"></script>
-<script src="/js/site.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-
-<script>
-  var _gaq=[['_setAccount','Your Google Analytics tracking code'],['_trackPageview']];
-  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-  s.parentNode.insertBefore(g,s)}(document,'script'));
-</script>
-
-<script>
-var ENABLE_POPOVER =  true , 
-EXPIRE_COOKIE =  5 , 
-SHOW_MODAL_TIMEOUT =  10000 , 
-MOUSE_LEAVE =  true , 
-MODAL_SIZE = "", 
-POST_URL = "https://zapier.com/hooks/catch/1227563/", 
-SIGNUP_HEADER = "Join Our Newsletter",
-HEADER_IMAGE = "//placehold.it/1000x600",
-IMG_DESCRIPTION = "Placeholder image for this popover modal optin form",
-SIGNUP_TEXT = "Signup today for free and be the first to get notified on new updates.",
-INPUT_PLACEHOLDER = "Enter your email",
-SUBMIT_BUTTON = "Subscribe",
-SUCCESS_MESSAGE = "Thanks for your subscription!",
-ERROR_MESSAGE = "Submitting form failed!",
-OPTIN =  true ,
-COOKIE_NAME = "mycookie1",
-CONTENTLANGUAGE = ""; 
-</script>
-
-
-
-<script src="/js/popover/angular-modal-service.min.js"></script>
-<script src="/js/angular-ismobile.min.js"></script>
-<script src="/js/popover/popover.min.js"></script>
-
-
-
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML.js"></script>
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$'], ['\[','\]']],
-    processEscapes: true,
-    processEnvironments: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-});
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    for(var all in MathJax.Hub.getAllJax()) {
-        all.SourceElement().parentNode.className += ' has-jax';
-
-    }
-});
-</script>
-
-
-
-
-
 
   </body>
-</html>
 
+</html>
